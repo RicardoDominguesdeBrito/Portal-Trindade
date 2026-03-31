@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-
 <html class="light" lang="pt-BR"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Comércio e Passeios | Divino Pai Eterno</title>
+<title>Portal Trindade | Guia da Romaria do Divino Pai Eterno</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;700&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Manrope:wght@400;500;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -18,49 +16,22 @@
               "primary-container": "#c9922a",
               "tertiary": "#5f5e5e",
               "on-primary-fixed-variant": "#604100",
-              "tertiary-fixed-dim": "#c8c6c5",
-              "on-secondary-fixed-variant": "#8f1017",
               "surface-dim": "#dadada",
               "primary-fixed": "#ffdeac",
               "on-primary": "#ffffff",
               "surface-container-highest": "#e2e2e2",
               "surface-bright": "#f9f9f9",
-              "secondary-fixed-dim": "#ffb3ad",
               "on-primary-fixed": "#281900",
-              "secondary-container": "#fc635c",
-              "on-tertiary-fixed-variant": "#474746",
               "surface-container": "#eeeeee",
               "surface-tint": "#7e5700",
               "surface-container-low": "#f3f3f3",
-              "on-error": "#ffffff",
               "outline": "#827564",
-              "secondary-fixed": "#ffdad6",
               "background": "#f9f9f9",
-              "on-secondary-fixed": "#410003",
               "on-surface": "#1a1c1c",
-              "on-secondary": "#ffffff",
-              "on-error-container": "#93000a",
               "surface": "#f9f9f9",
-              "on-tertiary": "#ffffff",
               "on-background": "#1a1c1c",
-              "primary-fixed-dim": "#f9bc51",
-              "inverse-surface": "#2f3131",
-              "inverse-on-surface": "#f1f1f1",
-              "surface-container-lowest": "#ffffff",
-              "on-tertiary-fixed": "#1b1b1b",
-              "tertiary-fixed": "#e5e2e1",
-              "surface-variant": "#e2e2e2",
               "primary": "#7e5700",
-              "tertiary-container": "#9d9b9b",
-              "error-container": "#ffdad6",
-              "on-tertiary-container": "#333333",
-              "on-primary-container": "#472f00",
               "secondary": "#b12c2b",
-              "on-secondary-container": "#650008",
-              "surface-container-high": "#e8e8e8",
-              "on-surface-variant": "#504536",
-              "inverse-primary": "#f9bc51",
-              "error": "#ba1a1a"
             },
             fontFamily: {
               "headline": ["Noto Serif"],
@@ -76,10 +47,6 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .glass-nav {
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
         .editorial-tight {
             line-height: 0.9;
             letter-spacing: -0.02em;
@@ -90,281 +57,185 @@
     </style>
 </head>
 <body class="bg-surface font-body text-on-surface">
-<!-- TopNavBar -->
-<header class="bg-[#f9f9f9]/80 dark:bg-stone-900/80 backdrop-blur-md docked full-width top-0 sticky z-50 no-border tonal-shift bg-surface-container-low">
-<nav class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
-<div class="font-serif text-2xl font-bold text-[#7e5700] dark:text-[#c9922a] font-headline">
-                Divino Pai Eterno
+
+<header class="bg-[#f9f9f9]/90 backdrop-blur-md full-width top-0 sticky z-50 border-b border-outline-variant/20 shadow-sm">
+<nav class="flex justify-between items-center w-full px-4 md:px-8 py-4 max-w-7xl mx-auto">
+<div class="font-serif text-2xl font-bold text-[#7e5700] font-headline">
+                Portal Trindade
             </div>
 <div class="hidden md:flex items-center space-x-8">
-<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#b12c2b] transition-colors duration-300" href="#">Início</a>
-<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#b12c2b] transition-colors duration-300" href="#">Hospedagem</a>
-<a class="text-[#7e5700] dark:text-[#c9922a] font-bold border-b-2 border-[#c9922a] pb-1 hover:text-[#b12c2b] transition-colors duration-300" href="#">Comércio</a>
-<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#b12c2b] transition-colors duration-300" href="#">Roteiros</a>
-<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#b12c2b] transition-colors duration-300" href="#">Eventos</a>
+<a class="text-[#7e5700] font-bold border-b-2 border-[#c9922a] pb-1" href="#">Início</a>
+<a class="text-stone-600 font-medium hover:text-[#b12c2b] transition-colors duration-300" href="#hospedagem">Hospedagem</a>
+<a class="text-stone-600 font-medium hover:text-[#b12c2b] transition-colors duration-300" href="#alimentacao">Alimentação</a>
+<a class="text-stone-600 font-medium hover:text-[#b12c2b] transition-colors duration-300" href="#passeios">Passeios</a>
 </div>
 <div class="flex items-center gap-4">
-<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">search</button>
-<button class="signature-gradient text-white px-6 py-2 rounded-xl font-medium active:scale-95 duration-200">
-                    Santuário
-                </button>
+<a href="https://wa.me/5564984294110" target="_blank" class="signature-gradient text-white px-6 py-2 rounded-xl font-medium shadow-md hover:scale-105 transition-transform duration-200">
+                    Anuncie Aqui
+                </a>
 </div>
 </nav>
 </header>
-<main class="max-w-7xl mx-auto px-8 pt-12">
-<!-- Hero Section: Editorial Header -->
-<section class="mb-24">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+
+<main class="max-w-7xl mx-auto px-4 md:px-8 pt-8 md:pt-12">
+<section class="mb-20">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
 <div>
-<span class="font-label text-secondary uppercase tracking-[0.2em] text-sm mb-4 block">Experiência do Peregrino</span>
-<h1 class="font-headline text-6xl md:text-7xl editorial-tight text-on-surface mb-8">Sabores e <br/><span class="text-primary italic">Lembranças</span> de Fé.</h1>
-<p class="font-body text-lg text-on-surface-variant max-w-md">Descubra o melhor da culinária local, artigos que tocam o coração e roteiros guiados pela história de Trindade.</p>
+<span class="font-label text-secondary uppercase tracking-[0.2em] text-sm mb-4 block font-bold">Guia Oficial do Romeiro</span>
+<h1 class="font-headline text-5xl md:text-7xl editorial-tight text-on-surface mb-6">Sua <span class="text-primary italic">Romaria</span> começa aqui.</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-md mb-8">Hospedagem garantida, os melhores restaurantes e roteiros de fé em Trindade-GO. Feito por quem vive a cidade.</p>
+<div class="flex gap-4">
+    <a href="#hospedagem" class="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-[#604100] transition-colors shadow-lg">Ver Pousadas</a>
 </div>
-<div class="relative group overflow-hidden rounded-xl aspect-[16/7]">
-<img alt="Centro Histórico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="atmospheric wide shot of a traditional brazilian plaza at sunset with warm golden lighting and cobblestone details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_OhZlLxPT0hQTcgFNWxlNvQvMh2ZfS7B1NMK77DG_7OdXd2klGecgh8gAwTZsGmfubPzwRFNYPEoYqX3zy1XughxM7UrvafzVdIexW2sVyUmWYJIpYTpSXfZzey55JrhEB5AYUdxREAIalpzcM7uAMjtgTw0kwTAKp6HerIj9V99iTpFz6hT1I_QR3-8tnJ98D0FgIwZ3uJzUYJfTpJ_qnmN5AaorjoGh3iqsQPymDPTgf5E3UD61gOziCR72SpvRbEr0hn5o5b8"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+</div>
+<div class="relative group overflow-hidden rounded-[2rem] aspect-[4/3] shadow-2xl">
+<img alt="Basílica de Trindade Vista Aérea" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="imagens/basilicavista.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
 <div class="absolute bottom-6 left-6 text-white">
-<p class="font-label text-xs uppercase tracking-widest opacity-80">Localização</p>
-<p class="font-headline text-xl">Centro Histórico de Trindade</p>
+<p class="font-label text-xs uppercase tracking-widest opacity-90 font-bold">Capital da Fé</p>
+<p class="font-headline text-2xl">Santuário Basílica</p>
 </div>
 </div>
 </div>
 </section>
-<!-- Category Filters (Chips) -->
-<section class="mb-16 flex flex-wrap gap-4 overflow-x-auto pb-4 scrollbar-hide">
-<button class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label text-sm uppercase tracking-wider">Todos</button>
-<button class="bg-surface-container-highest text-on-surface-variant hover:bg-surface-container-high px-8 py-3 rounded-xl font-label text-sm uppercase tracking-wider transition-all">Restaurantes</button>
-<button class="bg-surface-container-highest text-on-surface-variant hover:bg-surface-container-high px-8 py-3 rounded-xl font-label text-sm uppercase tracking-wider transition-all">Artigos Religiosos</button>
-<button class="bg-surface-container-highest text-on-surface-variant hover:bg-surface-container-high px-8 py-3 rounded-xl font-label text-sm uppercase tracking-wider transition-all">Passeios Guiados</button>
-</section>
-<!-- Restaurantes: Bento Grid Layout -->
-<section class="mb-32">
-<div class="flex justify-between items-baseline mb-12">
-<h2 class="font-headline text-4xl text-on-surface">Restaurantes</h2>
-<a class="font-label text-primary hover:text-secondary transition-colors border-b border-primary/20 pb-1" href="#">Ver todos os sabores</a>
+
+<section id="hospedagem" class="mb-24">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-10">
+<h2 class="font-headline text-4xl text-on-surface border-b-4 border-primary pb-2">Onde Ficar</h2>
+<p class="text-stone-500 mt-2 md:mt-0">Alugue direto com o proprietário.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-<!-- Large Featured Restaurant -->
-<div class="md:col-span-7 group cursor-pointer">
-<div class="relative overflow-hidden rounded-xl aspect-[16/10] mb-6">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="fine dining restaurant interior with rustic wooden tables and warm candle lighting reflecting on wine glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy2xFDAwUAg3xA4BZvq7fGPWl6FuMoY6ZdqhnKtohaIdBNTqeS7j0YDjKom9hj6h_x2lTAQC1IQLA8yupO82wRGsmJSlpimW5_4V_vnj3lYKLCb1RlZHl6XE7sX-rO0LPlYNQh5Sgcj-qhJtSAZxW07El1MNkZe1t7Ezip2EL4wKmzEOFDLtWE4YRlb3TSyciZUhNsx4LAPwP-BEFYdREv7avb6HPBnL-BeerDHgOCG89QuI0MrJ2q7R3wMbynLKQfoVTnF7bVY_s"/>
-<div class="absolute top-4 left-4">
-<span class="bg-surface-container-lowest/90 backdrop-blur text-primary px-4 py-1.5 rounded-full text-xs font-bold font-label uppercase">Destaque da Semana</span>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-100 group">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="imagens/alugueltemporada.jpg" alt="Aluguel de Temporada Trindade"/>
+<div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-md">Recomendado</div>
 </div>
-</div>
-<div class="flex justify-between items-start">
-<div>
-<h3 class="font-headline text-2xl mb-2">Restaurante Sabor de Trindade</h3>
-<p class="font-body text-on-surface-variant text-sm line-clamp-2">Culinária goiana autêntica servida em fogão a lenha com ingredientes locais selecionados.</p>
-</div>
-<span class="bg-surface-container-high px-3 py-1 rounded-lg text-primary font-bold font-label text-sm">$$$</span>
+<div class="p-6">
+<h3 class="font-headline text-2xl mb-2 text-stone-800">Casa do Sr. Antônio</h3>
+<p class="font-body text-stone-600 text-sm mb-4">Ambiente familiar, 3 quartos, garagem para 2 carros. Apenas 10 minutos de caminhada da Basílica. Ideal para famílias em romaria.</p>
+<div class="flex justify-between items-center mt-6">
+    <span class="text-xs font-label uppercase tracking-widest text-emerald-600 font-bold bg-emerald-50 px-3 py-1 rounded-lg">Disponível</span>
+    <a href="https://wa.me/5564984294110" target="_blank" class="bg-[#25D366] px-5 py-2.5 rounded-xl text-white font-bold font-label text-sm flex items-center gap-2 hover:bg-[#1ebd5b] transition-colors shadow-md">
+        <span class="material-symbols-outlined text-sm">chat</span> Chamar no WhatsApp
+    </a>
 </div>
 </div>
-<!-- Secondary Restaurant -->
-<div class="md:col-span-5 grid grid-rows-1 gap-8">
-<div class="bg-surface-container-low p-8 rounded-xl flex flex-col justify-between group hover:bg-surface-container transition-colors">
-<div>
-<div class="flex items-center gap-1 text-secondary mb-4">
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="text-on-surface-variant text-xs ml-2 font-label">(120 avaliações)</span>
 </div>
-<h3 class="font-headline text-xl mb-3">Café do Santuário</h3>
-<p class="font-body text-on-surface-variant text-sm">Pães caseiros e cafés especiais para uma pausa abençoada.</p>
+
+<div class="border-2 border-dashed border-primary/40 rounded-2xl flex flex-col items-center justify-center p-10 text-center bg-primary/5 hover:bg-primary/10 transition-colors cursor-pointer">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4 shadow-sm">
+    <span class="material-symbols-outlined text-4xl text-primary">hotel</span>
 </div>
-<div class="mt-8 flex items-center justify-between">
-<span class="text-xs font-label uppercase tracking-widest text-primary font-bold">Aberto agora</span>
-<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</div>
-</div>
-<!-- Advertise Placeholder -->
-<div class="border-2 border-dashed border-outline-variant/30 rounded-xl flex flex-col items-center justify-center p-8 text-center bg-white/50">
-<span class="material-symbols-outlined text-4xl text-outline-variant mb-4">storefront</span>
-<p class="font-headline text-lg mb-2">Sua Empresa Aqui</p>
-<p class="font-body text-xs text-on-surface-variant mb-6">Alcance milhares de romeiros todos os meses.</p>
-<button class="text-primary font-label text-xs uppercase font-bold tracking-widest hover:underline decoration-2 underline-offset-4 transition-all">Anuncie Aqui</button>
-</div>
+<h3 class="font-headline text-2xl mb-2 text-primary">Sua Pousada Aqui</h3>
+<p class="font-body text-sm text-stone-600 mb-8 max-w-xs">Garanta a lotação do seu espaço na Romaria 2026. Milhares de turistas acessam este portal.</p>
+<a href="https://wa.me/5564984294110" target="_blank" class="signature-gradient text-white px-8 py-3 rounded-xl font-bold shadow-md hover:scale-105 transition-transform">
+    Ver Planos de Anúncio
+</a>
 </div>
 </div>
 </section>
-<!-- Artigos Religiosos: High-End Card Grid -->
-<section class="mb-32">
-<div class="flex items-center gap-8 mb-12">
-<h2 class="font-headline text-4xl text-on-surface whitespace-nowrap">Artigos Religiosos</h2>
-<div class="h-[1px] bg-outline-variant/20 w-full"></div>
+
+<section id="alimentacao" class="mb-24 bg-surface-container-low -mx-4 md:-mx-8 px-4 md:px-8 py-16 rounded-3xl">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-10 max-w-7xl mx-auto">
+<h2 class="font-headline text-4xl text-on-surface border-b-4 border-[#b12c2b] pb-2">Sabores de Trindade</h2>
+<p class="text-stone-500 mt-2 md:mt-0">A verdadeira comida goiana.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-<!-- Item 1 -->
-<div class="group cursor-pointer">
-<div class="relative mb-6 rounded-xl overflow-hidden aspect-square bg-surface-container-low">
-<img class="w-full h-full object-cover mix-blend-multiply group-hover:scale-110 transition-transform duration-500" data-alt="detailed close-up of a handmade wooden rosary with soft focused candlelight background and sacred textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi4sGEQINu4v9HM1LfqjwLoiTL9J9Fsfcjcfzfncc96ZBrupulaUsKA0dAyF138zM9UcIIuS8VJcn7glJ-PcQ1H5uO5_uMILf0KU60a-91QX3cWeb3tCHlu-qZrBFXi7tJzNsxIWxAYycPr9AE7_9u-Mkhm4jwv9MageRPMJZyQBppfqLwiu4SZP7HWhq8RoFr2J_gyrlL4RRXFjcZPOoVMEJnfItddFLHswOdbOGXuft4vgvKiJURCwMhkkmHstDK3f7ITJYT7S4"/>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<div class="bg-white rounded-2xl overflow-hidden shadow-md group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="imagens/comidatipica.jpg" alt="Comida Típica Goiana"/>
 </div>
-<span class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold mb-2 block">Artesanato</span>
-<h3 class="font-headline text-xl mb-2">Terços de Madeira Nobre</h3>
-<p class="font-body text-on-surface-variant text-sm">Esculpidos à mão por artesãos locais com selo de autenticidade.</p>
+<div class="p-6">
+<h3 class="font-headline text-xl mb-2">Restaurante Fogão de Barro</h3>
+<p class="font-body text-stone-600 text-sm mb-4">Galinhada, pequi, feijão tropeiro e aquele tempero caseiro inconfundível. Self-service sem balança.</p>
+<a href="#" class="text-[#b12c2b] font-bold text-sm flex items-center gap-1 hover:underline">
+    <span class="material-symbols-outlined text-sm">location_on</span> Ver no Mapa
+</a>
 </div>
-<!-- Item 2 -->
-<div class="group cursor-pointer">
-<div class="relative mb-6 rounded-xl overflow-hidden aspect-square bg-surface-container-low">
-<img class="w-full h-full object-cover mix-blend-multiply group-hover:scale-110 transition-transform duration-500" data-alt="elegant religious statue of an angel carved in white stone with soft side lighting and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi4sGEQINu4v9HM1LfqjwLoiTL9J9Fsfcjcfzfncc96ZBrupulaUsKA0dAyF138zM9UcIIuS8VJcn7glJ-PcQ1H5uO5_uMILf0KU60a-91QX3cWeb3tCHlu-qZrBFXi7tJzNsxIWxAYycPr9AE7_9u-Mkhm4jwv9MageRPMJZyQBppfqLwiu4SZP7HWhq8RoFr2J_gyrlL4RRXFjcZPOoVMEJnfItddFLHswOdbOGXuft4vgvKiJURCwMhkkmHstDK3f7ITJYT7S4"/>
 </div>
-<span class="font-label text-[10px] uppercase tracking-widest text-secondary font-bold mb-2 block">Sacro</span>
-<h3 class="font-headline text-xl mb-2">Imagens em Resina Italiana</h3>
-<p class="font-body text-on-surface-variant text-sm">Réplicas detalhadas do Divino Pai Eterno em diversos tamanhos.</p>
+
+<div class="bg-white rounded-2xl overflow-hidden shadow-md group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="imagens/milhopamonha.jpg" alt="Pamonha Fresquinha"/>
 </div>
-<!-- Advertise Placeholder (Vertical Card) -->
-<div class="flex flex-col items-center justify-center border-2 border-dashed border-outline-variant/30 rounded-xl bg-surface-container-low/50 p-8 text-center h-full">
-<div class="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm">
-<span class="material-symbols-outlined text-primary text-3xl">add_shopping_cart</span>
+<div class="p-6">
+<h3 class="font-headline text-xl mb-2">Pamonharia do Divino</h3>
+<p class="font-body text-stone-600 text-sm mb-4">As melhores pamonhas de doce e sal, curau e milho cozido fresquinho para o seu lanche da tarde.</p>
+<a href="#" class="text-[#b12c2b] font-bold text-sm flex items-center gap-1 hover:underline">
+    <span class="material-symbols-outlined text-sm">location_on</span> Ver no Mapa
+</a>
 </div>
-<h3 class="font-headline text-xl mb-3">Destaque sua Loja</h3>
-<p class="font-body text-sm text-on-surface-variant mb-8">Mostre seus produtos para quem busca uma lembrança especial da sua visita.</p>
-<button class="signature-gradient text-white px-8 py-3 rounded-full font-label text-xs uppercase tracking-widest font-bold">Quero Anunciar</button>
+</div>
+
+<div class="border-2 border-dashed border-[#b12c2b]/30 rounded-2xl flex flex-col items-center justify-center p-6 text-center bg-white">
+<span class="material-symbols-outlined text-4xl text-[#b12c2b] mb-4">restaurant</span>
+<h3 class="font-headline text-xl mb-2 text-[#b12c2b]">Seu Restaurante</h3>
+<p class="font-body text-xs text-stone-500 mb-6">Traga mais clientes para o seu negócio durante a festa.</p>
+<a href="https://wa.me/5564984294110" target="_blank" class="border border-[#b12c2b] text-[#b12c2b] px-6 py-2 rounded-xl font-bold hover:bg-[#b12c2b] hover:text-white transition-colors">
+    Anunciar Aqui
+</a>
 </div>
 </div>
 </section>
-<!-- Interactive Map Placeholder -->
-<section class="mb-32">
-<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
-<div class="grid grid-cols-1 lg:grid-cols-3">
-<div class="p-12 lg:col-span-1">
-<h2 class="font-headline text-3xl mb-6 text-on-surface">Pontos de Interesse</h2>
-<div class="space-y-6">
-<div class="flex gap-4 items-start p-4 bg-white rounded-xl shadow-sm border-l-4 border-primary">
-<span class="material-symbols-outlined text-primary">location_on</span>
-<div>
-<h4 class="font-bold font-headline text-sm">Basílica do Divino Pai Eterno</h4>
-<p class="text-xs text-on-surface-variant">Santuário Principal</p>
+
+<section id="passeios" class="mb-24">
+<h2 class="font-headline text-4xl text-on-surface border-b-4 border-primary pb-2 mb-10 inline-block">Roteiros da Fé</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative overflow-hidden rounded-2xl aspect-[16/9] group shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="imagens/painelrodovia.jpg" alt="Via Sacra Rodovia dos Romeiros"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 text-white">
+<h3 class="font-headline text-2xl mb-1">Via Sacra e Painéis</h3>
+<p class="font-body text-sm text-stone-200">A reflexão ao longo da Rodovia dos Romeiros.</p>
 </div>
 </div>
-<div class="flex gap-4 items-start p-4 hover:bg-white/50 rounded-xl transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-on-surface-variant">shopping_bag</span>
-<div>
-<h4 class="font-bold font-headline text-sm">Mercado Central</h4>
-<p class="text-xs text-on-surface-variant">Artigos Regionais &amp; Comida</p>
-</div>
-</div>
-<div class="flex gap-4 items-start p-4 hover:bg-white/50 rounded-xl transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-on-surface-variant">history_edu</span>
-<div>
-<h4 class="font-bold font-headline text-sm">Museu da Memória</h4>
-<p class="text-xs text-on-surface-variant">História da Romaria</p>
-</div>
-</div>
-</div>
-<button class="mt-12 w-full border border-primary text-primary py-3 rounded-xl font-label text-xs uppercase tracking-widest font-bold hover:bg-primary/5 transition-colors">Abrir no Maps</button>
-</div>
-<div class="lg:col-span-2 relative min-h-[400px] lg:min-h-full overflow-hidden bg-stone-200">
-<img class="w-full h-full object-cover opacity-60" data-alt="stylized birds eye view map of a historic city center with prominent church structures and green spaces" data-location="Trindade, Goias" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDeS1rhumkw6wI46q_ZNd7OIoFaxC-YesGTMkCCQEXG9XVhvBjf_jPsDMFoUCsbvtSW3gihcsJIPZfXkqFWx_Ewhk4JKN5YakFfV309pYGtyyiHUuI6nEA7Y8TnGeXnTp9I7uGnQde7YV6gO9-J3ust7TLe1MoB02-UjG21nWjxQYTX56i6jZv11MEIfxYgaD4A_gBUVMdhZJNim6DqqTICixxXGBeX_lxkYxbcDVyK65DMyoNaJj9O7BvqRcrlsgU_jCJVZsejOE"/>
-<!-- Map Marker 1 -->
-<div class="absolute top-1/4 left-1/3">
-<div class="relative flex items-center justify-center">
-<div class="absolute animate-ping h-8 w-8 rounded-full bg-primary/40"></div>
-<div class="relative h-4 w-4 bg-primary rounded-full border-2 border-white shadow-md"></div>
-</div>
-</div>
-<!-- Map Marker 2 -->
-<div class="absolute bottom-1/3 right-1/4">
-<div class="h-4 w-4 bg-secondary rounded-full border-2 border-white shadow-md"></div>
-</div>
+<div class="relative overflow-hidden rounded-2xl aspect-[16/9] group shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="imagens/portalentrada.jpg" alt="Portal da Fé Trindade"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 text-white">
+<h3 class="font-headline text-2xl mb-1">Portal da Fé</h3>
+<p class="font-body text-sm text-stone-200">A tradicional foto de chegada na cidade santa.</p>
 </div>
 </div>
 </div>
 </section>
-<!-- Passeios Guiados: Horizontal Editorial Treatment -->
-<section class="mb-32">
-<div class="flex justify-between items-baseline mb-12">
-<h2 class="font-headline text-4xl text-on-surface">Passeios Guiados</h2>
-</div>
-<div class="space-y-12">
-<!-- Tour Card 1 -->
-<div class="flex flex-col md:flex-row gap-12 group">
-<div class="md:w-1/2 overflow-hidden rounded-xl aspect-video">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="small group of people walking through a historic church courtyard with old architecture and golden sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkZ8vZQiSFblzvXl-iYsJWlygELQBDMKr9_WK4-l2b8sXM_fbm3eDvlS9Ef1DG6jsLbJwE8MOq5JIGlMSwCwIaA-5xsb1ktXE68a1NSJYhoZd-r3aqCvlgsVWdIc442OwB_MaozDw9XHYtzPrxoc5mSnlofOCTApUn1EZLsjSRjNFgBCP29cQdwymuxQHM1cXmh16H1pK923Op8UF1s_INVKfNk_EqfPeqyillhzCY0IseHQWF6vDp1qHB94lX73UHAyLcnpihJ9A"/>
-</div>
-<div class="md:w-1/2 flex flex-col justify-center">
-<div class="flex items-center gap-4 mb-4">
-<span class="bg-surface-container-high px-3 py-1 rounded-lg text-primary text-[10px] font-bold font-label uppercase">Histórico</span>
-<span class="text-on-surface-variant text-xs font-label">Duração: 3h</span>
-</div>
-<h3 class="font-headline text-3xl mb-4">Caminho da Fé: Trilha da Basílica</h3>
-<p class="font-body text-on-surface-variant mb-8 max-w-lg leading-relaxed">Uma jornada espiritual guiada pelos segredos arquitetônicos da Basílica e a história da Medalha encontrada em 1840.</p>
-<div class="flex items-center gap-8">
-<button class="signature-gradient text-white px-8 py-3 rounded-xl font-label text-xs uppercase tracking-widest font-bold shadow-lg shadow-primary/20">Agendar Agora</button>
-<span class="font-headline text-xl text-primary">R$ 85<span class="text-xs text-on-surface-variant font-body">/pessoa</span></span>
-</div>
-</div>
-</div>
-<!-- Tour Card 2 -->
-<div class="flex flex-col md:flex-row-reverse gap-12 group">
-<div class="md:w-1/2 overflow-hidden rounded-xl aspect-video">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="outdoor market scene with fresh produce and traditional pottery under a soft overcast sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc_wi3eeaaUGpdDAUIwcsKxQKPerH0z6KGvl6DmDWu8ofW4SruBJzv47ghZ-G6hri9PRXyGpE5JjRWI3E-7gg1dleBXPCFelCa_T2G3U5YaCydfz1Nnjp3wDZkb1bN3u_l_HjicQrkNBapvl9f86tzY4mU8Y8lq_Yn7GUz3LdVMLEwURw0skjYd20NdUpPNIq5PHDsh1Je-ZpKwjFTKaTNjEkqC9-ek3uPld7M08uTY1l_CH7kUIubnROMhZvDczLV1ZXz4-yIZEw"/>
-</div>
-<div class="md:w-1/2 flex flex-col justify-center">
-<div class="flex items-center gap-4 mb-4">
-<span class="bg-surface-container-high px-3 py-1 rounded-lg text-primary text-[10px] font-bold font-label uppercase">Cultura &amp; Gastronomia</span>
-<span class="text-on-surface-variant text-xs font-label">Duração: 4h</span>
-</div>
-<h3 class="font-headline text-3xl mb-4">Sabores da Terra: Tour Gastronômico</h3>
-<p class="font-body text-on-surface-variant mb-8 max-w-lg leading-relaxed">Visita aos mercados locais com degustação de doces artesanais, pão de queijo e pratos típicos da região.</p>
-<div class="flex items-center gap-8">
-<button class="signature-gradient text-white px-8 py-3 rounded-xl font-label text-xs uppercase tracking-widest font-bold shadow-lg shadow-primary/20">Agendar Agora</button>
-<span class="font-headline text-xl text-primary">R$ 120<span class="text-xs text-on-surface-variant font-body">/pessoa</span></span>
-</div>
-</div>
-</div>
-</div>
+
+<section class="mb-20">
+    <a href="https://wa.me/5564984294110" target="_blank" class="block w-full rounded-3xl overflow-hidden shadow-2xl hover:opacity-95 transition-opacity">
+        <img src="imagens/captacao2.png" alt="Anuncie no Portal Trindade" class="w-full h-auto object-cover"/>
+    </a>
 </section>
-<!-- Final CTA: Advertise -->
-<section class="mb-32 text-center py-20 bg-surface-container-low rounded-[2rem] px-8">
-<span class="material-symbols-outlined text-5xl text-primary mb-6">campaign</span>
-<h2 class="font-headline text-4xl mb-6 max-w-2xl mx-auto">Quer ver seu negócio florescer aqui?</h2>
-<p class="font-body text-on-surface-variant text-lg mb-10 max-w-xl mx-auto">Junte-se ao ecossistema oficial do Santuário e conecte-se com milhões de devotos em Trindade.</p>
-<div class="flex flex-col sm:flex-row justify-center gap-6">
-<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-label text-sm uppercase tracking-[0.15em] font-bold">Ver Planos de Anúncio</button>
-<button class="border border-outline-variant text-on-surface px-10 py-4 rounded-xl font-label text-sm uppercase tracking-[0.15em] font-bold hover:bg-white transition-all">Falar com Consultor</button>
-</div>
-</section>
+
 </main>
-<!-- Footer -->
-<footer class="bg-[#f3f3f3] dark:bg-stone-950 w-full py-12 px-8 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto full-width border-t-0 mt-20 tonal-layering surface-container-low">
-<div class="flex flex-col gap-6">
-<div class="font-serif text-xl font-semibold text-stone-800 dark:text-stone-200 font-headline">
-                Divino Pai Eterno
+
+<footer class="bg-stone-900 w-full py-12 px-4 md:px-8 border-t-4 border-primary">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4">
+<div class="font-serif text-2xl font-bold text-white font-headline">
+                Portal Trindade
             </div>
-<p class="font-sans manrope text-sm text-stone-500 max-w-xs">
-                Acompanhando sua jornada de fé com informação e acolhimento em Trindade.
+<p class="font-body text-sm text-stone-400 max-w-xs leading-relaxed">
+                O seu guia comercial, turístico e de fé em Trindade-GO.
             </p>
 </div>
 <div class="flex flex-col gap-4">
-<p class="font-sans workSans text-sm uppercase tracking-wider text-[#7e5700] dark:text-[#c9922a] font-bold">Links Úteis</p>
-<nav class="flex flex-col gap-2">
-<a class="text-stone-500 dark:text-stone-400 hover:text-[#b12c2b] transition-all font-sans text-sm" href="#">Privacidade</a>
-<a class="text-stone-500 dark:text-stone-400 hover:text-[#b12c2b] transition-all font-sans text-sm" href="#">Termos</a>
-<a class="text-stone-500 dark:text-stone-400 hover:text-[#b12c2b] transition-all font-sans text-sm" href="#">Contato</a>
-<a class="text-stone-500 dark:text-stone-400 hover:text-[#b12c2b] transition-all font-sans text-sm" href="#">Imprensa</a>
-<a class="text-stone-500 dark:text-stone-400 hover:text-[#b12c2b] transition-all font-sans text-sm" href="#">Doações</a>
+<p class="font-label text-sm uppercase tracking-wider text-primary font-bold">Contato Comercial</p>
+<nav class="flex flex-col gap-3">
+<a class="text-stone-400 hover:text-white transition-colors text-sm flex items-center gap-2" href="https://wa.me/5564984294110" target="_blank">
+    <span class="material-symbols-outlined text-sm">chat</span> (64) 98429-4110
+</a>
+<a class="text-stone-400 hover:text-white transition-colors text-sm flex items-center gap-2" href="https://instagram.com/trindadeportal" target="_blank">
+    <span class="material-symbols-outlined text-sm">photo_camera</span> @trindadeportal
+</a>
 </nav>
 </div>
-<div class="flex flex-col gap-6">
-<p class="font-sans workSans text-sm uppercase tracking-wider text-[#7e5700] dark:text-[#c9922a] font-bold">Redes Sociais</p>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-stone-200 dark:bg-stone-800 flex items-center justify-center text-stone-600 dark:text-stone-300 hover:bg-primary hover:text-white transition-all" href="#">
-<span class="material-symbols-outlined text-xl">share</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-stone-200 dark:bg-stone-800 flex items-center justify-center text-stone-600 dark:text-stone-300 hover:bg-primary hover:text-white transition-all" href="#">
-<span class="material-symbols-outlined text-xl">camera</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-stone-200 dark:bg-stone-800 flex items-center justify-center text-stone-600 dark:text-stone-300 hover:bg-primary hover:text-white transition-all" href="#">
-<span class="material-symbols-outlined text-xl">play_circle</span>
-</a>
-</div>
-<p class="font-sans workSans text-[10px] text-stone-400 mt-4">
-                © 2024 Santuário Basílica do Divino Pai Eterno. Todos os direitos reservados.
+<div class="flex flex-col justify-end">
+<p class="font-body text-xs text-stone-500">
+                © 2026 Portal Trindade. Desenvolvido para a Romaria. Todos os direitos reservados.
             </p>
+</div>
 </div>
 </footer>
 </body></html>
