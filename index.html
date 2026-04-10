@@ -75,7 +75,8 @@
     .btn-ig, .btn-wa { padding: 8px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; text-decoration: none; transition: opacity 0.2s; }
     .btn-ig { background: #E1306C; color: white; }
     .btn-wa { background: #25D366; color: white; }
-    .btn-ig:hover, .btn-wa:hover { opacity: 0.85; }
+    .btn-link { background: #FF9900; color: white; }
+    .btn-ig:hover, .btn-wa:hover, .btn-link:hover { opacity: 0.85; }
 
     .galeria-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
     .galeria-item { position: relative; border-radius: 10px; overflow: hidden; aspect-ratio: 4/3; cursor: pointer; }
@@ -266,6 +267,7 @@ fetch('./conteudo.json')
       const badge = a.destaque ? `<span class="anunciante-badge">⭐ Destaque</span>` : '';
       const btnIg = a.instagram ? `<a class="btn-ig" href="${a.instagram}" target="_blank">Instagram</a>` : '';
       const btnWa = a.whatsapp ? `<a class="btn-wa" href="https://wa.me/${a.whatsapp}" target="_blank">WhatsApp</a>` : '';
+      const btnLink = a.link ? `<a class="btn-link" href="${a.link}" target="_blank">${a.texto_link || 'Saiba mais'}</a>` : '';
       const todasFotos = [a.imagem, ...(a.imagens_extras || [])];
       const imgsHtml = todasFotos.map((img, i) =>
         `<img src="${img}" alt="${a.nome}" class="${i===0?'ativo':''}" data-card="${idx}" data-slide="${i}">`
@@ -284,7 +286,7 @@ fetch('./conteudo.json')
             ${badge}
             <h3 class="anunciante-nome">${a.nome}</h3>
             <p class="anunciante-desc">${a.descricao}</p>
-            <div class="anunciante-btns">${btnIg}${btnWa}</div>
+            <div class="anunciante-btns">${btnIg}${btnWa}${btnLink}</div>
           </div>
         </div>`;
     }).join('');
