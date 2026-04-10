@@ -6,13 +6,11 @@
     "instagram": "https://www.instagram.com/trindadeportal",
     "email": "contato@portaltrindade.com.br"
   },
-
   "banner": {
     "imagem": "./imagens/basilicavista.png",
     "titulo": "Trindade: A Cidade da Fé",
     "descricao": "Seu portal completo para a Romaria do Divino Pai Eterno"
   },
-
   "romaria": {
     "titulo": "A Romaria 2026 está chegando",
     "tema": "Clamamos: Abbá, Pai",
@@ -25,12 +23,11 @@
       { "artista": "Daniel", "data": "4 e 5 de julho" }
     ]
   },
-
   "anunciantes": [
     {
       "nome": "Santo Santo Santo",
       "descricao": "Loja que transforma fé em arte. Terços artesanais, imagens sacras pintadas à mão, velas aromáticas e muito mais.",
-      "imagem": "imagem": "./imagens/loja_limpa.png",
+      "imagem": "./imagens/loja_limpa.png",
       "instagram": "https://www.instagram.com/santosantosanto.trindade",
       "whatsapp": "",
       "destaque": true
@@ -44,14 +41,12 @@
       "destaque": false
     }
   ],
-
   "galeria": [
     { "imagem": "./imagens/basilicavista.png", "legenda": "Basílica do Divino Pai Eterno" },
     { "imagem": "./imagens/alugueltemporada.png", "legenda": "Hospedagem próxima à Basílica" },
     { "imagem": "./imagens/portalentrada.png", "legenda": "Portal de entrada da cidade" },
     { "imagem": "./imagens/painelrodovia.png", "legenda": "Painel na rodovia" }
   ],
-
   "contato": {
     "mensagem_whatsapp": "Olá! Vim pelo Portal Trindade e gostaria de mais informações.",
     "texto_botao": "Fale com o Portal",
