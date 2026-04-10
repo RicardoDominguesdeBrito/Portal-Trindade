@@ -49,6 +49,16 @@
       "instagram": "",
       "whatsapp": "5562999079022",
       "destaque": true
+    },
+    {
+      "nome": "Manhãs com Jesus — Ricardo Brito",
+      "descricao": "180 reflexões para quem atravessa dor, espera e recomeço com Deus. Um livro de fé para começar cada manhã com força e esperança. Disponível na Amazon.",
+      "imagem": "./imagens/Caminho_de_luz_ao_amanhecer.png",
+      "link": "https://www.amazon.com.br/dp/B0GWDHMPRJ",
+      "texto_link": "Comprar na Amazon",
+      "instagram": "",
+      "whatsapp": "",
+      "destaque": true
     }
   ],
   "galeria": [
