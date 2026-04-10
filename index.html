@@ -4,50 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal Trindade | Guia da Romaria e da Cidade Santa</title>
-  <meta name="description" content="Guia completo da Romaria do Divino Pai Eterno em Trindade-GO. Informações, anunciantes locais e galeria de fotos.">
+  <meta name="description" content="Guia completo da Romaria do Divino Pai Eterno em Trindade-GO.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --azul: #1A2B4A;
-      --azul-medio: #2E4A6B;
-      --dourado: #C9A84C;
-      --dourado-claro: #F0D98D;
-      --branco: #FFFFFF;
-      --cinza: #F5F7FA;
-      --cinza-texto: #5a6a7a;
+      --azul: #1A2B4A; --azul-medio: #2E4A6B;
+      --dourado: #C9A84C; --dourado-claro: #F0D98D;
+      --branco: #FFFFFF; --cinza: #F5F7FA; --cinza-texto: #5a6a7a;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Lato', sans-serif; color: var(--azul); background: var(--branco); }
     h1,h2,h3,h4 { font-family: 'Playfair Display', serif; }
 
-    nav {
-      position: fixed; top: 0; width: 100%; z-index: 100;
-      background: rgba(26,43,74,0.97); backdrop-filter: blur(8px);
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 0 5%; height: 64px;
-    }
+    nav { position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(26,43,74,0.97); backdrop-filter: blur(8px); display: flex; justify-content: space-between; align-items: center; padding: 0 5%; height: 64px; }
     .nav-logo { color: var(--dourado-claro); font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; text-decoration: none; }
     .nav-links { display: flex; gap: 2rem; }
     .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
     .nav-links a:hover { color: var(--dourado-claro); }
-    .nav-cta { background: var(--dourado); color: var(--azul); padding: 8px 20px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.05em; transition: opacity 0.2s; }
-    .nav-cta:hover { opacity: 0.85; }
-    @media(max-width:768px){ .nav-links { display: none; } .nav-logo { font-size: 1.1rem; } }
+    .nav-cta { background: var(--dourado); color: var(--azul); padding: 8px 20px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; text-decoration: none; text-transform: uppercase; }
+    @media(max-width:768px){ .nav-links { display: none; } }
 
-    #hero {
-      margin-top: 64px; position: relative;
-      height: calc(100vh - 64px); min-height: 500px;
-      display: flex; align-items: center; justify-content: center; text-align: center;
-      overflow: hidden;
-    }
-    #hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    #hero { margin-top: 64px; position: relative; height: calc(100vh - 64px); min-height: 500px; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
+    #hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
     .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,43,74,0.65) 0%, rgba(26,43,74,0.4) 60%, rgba(26,43,74,0.8) 100%); }
     .hero-content { position: relative; z-index: 2; color: white; padding: 0 20px; max-width: 800px; }
     .hero-content h1 { font-size: clamp(2.2rem, 6vw, 5rem); line-height: 1.1; margin-bottom: 1rem; text-shadow: 0 2px 20px rgba(0,0,0,0.4); }
     .hero-content p { font-size: clamp(1rem, 2.5vw, 1.3rem); font-weight: 300; margin-bottom: 2rem; opacity: 0.9; }
-    .hero-btn { display: inline-block; background: var(--dourado); color: var(--azul); padding: 14px 36px; border-radius: 6px; font-weight: 700; font-size: 1rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.06em; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 20px rgba(201,168,76,0.5); }
-    .hero-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(201,168,76,0.6); }
+    .hero-btn { display: inline-block; background: var(--dourado); color: var(--azul); padding: 14px 36px; border-radius: 6px; font-weight: 700; font-size: 1rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.06em; box-shadow: 0 4px 20px rgba(201,168,76,0.5); }
 
     section { padding: 80px 5%; }
     .section-alt { background: var(--cinza); }
@@ -56,25 +40,15 @@
     .section-sub { color: var(--cinza-texto); font-size: 1.05rem; margin-bottom: 3rem; font-weight: 300; }
     .section-dark .section-sub { color: rgba(255,255,255,0.65); }
     .section-dark .section-title { color: var(--dourado-claro); }
+    .divisor { width: 60px; height: 3px; background: var(--dourado); border-radius: 2px; margin: 0.8rem 0 2.5rem; }
+    .divisor-center { margin: 0.8rem auto 2.5rem; }
 
-    /* ROMARIA COM CARTAZ */
-    .romaria-layout {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 3rem;
-      align-items: start;
-    }
+    /* ROMARIA */
+    .romaria-layout { display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: start; }
     @media(max-width:768px){ .romaria-layout { grid-template-columns: 1fr; } }
-    .romaria-cartaz {
-      width: 260px;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.4);
-      flex-shrink: 0;
-    }
+    .romaria-cartaz { width: 260px; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.4); }
     .romaria-cartaz img { width: 100%; display: block; }
     @media(max-width:768px){ .romaria-cartaz { width: 100%; max-width: 300px; margin: 0 auto; } }
-
     .romaria-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
     @media(max-width:600px){ .romaria-grid { grid-template-columns: 1fr; } }
     .romaria-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(201,168,76,0.3); border-radius: 12px; padding: 1.5rem; }
@@ -84,42 +58,45 @@
     .shows-list li { color: white; font-size: 1rem; padding: 2px 0; }
     .shows-list li span { color: var(--dourado-claro); font-size: 0.85rem; }
 
+    /* ANUNCIANTES */
     .anunciantes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; }
     .anunciante-card { background: white; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(26,43,74,0.08); transition: transform 0.25s, box-shadow 0.25s; display: flex; flex-direction: column; }
     .anunciante-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(26,43,74,0.15); }
-    .anunciante-img { width: 100%; height: 200px; object-fit: cover; }
+    .anunciante-img-slider { position: relative; height: 200px; overflow: hidden; }
+    .anunciante-img-slider img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.6s; }
+    .anunciante-img-slider img.ativo { opacity: 1; }
+    .slider-dots { position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; }
+    .slider-dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: background 0.3s; }
+    .slider-dot.ativo { background: white; }
     .anunciante-body { padding: 1.4rem; flex: 1; display: flex; flex-direction: column; }
     .anunciante-badge { display: inline-block; background: var(--dourado); color: var(--azul); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 10px; border-radius: 20px; margin-bottom: 0.7rem; }
     .anunciante-nome { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--azul); }
     .anunciante-desc { font-size: 0.9rem; color: var(--cinza-texto); line-height: 1.6; flex: 1; margin-bottom: 1.2rem; }
     .anunciante-btns { display: flex; gap: 0.6rem; flex-wrap: wrap; }
-    .btn-ig, .btn-wa { padding: 8px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; text-decoration: none; transition: opacity 0.2s; text-align: center; }
+    .btn-ig, .btn-wa { padding: 8px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; text-decoration: none; transition: opacity 0.2s; }
     .btn-ig { background: #E1306C; color: white; }
     .btn-wa { background: #25D366; color: white; }
     .btn-ig:hover, .btn-wa:hover { opacity: 0.85; }
 
+    /* GALERIA */
     .galeria-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
-    .galeria-item { position: relative; border-radius: 10px; overflow: hidden; aspect-ratio: 4/3; cursor: pointer; }
+    .galeria-item { position: relative; border-radius: 10px; overflow: hidden; aspect-ratio: 4/3; }
     .galeria-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
     .galeria-item:hover img { transform: scale(1.06); }
     .galeria-legenda { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(26,43,74,0.85)); color: white; font-size: 0.8rem; padding: 20px 12px 10px; transform: translateY(100%); transition: transform 0.3s; }
     .galeria-item:hover .galeria-legenda { transform: translateY(0); }
 
+    /* CONTATO */
     .contato-box { background: var(--dourado); border-radius: 16px; padding: 3rem; text-align: center; max-width: 600px; margin: 0 auto; }
     .contato-box h2 { color: var(--azul); margin-bottom: 0.8rem; }
     .contato-box p { color: var(--azul); opacity: 0.8; margin-bottom: 2rem; font-size: 1.05rem; }
-    .btn-wa-grande { display: inline-flex; align-items: center; gap: 10px; background: var(--azul); color: white; padding: 16px 40px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; text-decoration: none; transition: opacity 0.2s; }
-    .btn-wa-grande:hover { opacity: 0.85; }
+    .btn-wa-grande { display: inline-flex; align-items: center; gap: 10px; background: var(--azul); color: white; padding: 16px 40px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; text-decoration: none; }
 
     footer { background: #0F1C30; color: rgba(255,255,255,0.55); text-align: center; padding: 28px 5%; font-size: 0.85rem; }
     footer a { color: var(--dourado); text-decoration: none; }
 
-    .wa-float { position: fixed; bottom: 22px; right: 22px; z-index: 999; background: #25D366; color: white; border-radius: 50px; padding: 13px 24px; font-weight: 700; font-size: 0.95rem; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.45); display: flex; align-items: center; gap: 8px; transition: transform 0.2s, box-shadow 0.2s; }
-    .wa-float:hover { transform: scale(1.05); box-shadow: 0 8px 30px rgba(37,211,102,0.6); }
+    .wa-float { position: fixed; bottom: 22px; right: 22px; z-index: 999; background: #25D366; color: white; border-radius: 50px; padding: 13px 24px; font-weight: 700; font-size: 0.95rem; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.45); display: flex; align-items: center; gap: 8px; }
     @media(max-width:500px){ .wa-float span.label { display: none; } }
-
-    .divisor { width: 60px; height: 3px; background: var(--dourado); border-radius: 2px; margin: 0.8rem 0 2.5rem; }
-    .divisor-center { margin: 0.8rem auto 2.5rem; }
 
     #loading { position: fixed; inset: 0; background: var(--azul); display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity 0.5s; }
     #loading h2 { color: var(--dourado-claro); font-size: 1.8rem; }
@@ -146,7 +123,7 @@
   <div class="hero-content">
     <h1 id="hero-titulo"></h1>
     <p id="hero-desc"></p>
-    <a id="hero-btn" class="hero-btn" href="#romaria">Ver Romaria 2026</a>
+    <a class="hero-btn" href="#romaria">Ver Romaria 2026</a>
   </div>
 </section>
 
@@ -177,7 +154,7 @@
 <section id="contato" class="section-alt">
   <div class="contato-box">
     <h2>Fale com o Portal Trindade</h2>
-    <p id="contato-desc">Dúvidas, anúncios ou informações sobre a cidade — estamos aqui.</p>
+    <p>Dúvidas, anúncios ou informações sobre a cidade — estamos aqui.</p>
     <a id="wa-btn" class="btn-wa-grande" href="#" target="_blank">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.533 5.845L.057 24l6.305-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.001-1.37l-.36-.214-3.733.979 1-3.647-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
       <span id="wa-btn-texto">Fale com o Portal</span>
@@ -196,93 +173,121 @@
 </a>
 
 <script>
-  fetch('./conteudo.json')
-    .then(r => r.json())
-    .then(d => {
-      const wa = `https://wa.me/${d.site.whatsapp}?text=${encodeURIComponent(d.contato.mensagem_whatsapp)}`;
+fetch('./conteudo.json')
+  .then(r => r.json())
+  .then(d => {
+    const wa = `https://wa.me/${d.site.whatsapp}?text=${encodeURIComponent(d.contato.mensagem_whatsapp)}`;
 
-      document.querySelector('.nav-logo').textContent = d.site.titulo;
-      document.getElementById('nav-cta').href = wa;
+    document.querySelector('.nav-logo').textContent = d.site.titulo;
+    document.getElementById('nav-cta').href = wa;
+    document.getElementById('hero-bg').src = d.banner.imagem;
+    document.getElementById('hero-titulo').textContent = d.banner.titulo;
+    document.getElementById('hero-desc').textContent = d.banner.descricao;
+    document.getElementById('romaria-titulo').textContent = d.romaria.titulo;
 
-      document.getElementById('hero-bg').src = d.banner.imagem;
-      document.getElementById('hero-titulo').textContent = d.banner.titulo;
-      document.getElementById('hero-desc').textContent = d.banner.descricao;
+    if (d.romaria.cartaz) {
+      document.getElementById('romaria-cartaz').src = d.romaria.cartaz;
+    } else {
+      document.getElementById('romaria-cartaz-box').style.display = 'none';
+    }
 
-      document.getElementById('romaria-titulo').textContent = d.romaria.titulo;
+    const showsHtml = d.romaria.shows.map(s => `<li>${s.artista} <span>· ${s.data}</span></li>`).join('');
+    document.getElementById('romaria-grid').innerHTML = `
+      <div class="romaria-card">
+        <div class="romaria-label">Tema</div>
+        <div class="romaria-value">${d.romaria.tema}</div>
+        <div class="romaria-label" style="margin-top:1rem">Edição</div>
+        <div class="romaria-value">${d.romaria.edicao}</div>
+      </div>
+      <div class="romaria-card">
+        <div class="romaria-label">Período</div>
+        <div class="romaria-value">${d.romaria.periodo}</div>
+        <div class="romaria-label" style="margin-top:1rem">Expectativa</div>
+        <div class="romaria-value">${d.romaria.expectativa}</div>
+      </div>
+      <div class="romaria-card">
+        <div class="romaria-label">Local</div>
+        <div class="romaria-value">${d.romaria.local}</div>
+      </div>
+      <div class="romaria-card">
+        <div class="romaria-label">Shows confirmados</div>
+        <ul class="shows-list">${showsHtml}</ul>
+      </div>`;
 
-      // Cartaz
-      if (d.romaria.cartaz) {
-        document.getElementById('romaria-cartaz').src = d.romaria.cartaz;
-      } else {
-        document.getElementById('romaria-cartaz-box').style.display = 'none';
-      }
-
-      const showsHtml = d.romaria.shows.map(s =>
-        `<li>${s.artista} <span>· ${s.data}</span></li>`
+    const ag = document.getElementById('anunciantes-grid');
+    ag.innerHTML = d.anunciantes.map((a, idx) => {
+      const badge = a.destaque ? `<span class="anunciante-badge">⭐ Destaque</span>` : '';
+      const btnIg = a.instagram ? `<a class="btn-ig" href="${a.instagram}" target="_blank">Instagram</a>` : '';
+      const btnWa = a.whatsapp ? `<a class="btn-wa" href="https://wa.me/${a.whatsapp}" target="_blank">WhatsApp</a>` : '';
+      const todasFotos = [a.imagem, ...(a.imagens_extras || [])];
+      const imgsHtml = todasFotos.map((img, i) =>
+        `<img src="${img}" alt="${a.nome}" class="${i===0?'ativo':''}" data-card="${idx}" data-slide="${i}">`
       ).join('');
+      const dotsHtml = todasFotos.length > 1 ? `<div class="slider-dots">${todasFotos.map((_, i) =>
+        `<div class="slider-dot ${i===0?'ativo':''}" data-card="${idx}" data-slide="${i}"></div>`
+      ).join('')}</div>` : '';
+      return `
+        <div class="anunciante-card">
+          <div class="anunciante-img-slider">${imgsHtml}${dotsHtml}</div>
+          <div class="anunciante-body">
+            ${badge}
+            <h3 class="anunciante-nome">${a.nome}</h3>
+            <p class="anunciante-desc">${a.descricao}</p>
+            <div class="anunciante-btns">${btnIg}${btnWa}</div>
+          </div>
+        </div>`;
+    }).join('');
 
-      document.getElementById('romaria-grid').innerHTML = `
-        <div class="romaria-card">
-          <div class="romaria-label">Tema</div>
-          <div class="romaria-value">${d.romaria.tema}</div>
-          <div class="romaria-label" style="margin-top:1rem">Edição</div>
-          <div class="romaria-value">${d.romaria.edicao}</div>
-        </div>
-        <div class="romaria-card">
-          <div class="romaria-label">Período</div>
-          <div class="romaria-value">${d.romaria.periodo}</div>
-          <div class="romaria-label" style="margin-top:1rem">Expectativa</div>
-          <div class="romaria-value">${d.romaria.expectativa}</div>
-        </div>
-        <div class="romaria-card">
-          <div class="romaria-label">Local</div>
-          <div class="romaria-value">${d.romaria.local}</div>
-        </div>
-        <div class="romaria-card">
-          <div class="romaria-label">Shows confirmados</div>
-          <ul class="shows-list">${showsHtml}</ul>
-        </div>
-      `;
-
-      const ag = document.getElementById('anunciantes-grid');
-      ag.innerHTML = d.anunciantes.map(a => {
-        const badge = a.destaque ? `<span class="anunciante-badge">⭐ Destaque</span>` : '';
-        const btnIg = a.instagram ? `<a class="btn-ig" href="${a.instagram}" target="_blank">Instagram</a>` : '';
-        const btnWa = a.whatsapp ? `<a class="btn-wa" href="https://wa.me/${a.whatsapp}" target="_blank">WhatsApp</a>` : '';
-        return `
-          <div class="anunciante-card">
-            <img class="anunciante-img" src="${a.imagem}" alt="${a.nome}">
-            <div class="anunciante-body">
-              ${badge}
-              <h3 class="anunciante-nome">${a.nome}</h3>
-              <p class="anunciante-desc">${a.descricao}</p>
-              <div class="anunciante-btns">${btnIg}${btnWa}</div>
-            </div>
-          </div>`;
-      }).join('');
-
-      const gg = document.getElementById('galeria-grid');
-      gg.innerHTML = d.galeria.map(g => `
-        <div class="galeria-item">
-          <img src="${g.imagem}" alt="${g.legenda}" loading="lazy">
-          <div class="galeria-legenda">${g.legenda}</div>
-        </div>`
-      ).join('');
-
-      document.getElementById('wa-btn').href = wa;
-      document.getElementById('wa-btn-texto').textContent = d.contato.texto_botao;
-      document.getElementById('wa-float').href = wa;
-      document.getElementById('rodape-texto').textContent = d.contato.rodape;
-      document.getElementById('ig-link').href = d.site.instagram;
-
-      const loading = document.getElementById('loading');
-      loading.style.opacity = '0';
-      setTimeout(() => loading.remove(), 500);
-    })
-    .catch(err => {
-      console.error('Erro ao carregar conteudo.json:', err);
-      document.getElementById('loading').innerHTML = '<h2 style="color:#F0D98D">Erro ao carregar conteúdo</h2>';
+    // Slider automático
+    const sliders = {};
+    document.querySelectorAll('.anunciante-img-slider img').forEach(img => {
+      const card = img.dataset.card;
+      if (!sliders[card]) sliders[card] = { total: 0, atual: 0 };
+      sliders[card].total++;
     });
+    document.querySelectorAll('.slider-dot').forEach(dot => {
+      dot.addEventListener('click', () => {
+        const card = dot.dataset.card;
+        const slide = parseInt(dot.dataset.slide);
+        irParaSlide(card, slide);
+      });
+    });
+    function irParaSlide(card, slide) {
+      document.querySelectorAll(`img[data-card="${card}"]`).forEach(img => img.classList.remove('ativo'));
+      document.querySelectorAll(`.slider-dot[data-card="${card}"]`).forEach(d => d.classList.remove('ativo'));
+      document.querySelector(`img[data-card="${card}"][data-slide="${slide}"]`)?.classList.add('ativo');
+      document.querySelector(`.slider-dot[data-card="${card}"][data-slide="${slide}"]`)?.classList.add('ativo');
+      sliders[card].atual = slide;
+    }
+    Object.keys(sliders).forEach(card => {
+      if (sliders[card].total > 1) {
+        setInterval(() => {
+          const prox = (sliders[card].atual + 1) % sliders[card].total;
+          irParaSlide(card, prox);
+        }, 3000);
+      }
+    });
+
+    const gg = document.getElementById('galeria-grid');
+    gg.innerHTML = d.galeria.map(g => `
+      <div class="galeria-item">
+        <img src="${g.imagem}" alt="${g.legenda}" loading="lazy">
+        <div class="galeria-legenda">${g.legenda}</div>
+      </div>`).join('');
+
+    document.getElementById('wa-btn').href = wa;
+    document.getElementById('wa-btn-texto').textContent = d.contato.texto_botao;
+    document.getElementById('wa-float').href = wa;
+    document.getElementById('rodape-texto').textContent = d.contato.rodape;
+    document.getElementById('ig-link').href = d.site.instagram;
+
+    const loading = document.getElementById('loading');
+    loading.style.opacity = '0';
+    setTimeout(() => loading.remove(), 500);
+  })
+  .catch(err => {
+    document.getElementById('loading').innerHTML = '<h2 style="color:#F0D98D">Erro ao carregar conteúdo</h2>';
+  });
 </script>
 </body>
 </html>
