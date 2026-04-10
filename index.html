@@ -9,8 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --azul: #1A2B4A; --azul-medio: #2E4A6B;
-      --dourado: #C9A84C; --dourado-claro: #F0D98D;
+      --azul: #1A2B4A; --dourado: #C9A84C; --dourado-claro: #F0D98D;
       --branco: #FFFFFF; --cinza: #F5F7FA; --cinza-texto: #5a6a7a;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -20,7 +19,7 @@
     nav { position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(26,43,74,0.97); backdrop-filter: blur(8px); display: flex; justify-content: space-between; align-items: center; padding: 0 5%; height: 64px; }
     .nav-logo { color: var(--dourado-claro); font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; text-decoration: none; }
     .nav-links { display: flex; gap: 2rem; }
-    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
     .nav-links a:hover { color: var(--dourado-claro); }
     .nav-cta { background: var(--dourado); color: var(--azul); padding: 8px 20px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; text-decoration: none; text-transform: uppercase; }
     @media(max-width:768px){ .nav-links { display: none; } }
@@ -43,7 +42,6 @@
     .divisor { width: 60px; height: 3px; background: var(--dourado); border-radius: 2px; margin: 0.8rem 0 2.5rem; }
     .divisor-center { margin: 0.8rem auto 2.5rem; }
 
-    /* ROMARIA */
     .romaria-layout { display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: start; }
     @media(max-width:768px){ .romaria-layout { grid-template-columns: 1fr; } }
     .romaria-cartaz { width: 260px; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.4); }
@@ -58,16 +56,17 @@
     .shows-list li { color: white; font-size: 1rem; padding: 2px 0; }
     .shows-list li span { color: var(--dourado-claro); font-size: 0.85rem; }
 
-    /* ANUNCIANTES */
     .anunciantes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; }
     .anunciante-card { background: white; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(26,43,74,0.08); transition: transform 0.25s, box-shadow 0.25s; display: flex; flex-direction: column; }
     .anunciante-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(26,43,74,0.15); }
-    .anunciante-img-slider { position: relative; height: 200px; overflow: hidden; }
+    .anunciante-img-slider { position: relative; height: 200px; overflow: hidden; cursor: pointer; }
     .anunciante-img-slider img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.6s; }
     .anunciante-img-slider img.ativo { opacity: 1; }
-    .slider-dots { position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; }
+    .slider-dots { position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; z-index: 2; }
     .slider-dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: background 0.3s; }
     .slider-dot.ativo { background: white; }
+    .zoom-icon { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.5); color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 16px; z-index: 2; opacity: 0; transition: opacity 0.3s; }
+    .anunciante-img-slider:hover .zoom-icon { opacity: 1; }
     .anunciante-body { padding: 1.4rem; flex: 1; display: flex; flex-direction: column; }
     .anunciante-badge { display: inline-block; background: var(--dourado); color: var(--azul); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 10px; border-radius: 20px; margin-bottom: 0.7rem; }
     .anunciante-nome { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--azul); }
@@ -78,15 +77,13 @@
     .btn-wa { background: #25D366; color: white; }
     .btn-ig:hover, .btn-wa:hover { opacity: 0.85; }
 
-    /* GALERIA */
     .galeria-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
-    .galeria-item { position: relative; border-radius: 10px; overflow: hidden; aspect-ratio: 4/3; }
+    .galeria-item { position: relative; border-radius: 10px; overflow: hidden; aspect-ratio: 4/3; cursor: pointer; }
     .galeria-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
     .galeria-item:hover img { transform: scale(1.06); }
     .galeria-legenda { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(26,43,74,0.85)); color: white; font-size: 0.8rem; padding: 20px 12px 10px; transform: translateY(100%); transition: transform 0.3s; }
     .galeria-item:hover .galeria-legenda { transform: translateY(0); }
 
-    /* CONTATO */
     .contato-box { background: var(--dourado); border-radius: 16px; padding: 3rem; text-align: center; max-width: 600px; margin: 0 auto; }
     .contato-box h2 { color: var(--azul); margin-bottom: 0.8rem; }
     .contato-box p { color: var(--azul); opacity: 0.8; margin-bottom: 2rem; font-size: 1.05rem; }
@@ -98,6 +95,15 @@
     .wa-float { position: fixed; bottom: 22px; right: 22px; z-index: 999; background: #25D366; color: white; border-radius: 50px; padding: 13px 24px; font-weight: 700; font-size: 0.95rem; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.45); display: flex; align-items: center; gap: 8px; }
     @media(max-width:500px){ .wa-float span.label { display: none; } }
 
+    /* LIGHTBOX */
+    #lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 9998; align-items: center; justify-content: center; }
+    #lightbox.aberto { display: flex; }
+    #lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; border-radius: 8px; box-shadow: 0 0 60px rgba(0,0,0,0.8); }
+    #lightbox-fechar { position: absolute; top: 20px; right: 28px; color: white; font-size: 2.5rem; cursor: pointer; line-height: 1; }
+    #lightbox-anterior, #lightbox-proximo { position: absolute; top: 50%; transform: translateY(-50%); color: white; font-size: 2.5rem; cursor: pointer; background: rgba(255,255,255,0.1); border: none; padding: 10px 18px; border-radius: 8px; }
+    #lightbox-anterior { left: 16px; }
+    #lightbox-proximo { right: 16px; }
+
     #loading { position: fixed; inset: 0; background: var(--azul); display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity 0.5s; }
     #loading h2 { color: var(--dourado-claro); font-size: 1.8rem; }
   </style>
@@ -105,6 +111,14 @@
 <body>
 
 <div id="loading"><h2>Portal Trindade</h2></div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <span id="lightbox-fechar">✕</span>
+  <button id="lightbox-anterior">‹</button>
+  <img id="lightbox-img" src="" alt="">
+  <button id="lightbox-proximo">›</button>
+</div>
 
 <nav>
   <a class="nav-logo" href="#">Portal Trindade</a>
@@ -173,6 +187,44 @@
 </a>
 
 <script>
+// LIGHTBOX
+let lightboxFotos = [];
+let lightboxIdx = 0;
+
+function abrirLightbox(fotos, idx) {
+  lightboxFotos = fotos;
+  lightboxIdx = idx;
+  document.getElementById('lightbox-img').src = fotos[idx];
+  document.getElementById('lightbox').classList.add('aberto');
+  document.body.style.overflow = 'hidden';
+}
+
+function fecharLightbox() {
+  document.getElementById('lightbox').classList.remove('aberto');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('lightbox-fechar').addEventListener('click', fecharLightbox);
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target === this) fecharLightbox();
+});
+document.getElementById('lightbox-anterior').addEventListener('click', function(e) {
+  e.stopPropagation();
+  lightboxIdx = (lightboxIdx - 1 + lightboxFotos.length) % lightboxFotos.length;
+  document.getElementById('lightbox-img').src = lightboxFotos[lightboxIdx];
+});
+document.getElementById('lightbox-proximo').addEventListener('click', function(e) {
+  e.stopPropagation();
+  lightboxIdx = (lightboxIdx + 1) % lightboxFotos.length;
+  document.getElementById('lightbox-img').src = lightboxFotos[lightboxIdx];
+});
+document.addEventListener('keydown', function(e) {
+  if (!document.getElementById('lightbox').classList.contains('aberto')) return;
+  if (e.key === 'Escape') fecharLightbox();
+  if (e.key === 'ArrowLeft') document.getElementById('lightbox-anterior').click();
+  if (e.key === 'ArrowRight') document.getElementById('lightbox-proximo').click();
+});
+
 fetch('./conteudo.json')
   .then(r => r.json())
   .then(d => {
@@ -194,20 +246,15 @@ fetch('./conteudo.json')
     const showsHtml = d.romaria.shows.map(s => `<li>${s.artista} <span>· ${s.data}</span></li>`).join('');
     document.getElementById('romaria-grid').innerHTML = `
       <div class="romaria-card">
-        <div class="romaria-label">Tema</div>
-        <div class="romaria-value">${d.romaria.tema}</div>
-        <div class="romaria-label" style="margin-top:1rem">Edição</div>
-        <div class="romaria-value">${d.romaria.edicao}</div>
+        <div class="romaria-label">Tema</div><div class="romaria-value">${d.romaria.tema}</div>
+        <div class="romaria-label" style="margin-top:1rem">Edição</div><div class="romaria-value">${d.romaria.edicao}</div>
       </div>
       <div class="romaria-card">
-        <div class="romaria-label">Período</div>
-        <div class="romaria-value">${d.romaria.periodo}</div>
-        <div class="romaria-label" style="margin-top:1rem">Expectativa</div>
-        <div class="romaria-value">${d.romaria.expectativa}</div>
+        <div class="romaria-label">Período</div><div class="romaria-value">${d.romaria.periodo}</div>
+        <div class="romaria-label" style="margin-top:1rem">Expectativa</div><div class="romaria-value">${d.romaria.expectativa}</div>
       </div>
       <div class="romaria-card">
-        <div class="romaria-label">Local</div>
-        <div class="romaria-value">${d.romaria.local}</div>
+        <div class="romaria-label">Local</div><div class="romaria-value">${d.romaria.local}</div>
       </div>
       <div class="romaria-card">
         <div class="romaria-label">Shows confirmados</div>
@@ -228,7 +275,11 @@ fetch('./conteudo.json')
       ).join('')}</div>` : '';
       return `
         <div class="anunciante-card">
-          <div class="anunciante-img-slider">${imgsHtml}${dotsHtml}</div>
+          <div class="anunciante-img-slider" data-card="${idx}" data-fotos='${JSON.stringify(todasFotos)}'>
+            ${imgsHtml}
+            ${dotsHtml}
+            <div class="zoom-icon">🔍</div>
+          </div>
           <div class="anunciante-body">
             ${badge}
             <h3 class="anunciante-nome">${a.nome}</h3>
@@ -238,20 +289,30 @@ fetch('./conteudo.json')
         </div>`;
     }).join('');
 
-    // Slider automático
+    // Slider automático + lightbox nos anunciantes
     const sliders = {};
-    document.querySelectorAll('.anunciante-img-slider img').forEach(img => {
-      const card = img.dataset.card;
-      if (!sliders[card]) sliders[card] = { total: 0, atual: 0 };
-      sliders[card].total++;
+    document.querySelectorAll('.anunciante-img-slider').forEach(slider => {
+      const card = slider.dataset.card;
+      const fotos = JSON.parse(slider.dataset.fotos);
+      sliders[card] = { total: fotos.length, atual: 0, fotos };
+
+      slider.addEventListener('click', function(e) {
+        if (e.target.classList.contains('slider-dot')) return;
+        const atualImg = slider.querySelector('img.ativo');
+        const slideAtual = parseInt(atualImg?.dataset.slide || 0);
+        abrirLightbox(fotos, slideAtual);
+      });
     });
+
     document.querySelectorAll('.slider-dot').forEach(dot => {
-      dot.addEventListener('click', () => {
+      dot.addEventListener('click', function(e) {
+        e.stopPropagation();
         const card = dot.dataset.card;
         const slide = parseInt(dot.dataset.slide);
         irParaSlide(card, slide);
       });
     });
+
     function irParaSlide(card, slide) {
       document.querySelectorAll(`img[data-card="${card}"]`).forEach(img => img.classList.remove('ativo'));
       document.querySelectorAll(`.slider-dot[data-card="${card}"]`).forEach(d => d.classList.remove('ativo'));
@@ -259,6 +320,7 @@ fetch('./conteudo.json')
       document.querySelector(`.slider-dot[data-card="${card}"][data-slide="${slide}"]`)?.classList.add('ativo');
       sliders[card].atual = slide;
     }
+
     Object.keys(sliders).forEach(card => {
       if (sliders[card].total > 1) {
         setInterval(() => {
@@ -268,12 +330,20 @@ fetch('./conteudo.json')
       }
     });
 
+    // Galeria com lightbox
     const gg = document.getElementById('galeria-grid');
-    gg.innerHTML = d.galeria.map(g => `
-      <div class="galeria-item">
+    const fotosGaleria = d.galeria.map(g => g.imagem);
+    gg.innerHTML = d.galeria.map((g, i) => `
+      <div class="galeria-item" data-idx="${i}">
         <img src="${g.imagem}" alt="${g.legenda}" loading="lazy">
         <div class="galeria-legenda">${g.legenda}</div>
       </div>`).join('');
+
+    document.querySelectorAll('.galeria-item').forEach(item => {
+      item.addEventListener('click', () => {
+        abrirLightbox(fotosGaleria, parseInt(item.dataset.idx));
+      });
+    });
 
     document.getElementById('wa-btn').href = wa;
     document.getElementById('wa-btn-texto').textContent = d.contato.texto_botao;
@@ -285,7 +355,7 @@ fetch('./conteudo.json')
     loading.style.opacity = '0';
     setTimeout(() => loading.remove(), 500);
   })
-  .catch(err => {
+  .catch(() => {
     document.getElementById('loading').innerHTML = '<h2 style="color:#F0D98D">Erro ao carregar conteúdo</h2>';
   });
 </script>
