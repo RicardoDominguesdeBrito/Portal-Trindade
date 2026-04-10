@@ -1,0 +1,60 @@
+{
+  "site": {
+    "titulo": "Portal Trindade",
+    "subtitulo": "Guia da Romaria e da Cidade Santa",
+    "whatsapp": "5564984294110",
+    "instagram": "https://www.instagram.com/trindadeportal",
+    "email": "contato@portaltrindade.com.br"
+  },
+
+  "banner": {
+    "imagem": "./imagens/basilicavista.png",
+    "titulo": "Trindade: A Cidade da Fé",
+    "descricao": "Seu portal completo para a Romaria do Divino Pai Eterno"
+  },
+
+  "romaria": {
+    "titulo": "A Romaria 2026 está chegando",
+    "tema": "Clamamos: Abbá, Pai",
+    "edicao": "186ª edição",
+    "periodo": "26 de junho a 5 de julho de 2026",
+    "local": "Santuário Basílica do Divino Pai Eterno — Trindade, GO",
+    "expectativa": "Superar 4,3 milhões de romeiros",
+    "shows": [
+      { "artista": "Ana Castela", "data": "3 de julho" },
+      { "artista": "Daniel", "data": "4 e 5 de julho" }
+    ]
+  },
+
+  "anunciantes": [
+    {
+      "nome": "Santo Santo Santo",
+      "descricao": "Loja que transforma fé em arte. Terços artesanais, imagens sacras pintadas à mão, velas aromáticas e muito mais.",
+      "imagem": "./imagens/alugueltemporada.png",
+      "instagram": "https://www.instagram.com/santosantosanto.trindade",
+      "whatsapp": "",
+      "destaque": true
+    },
+    {
+      "nome": "Trenzinho da Alegria",
+      "descricao": "O passeio mais animado de Trindade. Diversão garantida para toda a família durante a romaria.",
+      "imagem": "./imagens/portalentrada.png",
+      "instagram": "",
+      "whatsapp": "5564900000000",
+      "destaque": false
+    }
+  ],
+
+  "galeria": [
+    { "imagem": "./imagens/basilicavista.png", "legenda": "Basílica do Divino Pai Eterno" },
+    { "imagem": "./imagens/alugueltemporada.png", "legenda": "Hospedagem próxima à Basílica" },
+    { "imagem": "./imagens/portalentrada.png", "legenda": "Portal de entrada da cidade" },
+    { "imagem": "./imagens/painelrodovia.png", "legenda": "Painel na rodovia" }
+  ],
+
+  "contato": {
+    "mensagem_whatsapp": "Olá! Vim pelo Portal Trindade e gostaria de mais informações.",
+    "texto_botao": "Fale com o Portal",
+    "rodape": "© 2026 Portal Trindade · Trindade-GO · Capital da Fé"
+  }
+}
