@@ -1,638 +1,357 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Portal Trindade | Hospedagem Premium e Guia Completo da Romaria 2025</title>
-    <meta name="description" content="Curadoria exclusiva de hospedagem a 300m da Basílica do Divino Pai Eterno. Guia completo, horários de missas e roteiros em Trindade-GO.">
-    <meta name="keywords" content="hospedagem trindade, romaria divino pai eterno, basílica trindade, aluguel temporada trindade">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Portal Trindade | Sua Romaria Começa Aqui">
-    <meta property="og:description" content="Imóveis com localização estratégica para a Romaria. Curadoria Premium.">
-    <meta property="og:type" content="website">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
-    
-    <style>
-        :root {
-            --azul-escuro: #1A2B4A;
-            --azul-medio: #2E4A6B;
-            --dourado: #D4AF37;
-            --dourado-claro: #F0D98D;
-            --branco: #FFFFFF;
-            --cinza-claro: #F5F7FA;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            color: var(--azul-escuro);
-            background: var(--branco);
-        }
-        
-        .font-heading {
-            font-family: 'Playfair Display', serif;
-        }
-        
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
-        
-        .hero-overlay {
-            background: linear-gradient(to bottom, rgba(26, 43, 74, 0.6), rgba(26, 43, 74, 0.3));
-        }
-        
-        .gradient-dourado {
-            background: linear-gradient(135deg, var(--dourado) 0%, var(--dourado-claro) 100%);
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        .badge-premium {
-            display: inline-block;
-            background: linear-gradient(135deg, #2ECC71 0%, #27AE60 100%);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        
-        .whatsapp-fixed {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25D366;
-            color: white;
-            padding: 14px 24px;
-            border-radius: 50px;
-            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-            z-index: 1000;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-        
-        .whatsapp-fixed:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
-        }
-        
-        .card-imovel {
-            transition: all 0.3s ease;
-        }
-        
-        .card-imovel:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(26, 43, 74, 0.15);
-        }
-        
-        .autoridade-bar {
-            background: rgba(212, 175, 55, 0.1);
-            border-top: 2px solid var(--dourado);
-            border-bottom: 2px solid var(--dourado);
-        }
-        
-        .lead-magnet-popup {
-            position: fixed;
-            bottom: 80px;
-            right: 20px;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(26, 43, 74, 0.2);
-            padding: 24px;
-            max-width: 360px;
-            z-index: 999;
-            display: none;
-            animation: slideUp 0.5s ease;
-        }
-        
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .lead-magnet-popup.active {
-            display: block;
-        }
-        
-        @media (max-width: 768px) {
-            .whatsapp-fixed {
-                padding: 12px 20px;
-                font-size: 14px;
-            }
-            
-            .lead-magnet-popup {
-                right: 10px;
-                left: 10px;
-                max-width: none;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Trindade | Guia da Romaria e da Cidade Santa</title>
+  <meta name="description" content="Guia completo da Romaria do Divino Pai Eterno em Trindade-GO. Informações, anunciantes locais e galeria de fotos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul: #1A2B4A;
+      --azul-medio: #2E4A6B;
+      --dourado: #C9A84C;
+      --dourado-claro: #F0D98D;
+      --branco: #FFFFFF;
+      --cinza: #F5F7FA;
+      --cinza-texto: #5a6a7a;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Lato', sans-serif; color: var(--azul); background: var(--branco); }
+    h1,h2,h3,h4 { font-family: 'Playfair Display', serif; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: rgba(26,43,74,0.97); backdrop-filter: blur(8px);
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0 5%; height: 64px;
+    }
+    .nav-logo { color: var(--dourado-claro); font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; text-decoration: none; }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--dourado-claro); }
+    .nav-cta {
+      background: var(--dourado); color: var(--azul); padding: 8px 20px;
+      border-radius: 6px; font-weight: 700; font-size: 0.85rem; text-decoration: none;
+      text-transform: uppercase; letter-spacing: 0.05em; transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+    @media(max-width:768px){
+      .nav-links { display: none; }
+      .nav-logo { font-size: 1.1rem; }
+    }
+
+    /* ── HERO ── */
+    #hero {
+      margin-top: 64px; position: relative;
+      height: calc(100vh - 64px); min-height: 500px;
+      display: flex; align-items: center; justify-content: center; text-align: center;
+      overflow: hidden;
+    }
+    #hero-bg {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(26,43,74,0.65) 0%, rgba(26,43,74,0.4) 60%, rgba(26,43,74,0.8) 100%);
+    }
+    .hero-content { position: relative; z-index: 2; color: white; padding: 0 20px; max-width: 800px; }
+    .hero-content h1 { font-size: clamp(2.2rem, 6vw, 5rem); line-height: 1.1; margin-bottom: 1rem; text-shadow: 0 2px 20px rgba(0,0,0,0.4); }
+    .hero-content p { font-size: clamp(1rem, 2.5vw, 1.3rem); font-weight: 300; margin-bottom: 2rem; opacity: 0.9; }
+    .hero-btn {
+      display: inline-block; background: var(--dourado); color: var(--azul);
+      padding: 14px 36px; border-radius: 6px; font-weight: 700; font-size: 1rem;
+      text-decoration: none; text-transform: uppercase; letter-spacing: 0.06em;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(201,168,76,0.5);
+    }
+    .hero-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(201,168,76,0.6); }
+
+    /* ── SECTION WRAPPER ── */
+    section { padding: 80px 5%; }
+    .section-alt { background: var(--cinza); }
+    .section-dark { background: var(--azul); color: white; }
+    .section-title { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 0.5rem; }
+    .section-sub { color: var(--cinza-texto); font-size: 1.05rem; margin-bottom: 3rem; font-weight: 300; }
+    .section-dark .section-sub { color: rgba(255,255,255,0.65); }
+    .section-dark .section-title { color: var(--dourado-claro); }
+
+    /* ── ROMARIA ── */
+    .romaria-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 900px;
+    }
+    @media(max-width:600px){ .romaria-grid { grid-template-columns: 1fr; } }
+    .romaria-card {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 12px; padding: 1.5rem;
+    }
+    .romaria-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--dourado); font-weight: 700; margin-bottom: 0.4rem; }
+    .romaria-value { font-size: 1.05rem; color: white; line-height: 1.4; }
+    .shows-list { list-style: none; margin-top: 0.4rem; }
+    .shows-list li { color: white; font-size: 1rem; padding: 2px 0; }
+    .shows-list li span { color: var(--dourado-claro); font-size: 0.85rem; }
+
+    /* ── ANUNCIANTES ── */
+    .anunciantes-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;
+    }
+    .anunciante-card {
+      background: white; border-radius: 14px; overflow: hidden;
+      box-shadow: 0 4px 20px rgba(26,43,74,0.08); transition: transform 0.25s, box-shadow 0.25s;
+      display: flex; flex-direction: column;
+    }
+    .anunciante-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(26,43,74,0.15); }
+    .anunciante-img { width: 100%; height: 200px; object-fit: cover; }
+    .anunciante-body { padding: 1.4rem; flex: 1; display: flex; flex-direction: column; }
+    .anunciante-badge {
+      display: inline-block; background: var(--dourado); color: var(--azul);
+      font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+      padding: 3px 10px; border-radius: 20px; margin-bottom: 0.7rem;
+    }
+    .anunciante-nome { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--azul); }
+    .anunciante-desc { font-size: 0.9rem; color: var(--cinza-texto); line-height: 1.6; flex: 1; margin-bottom: 1.2rem; }
+    .anunciante-btns { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+    .btn-ig, .btn-wa {
+      padding: 8px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 700;
+      text-decoration: none; transition: opacity 0.2s; text-align: center;
+    }
+    .btn-ig { background: #E1306C; color: white; }
+    .btn-wa { background: #25D366; color: white; }
+    .btn-ig:hover, .btn-wa:hover { opacity: 0.85; }
+
+    /* ── GALERIA ── */
+    .galeria-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem;
+    }
+    .galeria-item {
+      position: relative; border-radius: 10px; overflow: hidden;
+      aspect-ratio: 4/3; cursor: pointer;
+    }
+    .galeria-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+    .galeria-item:hover img { transform: scale(1.06); }
+    .galeria-legenda {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(26,43,74,0.85));
+      color: white; font-size: 0.8rem; padding: 20px 12px 10px;
+      transform: translateY(100%); transition: transform 0.3s;
+    }
+    .galeria-item:hover .galeria-legenda { transform: translateY(0); }
+
+    /* ── CONTATO / WHATSAPP ── */
+    .contato-box {
+      background: var(--dourado); border-radius: 16px; padding: 3rem;
+      text-align: center; max-width: 600px; margin: 0 auto;
+    }
+    .contato-box h2 { color: var(--azul); margin-bottom: 0.8rem; }
+    .contato-box p { color: var(--azul); opacity: 0.8; margin-bottom: 2rem; font-size: 1.05rem; }
+    .btn-wa-grande {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--azul); color: white; padding: 16px 40px;
+      border-radius: 8px; font-weight: 700; font-size: 1.05rem;
+      text-decoration: none; transition: opacity 0.2s;
+    }
+    .btn-wa-grande:hover { opacity: 0.85; }
+    .wa-icon { width: 24px; height: 24px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #0F1C30; color: rgba(255,255,255,0.55);
+      text-align: center; padding: 28px 5%; font-size: 0.85rem;
+    }
+    footer a { color: var(--dourado); text-decoration: none; }
+
+    /* ── WHATSAPP FLUTUANTE ── */
+    .wa-float {
+      position: fixed; bottom: 22px; right: 22px; z-index: 999;
+      background: #25D366; color: white; border-radius: 50px;
+      padding: 13px 24px; font-weight: 700; font-size: 0.95rem;
+      text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+      display: flex; align-items: center; gap: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .wa-float:hover { transform: scale(1.05); box-shadow: 0 8px 30px rgba(37,211,102,0.6); }
+    @media(max-width:500px){ .wa-float span.label { display: none; } }
+
+    /* ── DIVISOR DOURADO ── */
+    .divisor { width: 60px; height: 3px; background: var(--dourado); border-radius: 2px; margin: 0.8rem 0 2.5rem; }
+    .divisor-center { margin: 0.8rem auto 2.5rem; }
+
+    /* ── LOADING ── */
+    #loading {
+      position: fixed; inset: 0; background: var(--azul);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 9999; transition: opacity 0.5s;
+    }
+    #loading h2 { color: var(--dourado-claro); font-size: 1.8rem; }
+  </style>
 </head>
 <body>
 
-<!-- ========== HEADER FIXO ========== -->
-<header class="bg-white/95 backdrop-blur-md fixed w-full top-0 z-50 shadow-sm">
-    <nav class="max-w-7xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
-        <div class="font-heading text-2xl md:text-3xl font-bold" style="color: var(--azul-escuro);">
-            Portal Trindade
-        </div>
-        
-        <div class="hidden md:flex items-center gap-8">
-            <a href="#turismo-religioso" class="text-sm font-medium hover:text-opacity-70 transition" style="color: var(--azul-escuro);">Turismo Religioso</a>
-            <a href="#hospedagem-premium" class="text-sm font-medium hover:text-opacity-70 transition" style="color: var(--azul-escuro);">Hospedagem Premium</a>
-            <a href="#guia-cidade" class="text-sm font-medium hover:text-opacity-70 transition" style="color: var(--azul-escuro);">Guia da Cidade</a>
-            <a href="#noticias" class="text-sm font-medium hover:text-opacity-70 transition" style="color: var(--azul-escuro);">Notícias</a>
-        </div>
-        
-        <a href="https://wa.me/5564984294110?text=Olá!%20Gostaria%20de%20atendimento%20VIP%20para%20hospedagem%20em%20Trindade." target="_blank" class="gradient-dourado text-white px-6 py-2.5 rounded-xl font-semibold text-sm flex items-center gap-2 hover:opacity-90 transition shadow-md">
-            <span class="material-symbols-outlined text-lg">chat</span>
-            <span class="hidden md:inline">Atendimento VIP</span>
-        </a>
-    </nav>
-</header>
+<div id="loading"><h2>Portal Trindade</h2></div>
 
-<!-- ========== HERO SECTION ========== -->
-<section class="relative h-[85vh] md:h-[75vh] flex items-center justify-center overflow-hidden mt-16">
-    <img src="./imagens/basilicavista.png" alt="Basílica do Divino Pai Eterno" class="absolute inset-0 w-full h-full object-cover">
-    
-    <div class="absolute inset-0 hero-overlay"></div>
-    
-    <div class="relative z-10 text-center text-white px-4 max-w-4xl">
-        <h1 class="font-heading text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Trindade: A Cidade da Fé
-        </h1>
-        <p class="text-lg md:text-xl mb-8 font-light max-w-2xl mx-auto">
-            Seu portal oficial para a experiência completa da Romaria do Divino Pai Eterno
-        </p>
-        
-        <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
-            <a href="#hospedagem-premium" class="gradient-dourado text-white px-8 py-4 rounded-xl font-bold text-base flex items-center gap-2 hover:opacity-90 transition shadow-lg w-full md:w-auto justify-center" style="min-height: 56px;">
-                <span class="material-symbols-outlined">home</span>
-                Encontre Sua Hospedagem Estratégica
-            </a>
-            <a href="#lead-magnet" class="bg-white text-lg px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-opacity-90 transition shadow-lg w-full md:w-auto justify-center" style="color: var(--azul-escuro); min-height: 56px;">
-                <span class="material-symbols-outlined">download</span>
-                Baixe o Guia Completo 2025
-            </a>
-        </div>
-    </div>
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">Portal Trindade</a>
+  <div class="nav-links">
+    <a href="#romaria">Romaria 2026</a>
+    <a href="#anunciantes">Parceiros</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+  </div>
+  <a id="nav-cta" class="nav-cta" href="#contato">Fale Conosco</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <img id="hero-bg" src="" alt="Trindade-GO">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 id="hero-titulo"></h1>
+    <p id="hero-desc"></p>
+    <a id="hero-btn" class="hero-btn" href="#romaria">Ver Romaria 2026</a>
+  </div>
 </section>
 
-<!-- ========== BARRA DE AUTORIDADE ========== -->
-<section class="autoridade-bar py-6">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-            <div class="flex items-center justify-center gap-3">
-                <span class="material-symbols-outlined text-2xl" style="color: var(--azul-escuro);">verified</span>
-                <p class="text-sm md:text-base font-semibold" style="color: var(--azul-escuro);">Mais de 15.000 peregrinos atendidos em 2024</p>
-            </div>
-            <div class="flex items-center justify-center gap-3">
-                <span class="material-symbols-outlined text-2xl" style="color: var(--azul-escuro);">location_on</span>
-                <p class="text-sm md:text-base font-semibold" style="color: var(--azul-escuro);">Imóveis verificados e geolocalizados</p>
-            </div>
-            <div class="flex items-center justify-center gap-3">
-                <span class="material-symbols-outlined text-2xl" style="color: var(--azul-escuro);">star</span>
-                <p class="text-sm md:text-base font-semibold" style="color: var(--azul-escuro);">Curadoria exclusiva a 500m da Basílica</p>
-            </div>
-        </div>
-    </div>
+<!-- ROMARIA -->
+<section id="romaria" class="section-dark">
+  <h2 class="section-title" id="romaria-titulo"></h2>
+  <div class="divisor"></div>
+  <div class="romaria-grid" id="romaria-grid"></div>
 </section>
 
-<!-- ========== SEÇÃO: HOSPEDAGEM PREMIUM ========== -->
-<section id="hospedagem-premium" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center mb-12">
-            <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4" style="color: var(--azul-escuro);">
-                A Festa Passa Pela Sua Porta
-            </h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                Imóveis com localização estratégica para a Romaria<br>
-                <span class="font-semibold" style="color: var(--dourado);">Curadoria exclusiva · Atendimento VIP</span>
-            </p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            
-            <!-- Card 1: Setor Ana Rosa -->
-            <div class="card-imovel bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
-                <div class="relative h-48 overflow-hidden">
-                    <img src="./imagens/alugueltemporada.png" alt="Casa Setor Ana Rosa" class="w-full h-full object-cover">
-                    <div class="absolute top-3 left-3 badge-premium">
-                        A 350m da Basílica
-                    </div>
-                </div>
-                <div class="p-6">
-                    <h3 class="font-heading text-xl font-bold mb-2" style="color: var(--azul-escuro);">Casa Completa · Setor Ana Rosa</h3>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1">
-                        <span class="material-symbols-outlined text-base">location_on</span>
-                        <span>A 350 metros da Basílica</span>
-                    </div>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1">
-                        <span class="material-symbols-outlined text-base">group</span>
-                        <span>Até 6 pessoas</span>
-                    </div>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
-                        <span class="material-symbols-outlined text-base">bed</span>
-                        <span>3 quartos · 2 banheiros</span>
-                    </div>
-                    <p class="text-sm text-gray-700 italic mb-6">
-                        "A procissão passa em frente. Localização que valoriza sua fé."
-                    </p>
-                    <a href="https://wa.me/5564984294110?text=Olá!%20Tenho%20interesse%20no%20imóvel%20do%20Setor%20Ana%20Rosa%20(6%20pessoas,%20350m%20da%20Basílica).%20Gostaria%20de%20mais%20informações." target="_blank" class="w-full bg-green-600 text-white py-3 rounded-xl font-semibold flex items-center justify-center gap-2 hover:bg-green-700 transition">
-                        <span class="material-symbols-outlined">chat</span>
-                        Consultar Disponibilidade
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Card 2: Avenida Constantino Xavier -->
-            <div class="card-imovel bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
-                <div class="relative h-48 overflow-hidden">
-                    <img src="./imagens/basilicavista.png" alt="Imóvel Av. Constantino Xavier" class="w-full h-full object-cover">
-                    <div class="absolute top-3 left-3 badge-premium">
-                        Localização Premium
-                    </div>
-                </div>
-                <div class="p-6">
-                    <h3 class="font-heading text-xl font-bold mb-2" style="color: var(--azul-escuro);">Casa Ampla · Av. Constantino Xavier</h3>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1">
-                        <span class="material-symbols-outlined text-base">location_on</span>
-                        <span>A 400 metros da Basílica</span>
-                    </div>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1">
-                        <span class="material-symbols-outlined text-base">group</span>
-                        <span>Até 10 pessoas</span>
-                    </div>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
-                        <span class="material-symbols-outlined text-base">bed</span>
-                        <span>5 quartos · 3 banheiros</span>
-                    </div>
-                    <p class="text-sm text-gray-700 italic mb-6">
-                        "Espaço ideal para famílias grandes. Conforto e proximidade garantidos."
-                    </p>
-                    <a href="https://wa.me/5564984294110?text=Olá!%20Tenho%20interesse%20no%20imóvel%20da%20Av.%20Constantino%20Xavier%20(10%20pessoas).%20Gostaria%20de%20mais%20informações." target="_blank" class="w-full bg-green-600 text-white py-3 rounded-xl font-semibold flex items-center justify-center gap-2 hover:bg-green-700 transition">
-                        <span class="material-symbols-outlined">chat</span>
-                        Consultar Disponibilidade
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Card 3: Centro Histórico -->
-            <div class="card-imovel bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
-                <div class="relative h-48 overflow-hidden">
-                    <img src="./imagens/portalentrada.png" alt="Casa Centro Histórico" class="w-full h-full object-cover">
-                    <div class="absolute top-3 left-3 badge-premium">
-                        Centro Histórico
-                    </div>
-                </div>
-                <div class="p-6">
-                    <h3 class="font-heading text-xl font-bold mb-2" style="color: var(--azul-escuro);">Casa Aconchegante · Centro</h3>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1">
-                        <span class="material-symbols-outlined text-base">location_on</span>
-                        <span>A 500 metros da Basílica</span>
-                    </div>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-1">
-                        <span class="material-symbols-outlined text-base">group</span>
-                        <span>Até 4 pessoas</span>
-                    </div>
-                    <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
-                        <span class="material-symbols-outlined text-base">bed</span>
-                        <span>2 quartos · 1 banheiro</span>
-                    </div>
-                    <p class="text-sm text-gray-700 italic mb-6">
-                        "Perfeita para casais ou pequenas famílias. Tradição e acolhimento."
-                    </p>
-                    <a href="https://wa.me/5564984294110?text=Olá!%20Tenho%20interesse%20no%20imóvel%20do%20Centro%20Histórico%20(4%20pessoas).%20Gostaria%20de%20mais%20informações." target="_blank" class="w-full bg-green-600 text-white py-3 rounded-xl font-semibold flex items-center justify-center gap-2 hover:bg-green-700 transition">
-                        <span class="material-symbols-outlined">chat</span>
-                        Consultar Disponibilidade
-                    </a>
-                </div>
-            </div>
-            
-        </div>
-        
-        <div class="text-center">
-            <a href="https://wa.me/5564984294110?text=Olá!%20Gostaria%20de%20ver%20a%20curadoria%20completa%20de%20imóveis%20para%20a%20Romaria." target="_blank" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-white gradient-dourado hover:opacity-90 transition shadow-lg">
-                Ver Curadoria Completa
-                <span class="material-symbols-outlined">arrow_forward</span>
-            </a>
-        </div>
-    </div>
+<!-- ANUNCIANTES -->
+<section id="anunciantes" class="section-alt">
+  <h2 class="section-title">Parceiros Recomendados</h2>
+  <p class="section-sub">Curadoria do Portal · Negócios locais de confiança</p>
+  <div class="divisor"></div>
+  <div class="anunciantes-grid" id="anunciantes-grid"></div>
 </section>
 
-<!-- ========== SEÇÃO: TURISMO RELIGIOSO ========== -->
-<section id="turismo-religioso" class="py-20" style="background: var(--cinza-claro);">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center mb-12">
-            <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4" style="color: var(--azul-escuro);">
-                Organize Sua Peregrinação
-            </h2>
-            <p class="text-lg text-gray-600">
-                Guia completo para sua experiência espiritual em Trindade
-            </p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition text-center">
-                <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background: rgba(212, 175, 55, 0.2);">
-                    <span class="material-symbols-outlined text-4xl" style="color: var(--dourado);">schedule</span>
-                </div>
-                <h3 class="font-heading text-xl font-bold mb-3" style="color: var(--azul-escuro);">Horários de Missas</h3>
-                <p class="text-gray-600 mb-6">
-                    Programação completa de missas e celebrações na Basílica do Divino Pai Eterno.
-                </p>
-                <a href="#" class="text-sm font-semibold hover:underline" style="color: var(--azul-escuro);">
-                    ACESSAR HORÁRIOS →
-                </a>
-            </div>
-            
-            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition text-center">
-                <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background: rgba(212, 175, 55, 0.2);">
-                    <span class="material-symbols-outlined text-4xl" style="color: var(--dourado);">auto_stories</span>
-                </div>
-                <h3 class="font-heading text-xl font-bold mb-3" style="color: var(--azul-escuro);">História do Medalhão</h3>
-                <p class="text-gray-600 mb-6">
-                    Conheça a origem milagrosa da devoção ao Divino Pai Eterno em Trindade.
-                </p>
-                <a href="#" class="text-sm font-semibold hover:underline" style="color: var(--azul-escuro);">
-                    LER HISTÓRIA →
-                </a>
-            </div>
-            
-            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition text-center">
-                <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background: rgba(212, 175, 55, 0.2);">
-                    <span class="material-symbols-outlined text-4xl" style="color: var(--dourado);">map</span>
-                </div>
-                <h3 class="font-heading text-xl font-bold mb-3" style="color: var(--azul-escuro);">Roteiro Completo</h3>
-                <p class="text-gray-600 mb-6">
-                    O que fazer em Trindade: pontos turísticos, Via Sacra e muito mais.
-                </p>
-                <a href="#lead-magnet" class="text-sm font-semibold hover:underline" style="color: var(--azul-escuro);">
-                    BAIXAR ROTEIRO PDF →
-                </a>
-            </div>
-            
-        </div>
-    </div>
+<!-- GALERIA -->
+<section id="galeria">
+  <h2 class="section-title" style="text-align:center">Galeria de Trindade</h2>
+  <div class="divisor divisor-center"></div>
+  <div class="galeria-grid" id="galeria-grid"></div>
 </section>
 
-<!-- ========== SEÇÃO: UTILIDADE PÚBLICA ========== -->
-<section id="guia-cidade" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center mb-12">
-            <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4" style="color: var(--azul-escuro);">
-                Informações Essenciais da Cidade
-            </h2>
-        </div>
-        
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <a href="#" class="bg-gray-50 rounded-xl p-6 text-center hover:shadow-lg transition border border-gray-200">
-                <span class="material-symbols-outlined text-5xl mb-3" style="color: var(--azul-escuro);">wb_sunny</span>
-                <p class="font-semibold" style="color: var(--azul-escuro);">Previsão do Tempo</p>
-            </a>
-            <a href="#" class="bg-gray-50 rounded-xl p-6 text-center hover:shadow-lg transition border border-gray-200">
-                <span class="material-symbols-outlined text-5xl mb-3" style="color: var(--azul-escuro);">map</span>
-                <p class="font-semibold" style="color: var(--azul-escuro);">Mapa da Cidade</p>
-            </a>
-            <a href="#" class="bg-gray-50 rounded-xl p-6 text-center hover:shadow-lg transition border border-gray-200">
-                <span class="material-symbols-outlined text-5xl mb-3" style="color: var(--azul-escuro);">directions_car</span>
-                <p class="font-semibold" style="color: var(--azul-escuro);">Transporte</p>
-            </a>
-            <a href="#" class="bg-gray-50 rounded-xl p-6 text-center hover:shadow-lg transition border border-gray-200">
-                <span class="material-symbols-outlined text-5xl mb-3" style="color: var(--azul-escuro);">phone</span>
-                <p class="font-semibold" style="color: var(--azul-escuro);">Contatos Úteis</p>
-            </a>
-        </div>
-    </div>
+<!-- CONTATO -->
+<section id="contato" class="section-alt">
+  <div class="contato-box">
+    <h2>Fale com o Portal Trindade</h2>
+    <p id="contato-desc">Dúvidas, anúncios ou informações sobre a cidade — estamos aqui.</p>
+    <a id="wa-btn" class="btn-wa-grande" href="#" target="_blank">
+      <svg class="wa-icon" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.533 5.845L.057 24l6.305-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.001-1.37l-.36-.214-3.733.979 1-3.647-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+      <span id="wa-btn-texto">Fale com o Portal</span>
+    </a>
+  </div>
 </section>
 
-<!-- ========== SEÇÃO: NOTÍCIAS ========== -->
-<section id="noticias" class="py-20" style="background: var(--cinza-claro);">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="text-center mb-12">
-            <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4" style="color: var(--azul-escuro);">
-                Fique Por Dentro de Trindade
-            </h2>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-            <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
-                <img src="./imagens/painelrodovia.png" alt="Novena 2025" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <span class="text-xs font-semibold uppercase tracking-wider" style="color: var(--dourado);">12 de março · Turismo Religioso</span>
-                    <h3 class="font-heading text-xl font-bold mt-2 mb-3" style="color: var(--azul-escuro);">Novena 2025: Programação Completa Divulgada</h3>
-                    <p class="text-gray-600 text-sm">
-                        Confira todos os horários e celebrações especiais da Romaria do Divino Pai Eterno.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="bg-white rounded-2xl overflow-hidden shadow-lg">
-                <img src="./imagens/portalentrada.png" alt="Estacionamento" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <span class="text-xs font-semibold uppercase tracking-wider" style="color: var(--dourado);">8 de março · Utilidade Pública</span>
-                    <h3 class="font-heading text-xl font-bold mt-2 mb-3" style="color: var(--azul-escuro);">Novo Estacionamento Próximo à Basílica</h3>
-                    <p class="text-gray-600 text-sm">
-                        Ampliação da capacidade de vagas para romeiros durante a festa.
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="text-center">
-            <a href="#" class="inline-flex items-center gap-2 font-semibold hover:underline" style="color: var(--azul-escuro);">
-                VER TODAS AS NOTÍCIAS
-                <span class="material-symbols-outlined">arrow_forward</span>
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- ========== LEAD MAGNET SECTION ========== -->
-<section id="lead-magnet" class="py-20 bg-white">
-    <div class="max-w-4xl mx-auto px-4">
-        <div class="bg-gradient-to-br from-blue-900 to-blue-700 rounded-3xl p-8 md:p-12 text-white text-center shadow-2xl">
-            <span class="material-symbols-outlined text-6xl mb-4">download</span>
-            <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">
-                Baixe o Guia Completo da Romaria 2025
-            </h2>
-            <div class="max-w-md mx-auto mb-8">
-                <div class="flex items-start gap-3 mb-3">
-                    <span class="material-symbols-outlined">check_circle</span>
-                    <p class="text-left">Mapa exclusivo com imóveis disponíveis</p>
-                </div>
-                <div class="flex items-start gap-3 mb-3">
-                    <span class="material-symbols-outlined">check_circle</span>
-                    <p class="text-left">Checklist de hospedagem completo</p>
-                </div>
-                <div class="flex items-start gap-3">
-                    <span class="material-symbols-outlined">check_circle</span>
-                    <p class="text-left">Roteiro religioso com horários atualizados</p>
-                </div>
-            </div>
-            
-            <form class="max-w-md mx-auto space-y-4" id="leadForm">
-                <input type="text" placeholder="Seu Nome" class="w-full px-4 py-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
-                <input type="tel" placeholder="WhatsApp (com DDD)" class="w-full px-4 py-3 rounded-xl text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
-                <button type="submit" class="w-full gradient-dourado text-white py-4 rounded-xl font-bold text-lg hover:opacity-90 transition shadow-lg">
-                    BAIXAR GUIA GRÁTIS
-                </button>
-            </form>
-        </div>
-    </div>
-</section>
-
-<!-- ========== FOOTER PREMIUM ========== -->
-<footer class="py-16 px-4" style="background: var(--azul-escuro); color: white;">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-        
-        <div>
-            <h3 class="font-heading text-3xl font-bold mb-4">Portal Trindade</h3>
-            <p class="text-gray-300 text-sm leading-relaxed">
-                Informação oficial e curadoria de excelência para sua romaria em Trindade-GO.
-            </p>
-        </div>
-        
-        <div>
-            <h4 class="font-bold text-lg mb-4" style="color: var(--dourado);">Links Rápidos</h4>
-            <div class="space-y-2 text-sm">
-                <a href="#turismo-religioso" class="block text-gray-300 hover:text-white transition">Basílica e Horários</a>
-                <a href="#hospedagem-premium" class="block text-gray-300 hover:text-white transition">Curadoria de Hospedagem</a>
-                <a href="#guia-cidade" class="block text-gray-300 hover:text-white transition">Guia da Cidade</a>
-                <a href="#lead-magnet" class="block text-gray-300 hover:text-white transition">Baixar Guia 2025</a>
-            </div>
-        </div>
-        
-        <div>
-            <h4 class="font-bold text-lg mb-4" style="color: var(--dourado);">Atendimento VIP</h4>
-            <div class="space-y-3 text-sm">
-                <a href="https://wa.me/5564984294110" target="_blank" class="flex items-center gap-2 text-gray-300 hover:text-white transition">
-                    <span class="material-symbols-outlined">phone</span>
-                    (64) 98429-4110
-                </a>
-                <a href="mailto:contato@portaltrindade.com.br" class="flex items-center gap-2 text-gray-300 hover:text-white transition">
-                    <span class="material-symbols-outlined">mail</span>
-                    contato@portaltrindade.com.br
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
-        <p>© 2025 Portal Trindade · Todos os direitos reservados · <a href="#" class="hover:text-white">Privacidade</a> · <a href="#" class="hover:text-white">Termos</a></p>
-    </div>
+<!-- FOOTER -->
+<footer>
+  <p id="rodape-texto"></p>
+  <p style="margin-top:6px">
+    <a id="ig-link" href="#" target="_blank">@trindadeportal no Instagram</a>
+  </p>
 </footer>
 
-<!-- ========== BOTÃO WHATSAPP FIXO ========== -->
-<a href="https://wa.me/5564984294110?text=Olá!%20Gostaria%20de%20atendimento%20VIP." target="_blank" class="whatsapp-fixed">
-    <span class="material-symbols-outlined">chat</span>
-    <span class="hidden md:inline">Atendimento VIP</span>
+<!-- WHATSAPP FLUTUANTE -->
+<a id="wa-float" class="wa-float" href="#" target="_blank">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.533 5.845L.057 24l6.305-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.001-1.37l-.36-.214-3.733.979 1-3.647-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+  <span class="label">Fale Conosco</span>
 </a>
 
-<!-- ========== LEAD MAGNET POPUP ========== -->
-<div class="lead-magnet-popup" id="leadMagnetPopup">
-    <div class="flex justify-between items-start mb-4">
-        <h3 class="font-heading text-xl font-bold" style="color: var(--azul-escuro);">📥 Guia da Romaria 2025</h3>
-        <button onclick="closePopup()" class="text-gray-500 hover:text-gray-800">
-            <span class="material-symbols-outlined">close</span>
-        </button>
-    </div>
-    <p class="text-sm text-gray-600 mb-4">
-        Baixe o guia completo com mapa de hospedagem, horários e roteiro religioso.
-    </p>
-    <a href="#lead-magnet" onclick="closePopup()" class="w-full gradient-dourado text-white py-3 rounded-xl font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition">
-        <span class="material-symbols-outlined">download</span>
-        Baixar Grátis
-    </a>
-</div>
-
 <script>
-    let popupShown = false;
-    
-    function showPopup() {
-        if (!popupShown) {
-            document.getElementById('leadMagnetPopup').classList.add('active');
-            popupShown = true;
-        }
-    }
-    
-    function closePopup() {
-        document.getElementById('leadMagnetPopup').classList.remove('active');
-    }
-    
-    setTimeout(showPopup, 30000);
-    
-    window.addEventListener('scroll', function() {
-        const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-        if (scrollPercentage > 50) {
-            showPopup();
-        }
-    });
-    
-    function trackEvent(eventName, params) {
-        if (typeof gtag !== 'undefined') {
-            gtag('event', eventName, params);
-        }
-    }
-    
-    document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
-        link.addEventListener('click', function() {
-            trackEvent('whatsapp_click', {
-                'event_category': 'engagement',
-                'event_label': this.textContent.trim()
-            });
-        });
-    });
-    
-    document.getElementById('leadForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        trackEvent('download_guia', {
-            'event_category': 'lead_generation',
-            'event_label': 'Guia Romaria 2025'
-        });
-        
-        alert('Obrigado! O guia será enviado para seu WhatsApp em instantes.');
-        
-        const whatsapp = this.querySelector('input[type="tel"]').value;
-        window.open(`https://wa.me/55${whatsapp.replace(/\D/g, '')}?text=Olá!%20Aqui%20está%20seu%20Guia%20da%20Romaria%202025.`, '_blank');
+  fetch('./conteudo.json')
+    .then(r => r.json())
+    .then(d => {
+      const wa = `https://wa.me/${d.site.whatsapp}?text=${encodeURIComponent(d.contato.mensagem_whatsapp)}`;
+
+      // NAV
+      document.querySelector('.nav-logo').textContent = d.site.titulo;
+      document.getElementById('nav-cta').href = wa;
+
+      // HERO
+      document.getElementById('hero-bg').src = d.banner.imagem;
+      document.getElementById('hero-titulo').textContent = d.banner.titulo;
+      document.getElementById('hero-desc').textContent = d.banner.descricao;
+
+      // ROMARIA
+      document.getElementById('romaria-titulo').textContent = d.romaria.titulo;
+      const rg = document.getElementById('romaria-grid');
+      const showsHtml = d.romaria.shows.map(s =>
+        `<li>${s.artista} <span>· ${s.data}</span></li>`
+      ).join('');
+      rg.innerHTML = `
+        <div class="romaria-card">
+          <div class="romaria-label">Tema</div>
+          <div class="romaria-value">${d.romaria.tema}</div>
+          <div class="romaria-label" style="margin-top:1rem">Edição</div>
+          <div class="romaria-value">${d.romaria.edicao}</div>
+        </div>
+        <div class="romaria-card">
+          <div class="romaria-label">Período</div>
+          <div class="romaria-value">${d.romaria.periodo}</div>
+          <div class="romaria-label" style="margin-top:1rem">Expectativa</div>
+          <div class="romaria-value">${d.romaria.expectativa}</div>
+        </div>
+        <div class="romaria-card">
+          <div class="romaria-label">Local</div>
+          <div class="romaria-value">${d.romaria.local}</div>
+        </div>
+        <div class="romaria-card">
+          <div class="romaria-label">Shows confirmados</div>
+          <ul class="shows-list">${showsHtml}</ul>
+        </div>
+      `;
+
+      // ANUNCIANTES
+      const ag = document.getElementById('anunciantes-grid');
+      ag.innerHTML = d.anunciantes.map(a => {
+        const badge = a.destaque ? `<span class="anunciante-badge">⭐ Destaque</span>` : '';
+        const btnIg = a.instagram ? `<a class="btn-ig" href="${a.instagram}" target="_blank">Instagram</a>` : '';
+        const btnWa = a.whatsapp ? `<a class="btn-wa" href="https://wa.me/${a.whatsapp}" target="_blank">WhatsApp</a>` : '';
+        return `
+          <div class="anunciante-card">
+            <img class="anunciante-img" src="${a.imagem}" alt="${a.nome}">
+            <div class="anunciante-body">
+              ${badge}
+              <h3 class="anunciante-nome">${a.nome}</h3>
+              <p class="anunciante-desc">${a.descricao}</p>
+              <div class="anunciante-btns">${btnIg}${btnWa}</div>
+            </div>
+          </div>`;
+      }).join('');
+
+      // GALERIA
+      const gg = document.getElementById('galeria-grid');
+      gg.innerHTML = d.galeria.map(g => `
+        <div class="galeria-item">
+          <img src="${g.imagem}" alt="${g.legenda}" loading="lazy">
+          <div class="galeria-legenda">${g.legenda}</div>
+        </div>`
+      ).join('');
+
+      // CONTATO
+      document.getElementById('wa-btn').href = wa;
+      document.getElementById('wa-btn-texto').textContent = d.contato.texto_botao;
+      document.getElementById('wa-float').href = wa;
+
+      // FOOTER
+      document.getElementById('rodape-texto').textContent = d.contato.rodape;
+      document.getElementById('ig-link').href = d.site.instagram;
+
+      // Remove loading
+      const loading = document.getElementById('loading');
+      loading.style.opacity = '0';
+      setTimeout(() => loading.remove(), 500);
+    })
+    .catch(err => {
+      console.error('Erro ao carregar conteudo.json:', err);
+      document.getElementById('loading').innerHTML = '<h2 style="color:#F0D98D">Erro ao carregar conteúdo</h2>';
     });
 </script>
-
 </body>
 </html>
-```
