@@ -20,7 +20,8 @@
     "expectativa": "Superar 4,3 milhões de romeiros",
     "shows": [
       { "artista": "Ana Castela", "data": "3 de julho" },
-      { "artista": "Daniel", "data": "4 e 5 de julho" }
+      { "artista": "Daniel", "data": "4 ou 5 de julho" },
+      { "artista": "Outras atrações", "data": "a confirmar" }
     ]
   },
   "anunciantes": [
@@ -45,7 +46,12 @@
     { "imagem": "./imagens/basilicavista.png", "legenda": "Basílica do Divino Pai Eterno" },
     { "imagem": "./imagens/alugueltemporada.png", "legenda": "Hospedagem próxima à Basílica" },
     { "imagem": "./imagens/portalentrada.png", "legenda": "Portal de entrada da cidade" },
-    { "imagem": "./imagens/painelrodovia.png", "legenda": "Painel na rodovia" }
+    { "imagem": "./imagens/painelrodovia.png", "legenda": "Painel na rodovia" },
+    { "imagem": "./imagens/pordosoltrindade.png", "legenda": "Por do sol em Trindade" },
+    { "imagem": "./imagens/PHOTO-2023-06-09-11-13-48-e1686322429817.jpg", "legenda": "Romaria — arquivo 2023" },
+    { "imagem": "./imagens/883e4f0abd6b84ebccefb04e72c6f947.webp", "legenda": "Trindade — Capital da Fé" },
+    { "imagem": "./imagens/Gemini_Generated_Image_c3adgqc3adgqc3ad.png", "legenda": "Trindade — imagem especial" },
+    { "imagem": "./imagens/Imagem_Original_e_Milagrosa_do_Divino_Pai_Eterno.png", "legenda": "Imagem Original e Milagrosa do Divino Pai Eterno" }
   ],
   "contato": {
     "mensagem_whatsapp": "Olá! Vim pelo Portal Trindade e gostaria de mais informações.",
