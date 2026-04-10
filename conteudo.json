@@ -30,7 +30,7 @@
     {
       "nome": "Santo Santo Santo",
       "descricao": "Loja que transforma fé em arte. Terços artesanais, imagens sacras pintadas à mão, velas aromáticas e muito mais.",
-      "imagem": ""imagem": "./imagens/loja_limpa.png",",
+      "imagem": "imagem": "./imagens/loja_limpa.png",
       "instagram": "https://www.instagram.com/santosantosanto.trindade",
       "whatsapp": "",
       "destaque": true
