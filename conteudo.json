@@ -59,6 +59,16 @@
       "instagram": "",
       "whatsapp": "",
       "destaque": true
+    },
+    {
+      "nome": "Do Lado de Dentro — Livro Gratuito",
+      "descricao": "Um testemunho real de fé, limite e recomeço. Escrito por Ricardo Brito, morador de Trindade, este livro é oferecido gratuitamente. 100% das contribuições voluntárias são destinadas a pacientes oncológicos em dificuldade financeira. Receba o PDF e faça parte dessa corrente do bem.",
+      "imagem": "./imagens/livro_dolado.png",
+      "link": "https://ricardodominguesdebrito.github.io/Do-Lado-de-Dentro/",
+      "texto_link": "Receber Gratuitamente",
+      "instagram": "",
+      "whatsapp": "",
+      "destaque": true
     }
   ],
   "galeria": [
