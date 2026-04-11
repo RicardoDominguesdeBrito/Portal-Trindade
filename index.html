@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal Trindade | Guia da Romaria e da Cidade Santa</title>
   <meta name="description" content="Guia completo da Romaria do Divino Pai Eterno em Trindade-GO.">
+  <meta property="og:title" content="Portal Trindade | Guia da Romaria 2026">
+  <meta property="og:description" content="Seu portal completo para a Romaria do Divino Pai Eterno. Programação, pousadas e o guia da Cidade Santa.">
+  <meta property="og:image" content="./imagens/basilicavista.png">
+  <meta property="og:url" content="https://www.festadodivinopaieterno.com.br">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
@@ -30,7 +35,8 @@
     .hero-content { position: relative; z-index: 2; color: white; padding: 0 20px; max-width: 800px; }
     .hero-content h1 { font-size: clamp(2.2rem, 6vw, 5rem); line-height: 1.1; margin-bottom: 1rem; text-shadow: 0 2px 20px rgba(0,0,0,0.4); }
     .hero-content p { font-size: clamp(1rem, 2.5vw, 1.3rem); font-weight: 300; margin-bottom: 2rem; opacity: 0.9; }
-    .hero-btn { display: inline-block; background: var(--dourado); color: var(--azul); padding: 14px 36px; border-radius: 6px; font-weight: 700; font-size: 1rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.06em; box-shadow: 0 4px 20px rgba(201,168,76,0.5); }
+    .hero-btn { display: inline-block; background: var(--dourado); color: var(--azul); padding: 16px 40px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.08em; box-shadow: 0 8px 25px -5px rgba(201,168,76,0.6); transition: all 0.3s ease; }
+    .hero-btn:hover { background: var(--dourado-claro); transform: translateY(-2px); box-shadow: 0 12px 30px -5px rgba(201,168,76,0.8); }
 
     section { padding: 80px 5%; }
     .section-alt { background: var(--cinza); }
@@ -57,8 +63,10 @@
     .shows-list li span { color: var(--dourado-claro); font-size: 0.85rem; }
 
     .anunciantes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; }
-    .anunciante-card { background: white; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 20px rgba(26,43,74,0.08); transition: transform 0.25s, box-shadow 0.25s; display: flex; flex-direction: column; }
-    .anunciante-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(26,43,74,0.15); }
+    .anunciante-card { background: white; border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px -5px rgba(26,43,74,0.05), 0 4px 10px -5px rgba(26,43,74,0.02); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; }
+    .anunciante-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px -10px rgba(26,43,74,0.12), 0 10px 20px -5px rgba(26,43,74,0.08); }
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
     .anunciante-img-slider { position: relative; height: 200px; overflow: hidden; cursor: pointer; }
     .anunciante-img-slider img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.6s; }
     .anunciante-img-slider img.ativo { opacity: 1; }
@@ -145,7 +153,7 @@
 <section id="romaria" class="section-dark">
   <h2 class="section-title" id="romaria-titulo"></h2>
   <div class="divisor"></div>
-  <div class="romaria-layout">
+  <div id="contador-box" style="display:flex; gap:15px; margin-bottom:2rem; justify-content:flex-start;"></div>
     <div class="romaria-grid" id="romaria-grid"></div>
     <div class="romaria-cartaz" id="romaria-cartaz-box">
       <img id="romaria-cartaz" src="" alt="Cartaz Romaria 2026">
@@ -354,6 +362,57 @@ fetch('./conteudo.json')
     document.getElementById('ig-link').href = d.site.instagram;
 
     const loading = document.getElementById('loading');
+
+    // CONTADOR REGRESSIVO
+    const dataFesta = new Date('June 26, 2026 00:00:00').getTime();
+    const contadorBox = document.getElementById('contador-box');
+    const atualizarContador = setInterval(() => {
+      const agora = new Date().getTime();
+      const distancia = dataFesta - agora;
+      if (distancia < 0) {
+        clearInterval(atualizarContador);
+        contadorBox.innerHTML = '<div class="romaria-label" style="font-size:1.2rem; color:var(--dourado-claro);">A Romaria Começou!</div>';
+        return;
+      }
+      const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+      contadorBox.innerHTML = `
+        <div style="text-align:center; background:rgba(201,168,76,0.1); padding:10px 15px; border-radius:8px; border:1px solid rgba(201,168,76,0.3);">
+          <div style="font-size:1.8rem; font-weight:700; color:white; font-family:'Playfair Display', serif;">${dias}</div>
+          <div style="font-size:0.7rem; color:var(--dourado); text-transform:uppercase; letter-spacing:1px;">Dias</div>
+        </div>
+        <div style="text-align:center; background:rgba(201,168,76,0.1); padding:10px 15px; border-radius:8px; border:1px solid rgba(201,168,76,0.3);">
+          <div style="font-size:1.8rem; font-weight:700; color:white; font-family:'Playfair Display', serif;">${horas}</div>
+          <div style="font-size:0.7rem; color:var(--dourado); text-transform:uppercase; letter-spacing:1px;">Horas</div>
+        </div>
+        <div style="text-align:center; background:rgba(201,168,76,0.1); padding:10px 15px; border-radius:8px; border:1px solid rgba(201,168,76,0.3);">
+          <div style="font-size:1.8rem; font-weight:700; color:white; font-family:'Playfair Display', serif;">${minutos}</div>
+          <div style="font-size:0.7rem; color:var(--dourado); text-transform:uppercase; letter-spacing:1px;">Min</div>
+        </div>
+      `;
+    }, 1000);
+
+    // INTERSECTION OBSERVER (animações de entrada)
+    setTimeout(() => {
+      const elements = document.querySelectorAll('.anunciante-card, .galeria-item, .romaria-card, .contato-box');
+      elements.forEach(el => el.classList.add('reveal'));
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      elements.forEach(el => observer.observe(el));
+
+      // FALLBACK: se após 3s algum elemento ainda estiver invisível, força aparição
+      setTimeout(() => {
+        elements.forEach(el => el.classList.add('visible'));
+      }, 3000);
+    }, 600);
+
     loading.style.opacity = '0';
     setTimeout(() => loading.remove(), 500);
   })
