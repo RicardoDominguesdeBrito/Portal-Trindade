@@ -1,164 +1,66 @@
-{
-  "site": {
-    "titulo": "Portal Trindade",
-    "subtitulo": "Guia da Romaria e da Cidade Santa",
-    "whatsapp": "5564984294110",
-    "instagram": "https://www.instagram.com/trindadeportal",
-    "email": "contato@portaltrindade.com.br"
-  },
-  "banner": {
-    "imagem": "./imagens/basilicavista.png",
-    "titulo": "Trindade: A Cidade da Fé",
-    "descricao": "Seu portal completo para a Romaria do Divino Pai Eterno"
-  },
-  "romaria": {
-    "titulo": "A Romaria 2026 está chegando",
-    "cartaz": "./imagens/festa2026.png",
-    "tema": "Clamamos: Abbá, Pai",
-    "edicao": "186ª edição",
-    "periodo": "26 de junho a 5 de julho de 2026",
-    "local": "Trindade, GO",
-    "expectativa": "Superar 4,3 milhões de romeiros",
-    "shows": [
-      {
-        "artista": "Desfile de Carros de Boi, Cavaleiros e Muladeiros",
-        "data": "3 de julho"
-      },
-      {
-        "artista": "Ana Castela",
-        "data": "4 de julho"
-      },
-      {
-        "artista": "Daniel",
-        "data": "5 de julho"
-      }
-    ]
-  },
-  "anunciantes": [
-    {
-      "nome": "Santo Santo Santo",
-      "descricao": "Loja que transforma fé em arte. Terços artesanais, imagens sacras pintadas à mão, velas aromáticas e muito mais.",
-      "imagem": "./imagens/loja_limpa.png",
-      "instagram": "https://www.instagram.com/santosantosanto.trindade",
-      "whatsapp": "",
-      "destaque": true
-    },
-    {
-      "nome": "Trenzinho Família de Amor — Oficial do Santuário",
-      "descricao": "O transporte oficial do Santuário do Divino Pai Eterno leva os devotos até a nova Casa do Pai. 33 lugares, acessível para PCDs, com elevador. Saídas diárias das 8h às 19h, a cada 30 minutos. O percurso inclui visita ao sino Vox Patris e ambientes de imersão espiritual. Ingresso: R$ 20 (ida e volta). Venda na Associação Filhos do Pai Eterno e no ponto de embarque em frente à Reitoria.",
-      "imagem": "./imagens/trezinhopaieterno.png",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": false
-    },
-    {
-      "nome": "Aluguel por Temporada — Festa 2026",
-      "descricao": "Imóvel mobiliado na Av. Constantino Xavier, entre a Igreja Padre Pelágio e a Basílica. Uma das regiões mais procuradas de Trindade. Garagem para 2 carros. Disponível para locação durante a Festa do Divino Pai Eterno 2026.",
-      "imagem": "./imagens/casajuliana2.jpeg",
-      "imagens_extras": [
-        "./imagens/casajuliana3.jpeg",
-        "./imagens/casajuliana1.jpeg"
-      ],
-      "instagram": "",
-      "whatsapp": "5562999079022",
-      "destaque": true
-    },
-    {
-      "nome": "Manhãs com Jesus — Ricardo Brito",
-      "descricao": "180 reflexões para quem atravessa dor, espera e recomeço com Deus. Um livro de fé para começar cada manhã com força e esperança. Disponível na Amazon.",
-      "imagem": "./imagens/livro_manhas.png",
-      "link": "https://www.amazon.com.br/dp/B0GWDHMPRJ",
-      "texto_link": "Comprar na Amazon",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": true
-    },
-    {
-      "nome": "Do Lado de Dentro — Livro Gratuito",
-      "descricao": "Um testemunho real de fé, limite e recomeço. Escrito por Ricardo Brito, morador de Trindade, este livro é oferecido gratuitamente. 100% das contribuições voluntárias são destinadas a pacientes oncológicos em dificuldade financeira. Receba o PDF e faça parte dessa corrente do bem.",
-      "imagem": "./imagens/livro_dolado.png",
-      "link": "https://ricardodominguesdebrito.github.io/Do-Lado-de-Dentro/",
-      "texto_link": "Receber Gratuitamente",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": true
-    },
-    {
-      "nome": "Instrução aos Católicos — Santo Afonso de Ligório",
-      "descricao": "Um clássico indispensável da fé católica. Obra completa sobre os mandamentos, os sacramentos e a veracidade da fé. Capa dura, 348 páginas. Vendido pelo Centro Dom Bosco com frete grátis.",
-      "imagem": "./imagens/livro_catolico.png",
-      "link": "https://meli.la/2EstgTG",
-      "texto_link": "Comprar no Mercado Livre",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": false
-    }
-  ],
-  "galeria": [
-    {
-      "imagem": "./imagens/basilicavista.png",
-      "legenda": "Basílica do Divino Pai Eterno"
-    },
-    {
-      "imagem": "./imagens/altarmatriz.png",
-      "legenda": "Altar da Igreja Matriz"
-    },
-    {
-      "imagem": "./imagens/capelacruzeiro.png",
-      "legenda": "Capela do Cruzeiro"
-    },
-    {
-      "imagem": "./imagens/vitral.png",
-      "legenda": "Vitral da Basílica"
-    },
-    {
-      "imagem": "./imagens/comidatipica.png",
-      "legenda": "Comida típica de Trindade"
-    },
-    {
-      "imagem": "./imagens/castelinho.png",
-      "legenda": "Castelinho de Trindade"
-    },
-    {
-      "imagem": "./imagens/medalhao.png",
-      "legenda": "Medalhão do Divino Pai Eterno"
-    },
-    {
-      "imagem": "./imagens/caminhadadafe.png",
-      "legenda": "Caminhada da Fé"
-    },
-    {
-      "imagem": "./imagens/gruta.png",
-      "legenda": "Gruta de Trindade"
-    },
-    {
-      "imagem": "./imagens/igrejasaojose.png",
-      "legenda": "Igreja São José"
-    },
-    {
-      "imagem": "./imagens/novaigrejavistacima.png",
-      "legenda": "Nova Igreja — vista aérea"
-    },
-    {
-      "imagem": "./imagens/portalentrada.png",
-      "legenda": "Portal de entrada da cidade"
-    },
-    {
-      "imagem": "./imagens/painelrodovia.png",
-      "legenda": "Painel na rodovia"
-    },
-    {
-      "imagem": "./imagens/pordosoltrindade.png",
-      "legenda": "Por do sol em Trindade"
-    },
-    {
-      "imagem": "./imagens/Imagem_Original_e_Milagrosa_do_Divino_Pai_Eterno.png",
-      "legenda": "Imagem Original e Milagrosa do Divino Pai Eterno"
-    }
-  ],
-  "contato": {
-    "mensagem_whatsapp": "Olá! Vim pelo Portal Trindade e gostaria de mais informações.",
-    "texto_botao": "Fale com o Portal",
-    "rodape": "© 2026 Portal Trindade · Trindade-GO · Capital da Fé"
-  }
-}
+diff --git a/conteudo.json b/conteudo.json
+index 5c6951abc5df868e488e2e3eb366929cebf4c967..980ad711dba955f185f94e18605684bd06edb220 100644
+--- a/conteudo.json
++++ b/conteudo.json
+@@ -13,50 +13,61 @@
+   },
+   "romaria": {
+     "titulo": "A Romaria 2026 está chegando",
+     "cartaz": "./imagens/festa2026.png",
+     "tema": "Clamamos: Abbá, Pai",
+     "edicao": "186ª edição",
+     "periodo": "26 de junho a 5 de julho de 2026",
+     "local": "Trindade, GO",
+     "expectativa": "Superar 4,3 milhões de romeiros",
+     "shows": [
+       {
+         "artista": "Desfile de Carros de Boi, Cavaleiros e Muladeiros",
+         "data": "3 de julho"
+       },
+       {
+         "artista": "Ana Castela",
+         "data": "4 de julho"
+       },
+       {
+         "artista": "Daniel",
+         "data": "5 de julho"
+       }
+     ]
+   },
+   "anunciantes": [
++    {
++      "nome": "Hotel Recanto Goiano",
++      "descricao": "Sabor caseiro, conforto e hospitalidade em Trindade. Hospedagem prática e acolhedora, com café da manhã, almoço e jantar, quartos privativos com Wi‑Fi, frigobar, ventilador de teto e ar-condicionado. Ambiente familiar, ideal para romeiros, turistas e famílias. Informações e reservas: (62) 3991-5854, (62) 98592-1198 (Elismeire) e (62) 98319-6740 (Victor). Endereço: Rua Padre Pelágio, Qd. A, Lt. 21, nº 236, Setor Vila Santo Onofre, Trindade-GO.",
++      "imagem": "./imagens/pousadarecanto.jpeg",
++      "imagens_extras": [
++        "./imagens/pousadarecanto2.jpeg"
++      ],
++      "instagram": "https://www.instagram.com/reel/DXM6pVwj-Dd/",
++      "whatsapp": "556239915854",
++      "destaque": true
++    },
+     {
+       "nome": "Santo Santo Santo",
+       "descricao": "Loja que transforma fé em arte. Terços artesanais, imagens sacras pintadas à mão, velas aromáticas e muito mais.",
+       "imagem": "./imagens/loja_limpa.png",
+       "instagram": "https://www.instagram.com/santosantosanto.trindade",
+       "whatsapp": "",
+       "destaque": true
+     },
+     {
+       "nome": "Trenzinho Família de Amor — Oficial do Santuário",
+       "descricao": "O transporte oficial do Santuário do Divino Pai Eterno leva os devotos até a nova Casa do Pai. 33 lugares, acessível para PCDs, com elevador. Saídas diárias das 8h às 19h, a cada 30 minutos. O percurso inclui visita ao sino Vox Patris e ambientes de imersão espiritual. Ingresso: R$ 20 (ida e volta). Venda na Associação Filhos do Pai Eterno e no ponto de embarque em frente à Reitoria.",
+       "imagem": "./imagens/trezinhopaieterno.png",
+       "instagram": "",
+       "whatsapp": "",
+       "destaque": false
+     },
+     {
+       "nome": "Aluguel por Temporada — Festa 2026",
+       "descricao": "Imóvel mobiliado na Av. Constantino Xavier, entre a Igreja Padre Pelágio e a Basílica. Uma das regiões mais procuradas de Trindade. Garagem para 2 carros. Disponível para locação durante a Festa do Divino Pai Eterno 2026.",
+       "imagem": "./imagens/casajuliana2.jpeg",
+       "imagens_extras": [
+         "./imagens/casajuliana3.jpeg",
+         "./imagens/casajuliana1.jpeg"
+       ],
+       "instagram": "",
