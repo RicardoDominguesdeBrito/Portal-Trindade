@@ -36,6 +36,17 @@
   },
   "anunciantes": [
     {
+      "nome": "Hotel Recanto Goiano",
+      "descricao": "Sabor caseiro, conforto e hospitalidade em Trindade. Hospedagem prática e acolhedora, com café da manhã, almoço e jantar, quartos privativos com Wi‑Fi, frigobar, ventilador de teto e ar-condicionado. Ambiente familiar, ideal para romeiros, turistas e famílias. Informações e reservas: (62) 3991-5854, (62) 98592-1198 (Elismeire) e (62) 98319-6740 (Victor). Endereço: Rua Padre Pelágio, Qd. A, Lt. 21, nº 236, Setor Vila Santo Onofre, Trindade-GO.",
+      "imagem": "./imagens/pousadarecanto.jpeg",
+      "imagens_extras": [
+        "./imagens/pousadarecanto2.jpeg"
+      ],
+      "instagram": "https://www.instagram.com/reel/DXM6pVwj-Dd/",
+      "whatsapp": "556239915854",
+      "destaque": true
+    },
+    {
       "nome": "Santo Santo Santo",
       "descricao": "Loja que transforma fé em arte. Terços artesanais, imagens sacras pintadas à mão, velas aromáticas e muito mais.",
       "imagem": "./imagens/loja_limpa.png",
