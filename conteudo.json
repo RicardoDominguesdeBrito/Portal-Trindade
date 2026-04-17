@@ -36,14 +36,11 @@
   },
   "anunciantes": [
     {
-      "nome": "Hotel Recanto Goiano",
-      "descricao": "Sabor caseiro, conforto e hospitalidade em Trindade. Hospedagem prática e acolhedora, com café da manhã, almoço e jantar, quartos privativos com Wi‑Fi, frigobar, ventilador de teto e ar-condicionado. Ambiente familiar, ideal para romeiros, turistas e famílias. Informações e reservas: (62) 3991-5854, (62) 98592-1198 (Elismeire) e (62) 98319-6740 (Victor). Endereço: Rua Padre Pelágio, Qd. A, Lt. 21, nº 236, Setor Vila Santo Onofre, Trindade-GO.",
-      "imagem": "./imagens/pousadarecanto.jpeg",
-      "imagens_extras": [
-        "./imagens/pousadarecanto2.jpeg"
-      ],
-      "instagram": "https://www.instagram.com/recantogoiano.hotel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-      "whatsapp": "556239915854",
+      "nome": "Pousada Padre Pelágio",
+      "descricao": "Hospedagem acolhedora em Trindade, em localização privilegiada, a poucos passos da Basílica. Oferece quartos privativos com ar-condicionado e frigobar, Wi-Fi gratuito, café da manhã incluso, almoço e jantar com comida caseira, em ambiente familiar para romeiros, famílias e grupos.",
+      "imagem": "./imagens/posadapadrepelagio.png",
+      "instagram": "",
+      "whatsapp": "5562985921198",
       "destaque": true
     },
     {
