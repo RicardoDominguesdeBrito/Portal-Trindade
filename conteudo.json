@@ -71,6 +71,15 @@
       "destaque": false
     },
     {
+      "nome": "Vando Espetinhos",
+      "descricao": "Quem mora em Trindade sabe: quando a fome bate, o que a gente procura é comida boa, bem feita e sem complicação. O Vando Espetinhos é uma opção da cidade pra quem quer comer bem e com mais tranquilidade. 🍢 Espetinho no ponto. 📍 Av. Raimundo de Aquino, 195 — Trindade, GO. 📲 Cardápio no perfil @vandoespetinhos. Dica do Portal Trindade pra quem é daqui e pra quem passa pela cidade.",
+      "imagem": "./imagens/vandoespetinho.jpeg",
+      "imagens_extras": [],
+      "instagram": "https://www.instagram.com/vandoespetinhos",
+      "whatsapp": "",
+      "destaque": true
+    },
+    {
       "nome": "Aluguel por Temporada — Festa 2026",
       "descricao": "Este imóvel foi alugado em menos de 10 dias após o anúncio no Portal Trindade. Quem divulga antes, sai na frente. Na temporada da Festa de Trindade 2026, localização boa e visibilidade certa fazem diferença. O Portal Trindade é vitrine local para quem quer alcançar romeiros, visitantes e famílias que já buscam onde ficar em Trindade. Seu imóvel, espaço ou hospedagem também pode ganhar visibilidade com apresentação profissional, dentro do público certo e no momento certo. Chame no direct e anuncie com antecedência.",
       "imagem": "./imagens/portal_trindade_4x5.png",
