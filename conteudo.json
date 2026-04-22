@@ -7,13 +7,13 @@
     "email": "contato@portaltrindade.com.br"
   },
   "banner": {
-    "imagem": "./imagens/basilicavista.png",
+    "imagem": "./imagens/imagemsite.png",
     "titulo": "Trindade: A Cidade da Fé",
     "descricao": "Seu portal completo para a Romaria do Divino Pai Eterno"
   },
   "romaria": {
     "titulo": "A Romaria 2026 está chegando",
-    "cartaz": "./imagens/imagemsite.png",
+    "cartaz": "./imagens/festa2026.png",
     "tema": "Clamamos: Abbá, Pai",
     "edicao": "186ª edição",
     "periodo": "26 de junho a 5 de julho de 2026",
