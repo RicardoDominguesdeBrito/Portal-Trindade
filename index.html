@@ -62,6 +62,10 @@
     .shows-list li { color: white; font-size: 1rem; padding: 2px 0; }
     .shows-list li span { color: var(--dourado-claro); font-size: 0.85rem; }
 
+    /* IMAGEM SHOWS */
+    .shows-img-wrapper { margin-top: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.4); }
+    .shows-img-wrapper img { width: 100%; display: block; }
+
     .anunciantes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; }
     .anunciante-card { background: white; border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px -5px rgba(26,43,74,0.05), 0 4px 10px -5px rgba(26,43,74,0.02); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; }
     .anunciante-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px -10px rgba(26,43,74,0.12), 0 10px 20px -5px rgba(26,43,74,0.08); }
@@ -154,10 +158,12 @@
   <h2 class="section-title" id="romaria-titulo"></h2>
   <div class="divisor"></div>
   <div id="contador-box" style="display:flex; gap:15px; margin-bottom:2rem; justify-content:flex-start;"></div>
-    <div class="romaria-grid" id="romaria-grid"></div>
-    <div class="romaria-cartaz" id="romaria-cartaz-box">
-      <img id="romaria-cartaz" src="" alt="Cartaz Romaria 2026">
-    </div>
+  <div class="romaria-grid" id="romaria-grid"></div>
+  <div class="shows-img-wrapper" id="shows-img-wrapper" style="display:none;">
+    <img id="shows-img" src="./imagens/imagemsite.png" alt="Shows confirmados — Ana Castela e Daniel">
+  </div>
+  <div class="romaria-cartaz" id="romaria-cartaz-box" style="margin-top:2rem;">
+    <img id="romaria-cartaz" src="" alt="Cartaz Romaria 2026">
   </div>
 </section>
 
@@ -251,6 +257,9 @@ fetch('./conteudo.json')
     } else {
       document.getElementById('romaria-cartaz-box').style.display = 'none';
     }
+
+    // Exibe imagem dos shows
+    document.getElementById('shows-img-wrapper').style.display = 'block';
 
     const showsHtml = d.romaria.shows.map(s => `<li>${s.artista} <span>· ${s.data}</span></li>`).join('');
     document.getElementById('romaria-grid').innerHTML = `
@@ -407,7 +416,6 @@ fetch('./conteudo.json')
       }, { threshold: 0.1 });
       elements.forEach(el => observer.observe(el));
 
-      // FALLBACK: se após 3s algum elemento ainda estiver invisível, força aparição
       setTimeout(() => {
         elements.forEach(el => el.classList.add('visible'));
       }, 3000);
