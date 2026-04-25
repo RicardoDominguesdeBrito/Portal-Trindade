@@ -63,6 +63,21 @@
       "destaque": true
     },
     {
+      "nome": "Cibeles Café e Restaurante",
+      "descricao": "Opção em Trindade para quem busca comida bem feita, praticidade e atendimento cuidadoso em diferentes momentos do dia. Com café, almoço, lanches, sobremesas e cardápio virtual, o Cibeles atende moradores, trabalhadores, famílias e visitantes que procuram uma refeição organizada, saborosa e com entrega pontual. Oferece pedidos por WhatsApp e cardápio online, facilitando a escolha para quem deseja receber em casa, no trabalho ou retirar no local.",
+      "imagem": "./imagens/imagem01cibele.png",
+      "imagens_extras": [
+        "./imagens/imagem02cibele.png",
+        "./imagens/imagem03cibele.png"
+      ],
+      "instagram": "https://www.instagram.com/cafecibeles",
+      "whatsapp": "5562995542614",
+      "link": "https://delivery.yooga.app/cafe-restaurante-cibeles",
+      "texto_link": "Ver Cardápio Virtual",
+      "endereco": "Avenida Coronel Anacleto, 445, Sala 1 — Trindade-GO",
+      "destaque": true
+    },
+    {
       "nome": "Trenzinho Família de Amor — Oficial do Santuário",
       "descricao": "O transporte oficial do Santuário do Divino Pai Eterno leva os devotos até a nova Casa do Pai. 33 lugares, acessível para PCDs, com elevador. Saídas diárias das 8h às 19h, a cada 30 minutos. O percurso inclui visita ao sino Vox Patris e ambientes de imersão espiritual. Ingresso: R$ 20 (ida e volta). Venda na Associação Filhos do Pai Eterno e no ponto de embarque em frente à Reitoria.",
       "imagem": "./imagens/trezinhopaieterno.png",
