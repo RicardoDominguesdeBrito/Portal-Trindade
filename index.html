@@ -3,373 +3,429 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guia da Romaria de Trindade 2026 | Portal Trindade</title>
-  <meta name="description" content="Portal independente com informações da Romaria de Trindade 2026, parceiros locais, hospedagem, onde comer, serviços e orientações de segurança em Trindade GO.">
-  <meta property="og:title" content="Guia da Romaria de Trindade 2026 | Portal Trindade">
-  <meta property="og:description" content="Informações, parceiros locais e orientações para romeiros, visitantes e moradores durante a Festa do Divino Pai Eterno 2026.">
+  <title>Portal Trindade | Guia da Romaria e da Cidade Santa</title>
+  <meta name="description" content="Guia completo da Romaria do Divino Pai Eterno em Trindade-GO.">
+  <meta property="og:title" content="Portal Trindade | Guia da Romaria 2026">
+  <meta property="og:description" content="Seu portal completo para a Romaria do Divino Pai Eterno. Programação, pousadas e o guia da Cidade Santa.">
   <meta property="og:image" content="./imagens/basilicavista.png">
   <meta property="og:url" content="https://www.festadodivinopaieterno.com.br">
   <meta property="og:type" content="website">
-  <link rel="canonical" href="https://www.festadodivinopaieterno.com.br/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --azul: #1A2B4A;
-      --dourado: #C9A84C;
-      --dourado-claro: #F0D98D;
-      --off-white: #FCFBF7;
-      --cinza: #F3F4F6;
-      --texto: #243a5a;
-      --texto-suave: #5a6a7a;
-      --borda: #dbe2ec;
-      --verde: #25D366;
+      --azul: #1A2B4A; --dourado: #C9A84C; --dourado-claro: #F0D98D;
+      --branco: #FFFFFF; --cinza: #F5F7FA; --cinza-texto: #5a6a7a;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Lato', sans-serif; color: var(--texto); background: #fff; line-height: 1.6; }
-    h1,h2,h3,h4 { font-family: 'Playfair Display', serif; line-height: 1.2; }
-    img { max-width: 100%; display: block; }
+    body { font-family: 'Lato', sans-serif; color: var(--azul); background: var(--branco); }
+    h1,h2,h3,h4 { font-family: 'Playfair Display', serif; }
 
-    .topbar { position: sticky; top: 0; z-index: 200; background: rgba(26,43,74,0.98); border-bottom: 1px solid rgba(255,255,255,0.08); }
-    .nav-wrap { min-height: 64px; padding: 0.75rem 1rem; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
-    .nav-logo { color: var(--dourado-claro); font-size: 1.3rem; font-weight: 700; text-decoration: none; }
-    .menu-toggle { background: transparent; border: 1px solid rgba(255,255,255,0.45); color: #fff; border-radius: 8px; font-weight: 700; padding: 0.55rem 0.75rem; min-height: 44px; cursor: pointer; }
-    .nav-links { display: none; flex-direction: column; padding: 0 1rem 1rem; gap: 0.3rem; }
-    .nav-links.open { display: flex; }
-    .nav-links a { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.95rem; min-height: 44px; display: flex; align-items: center; padding: 0.4rem 0.5rem; border-radius: 8px; }
-    .nav-links a:hover, .nav-links a:focus-visible { background: rgba(240,217,141,0.15); }
+    nav { position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(26,43,74,0.97); backdrop-filter: blur(8px); display: flex; justify-content: space-between; align-items: center; padding: 0 5%; height: 64px; }
+    .nav-logo { color: var(--dourado-claro); font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; text-decoration: none; }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+    .nav-links a:hover { color: var(--dourado-claro); }
+    .nav-cta { background: var(--dourado); color: var(--azul); padding: 8px 20px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; text-decoration: none; text-transform: uppercase; }
+    @media(max-width:768px){ .nav-links { display: none; } }
 
-    .container { max-width: 1150px; margin: 0 auto; padding: 0 1rem; }
-    section { padding: 3rem 0; }
-    .section-alt { background: var(--off-white); }
-    .section-title { font-size: clamp(1.6rem, 4vw, 2.4rem); margin-bottom: 0.4rem; }
-    .section-sub { color: var(--texto-suave); margin-bottom: 1.2rem; }
-    .divider { width: 56px; height: 3px; background: var(--dourado); border-radius: 99px; margin-bottom: 1.2rem; }
+    #hero { margin-top: 64px; position: relative; height: calc(100vh - 64px); min-height: 500px; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
+    #hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,43,74,0.65) 0%, rgba(26,43,74,0.4) 60%, rgba(26,43,74,0.8) 100%); }
+    .hero-content { position: relative; z-index: 2; color: white; padding: 0 20px; max-width: 800px; }
+    .hero-content h1 { font-size: clamp(2.2rem, 6vw, 5rem); line-height: 1.1; margin-bottom: 1rem; text-shadow: 0 2px 20px rgba(0,0,0,0.4); }
+    .hero-content p { font-size: clamp(1rem, 2.5vw, 1.3rem); font-weight: 300; margin-bottom: 2rem; opacity: 0.9; }
+    .hero-btn { display: inline-block; background: var(--dourado); color: var(--azul); padding: 16px 40px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.08em; box-shadow: 0 8px 25px -5px rgba(201,168,76,0.6); transition: all 0.3s ease; }
+    .hero-btn:hover { background: var(--dourado-claro); transform: translateY(-2px); box-shadow: 0 12px 30px -5px rgba(201,168,76,0.8); }
 
-    #inicio { background: linear-gradient(150deg, #fefcf5 0%, #fff 70%); }
-    .hero-wrap { display: grid; gap: 1rem; }
-    .hero-image { border-radius: 14px; overflow: hidden; aspect-ratio: 16/9; box-shadow: 0 10px 28px rgba(26,43,74,0.12); }
-    .hero-image img { width: 100%; height: 100%; object-fit: cover; }
-    .hero-content { background: #fff; border: 1px solid var(--borda); border-radius: 14px; padding: 1.2rem; box-shadow: 0 8px 20px rgba(26,43,74,0.06); }
-    .hero-kicker { color: #7b5b12; font-weight: 700; font-size: 0.86rem; letter-spacing: 0.02em; }
-    .hero-content h1 { margin: 0.5rem 0 0.8rem; font-size: clamp(1.8rem, 6vw, 2.8rem); }
-    .hero-content p { color: var(--texto-suave); }
-    .hero-date { margin: 0.9rem 0 1.2rem; color: var(--azul); font-weight: 700; background: #f8f1dd; border-left: 4px solid var(--dourado); padding: 0.6rem 0.75rem; border-radius: 6px; }
+    section { padding: 80px 5%; }
+    .section-alt { background: var(--cinza); }
+    .section-dark { background: var(--azul); color: white; }
+    .section-title { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 0.5rem; }
+    .section-sub { color: var(--cinza-texto); font-size: 1.05rem; margin-bottom: 3rem; font-weight: 300; }
+    .section-dark .section-sub { color: rgba(255,255,255,0.65); }
+    .section-dark .section-title { color: var(--dourado-claro); }
+    .divisor { width: 60px; height: 3px; background: var(--dourado); border-radius: 2px; margin: 0.8rem 0 2.5rem; }
+    .divisor-center { margin: 0.8rem auto 2.5rem; }
 
-    .cta-row { display: flex; flex-wrap: wrap; gap: 0.55rem; }
-    .btn { border-radius: 10px; padding: 0.8rem 1rem; min-height: 46px; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; text-decoration: none; border: 1px solid transparent; font-size: 0.92rem; }
-    .btn-primary { background: var(--azul); color: #fff; }
-    .btn-primary:hover { opacity: 0.93; }
-    .btn-secondary { background: #fff; color: var(--azul); border-color: var(--azul); }
-    .btn-whatsapp { background: var(--verde); color: #fff; }
+    .romaria-layout { display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: start; }
+    @media(max-width:768px){ .romaria-layout { grid-template-columns: 1fr; } }
+    .romaria-cartaz { width: 260px; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.4); }
+    .romaria-cartaz img { width: 100%; display: block; }
+    @media(max-width:768px){ .romaria-cartaz { width: 100%; max-width: 300px; margin: 0 auto; } }
+    .romaria-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    @media(max-width:600px){ .romaria-grid { grid-template-columns: 1fr; } }
+    .romaria-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(201,168,76,0.3); border-radius: 12px; padding: 1.5rem; }
+    .romaria-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--dourado); font-weight: 700; margin-bottom: 0.4rem; }
+    .romaria-value { font-size: 1.05rem; color: white; line-height: 1.4; }
+    .shows-list { list-style: none; margin-top: 0.4rem; }
+    .shows-list li { color: white; font-size: 1rem; padding: 2px 0; }
+    .shows-list li span { color: var(--dourado-claro); font-size: 0.85rem; }
 
-    .romaria-grid { display: grid; grid-template-columns: 1fr; gap: 0.8rem; }
-    .romaria-card { background: #fff; border: 1px solid var(--borda); border-radius: 12px; padding: 0.9rem; }
-    .romaria-label { font-size: 0.8rem; text-transform: uppercase; color: #6c7e95; letter-spacing: .04em; font-weight: 700; }
-    .romaria-value { color: var(--texto); font-weight: 700; }
-    .shows-list { margin: .35rem 0 0 1rem; }
+    /* IMAGEM SHOWS */
+    .shows-img-wrapper { margin-top: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.4); }
+    .shows-img-wrapper img { width: 100%; display: block; }
 
-    .safety-box, .legal-box { margin-top: 1rem; border-radius: 12px; padding: 1rem; border: 1px solid #e6dbc2; background: #fff8e8; }
-    .safety-box ul { margin: .7rem 0 .9rem 1rem; }
+    .anunciantes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; }
+    .anunciante-card { background: white; border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px -5px rgba(26,43,74,0.05), 0 4px 10px -5px rgba(26,43,74,0.02); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; }
+    .anunciante-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px -10px rgba(26,43,74,0.12), 0 10px 20px -5px rgba(26,43,74,0.08); }
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .anunciante-img-slider { position: relative; height: 200px; overflow: hidden; cursor: pointer; }
+    .anunciante-img-slider img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.6s; }
+    .anunciante-img-slider img.ativo { opacity: 1; }
+    .slider-dots { position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; z-index: 2; }
+    .slider-dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: background 0.3s; }
+    .slider-dot.ativo { background: white; }
+    .zoom-icon { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.5); color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 16px; z-index: 2; opacity: 0; transition: opacity 0.3s; }
+    .anunciante-img-slider:hover .zoom-icon { opacity: 1; }
+    .anunciante-body { padding: 1.4rem; flex: 1; display: flex; flex-direction: column; }
+    .anunciante-badge { display: inline-block; background: var(--dourado); color: var(--azul); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 10px; border-radius: 20px; margin-bottom: 0.7rem; }
+    .anunciante-nome { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--azul); }
+    .anunciante-desc { font-size: 0.9rem; color: var(--cinza-texto); line-height: 1.6; flex: 1; margin-bottom: 1.2rem; }
+    .anunciante-btns { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+    .btn-ig, .btn-wa { padding: 8px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; text-decoration: none; transition: opacity 0.2s; }
+    .btn-ig { background: #E1306C; color: white; }
+    .btn-wa { background: #25D366; color: white; }
+    .btn-link { background: #FF9900; color: white; }
+    .btn-ig:hover, .btn-wa:hover, .btn-link:hover { opacity: 0.85; }
 
-    .partner-category { margin-top: 1.5rem; }
-    .category-head { margin-bottom: .8rem; }
-    .partner-grid { display: grid; grid-template-columns: 1fr; gap: .9rem; }
-    .partner-card { background: #fff; border: 1px solid var(--borda); border-radius: 14px; overflow: hidden; }
-    .partner-image { aspect-ratio: 16/10; background: #eef2f7; }
-    .partner-image img { width: 100%; height: 100%; object-fit: cover; }
-    .partner-body { padding: .9rem; }
-    .badge { display: inline-block; font-size: .75rem; font-weight: 700; background: #f8f1dd; color: #7b5b12; padding: .2rem .55rem; border-radius: 999px; }
-    .partner-name { margin-top: .45rem; font-size: 1.2rem; }
-    .partner-desc { color: var(--texto-suave); font-size: .95rem; margin: .5rem 0 .7rem; }
-    .small-legal { font-size: .78rem; color: #6f5a2c; margin-top: .6rem; }
+    .galeria-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+    .galeria-item { position: relative; border-radius: 10px; overflow: hidden; aspect-ratio: 4/3; cursor: pointer; }
+    .galeria-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+    .galeria-item:hover img { transform: scale(1.06); }
+    .galeria-legenda { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(26,43,74,0.85)); color: white; font-size: 0.8rem; padding: 20px 12px 10px; transform: translateY(100%); transition: transform 0.3s; }
+    .galeria-item:hover .galeria-legenda { transform: translateY(0); }
 
-    .galeria-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; }
-    .galeria-item { border-radius: 10px; overflow: hidden; aspect-ratio: 4/3; position: relative; }
-    .galeria-item img { width: 100%; height: 100%; object-fit: cover; }
+    .contato-box { background: var(--dourado); border-radius: 16px; padding: 3rem; text-align: center; max-width: 600px; margin: 0 auto; }
+    .contato-box h2 { color: var(--azul); margin-bottom: 0.8rem; }
+    .contato-box p { color: var(--azul); opacity: 0.8; margin-bottom: 2rem; font-size: 1.05rem; }
+    .btn-wa-grande { display: inline-flex; align-items: center; gap: 10px; background: var(--azul); color: white; padding: 16px 40px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; text-decoration: none; }
 
-    .anuncie-values { display: grid; gap: .6rem; margin: 1rem 0; }
-    .anuncie-values li { background: #fff; border: 1px solid var(--borda); border-radius: 10px; padding: .7rem; list-style: none; }
+    footer { background: #0F1C30; color: rgba(255,255,255,0.55); text-align: center; padding: 28px 5%; font-size: 0.85rem; }
+    footer a { color: var(--dourado); text-decoration: none; }
 
-    .contact-box { background: #fff; border: 1px solid var(--borda); border-radius: 14px; padding: 1.2rem; text-align: center; }
-    footer { background: #0F1C30; color: rgba(255,255,255,0.7); text-align: center; padding: 1.2rem 1rem; }
+    .wa-float { position: fixed; bottom: 22px; right: 22px; z-index: 999; background: #25D366; color: white; border-radius: 50px; padding: 13px 24px; font-weight: 700; font-size: 0.95rem; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.45); display: flex; align-items: center; gap: 8px; }
+    @media(max-width:500px){ .wa-float span.label { display: none; } }
 
-    @media (min-width: 860px) {
-      .menu-toggle { display: none; }
-      .nav-wrap { padding: 0.75rem 2rem; }
-      .nav-links { display: flex !important; flex-direction: row; align-items: center; gap: 0.4rem; padding: 0 2rem .6rem; overflow-x: auto; }
-      .nav-links a { font-size: .88rem; white-space: nowrap; }
-      .hero-wrap { grid-template-columns: 1.05fr 1fr; align-items: stretch; }
-      .romaria-grid { grid-template-columns: 1fr 1fr; }
-      .partner-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .galeria-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
-      .anuncie-values { grid-template-columns: 1fr 1fr; }
-    }
+    /* LIGHTBOX */
+    #lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 9998; align-items: center; justify-content: center; }
+    #lightbox.aberto { display: flex; }
+    #lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; border-radius: 8px; box-shadow: 0 0 60px rgba(0,0,0,0.8); }
+    #lightbox-fechar { position: absolute; top: 20px; right: 28px; color: white; font-size: 2.5rem; cursor: pointer; line-height: 1; }
+    #lightbox-anterior, #lightbox-proximo { position: absolute; top: 50%; transform: translateY(-50%); color: white; font-size: 2.5rem; cursor: pointer; background: rgba(255,255,255,0.1); border: none; padding: 10px 18px; border-radius: 8px; }
+    #lightbox-anterior { left: 16px; }
+    #lightbox-proximo { right: 16px; }
+
+    #loading { position: fixed; inset: 0; background: var(--azul); display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity 0.5s; }
+    #loading h2 { color: var(--dourado-claro); font-size: 1.8rem; }
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Portal Trindade",
-    "url": "https://www.festadodivinopaieterno.com.br/",
-    "inLanguage": "pt-BR",
-    "description": "Portal independente com informações da Romaria de Trindade 2026 e parceiros locais.",
-    "areaServed": "Trindade, Goiás, Brasil"
-  }
-  </script>
 </head>
 <body>
-  <header class="topbar" aria-label="Cabeçalho principal">
-    <div class="nav-wrap">
-      <a class="nav-logo" href="#inicio">Portal Trindade</a>
-      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
-    </div>
-    <nav id="nav-links" class="nav-links" aria-label="Navegação principal">
-      <a href="#inicio">Início</a>
-      <a href="#romaria">Romaria 2026</a>
-      <a href="#onde-ficar">Onde Ficar</a>
-      <a href="#onde-comer">Onde Comer</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#anuncie">Anuncie</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
 
-  <main>
-    <section id="inicio">
-      <div class="container hero-wrap">
-        <div class="hero-image">
-          <img id="hero-bg" src="" alt="Vista de Trindade GO durante a Romaria" fetchpriority="high" decoding="async">
-        </div>
-        <div class="hero-content">
-          <p class="hero-kicker">Portal independente para romeiros e visitantes</p>
-          <h1>Guia da Romaria de Trindade 2026</h1>
-          <p>Informações, parceiros locais e orientações para romeiros, visitantes e moradores durante a Festa do Divino Pai Eterno.</p>
-          <p class="hero-date">Romaria 2026: de 26 de junho a 5 de julho</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#parceiros">Ver parceiros recomendados</a>
-            <a class="btn btn-secondary" href="#anuncie">Anunciar meu negócio</a>
-            <a class="btn btn-whatsapp" id="hero-wa" href="#">Falar com o Portal</a>
-          </div>
-        </div>
-      </div>
-    </section>
+<div id="loading"><h2>Portal Trindade</h2></div>
 
-    <section id="romaria" class="section-alt">
-      <div class="container">
-        <h2 class="section-title" id="romaria-titulo">Romaria 2026</h2>
-        <p class="section-sub">Festa do Divino Pai Eterno 2026 em Trindade GO.</p>
-        <div class="divider"></div>
-        <div id="romaria-grid" class="romaria-grid"></div>
-      </div>
-    </section>
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <span id="lightbox-fechar">✕</span>
+  <button id="lightbox-anterior">‹</button>
+  <img id="lightbox-img" src="" alt="">
+  <button id="lightbox-proximo">›</button>
+</div>
 
-    <section id="parceiros">
-      <div class="container">
-        <h2 class="section-title">Parceiros Recomendados</h2>
-        <p class="section-sub">Categorias organizadas para facilitar sua busca durante a Romaria de Trindade 2026.</p>
-        <div class="divider"></div>
-        <div class="legal-box">
-          <strong>Aviso importante:</strong> O Portal Trindade divulga informações e parceiros locais. As negociações são feitas diretamente entre visitante e anunciante. O Portal não intermedeia pagamentos, não cobra comissão sobre negociações e recomenda confirmar dados, localização, condições de estadia, datas, valores e identidade do responsável antes de qualquer pagamento.
-        </div>
+<nav>
+  <a class="nav-logo" href="#">Portal Trindade</a>
+  <div class="nav-links">
+    <a href="#romaria">Romaria 2026</a>
+    <a href="#anunciantes">Parceiros</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+  </div>
+  <a id="nav-cta" class="nav-cta" href="#contato">Fale Conosco</a>
+</nav>
 
-        <div class="safety-box" id="onde-ficar">
-          <h3>Vai alugar para a Romaria? Atenção aos cuidados.</h3>
-          <ul>
-            <li>Visite o imóvel quando possível.</li>
-            <li>Confirme se está falando com o proprietário ou responsável direto.</li>
-            <li>Evite pagamentos altos antecipados sem segurança.</li>
-            <li>Combine entrada, saída, quantidade de pessoas e condições antes.</li>
-            <li>Registre tudo por mensagem.</li>
-            <li>Em caso de dúvida, não conclua a negociação.</li>
-          </ul>
-          <a class="btn btn-primary" href="#onde-ficar">Ver parceiros de hospedagem</a>
-        </div>
+<section id="hero">
+  <img id="hero-bg" src="" alt="Trindade-GO">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 id="hero-titulo"></h1>
+    <p id="hero-desc"></p>
+    <a class="hero-btn" href="#romaria">Ver Romaria 2026</a>
+  </div>
+</section>
 
-        <div id="categorias-parceiros"></div>
-      </div>
-    </section>
+<section id="romaria" class="section-dark">
+  <h2 class="section-title" id="romaria-titulo"></h2>
+  <div class="divisor"></div>
+  <div id="contador-box" style="display:flex; gap:15px; margin-bottom:2rem; justify-content:flex-start;"></div>
+  <div class="romaria-grid" id="romaria-grid"></div>
+  <div class="shows-img-wrapper" id="shows-img-wrapper" style="display:none;">
+    <img id="shows-img" src="./imagens/imagemsite.png" alt="Shows confirmados — Ana Castela e Daniel">
+  </div>
+  <div class="romaria-cartaz" id="romaria-cartaz-box" style="margin-top:2rem;">
+    <img id="romaria-cartaz" src="" alt="Cartaz Romaria 2026">
+  </div>
+</section>
 
-    <section id="galeria" class="section-alt">
-      <div class="container">
-        <h2 class="section-title">Galeria de Trindade</h2>
-        <p class="section-sub">Imagens da cidade, fé e turismo religioso em Goiás.</p>
-        <div class="divider"></div>
-        <div class="galeria-grid" id="galeria-grid"></div>
-      </div>
-    </section>
+<section id="anunciantes" class="section-alt">
+  <h2 class="section-title">Parceiros Recomendados</h2>
+  <p class="section-sub">Curadoria do Portal · Negócios locais de confiança</p>
+  <div class="divisor"></div>
+  <div class="anunciantes-grid" id="anunciantes-grid"></div>
+</section>
 
-    <section id="anuncie">
-      <div class="container">
-        <h2 class="section-title">Anuncie no Portal Trindade</h2>
-        <p class="section-sub">O Portal Trindade conecta negócios locais, hospedagens, serviços e experiências ao público que acompanha a Romaria, a cidade e o turismo religioso em Trindade-GO.</p>
-        <ul class="anuncie-values">
-          <li>Divulgação para moradores, romeiros e visitantes</li>
-          <li>Materiais organizados com imagem e texto profissional</li>
-          <li>Presença em um portal temático ligado à Romaria 2026</li>
-          <li>Possibilidade de destaque por categoria</li>
-          <li>Atendimento direto pelo WhatsApp</li>
-        </ul>
-        <div class="cta-row">
-          <a id="anuncie-wa" class="btn btn-whatsapp" href="#">Quero anunciar no Portal</a>
-        </div>
-        <p class="small-legal" style="margin-top:.7rem">O Portal Trindade é um canal independente de divulgação local e não representa órgão oficial da Festa do Divino Pai Eterno.</p>
-      </div>
-    </section>
+<section id="galeria">
+  <h2 class="section-title" style="text-align:center">Galeria de Trindade</h2>
+  <div class="divisor divisor-center"></div>
+  <div class="galeria-grid" id="galeria-grid"></div>
+</section>
 
-    <section id="contato" class="section-alt">
-      <div class="container">
-        <div class="contact-box">
-          <h2 class="section-title">Fale com o Portal</h2>
-          <p class="section-sub">Dúvidas, anúncios e parcerias locais com atendimento direto por WhatsApp.</p>
-          <a id="contato-wa" class="btn btn-whatsapp" href="#">Falar pelo WhatsApp</a>
-        </div>
-      </div>
-    </section>
-  </main>
+<section id="contato" class="section-alt">
+  <div class="contato-box">
+    <h2>Fale com o Portal Trindade</h2>
+    <p>Dúvidas, anúncios ou informações sobre a cidade — estamos aqui.</p>
+    <a id="wa-btn" class="btn-wa-grande" href="#" target="_blank">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.533 5.845L.057 24l6.305-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.001-1.37l-.36-.214-3.733.979 1-3.647-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+      <span id="wa-btn-texto">Fale com o Portal</span>
+    </a>
+  </div>
+</section>
 
-  <footer>
-    <p id="rodape-texto"></p>
-    <p><a id="ig-link" style="color:#F0D98D" href="#" target="_blank" rel="noopener">Instagram do Portal Trindade</a></p>
-  </footer>
+<footer>
+  <p id="rodape-texto"></p>
+  <p style="margin-top:6px"><a id="ig-link" href="#" target="_blank">@trindadeportal no Instagram</a></p>
+</footer>
+
+<a id="wa-float" class="wa-float" href="#" target="_blank">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.533 5.845L.057 24l6.305-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.001-1.37l-.36-.214-3.733.979 1-3.647-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+  <span class="label">Fale Conosco</span>
+</a>
 
 <script>
-const categoriasInfo = {
-  'onde-ficar': {
-    id: 'onde-ficar',
-    titulo: 'Onde Ficar',
-    descricao: 'Pousadas, hotéis, casas, quartos e imóveis por temporada para quem vem à Romaria.'
-  },
-  'onde-comer': {
-    id: 'onde-comer',
-    titulo: 'Onde Comer',
-    descricao: 'Restaurantes, cafés, marmitas, lanches e opções locais para visitantes e moradores.'
-  },
-  'servicos': {
-    id: 'servicos',
-    titulo: 'Serviços Úteis',
-    descricao: 'Comércios e serviços que ajudam o romeiro durante a estadia em Trindade.'
-  },
-  'fe-conteudo': {
-    id: 'fe-conteudo',
-    titulo: 'Fé e Conteúdo',
-    descricao: 'Mensagens, livros, orientações e conteúdos ligados à espiritualidade e à experiência da Romaria.'
-  }
-};
+// LIGHTBOX
+let lightboxFotos = [];
+let lightboxIdx = 0;
 
-const categoriaLabel = {
-  'onde-ficar': 'Onde Ficar',
-  'onde-comer': 'Onde Comer',
-  'servicos': 'Serviços Úteis',
-  'fe-conteudo': 'Fé e Conteúdo'
-};
+function abrirLightbox(fotos, idx) {
+  lightboxFotos = fotos;
+  lightboxIdx = idx;
+  document.getElementById('lightbox-img').src = fotos[idx];
+  document.getElementById('lightbox').classList.add('aberto');
+  document.body.style.overflow = 'hidden';
+}
 
-const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
-menuToggle.addEventListener('click', () => {
-  const isOpen = navLinks.classList.toggle('open');
-  menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+function fecharLightbox() {
+  document.getElementById('lightbox').classList.remove('aberto');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('lightbox-fechar').addEventListener('click', fecharLightbox);
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target === this) fecharLightbox();
 });
-navLinks.querySelectorAll('a').forEach((a) => {
-  a.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    menuToggle.setAttribute('aria-expanded', 'false');
-  });
+document.getElementById('lightbox-anterior').addEventListener('click', function(e) {
+  e.stopPropagation();
+  lightboxIdx = (lightboxIdx - 1 + lightboxFotos.length) % lightboxFotos.length;
+  document.getElementById('lightbox-img').src = lightboxFotos[lightboxIdx];
+});
+document.getElementById('lightbox-proximo').addEventListener('click', function(e) {
+  e.stopPropagation();
+  lightboxIdx = (lightboxIdx + 1) % lightboxFotos.length;
+  document.getElementById('lightbox-img').src = lightboxFotos[lightboxIdx];
+});
+document.addEventListener('keydown', function(e) {
+  if (!document.getElementById('lightbox').classList.contains('aberto')) return;
+  if (e.key === 'Escape') fecharLightbox();
+  if (e.key === 'ArrowLeft') document.getElementById('lightbox-anterior').click();
+  if (e.key === 'ArrowRight') document.getElementById('lightbox-proximo').click();
 });
 
 fetch('./conteudo.json')
-  .then((r) => r.json())
-  .then((d) => {
+  .then(r => r.json())
+  .then(d => {
     const wa = `https://wa.me/${d.site.whatsapp}?text=${encodeURIComponent(d.contato.mensagem_whatsapp)}`;
 
     document.querySelector('.nav-logo').textContent = d.site.titulo;
+    document.getElementById('nav-cta').href = wa;
     document.getElementById('hero-bg').src = d.banner.imagem;
-    document.getElementById('hero-bg').alt = 'Romaria em Trindade GO';
+    document.getElementById('hero-titulo').textContent = d.banner.titulo;
+    document.getElementById('hero-desc').textContent = d.banner.descricao;
     document.getElementById('romaria-titulo').textContent = d.romaria.titulo;
 
-    document.getElementById('hero-wa').href = wa;
-    document.getElementById('anuncie-wa').href = wa;
-    document.getElementById('contato-wa').href = wa;
+    if (d.romaria.cartaz) {
+      document.getElementById('romaria-cartaz').src = d.romaria.cartaz;
+    } else {
+      document.getElementById('romaria-cartaz-box').style.display = 'none';
+    }
 
-    const showsHtml = d.romaria.shows.map((s) => `<li>${s.artista} · ${s.data}</li>`).join('');
+    // Exibe imagem dos shows
+    document.getElementById('shows-img-wrapper').style.display = 'block';
+
+    const showsHtml = d.romaria.shows.map(s => `<li>${s.artista} <span>· ${s.data}</span></li>`).join('');
     document.getElementById('romaria-grid').innerHTML = `
-      <article class="romaria-card">
-        <div class="romaria-label">Tema</div>
-        <div class="romaria-value">${d.romaria.tema}</div>
-      </article>
-      <article class="romaria-card">
-        <div class="romaria-label">Período</div>
-        <div class="romaria-value">${d.romaria.periodo}</div>
-      </article>
-      <article class="romaria-card">
-        <div class="romaria-label">Local</div>
-        <div class="romaria-value">${d.romaria.local}</div>
-      </article>
-      <article class="romaria-card">
-        <div class="romaria-label">Shows e programação</div>
+      <div class="romaria-card">
+        <div class="romaria-label">Tema</div><div class="romaria-value">${d.romaria.tema}</div>
+        <div class="romaria-label" style="margin-top:1rem">Edição</div><div class="romaria-value">${d.romaria.edicao}</div>
+      </div>
+      <div class="romaria-card">
+        <div class="romaria-label">Período</div><div class="romaria-value">${d.romaria.periodo}</div>
+        <div class="romaria-label" style="margin-top:1rem">Expectativa</div><div class="romaria-value">${d.romaria.expectativa}</div>
+      </div>
+      <div class="romaria-card">
+        <div class="romaria-label">Local</div><div class="romaria-value">${d.romaria.local}</div>
+      </div>
+      <div class="romaria-card">
+        <div class="romaria-label">Shows confirmados</div>
         <ul class="shows-list">${showsHtml}</ul>
-      </article>`;
+      </div>`;
 
-    const categoriesWrapper = document.getElementById('categorias-parceiros');
-    const agrupados = Object.keys(categoriasInfo).reduce((acc, key) => ({ ...acc, [key]: [] }), {});
-
-    d.anunciantes.forEach((anunciante) => {
-      const categoria = anunciante.categoria || 'servicos';
-      if (!agrupados[categoria]) agrupados[categoria] = [];
-      agrupados[categoria].push(anunciante);
-    });
-
-    categoriesWrapper.innerHTML = Object.keys(categoriasInfo).map((key) => {
-      const info = categoriasInfo[key];
-      const cards = (agrupados[key] || []).map((a) => {
-        const imgAlt = `${a.nome} em Trindade GO`;
-        const principalHref = a.whatsapp ? `https://wa.me/${a.whatsapp}` : (a.link || wa);
-        const principalTexto = a.whatsapp ? 'Falar pelo WhatsApp' : (key === 'onde-ficar' ? 'Ver imóveis para temporada' : 'Saiba mais');
-        const secundarioHref = a.link || a.instagram || '';
-        const secundarioTexto = a.link ? 'Ver detalhes' : (a.instagram ? 'Ver localização' : 'Saiba mais');
-        const btnSecundario = secundarioHref ? `<a class="btn btn-secondary" href="${secundarioHref}" target="_blank" rel="noopener">${secundarioTexto}</a>` : '';
-
-        return `
-          <article class="partner-card">
-            <div class="partner-image">
-              <img src="${a.imagem}" alt="${imgAlt}" loading="lazy" decoding="async">
-            </div>
-            <div class="partner-body">
-              <span class="badge">${categoriaLabel[key]}</span>
-              <h4 class="partner-name">${a.nome}</h4>
-              <p class="partner-desc">${a.descricao}</p>
-              <div class="cta-row">
-                <a class="btn btn-primary" href="${principalHref}" target="_blank" rel="noopener">${principalTexto}</a>
-                ${btnSecundario}
-              </div>
-              <p class="small-legal">Negociação direta com o anunciante. O Portal não intermedeia pagamentos.</p>
-            </div>
-          </article>`;
-      }).join('');
-
+    const ag = document.getElementById('anunciantes-grid');
+    ag.innerHTML = d.anunciantes.map((a, idx) => {
+      const badge = a.destaque ? `<span class="anunciante-badge">⭐ Destaque</span>` : '';
+      const btnIg = a.instagram ? `<a class="btn-ig" href="${a.instagram}" target="_blank">Instagram</a>` : '';
+      const btnWa = a.whatsapp ? `<a class="btn-wa" href="https://wa.me/${a.whatsapp}" target="_blank">WhatsApp</a>` : '';
+      const btnLink = a.link ? `<a class="btn-link" href="${a.link}" target="_blank">${a.texto_link || 'Saiba mais'}</a>` : '';
+      const todasFotos = [a.imagem, ...(a.imagens_extras || [])];
+      const imgsHtml = todasFotos.map((img, i) =>
+        `<img src="${img}" alt="${a.nome}" class="${i===0?'ativo':''}" data-card="${idx}" data-slide="${i}">`
+      ).join('');
+      const dotsHtml = todasFotos.length > 1 ? `<div class="slider-dots">${todasFotos.map((_, i) =>
+        `<div class="slider-dot ${i===0?'ativo':''}" data-card="${idx}" data-slide="${i}"></div>`
+      ).join('')}</div>` : '';
       return `
-        <section class="partner-category" id="${info.id}">
-          <div class="category-head">
-            <h3>${info.titulo}</h3>
-            <p class="section-sub">${info.descricao}</p>
+        <div class="anunciante-card">
+          <div class="anunciante-img-slider" data-card="${idx}" data-fotos='${JSON.stringify(todasFotos)}'>
+            ${imgsHtml}
+            ${dotsHtml}
+            <div class="zoom-icon">🔍</div>
           </div>
-          <div class="partner-grid">${cards || '<p>Nenhum parceiro publicado nesta categoria no momento.</p>'}</div>
-        </section>`;
+          <div class="anunciante-body">
+            ${badge}
+            <h3 class="anunciante-nome">${a.nome}</h3>
+            <p class="anunciante-desc">${a.descricao}</p>
+            <div class="anunciante-btns">${btnIg}${btnWa}${btnLink}</div>
+          </div>
+        </div>`;
     }).join('');
 
-    const galeria = document.getElementById('galeria-grid');
-    galeria.innerHTML = d.galeria.map((g) => `
-      <figure class="galeria-item">
-        <img src="${g.imagem}" alt="${g.legenda}" loading="lazy" decoding="async">
-      </figure>`).join('');
+    // Slider automático + lightbox nos anunciantes
+    const sliders = {};
+    document.querySelectorAll('.anunciante-img-slider').forEach(slider => {
+      const card = slider.dataset.card;
+      const fotos = JSON.parse(slider.dataset.fotos);
+      sliders[card] = { total: fotos.length, atual: 0, fotos };
 
+      slider.addEventListener('click', function(e) {
+        if (e.target.classList.contains('slider-dot')) return;
+        const atualImg = slider.querySelector('img.ativo');
+        const slideAtual = parseInt(atualImg?.dataset.slide || 0);
+        abrirLightbox(fotos, slideAtual);
+      });
+    });
+
+    document.querySelectorAll('.slider-dot').forEach(dot => {
+      dot.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const card = dot.dataset.card;
+        const slide = parseInt(dot.dataset.slide);
+        irParaSlide(card, slide);
+      });
+    });
+
+    function irParaSlide(card, slide) {
+      document.querySelectorAll(`img[data-card="${card}"]`).forEach(img => img.classList.remove('ativo'));
+      document.querySelectorAll(`.slider-dot[data-card="${card}"]`).forEach(d => d.classList.remove('ativo'));
+      document.querySelector(`img[data-card="${card}"][data-slide="${slide}"]`)?.classList.add('ativo');
+      document.querySelector(`.slider-dot[data-card="${card}"][data-slide="${slide}"]`)?.classList.add('ativo');
+      sliders[card].atual = slide;
+    }
+
+    Object.keys(sliders).forEach(card => {
+      if (sliders[card].total > 1) {
+        setInterval(() => {
+          const prox = (sliders[card].atual + 1) % sliders[card].total;
+          irParaSlide(card, prox);
+        }, 3000);
+      }
+    });
+
+    // Galeria com lightbox
+    const gg = document.getElementById('galeria-grid');
+    const fotosGaleria = d.galeria.map(g => g.imagem);
+    gg.innerHTML = d.galeria.map((g, i) => `
+      <div class="galeria-item" data-idx="${i}">
+        <img src="${g.imagem}" alt="${g.legenda}" loading="lazy">
+        <div class="galeria-legenda">${g.legenda}</div>
+      </div>`).join('');
+
+    document.querySelectorAll('.galeria-item').forEach(item => {
+      item.addEventListener('click', () => {
+        abrirLightbox(fotosGaleria, parseInt(item.dataset.idx));
+      });
+    });
+
+    document.getElementById('wa-btn').href = wa;
+    document.getElementById('wa-btn-texto').textContent = d.contato.texto_botao;
+    document.getElementById('wa-float').href = wa;
     document.getElementById('rodape-texto').textContent = d.contato.rodape;
     document.getElementById('ig-link').href = d.site.instagram;
+
+    const loading = document.getElementById('loading');
+
+    // CONTADOR REGRESSIVO
+    const dataFesta = new Date('June 26, 2026 00:00:00').getTime();
+    const contadorBox = document.getElementById('contador-box');
+    const atualizarContador = setInterval(() => {
+      const agora = new Date().getTime();
+      const distancia = dataFesta - agora;
+      if (distancia < 0) {
+        clearInterval(atualizarContador);
+        contadorBox.innerHTML = '<div class="romaria-label" style="font-size:1.2rem; color:var(--dourado-claro);">A Romaria Começou!</div>';
+        return;
+      }
+      const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+      contadorBox.innerHTML = `
+        <div style="text-align:center; background:rgba(201,168,76,0.1); padding:10px 15px; border-radius:8px; border:1px solid rgba(201,168,76,0.3);">
+          <div style="font-size:1.8rem; font-weight:700; color:white; font-family:'Playfair Display', serif;">${dias}</div>
+          <div style="font-size:0.7rem; color:var(--dourado); text-transform:uppercase; letter-spacing:1px;">Dias</div>
+        </div>
+        <div style="text-align:center; background:rgba(201,168,76,0.1); padding:10px 15px; border-radius:8px; border:1px solid rgba(201,168,76,0.3);">
+          <div style="font-size:1.8rem; font-weight:700; color:white; font-family:'Playfair Display', serif;">${horas}</div>
+          <div style="font-size:0.7rem; color:var(--dourado); text-transform:uppercase; letter-spacing:1px;">Horas</div>
+        </div>
+        <div style="text-align:center; background:rgba(201,168,76,0.1); padding:10px 15px; border-radius:8px; border:1px solid rgba(201,168,76,0.3);">
+          <div style="font-size:1.8rem; font-weight:700; color:white; font-family:'Playfair Display', serif;">${minutos}</div>
+          <div style="font-size:0.7rem; color:var(--dourado); text-transform:uppercase; letter-spacing:1px;">Min</div>
+        </div>
+      `;
+    }, 1000);
+
+    // INTERSECTION OBSERVER (animações de entrada)
+    setTimeout(() => {
+      const elements = document.querySelectorAll('.anunciante-card, .galeria-item, .romaria-card, .contato-box');
+      elements.forEach(el => el.classList.add('reveal'));
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      elements.forEach(el => observer.observe(el));
+
+      setTimeout(() => {
+        elements.forEach(el => el.classList.add('visible'));
+      }, 3000);
+    }, 600);
+
+    loading.style.opacity = '0';
+    setTimeout(() => loading.remove(), 500);
   })
   .catch(() => {
-    document.querySelector('main').innerHTML = '<section><div class="container"><h1>Erro ao carregar o conteúdo</h1><p>Tente novamente em instantes.</p></div></section>';
+    document.getElementById('loading').innerHTML = '<h2 style="color:#F0D98D">Erro ao carregar conteúdo</h2>';
   });
 </script>
 </body>
