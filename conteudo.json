@@ -44,7 +44,8 @@
       ],
       "instagram": "https://www.instagram.com/recantogoiano.hotel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       "whatsapp": "556239915854",
-      "destaque": true
+      "destaque": true,
+      "categoria": "onde-ficar"
     },
     {
       "nome": "Pousada Padre Pelágio",
@@ -52,7 +53,8 @@
       "imagem": "./imagens/posadapadrepelagio.png",
       "instagram": "",
       "whatsapp": "5562985921198",
-      "destaque": true
+      "destaque": true,
+      "categoria": "onde-ficar"
     },
     {
       "nome": "Santo Santo Santo",
@@ -60,7 +62,8 @@
       "imagem": "./imagens/loja_limpa.png",
       "instagram": "https://www.instagram.com/santosantosanto.trindade",
       "whatsapp": "",
-      "destaque": true
+      "destaque": true,
+      "categoria": "servicos"
     },
     {
       "nome": "Cibeles Café e Restaurante",
@@ -75,7 +78,8 @@
       "link": "https://delivery.yooga.app/cafe-restaurante-cibeles",
       "texto_link": "Ver Cardápio Virtual",
       "endereco": "Avenida Coronel Anacleto, 445, Sala 1 — Trindade-GO",
-      "destaque": true
+      "destaque": true,
+      "categoria": "onde-comer"
     },
     {
       "nome": "Trenzinho Família de Amor — Oficial do Santuário",
@@ -83,7 +87,8 @@
       "imagem": "./imagens/trezinhopaieterno.png",
       "instagram": "",
       "whatsapp": "",
-      "destaque": false
+      "destaque": false,
+      "categoria": "servicos"
     },
     {
       "nome": "Vando Espetinhos",
@@ -92,7 +97,8 @@
       "imagens_extras": [],
       "instagram": "https://www.instagram.com/vandoespetinhos",
       "whatsapp": "",
-      "destaque": true
+      "destaque": true,
+      "categoria": "onde-comer"
     },
     {
       "nome": "Aluguel por Temporada — Festa 2026",
@@ -101,7 +107,8 @@
       "imagens_extras": [],
       "instagram": "",
       "whatsapp": "",
-      "destaque": true
+      "destaque": true,
+      "categoria": "onde-ficar"
     },
     {
       "nome": "Manhãs com Jesus — Ricardo Brito",
@@ -111,7 +118,8 @@
       "texto_link": "Comprar na Amazon",
       "instagram": "",
       "whatsapp": "",
-      "destaque": true
+      "destaque": true,
+      "categoria": "fe-conteudo"
     },
     {
       "nome": "Do Lado de Dentro — Livro Gratuito",
@@ -121,7 +129,8 @@
       "texto_link": "Receber Gratuitamente",
       "instagram": "",
       "whatsapp": "",
-      "destaque": true
+      "destaque": true,
+      "categoria": "fe-conteudo"
     },
     {
       "nome": "Instrução aos Católicos — Santo Afonso de Ligório",
@@ -131,7 +140,8 @@
       "texto_link": "Comprar no Mercado Livre",
       "instagram": "",
       "whatsapp": "",
-      "destaque": false
+      "destaque": false,
+      "categoria": "fe-conteudo"
     }
   ],
   "galeria": [
@@ -202,4 +212,3 @@
     "rodape": "© 2026 Portal Trindade · Trindade-GO · Capital da Fé"
   }
 }
-
