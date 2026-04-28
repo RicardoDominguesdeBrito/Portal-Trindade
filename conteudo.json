@@ -19,6 +19,7 @@
     "periodo": "26 de junho a 5 de julho de 2026",
     "local": "Trindade, GO",
     "expectativa": "Superar 4,3 milhões de romeiros",
+    "imagem_shows": "./imagens/danieleanacastela.png",
     "shows": [
       {
         "artista": "Desfile de Carros de Boi, Cavaleiros e Muladeiros",
@@ -37,7 +38,7 @@
   "anunciantes": [
     {
       "nome": "Hotel Recanto Goiano",
-      "descricao": "Hospedagem acolhedora em Trindade, ideal para romeiros, turistas e famílias. Oferece café da manhã, almoço e jantar, quartos privativos com ar-condicionado, Wi‑Fi e frigobar, em ambiente familiar e bem localizado.",
+      "descricao": "Hospedagem acolhedora em Trindade, ideal para romeiros, turistas e famílias. Quartos privativos com ar-condicionado, Wi-Fi, frigobar e refeições incluídas, em ambiente familiar e bem localizado.",
       "imagem": "./imagens/pousadarecanto.jpeg",
       "imagens_extras": [
         "./imagens/pousadarecanto2.jpeg"
@@ -48,7 +49,7 @@
     },
     {
       "nome": "Pousada Padre Pelágio",
-      "descricao": "Hospedagem acolhedora em Trindade, em localização privilegiada, a poucos passos da Basílica. Oferece quartos privativos com ar-condicionado e frigobar, Wi-Fi gratuito, café da manhã incluso, almoço e jantar com comida caseira, em ambiente familiar para romeiros, famílias e grupos.",
+      "descricao": "Hospedagem privilegiada a poucos passos da Basílica. Quartos com ar-condicionado, frigobar e Wi-Fi gratuito. Café da manhã incluso, almoço e jantar caseiros para romeiros, famílias e grupos.",
       "imagem": "./imagens/posadapadrepelagio.png",
       "instagram": "",
       "whatsapp": "5562985921198",
@@ -56,7 +57,7 @@
     },
     {
       "nome": "Santo Santo Santo",
-      "descricao": "Loja que transforma fé em arte. Terços artesanais, imagens sacras pintadas à mão, velas aromáticas e muito mais.",
+      "descricao": "Loja que transforma fé em arte. Terços artesanais, imagens sacras pintadas à mão, velas aromáticas e muito mais. Um presente sagrado para levar de Trindade.",
       "imagem": "./imagens/loja_limpa.png",
       "instagram": "https://www.instagram.com/santosantosanto.trindade",
       "whatsapp": "",
@@ -64,7 +65,7 @@
     },
     {
       "nome": "Cibeles Café e Restaurante",
-      "descricao": "Opção em Trindade para quem busca comida bem feita, praticidade e atendimento cuidadoso em diferentes momentos do dia. Com café, almoço, lanches, sobremesas e cardápio virtual, o Cibeles atende moradores, trabalhadores, famílias e visitantes que procuram uma refeição organizada, saborosa e com entrega pontual. Oferece pedidos por WhatsApp e cardápio online, facilitando a escolha para quem deseja receber em casa, no trabalho ou retirar no local.",
+      "descricao": "Café, almoço e lanches com sabor caseiro e atendimento cuidadoso. Cardápio virtual disponível com pedidos pelo WhatsApp e retirada ou entrega no local.",
       "imagem": "./imagens/imagem01cibele.png",
       "imagens_extras": [
         "./imagens/imagem02cibele.png",
@@ -79,7 +80,7 @@
     },
     {
       "nome": "Trenzinho Família de Amor — Oficial do Santuário",
-      "descricao": "O transporte oficial do Santuário do Divino Pai Eterno leva os devotos até a nova Casa do Pai. 33 lugares, acessível para PCDs, com elevador. Saídas diárias das 8h às 19h, a cada 30 minutos. O percurso inclui visita ao sino Vox Patris e ambientes de imersão espiritual. Ingresso: R$ 20 (ida e volta). Venda na Associação Filhos do Pai Eterno e no ponto de embarque em frente à Reitoria.",
+      "descricao": "Transporte oficial do Santuário do Divino Pai Eterno até a nova Casa do Pai. 33 lugares, acessível para PCDs. Saídas diárias das 8h às 19h. Ingresso: R$ 20 (ida e volta).",
       "imagem": "./imagens/trezinhopaieterno.png",
       "instagram": "",
       "whatsapp": "",
@@ -87,7 +88,7 @@
     },
     {
       "nome": "Vando Espetinhos",
-      "descricao": "Quem mora em Trindade sabe: quando a fome bate, o que a gente procura é comida boa, bem feita e sem complicação. O Vando Espetinhos é uma opção da cidade pra quem quer comer bem e com mais tranquilidade. 🍢 Espetinho no ponto. 📍 Av. Raimundo de Aquino, 195 — Trindade, GO. 📲 Cardápio no perfil @vandoespetinhos. Dica do Portal Trindade pra quem é daqui e pra quem passa pela cidade.",
+      "descricao": "Comida boa, bem feita e sem complicação. O Vando Espetinhos é a pedida certa de quem mora em Trindade ou passa pela cidade. Espetinho no ponto, sempre fresquinho.",
       "imagem": "./imagens/vandoespetinho.jpeg",
       "imagens_extras": [],
       "instagram": "https://www.instagram.com/vandoespetinhos",
@@ -96,7 +97,7 @@
     },
     {
       "nome": "Aluguel por Temporada — Festa 2026",
-      "descricao": "Este imóvel foi alugado em menos de 10 dias após o anúncio no Portal Trindade. Quem divulga antes, sai na frente. Na temporada da Festa de Trindade 2026, localização boa e visibilidade certa fazem diferença. O Portal Trindade é vitrine local para quem quer alcançar romeiros, visitantes e famílias que já buscam onde ficar em Trindade. Seu imóvel, espaço ou hospedagem também pode ganhar visibilidade com apresentação profissional, dentro do público certo e no momento certo. Chame no direct e anuncie com antecedência.",
+      "descricao": "Seu imóvel ou hospedagem com visibilidade garantida para a Romaria 2026. O Portal Trindade conecta proprietários a romeiros, famílias e visitantes que buscam onde ficar em Trindade.",
       "imagem": "./imagens/portal_trindade_4x5.png",
       "imagens_extras": [],
       "instagram": "",
@@ -115,7 +116,7 @@
     },
     {
       "nome": "Do Lado de Dentro — Livro Gratuito",
-      "descricao": "Um testemunho real de fé, limite e recomeço. Escrito por Ricardo Brito, morador de Trindade, este livro é oferecido gratuitamente. 100% das contribuições voluntárias são destinadas a pacientes oncológicos em dificuldade financeira. Receba o PDF e faça parte dessa corrente do bem.",
+      "descricao": "Testemunho real de fé, limite e recomeço, escrito por Ricardo Brito. Oferecido gratuitamente — 100% das contribuições voluntárias vão para pacientes oncológicos em dificuldade financeira.",
       "imagem": "./imagens/livro_dolado.png",
       "link": "https://ricardodominguesdebrito.github.io/Do-Lado-de-Dentro/",
       "texto_link": "Receber Gratuitamente",
@@ -125,7 +126,7 @@
     },
     {
       "nome": "Instrução aos Católicos — Santo Afonso de Ligório",
-      "descricao": "Um clássico indispensável da fé católica. Obra completa sobre os mandamentos, os sacramentos e a veracidade da fé. Capa dura, 348 páginas. Vendido pelo Centro Dom Bosco com frete grátis.",
+      "descricao": "Clássico indispensável da fé católica sobre os mandamentos, sacramentos e a veracidade da fé. Capa dura, 348 páginas. Frete grátis pelo Centro Dom Bosco.",
       "imagem": "./imagens/livro_catolico.png",
       "link": "https://meli.la/2EstgTG",
       "texto_link": "Comprar no Mercado Livre",
@@ -202,4 +203,3 @@
     "rodape": "© 2026 Portal Trindade · Trindade-GO · Capital da Fé"
   }
 }
-
