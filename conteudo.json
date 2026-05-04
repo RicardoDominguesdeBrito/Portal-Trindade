@@ -84,4 +84,137 @@
       "imagem": "./imagens/imagem01cibele.png",
       "imagens_extras": [
         "./imagens/imagem02cibele.png",
-        "./imagens
+        "./imagens/imagem03cibele.png"
+      ],
+      "instagram": "https://www.instagram.com/cafecibeles",
+      "whatsapp": "5562995542614",
+      "link": "https://delivery.yooga.app/cafe-restaurante-cibeles",
+      "texto_link": "Ver Cardápio Virtual",
+      "endereco": "Avenida Coronel Anacleto, 445, Sala 1 — Trindade-GO",
+      "destaque": true
+    },
+    {
+      "nome": "Trenzinho Família de Amor — Oficial do Santuário",
+      "descricao": "Transporte oficial entre o Santuário do Divino Pai Eterno e a nova Casa do Pai. 33 lugares com acessibilidade para PCDs. Saídas diárias das 8h às 19h. Ingresso: R$ 20 (ida e volta).",
+      "imagem": "./imagens/trezinhopaieterno.png",
+      "instagram": "",
+      "whatsapp": "",
+      "destaque": false
+    },
+    {
+      "nome": "Vando Espetinhos",
+      "descricao": "Espetinhos fresquinhos, bem temperados e no ponto certo. Referência em Trindade para quem quer comer bem com simplicidade. Ideal para uma parada rápida durante a romaria.",
+      "imagem": "./imagens/vandoespetinho.jpeg",
+      "imagens_extras": [],
+      "instagram": "https://www.instagram.com/vandoespetinhos",
+      "whatsapp": "",
+      "destaque": true
+    },
+    {
+      "nome": "Aluguel por Temporada — Festa 2026",
+      "descricao": "Anuncie seu imóvel ou hospedagem para a Romaria 2026. O Portal Trindade conecta proprietários a romeiros e visitantes que buscam onde se hospedar durante a Festa do Divino Pai Eterno.",
+      "imagem": "./imagens/portal_trindade_4x5.png",
+      "imagens_extras": [],
+      "instagram": "",
+      "whatsapp": "",
+      "destaque": true
+    },
+    {
+      "nome": "Manhãs com Jesus — Ricardo Brito",
+      "descricao": "180 reflexões diárias para quem atravessa dor, espera e recomeço com Deus. Um livro de fé para começar cada manhã com força e esperança. Disponível na Amazon.",
+      "imagem": "./imagens/livro_manhas.png",
+      "link": "https://www.amazon.com.br/dp/B0GWDHMPRJ",
+      "texto_link": "Comprar na Amazon",
+      "instagram": "",
+      "whatsapp": "",
+      "destaque": true
+    },
+    {
+      "nome": "Do Lado de Dentro — Livro Gratuito",
+      "descricao": "Testemunho real de fé, limite e recomeço escrito por Ricardo Brito. Distribuído gratuitamente — todas as contribuições voluntárias vão para pacientes oncológicos em dificuldade financeira.",
+      "imagem": "./imagens/livro_dolado.png",
+      "link": "https://ricardodominguesdebrito.github.io/Do-Lado-de-Dentro/",
+      "texto_link": "Receber Gratuitamente",
+      "instagram": "",
+      "whatsapp": "",
+      "destaque": true
+    },
+    {
+      "nome": "Instrução aos Católicos — Santo Afonso de Ligório",
+      "descricao": "Clássico da espiritualidade católica sobre mandamentos, sacramentos e a veracidade da fé. Capa dura, 348 páginas. Frete grátis pelo Centro Dom Bosco.",
+      "imagem": "./imagens/livro_catolico.png",
+      "link": "https://meli.la/2EstgTG",
+      "texto_link": "Comprar no Mercado Livre",
+      "instagram": "",
+      "whatsapp": "",
+      "destaque": false
+    }
+  ],
+  "galeria": [
+    {
+      "imagem": "./imagens/basilicavista.png",
+      "legenda": "Basílica do Divino Pai Eterno"
+    },
+    {
+      "imagem": "./imagens/altarmatriz.png",
+      "legenda": "Altar da Igreja Matriz"
+    },
+    {
+      "imagem": "./imagens/capelacruzeiro.png",
+      "legenda": "Capela do Cruzeiro"
+    },
+    {
+      "imagem": "./imagens/vitral.png",
+      "legenda": "Vitral da Basílica"
+    },
+    {
+      "imagem": "./imagens/comidatipica.png",
+      "legenda": "Comida típica de Trindade"
+    },
+    {
+      "imagem": "./imagens/castelinho.png",
+      "legenda": "Castelinho de Trindade"
+    },
+    {
+      "imagem": "./imagens/medalhao.png",
+      "legenda": "Medalhão do Divino Pai Eterno"
+    },
+    {
+      "imagem": "./imagens/caminhadadafe.png",
+      "legenda": "Caminhada da Fé"
+    },
+    {
+      "imagem": "./imagens/gruta.png",
+      "legenda": "Gruta de Trindade"
+    },
+    {
+      "imagem": "./imagens/igrejasaojose.png",
+      "legenda": "Igreja São José"
+    },
+    {
+      "imagem": "./imagens/novaigrejavistacima.png",
+      "legenda": "Nova Igreja — vista aérea"
+    },
+    {
+      "imagem": "./imagens/portalentrada.png",
+      "legenda": "Portal de entrada da cidade"
+    },
+    {
+      "imagem": "./imagens/painelrodovia.png",
+      "legenda": "Painel na rodovia"
+    },
+    {
+      "imagem": "./imagens/pordosoltrindade.png",
+      "legenda": "Por do sol em Trindade"
+    },
+    {
+      "imagem": "./imagens/Imagem_Original_e_Milagrosa_do_Divino_Pai_Eterno.png",
+      "legenda": "Imagem Original e Milagrosa do Divino Pai Eterno"
+    }
+  ],
+  "contato": {
+    "mensagem_whatsapp": "Olá! Vim pelo Portal Trindade e gostaria de mais informações.",
+    "texto_botao": "Fale com o Portal",
+    "rodape": "© 2026 Portal Trindade · Trindade-GO · Capital da Fé"
+  }
+}
