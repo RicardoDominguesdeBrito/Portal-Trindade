@@ -63,15 +63,25 @@
     .shows-list li { color: white; font-size: 1rem; padding: 2px 0; }
     .shows-list li span { color: var(--dourado-claro); font-size: 0.85rem; }
 
-    /* IMAGEM SHOWS */
     .shows-img-wrapper { margin-top: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.4); }
     .shows-img-wrapper img { width: 100%; display: block; }
 
     .anunciantes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; }
-    .anunciante-card { background: white; border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px -5px rgba(26,43,74,0.05), 0 4px 10px -5px rgba(26,43,74,0.02); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; }
+
+    .anunciante-card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px -5px rgba(26,43,74,0.05), 0 4px 10px -5px rgba(26,43,74,0.02);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+    }
     .anunciante-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px -10px rgba(26,43,74,0.12), 0 10px 20px -5px rgba(26,43,74,0.08); }
+
     .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
+
     .anunciante-img-slider { position: relative; height: 200px; overflow: hidden; cursor: pointer; }
     .anunciante-img-slider img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.6s; }
     .anunciante-img-slider img.ativo { opacity: 1; }
@@ -80,15 +90,29 @@
     .slider-dot.ativo { background: white; }
     .zoom-icon { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.5); color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 16px; z-index: 2; opacity: 0; transition: opacity 0.3s; }
     .anunciante-img-slider:hover .zoom-icon { opacity: 1; }
+
     .anunciante-body { padding: 1.4rem; flex: 1; display: flex; flex-direction: column; }
     .anunciante-badge { display: inline-block; background: var(--dourado); color: var(--azul); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 10px; border-radius: 20px; margin-bottom: 0.7rem; }
-    .anunciante-nome { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--azul); line-height: 1.3; min-height: 2.6rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-    .anunciante-desc { font-size: 0.9rem; color: var(--cinza-texto); line-height: 1.6; margin-bottom: 1.2rem; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; min-height: 5.76rem; }
+
+    /* CORREÇÃO PRINCIPAL: removido line-clamp do nome e da descrição */
+    .anunciante-nome {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--azul);
+      line-height: 1.3;
+    }
+    .anunciante-desc {
+      font-size: 0.9rem;
+      color: var(--cinza-texto);
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+    }
+
     .anunciante-btns { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: auto; }
     .btn-ig, .btn-wa { padding: 8px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; text-decoration: none; transition: opacity 0.2s; }
     .btn-ig { background: #E1306C; color: white; }
     .btn-wa { background: #25D366; color: white; }
-    .btn-link { background: #FF9900; color: white; }
+    .btn-link { background: #FF9900; color: white; padding: 8px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; text-decoration: none; transition: opacity 0.2s; }
     .btn-ig:hover, .btn-wa:hover, .btn-link:hover { opacity: 0.85; }
 
     .galeria-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
@@ -109,7 +133,6 @@
     .wa-float { position: fixed; bottom: 22px; right: 22px; z-index: 999; background: #25D366; color: white; border-radius: 50px; padding: 13px 24px; font-weight: 700; font-size: 0.95rem; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.45); display: flex; align-items: center; gap: 8px; }
     @media(max-width:500px){ .wa-float span.label { display: none; } }
 
-    /* LIGHTBOX */
     #lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 9998; align-items: center; justify-content: center; }
     #lightbox.aberto { display: flex; }
     #lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; border-radius: 8px; box-shadow: 0 0 60px rgba(0,0,0,0.8); }
@@ -126,7 +149,6 @@
 
 <div id="loading"><h2>Portal Trindade</h2></div>
 
-<!-- LIGHTBOX -->
 <div id="lightbox">
   <span id="lightbox-fechar">✕</span>
   <button id="lightbox-anterior">‹</button>
@@ -203,7 +225,6 @@
 </a>
 
 <script>
-// LIGHTBOX
 let lightboxFotos = [];
 let lightboxIdx = 0;
 
@@ -259,7 +280,6 @@ fetch('./conteudo.json')
       document.getElementById('romaria-cartaz-box').style.display = 'none';
     }
 
-    // Exibe imagem dos shows
     document.getElementById('shows-img-wrapper').style.display = 'block';
 
     const showsHtml = d.romaria.shows.map(s => `<li>${s.artista} <span>· ${s.data}</span></li>`).join('');
@@ -282,7 +302,7 @@ fetch('./conteudo.json')
 
     const ag = document.getElementById('anunciantes-grid');
     ag.innerHTML = d.anunciantes.map((a, idx) => {
-      const badge = a.destaque ? `<span class="anunciante-badge">⭐ Destaque</span>` : '';
+      const badge = a.destaque ? `<span class="anunciante-badge">&#11088; Destaque</span>` : '';
       const btnIg = a.instagram ? `<a class="btn-ig" href="${a.instagram}" target="_blank">Instagram</a>` : '';
       const btnWa = a.whatsapp ? `<a class="btn-wa" href="https://wa.me/${a.whatsapp}" target="_blank">WhatsApp</a>` : '';
       const btnLink = a.link ? `<a class="btn-link" href="${a.link}" target="_blank">${a.texto_link || 'Saiba mais'}</a>` : '';
@@ -298,7 +318,7 @@ fetch('./conteudo.json')
           <div class="anunciante-img-slider" data-card="${idx}" data-fotos='${JSON.stringify(todasFotos)}'>
             ${imgsHtml}
             ${dotsHtml}
-            <div class="zoom-icon">🔍</div>
+            <div class="zoom-icon">&#128269;</div>
           </div>
           <div class="anunciante-body">
             ${badge}
@@ -309,7 +329,6 @@ fetch('./conteudo.json')
         </div>`;
     }).join('');
 
-    // Slider automático + lightbox nos anunciantes
     const sliders = {};
     document.querySelectorAll('.anunciante-img-slider').forEach(slider => {
       const card = slider.dataset.card;
@@ -350,7 +369,6 @@ fetch('./conteudo.json')
       }
     });
 
-    // Galeria com lightbox
     const gg = document.getElementById('galeria-grid');
     const fotosGaleria = d.galeria.map(g => g.imagem);
     gg.innerHTML = d.galeria.map((g, i) => `
@@ -373,7 +391,6 @@ fetch('./conteudo.json')
 
     const loading = document.getElementById('loading');
 
-    // CONTADOR REGRESSIVO
     const dataFesta = new Date('June 26, 2026 00:00:00').getTime();
     const contadorBox = document.getElementById('contador-box');
     const atualizarContador = setInterval(() => {
@@ -399,11 +416,9 @@ fetch('./conteudo.json')
         <div style="text-align:center; background:rgba(201,168,76,0.1); padding:10px 15px; border-radius:8px; border:1px solid rgba(201,168,76,0.3);">
           <div style="font-size:1.8rem; font-weight:700; color:white; font-family:'Playfair Display', serif;">${minutos}</div>
           <div style="font-size:0.7rem; color:var(--dourado); text-transform:uppercase; letter-spacing:1px;">Min</div>
-        </div>
-      `;
+        </div>`;
     }, 1000);
 
-    // INTERSECTION OBSERVER (animações de entrada)
     setTimeout(() => {
       const elements = document.querySelectorAll('.anunciante-card, .galeria-item, .romaria-card, .contato-box');
       elements.forEach(el => el.classList.add('reveal'));
@@ -416,10 +431,7 @@ fetch('./conteudo.json')
         });
       }, { threshold: 0.1 });
       elements.forEach(el => observer.observe(el));
-
-      setTimeout(() => {
-        elements.forEach(el => el.classList.add('visible'));
-      }, 3000);
+      setTimeout(() => { elements.forEach(el => el.classList.add('visible')); }, 3000);
     }, 600);
 
     loading.style.opacity = '0';
