@@ -56,6 +56,21 @@
       "destaque": true
     },
     {
+      "nome": "Vila Barro Branco — Pousada de Charme",
+      "descricao": "Pousada de charme em zona rural de Trindade, à beira da GO-060. Hospedagem, day use, piscina, gastronomia em fogão a lenha, jantar à la carte e experiências ao ar livre como caiaque e trilhas. Uma opção de descanso e lazer para casais, famílias e romeiros que desejam vivenciar o Cerrado a poucos minutos da Basílica do Divino Pai Eterno.",
+      "imagem": "./imagens/barrobranco01.png",
+      "imagens_extras": [
+        "./imagens/barrobranco02v.png",
+        "./imagens/barrobranco03v.png"
+      ],
+      "instagram": "https://www.instagram.com/vilabarrobranco",
+      "whatsapp": "556299050030",
+      "link": "https://www.vilabarrobranco.com.br",
+      "texto_link": "Ver site oficial",
+      "endereco": "Rodovia GO-060 — Zona Rural de Trindade-GO",
+      "destaque": true
+    },
+    {
       "nome": "Santo Santo Santo",
       "descricao": "Loja que transforma fé em arte. Terços artesanais, imagens sacras pintadas à mão, velas aromáticas e muito mais. Um presente sagrado para levar de Trindade.",
       "imagem": "./imagens/loja_limpa.png",
