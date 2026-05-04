@@ -38,7 +38,7 @@
   "anunciantes": [
     {
       "nome": "Hotel Recanto Goiano",
-      "descricao": "Hospedagem acolhedora em Trindade, ideal para romeiros, turistas e famílias. Quartos privativos com ar-condicionado, Wi-Fi, frigobar e refeições incluídas, em ambiente familiar e bem localizado.",
+      "descricao": "Hospedagem acolhedora em Trindade para romeiros, turistas e famílias. Quartos com ar-condicionado, Wi-Fi e frigobar. Refeições incluídas em ambiente familiar e bem localizado.",
       "imagem": "./imagens/pousadarecanto.jpeg",
       "imagens_extras": [
         "./imagens/pousadarecanto2.jpeg"
@@ -49,7 +49,7 @@
     },
     {
       "nome": "Pousada Padre Pelágio",
-      "descricao": "Hospedagem privilegiada a poucos passos da Basílica. Quartos com ar-condicionado, frigobar e Wi-Fi gratuito. Café da manhã incluso, almoço e jantar caseiros para romeiros, famílias e grupos.",
+      "descricao": "A poucos passos da Basílica do Divino Pai Eterno. Quartos com ar-condicionado, frigobar e Wi-Fi gratuito. Café da manhã incluso, com almoço e jantar caseiros disponíveis.",
       "imagem": "./imagens/posadapadrepelagio.png",
       "instagram": "",
       "whatsapp": "5562985921198",
@@ -57,7 +57,7 @@
     },
     {
       "nome": "Vila Barro Branco — Pousada de Charme",
-      "descricao": "Pousada de charme em zona rural de Trindade, à beira da GO-060. Hospedagem, day use, piscina, gastronomia em fogão a lenha, jantar à la carte e experiências ao ar livre como caiaque e trilhas. Uma opção de descanso e lazer para casais, famílias e romeiros que desejam vivenciar o Cerrado a poucos minutos da Basílica do Divino Pai Eterno.",
+      "descricao": "Refúgio de charme na zona rural de Trindade, à beira da GO-060. Piscina, gastronomia em fogão a lenha, jantar à la carte e experiências ao ar livre. A poucos minutos da Basílica do Divino Pai Eterno.",
       "imagem": "./imagens/barrobranco01.png",
       "imagens_extras": [
         "./imagens/barrobranco02v.png",
@@ -72,7 +72,7 @@
     },
     {
       "nome": "Santo Santo Santo",
-      "descricao": "Loja que transforma fé em arte. Terços artesanais, imagens sacras pintadas à mão, velas aromáticas e muito mais. Um presente sagrado para levar de Trindade.",
+      "descricao": "Loja de artigos religiosos artesanais em Trindade. Terços feitos à mão, imagens sacras pintadas, velas aromáticas e presentes com fé. Uma lembrança sagrada para levar da Capital da Fé.",
       "imagem": "./imagens/loja_limpa.png",
       "instagram": "https://www.instagram.com/santosantosanto.trindade",
       "whatsapp": "",
@@ -80,141 +80,8 @@
     },
     {
       "nome": "Cibeles Café e Restaurante",
-      "descricao": "Café, almoço e lanches com sabor caseiro e atendimento cuidadoso. Cardápio virtual disponível com pedidos pelo WhatsApp e retirada ou entrega no local.",
+      "descricao": "Café da manhã, almoço e lanches com sabor caseiro no centro de Trindade. Cardápio virtual disponível com pedidos pelo WhatsApp, retirada no local ou entrega.",
       "imagem": "./imagens/imagem01cibele.png",
       "imagens_extras": [
         "./imagens/imagem02cibele.png",
-        "./imagens/imagem03cibele.png"
-      ],
-      "instagram": "https://www.instagram.com/cafecibeles",
-      "whatsapp": "5562995542614",
-      "link": "https://delivery.yooga.app/cafe-restaurante-cibeles",
-      "texto_link": "Ver Cardápio Virtual",
-      "endereco": "Avenida Coronel Anacleto, 445, Sala 1 — Trindade-GO",
-      "destaque": true
-    },
-    {
-      "nome": "Trenzinho Família de Amor — Oficial do Santuário",
-      "descricao": "Transporte oficial do Santuário do Divino Pai Eterno até a nova Casa do Pai. 33 lugares, acessível para PCDs. Saídas diárias das 8h às 19h. Ingresso: R$ 20 (ida e volta).",
-      "imagem": "./imagens/trezinhopaieterno.png",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": false
-    },
-    {
-      "nome": "Vando Espetinhos",
-      "descricao": "Comida boa, bem feita e sem complicação. O Vando Espetinhos é a pedida certa de quem mora em Trindade ou passa pela cidade. Espetinho no ponto, sempre fresquinho.",
-      "imagem": "./imagens/vandoespetinho.jpeg",
-      "imagens_extras": [],
-      "instagram": "https://www.instagram.com/vandoespetinhos",
-      "whatsapp": "",
-      "destaque": true
-    },
-    {
-      "nome": "Aluguel por Temporada — Festa 2026",
-      "descricao": "Seu imóvel ou hospedagem com visibilidade garantida para a Romaria 2026. O Portal Trindade conecta proprietários a romeiros, famílias e visitantes que buscam onde ficar em Trindade.",
-      "imagem": "./imagens/portal_trindade_4x5.png",
-      "imagens_extras": [],
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": true
-    },
-    {
-      "nome": "Manhãs com Jesus — Ricardo Brito",
-      "descricao": "180 reflexões para quem atravessa dor, espera e recomeço com Deus. Um livro de fé para começar cada manhã com força e esperança. Disponível na Amazon.",
-      "imagem": "./imagens/livro_manhas.png",
-      "link": "https://www.amazon.com.br/dp/B0GWDHMPRJ",
-      "texto_link": "Comprar na Amazon",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": true
-    },
-    {
-      "nome": "Do Lado de Dentro — Livro Gratuito",
-      "descricao": "Testemunho real de fé, limite e recomeço, escrito por Ricardo Brito. Oferecido gratuitamente — 100% das contribuições voluntárias vão para pacientes oncológicos em dificuldade financeira.",
-      "imagem": "./imagens/livro_dolado.png",
-      "link": "https://ricardodominguesdebrito.github.io/Do-Lado-de-Dentro/",
-      "texto_link": "Receber Gratuitamente",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": true
-    },
-    {
-      "nome": "Instrução aos Católicos — Santo Afonso de Ligório",
-      "descricao": "Clássico indispensável da fé católica sobre os mandamentos, sacramentos e a veracidade da fé. Capa dura, 348 páginas. Frete grátis pelo Centro Dom Bosco.",
-      "imagem": "./imagens/livro_catolico.png",
-      "link": "https://meli.la/2EstgTG",
-      "texto_link": "Comprar no Mercado Livre",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": false
-    }
-  ],
-  "galeria": [
-    {
-      "imagem": "./imagens/basilicavista.png",
-      "legenda": "Basílica do Divino Pai Eterno"
-    },
-    {
-      "imagem": "./imagens/altarmatriz.png",
-      "legenda": "Altar da Igreja Matriz"
-    },
-    {
-      "imagem": "./imagens/capelacruzeiro.png",
-      "legenda": "Capela do Cruzeiro"
-    },
-    {
-      "imagem": "./imagens/vitral.png",
-      "legenda": "Vitral da Basílica"
-    },
-    {
-      "imagem": "./imagens/comidatipica.png",
-      "legenda": "Comida típica de Trindade"
-    },
-    {
-      "imagem": "./imagens/castelinho.png",
-      "legenda": "Castelinho de Trindade"
-    },
-    {
-      "imagem": "./imagens/medalhao.png",
-      "legenda": "Medalhão do Divino Pai Eterno"
-    },
-    {
-      "imagem": "./imagens/caminhadadafe.png",
-      "legenda": "Caminhada da Fé"
-    },
-    {
-      "imagem": "./imagens/gruta.png",
-      "legenda": "Gruta de Trindade"
-    },
-    {
-      "imagem": "./imagens/igrejasaojose.png",
-      "legenda": "Igreja São José"
-    },
-    {
-      "imagem": "./imagens/novaigrejavistacima.png",
-      "legenda": "Nova Igreja — vista aérea"
-    },
-    {
-      "imagem": "./imagens/portalentrada.png",
-      "legenda": "Portal de entrada da cidade"
-    },
-    {
-      "imagem": "./imagens/painelrodovia.png",
-      "legenda": "Painel na rodovia"
-    },
-    {
-      "imagem": "./imagens/pordosoltrindade.png",
-      "legenda": "Por do sol em Trindade"
-    },
-    {
-      "imagem": "./imagens/Imagem_Original_e_Milagrosa_do_Divino_Pai_Eterno.png",
-      "legenda": "Imagem Original e Milagrosa do Divino Pai Eterno"
-    }
-  ],
-  "contato": {
-    "mensagem_whatsapp": "Olá! Vim pelo Portal Trindade e gostaria de mais informações.",
-    "texto_botao": "Fale com o Portal",
-    "rodape": "© 2026 Portal Trindade · Trindade-GO · Capital da Fé"
-  }
-}
+        "./imagens
