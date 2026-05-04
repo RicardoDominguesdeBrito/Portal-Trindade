@@ -94,28 +94,11 @@
       "destaque": true
     },
     {
-      "nome": "Trenzinho Família de Amor — Oficial do Santuário",
-      "descricao": "Transporte oficial entre o Santuário do Divino Pai Eterno e a nova Casa do Pai. 33 lugares com acessibilidade para PCDs. Saídas diárias das 8h às 19h. Ingresso: R$ 20 (ida e volta).",
-      "imagem": "./imagens/trezinhopaieterno.png",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": false
-    },
-    {
       "nome": "Vando Espetinhos",
-      "descricao": "Espetinhos fresquinhos, bem temperados e no ponto certo. Referência em Trindade para quem quer comer bem com simplicidade. Ideal para uma parada rápida durante a romaria.",
+      "descricao": "Espetinhos fresquinhos e bem temperados em Trindade. Ideal para uma parada rápida durante a romaria ou para quem mora na cidade.",
       "imagem": "./imagens/vandoespetinho.jpeg",
       "imagens_extras": [],
       "instagram": "https://www.instagram.com/vandoespetinhos",
-      "whatsapp": "",
-      "destaque": true
-    },
-    {
-      "nome": "Aluguel por Temporada — Festa 2026",
-      "descricao": "Anuncie seu imóvel ou hospedagem para a Romaria 2026. O Portal Trindade conecta proprietários a romeiros e visitantes que buscam onde se hospedar durante a Festa do Divino Pai Eterno.",
-      "imagem": "./imagens/portal_trindade_4x5.png",
-      "imagens_extras": [],
-      "instagram": "",
       "whatsapp": "",
       "destaque": true
     },
@@ -131,7 +114,7 @@
     },
     {
       "nome": "Do Lado de Dentro — Livro Gratuito",
-      "descricao": "Testemunho real de fé, limite e recomeço escrito por Ricardo Brito. Distribuído gratuitamente — todas as contribuições voluntárias vão para pacientes oncológicos em dificuldade financeira.",
+      "descricao": "Testemunho real de fé e recomeço escrito por Ricardo Brito. Distribuído gratuitamente — todas as contribuições voluntárias vão para pacientes oncológicos em dificuldade financeira.",
       "imagem": "./imagens/livro_dolado.png",
       "link": "https://ricardodominguesdebrito.github.io/Do-Lado-de-Dentro/",
       "texto_link": "Receber Gratuitamente",
