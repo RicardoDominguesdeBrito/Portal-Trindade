@@ -7,19 +7,19 @@
     "email": "contato@portaltrindade.com.br"
   },
   "banner": {
-    "imagem": "./imagens/imagemsite.png",
+    "imagem": "/imagens/imagemsite.png",
     "titulo": "Trindade: A Cidade da Fé",
     "descricao": "Seu portal completo para a Romaria do Divino Pai Eterno"
   },
   "romaria": {
     "titulo": "A Romaria 2026 está chegando",
-    "cartaz": "./imagens/festa2026.png",
+    "cartaz": "/imagens/festa2026.png",
     "tema": "Clamamos: Abbá, Pai",
     "edicao": "186ª edição",
     "periodo": "26 de junho a 5 de julho de 2026",
     "local": "Trindade, GO",
     "expectativa": "Superar 4,3 milhões de romeiros",
-    "imagem_shows": "./imagens/danieleanacastela.png",
+    "imagem_shows": "/imagens/danieleanacastela.png",
     "programacao": [
       {
         "data": "Sex, 26/06",
@@ -41,193 +41,4 @@
           { "horario": "10h30 e 12h", "descricao": "Missas — Santuário Basílica" },
           { "horario": "16h", "descricao": "Romaria da Juventude" },
           { "horario": "17h", "descricao": "Romaria Motociclista" },
-          { "horario": "17h30", "descricao": "Missa com foliões e Missa da Juventude" }
-        ]
-      },
-      {
-        "data": "Dom, 28/06",
-        "titulo": "Romaria dos Ciclistas",
-        "eventos": [
-          { "horario": "05h", "descricao": "Romaria Vicentina — Procissão de Penitência" },
-          { "horario": "10h30", "descricao": "Missa das crianças — Romeirinhos do Divino Pai Eterno" },
-          { "horario": "12h", "descricao": "Missa — Santuário Basílica" },
-          { "horario": "16h30", "descricao": "5ª Romaria dos Ciclistas — Trevo de Goiânia" },
-          { "horario": "17h30", "descricao": "Missa da Renovação Carismática e Mães que Rezam pelos Filhos" }
-        ]
-      },
-      {
-        "data": "Seg a Qua, 29/06–01/07",
-        "titulo": "Dias de Devoção",
-        "eventos": [
-          { "horario": "05h", "descricao": "Procissão de Penitência — Igreja Matriz ao pátio da Basílica" },
-          { "horario": "09h e 14h", "descricao": "Missas com novena — Igreja Matriz" },
-          { "horario": "19h30", "descricao": "Participação de paróquias — Praça do Santuário" }
-        ]
-      },
-      {
-        "data": "Qui, 02/07",
-        "titulo": "Romaria dos Carros de Boi 🐂",
-        "eventos": [
-          { "horario": "07h30", "descricao": "Desfile de Carreiros, Cavaleiros e Muladeiros" },
-          { "horario": "17h30", "descricao": "Missa das Obras Sociais" },
-          { "horario": "19h30", "descricao": "Participação de paróquias — Praça do Santuário" }
-        ]
-      },
-      {
-        "data": "Sex, 03/07",
-        "titulo": "Show — Ana Castela 🎤",
-        "eventos": [
-          { "horario": "12h", "descricao": "Missa — Santuário Basílica" },
-          { "horario": "19h30", "descricao": "Participações pastorais — Praça do Santuário" },
-          { "horario": "À noite", "descricao": "Show: Ana Castela" }
-        ]
-      },
-      {
-        "data": "Sáb, 04/07",
-        "titulo": "Show — Daniel 🎤",
-        "eventos": [
-          { "horario": "08h", "descricao": "Encontro de carreiros" },
-          { "horario": "12h e 17h30", "descricao": "Missas — Santuário Basílica" },
-          { "horario": "21h30", "descricao": "Missa com juventude" },
-          { "horario": "À noite", "descricao": "Show: Daniel" }
-        ]
-      },
-      {
-        "data": "Dom, 05/07",
-        "titulo": "Encerramento",
-        "eventos": [
-          { "horario": "08h", "descricao": "Missa das Autoridades" },
-          { "horario": "17h30", "descricao": "Procissão Luminosa e Missa de Encerramento — pátio da Basílica" }
-        ]
-      }
-    ],
-    "shows": [
-      { "artista": "Desfile de Carros de Boi, Cavaleiros e Muladeiros", "data": "2 de julho" },
-      { "artista": "Ana Castela", "data": "3 de julho" },
-      { "artista": "Daniel", "data": "4 de julho" }
-    ]
-  },
-  "anunciantes": [
-    {
-      "nome": "Hotel Recanto Goiano",
-      "descricao": "Hospedagem acolhedora em Trindade, ideal para romeiros, turistas e famílias. Quartos privativos com ar-condicionado, Wi-Fi, frigobar e refeições incluídas, em ambiente familiar e bem localizado.",
-      "imagem": "./imagens/pousadarecanto.jpeg",
-      "imagens_extras": ["./imagens/pousadarecanto2.jpeg"],
-      "instagram": "https://www.instagram.com/recantogoiano.hotel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-      "whatsapp": "556239915854",
-      "destaque": true
-    },
-    {
-      "nome": "Pousada Padre Pelágio",
-      "descricao": "Hospedagem privilegiada a poucos passos da Basílica. Quartos com ar-condicionado, frigobar e Wi-Fi gratuito. Café da manhã incluso, almoço e jantar caseiros para romeiros, famílias e grupos.",
-      "imagem": "./imagens/posadapadrepelagio.png",
-      "instagram": "",
-      "whatsapp": "5562985921198",
-      "destaque": true
-    },
-    {
-      "nome": "Santo Santo Santo",
-      "descricao": "Loja que transforma fé em arte. Terços artesanais, imagens sacras pintadas à mão, velas aromáticas e muito mais. Um presente sagrado para levar de Trindade.",
-      "imagem": "./imagens/loja_limpa.png",
-      "instagram": "https://www.instagram.com/santosantosanto.trindade",
-      "whatsapp": "",
-      "destaque": true
-    },
-    {
-      "nome": "Cibeles Café e Restaurante",
-      "descricao": "Café, almoço e lanches com sabor caseiro e atendimento cuidadoso. Cardápio virtual disponível com pedidos pelo WhatsApp e retirada ou entrega no local.",
-      "imagem": "./imagens/imagem01cibele.png",
-      "imagens_extras": ["./imagens/imagem02cibele.png", "./imagens/imagem03cibele.png"],
-      "instagram": "https://www.instagram.com/cafecibeles",
-      "whatsapp": "5562995542614",
-      "link": "https://delivery.yooga.app/cafe-restaurante-cibeles",
-      "texto_link": "Ver Cardápio Virtual",
-      "endereco": "Avenida Coronel Anacleto, 445, Sala 1 — Trindade-GO",
-      "destaque": true
-    },
-    {
-      "nome": "Vila Barro Branco",
-      "descricao": "Refúgio de charme na GO-060, em Trindade, com hospedagem, day use, gastronomia e experiências em meio à natureza do Cerrado.",
-      "imagem": "./imagens/barrobranco01.png",
-      "imagens_extras": ["./imagens/barrobranco02v.png", "./imagens/barrobranco03v.png"],
-      "instagram": "https://www.instagram.com/vilabarrobranco",
-      "whatsapp": "5562999050030",
-      "link": "https://www.vilabarrobranco.com.br/",
-      "texto_link": "Ver Site Oficial",
-      "endereco": "Rodovia GO-060 — Zona Rural de Trindade-GO",
-      "destaque": true
-    },
-    {
-      "nome": "Óticas Vitórya",
-      "descricao": "13 anos em Trindade, mais de 20 anos de experiência. Armações das melhores marcas, lentes com tecnologia avançada e atendimento de confiança. Duas lojas na cidade, parcelamento em até 6x sem juros e orientação para consulta oftalmológica.",
-      "imagem": "./imagens/novage.png",
-      "imagens_extras": [],
-      "instagram": "https://www.instagram.com/oticas_vitorya",
-      "whatsapp": "5562992114648",
-      "link": "https://wa.me/5562991473716",
-      "texto_link": "WhatsApp Loja 1",
-      "destaque": true
-    },
-    {
-      "nome": "Vando Espetinhos",
-      "descricao": "Comida boa, bem feita e sem complicação. O Vando Espetinhos é a pedida certa de quem mora em Trindade ou passa pela cidade. Espetinho no ponto, sempre fresquinho.",
-      "imagem": "./imagens/vandoespetinho.jpeg",
-      "imagens_extras": [],
-      "instagram": "https://www.instagram.com/vandoespetinhos",
-      "whatsapp": "",
-      "destaque": true
-    },
-    {
-      "nome": "Manhãs com Jesus — Ricardo Brito",
-      "descricao": "180 reflexões para quem atravessa dor, espera e recomeço com Deus. Um livro de fé para começar cada manhã com força e esperança. Disponível na Amazon.",
-      "imagem": "./imagens/livro_manhas.png",
-      "link": "https://www.amazon.com.br/dp/B0GWDHMPRJ",
-      "texto_link": "Comprar na Amazon",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": true
-    },
-    {
-      "nome": "Do Lado de Dentro — Livro Gratuito",
-      "descricao": "Testemunho real de fé, limite e recomeço, escrito por Ricardo Brito. Oferecido gratuitamente — 100% das contribuições voluntárias vão para pacientes oncológicos em dificuldade financeira.",
-      "imagem": "./imagens/livro_dolado.png",
-      "link": "https://ricardodominguesdebrito.github.io/Do-Lado-de-Dentro/",
-      "texto_link": "Receber Gratuitamente",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": true
-    },
-    {
-      "nome": "Instrução aos Católicos — Santo Afonso de Ligório",
-      "descricao": "Clássico indispensável da fé católica sobre os mandamentos, sacramentos e a veracidade da fé. Capa dura, 348 páginas. Frete grátis pelo Centro Dom Bosco.",
-      "imagem": "./imagens/livro_catolico.png",
-      "link": "https://meli.la/2EstgTG",
-      "texto_link": "Comprar no Mercado Livre",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": false
-    }
-  ],
-  "galeria": [
-    { "imagem": "./imagens/basilicavista.png", "legenda": "Basílica do Divino Pai Eterno" },
-    { "imagem": "./imagens/altarmatriz.png", "legenda": "Altar da Igreja Matriz" },
-    { "imagem": "./imagens/capelacruzeiro.png", "legenda": "Capela do Cruzeiro" },
-    { "imagem": "./imagens/vitral.png", "legenda": "Vitral da Basílica" },
-    { "imagem": "./imagens/comidatipica.png", "legenda": "Comida típica de Trindade" },
-    { "imagem": "./imagens/castelinho.png", "legenda": "Castelinho de Trindade" },
-    { "imagem": "./imagens/medalhao.png", "legenda": "Medalhão do Divino Pai Eterno" },
-    { "imagem": "./imagens/caminhadadafe.png", "legenda": "Caminhada da Fé" },
-    { "imagem": "./imagens/gruta.png", "legenda": "Gruta de Trindade" },
-    { "imagem": "./imagens/igrejasaojose.png", "legenda": "Igreja São José" },
-    { "imagem": "./imagens/novaigrejavistacima.png", "legenda": "Nova Igreja — vista aérea" },
-    { "imagem": "./imagens/portalentrada.png", "legenda": "Portal de entrada da cidade" },
-    { "imagem": "./imagens/painelrodovia.png", "legenda": "Painel na rodovia" },
-    { "imagem": "./imagens/pordosoltrindade.png", "legenda": "Por do sol em Trindade" },
-    { "imagem": "./imagens/Imagem_Original_e_Milagrosa_do_Divino_Pai_Eterno.png", "legenda": "Imagem Original e Milagrosa do Divino Pai Eterno" }
-  ],
-  "contato": {
-    "mensagem_whatsapp": "Olá! Vim pelo Portal Trindade e gostaria de mais informações.",
-    "texto_botao": "Fale com o Portal",
-    "rodape": "© 2026 Portal Trindade · Trindade-GO · Capital da Fé"
-  }
-}
+          { "horario": "17h30", "descricao": "Missa com foliões e Missa da Juvent
