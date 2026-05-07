@@ -88,7 +88,24 @@
     .prog-hora { font-size: 0.75rem; color: var(--dourado-claro); font-weight: 700; min-width: 52px; padding-top: 2px; }
     .prog-desc { font-size: 0.85rem; color: rgba(255,255,255,0.8); line-height: 1.4; }
 
-    .anunciantes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; }
+    /* MODAL PROGRAMAÇÃO COMPLETA */
+    #modal-prog { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 9997; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 2rem 1rem; }
+    #modal-prog.aberto { display: flex; }
+    .modal-box { background: var(--azul); border: 1px solid rgba(201,168,76,0.3); border-radius: 16px; width: 100%; max-width: 900px; padding: 2.5rem; position: relative; margin: auto; }
+    .modal-fechar { position: absolute; top: 1.2rem; right: 1.5rem; color: var(--dourado-claro); font-size: 2rem; cursor: pointer; background: none; border: none; line-height: 1; }
+    .modal-titulo { color: var(--dourado-claro); font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 0.3rem; }
+    .modal-sub { color: rgba(255,255,255,0.55); font-size: 0.9rem; margin-bottom: 2rem; }
+    .modal-dia { margin-bottom: 2rem; border-bottom: 1px solid rgba(201,168,76,0.15); padding-bottom: 1.5rem; }
+    .modal-dia:last-child { border-bottom: none; margin-bottom: 0; }
+    .modal-dia-header { display: flex; align-items: baseline; gap: 0.8rem; margin-bottom: 1rem; }
+    .modal-dia-data { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--dourado); font-weight: 700; }
+    .modal-dia-titulo { color: white; font-weight: 700; font-size: 1rem; }
+    .modal-evento { display: flex; gap: 1rem; margin-bottom: 0.5rem; align-items: flex-start; }
+    .modal-hora { font-size: 0.75rem; color: var(--dourado-claro); font-weight: 700; min-width: 56px; padding-top: 2px; flex-shrink: 0; }
+    .modal-desc { font-size: 0.85rem; color: rgba(255,255,255,0.8); line-height: 1.5; }
+    .modal-desc small { color: rgba(255,255,255,0.45); font-size: 0.78rem; }
+    .btn-prog-completa { display: inline-block; margin-top: 2rem; background: transparent; border: 1px solid var(--dourado); color: var(--dourado-claro); padding: 10px 28px; border-radius: 8px; font-weight: 700; font-size: 0.9rem; cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em; }
+    .btn-prog-completa:hover { background: var(--dourado); color: var(--azul); }
     .anunciante-card { background: white; border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px -5px rgba(26,43,74,0.05), 0 4px 10px -5px rgba(26,43,74,0.02); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; }
     .anunciante-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px -10px rgba(26,43,74,0.12), 0 10px 20px -5px rgba(26,43,74,0.08); }
     .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
@@ -198,8 +215,151 @@
     <p class="section-sub" style="color:rgba(255,255,255,0.6); text-align:center">26 de junho a 5 de julho · Trindade, GO</p>
     <div class="divisor divisor-center"></div>
     <div class="prog-grid" id="prog-grid"></div>
+    <div style="text-align:center">
+      <button class="btn-prog-completa" id="btn-abrir-modal">📋 Ver Programação Completa</button>
+    </div>
   </div>
 </section>
+
+<!-- MODAL PROGRAMAÇÃO COMPLETA -->
+<div id="modal-prog">
+  <div class="modal-box">
+    <button class="modal-fechar" id="modal-fechar">✕</button>
+    <h2 class="modal-titulo">Programação Completa · Romaria 2026</h2>
+    <p class="modal-sub">26 de junho a 5 de julho · Trindade, GO · 186ª edição</p>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header">
+        <span class="modal-dia-data">Sex, 26/06</span>
+        <span class="modal-dia-titulo">Abertura — Romaria dos Militares</span>
+      </div>
+      <div class="modal-evento"><span class="modal-hora">06h</span><span class="modal-desc">Saída da 17ª Romaria dos Militares, Forças Armadas, Polícia e Segurança <small>· Trevo de Goiânia</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">10h30</span><span class="modal-desc">Missa dos Militares, das Forças Armadas, Polícia e Segurança <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">17h</span><span class="modal-desc">4ª Romaria da OAB | 10ª Romaria da Vila São Cottolengo <small>· Trevo de Goiânia</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">18h</span><span class="modal-desc">10ª Romaria da Polícia Civil <small>· Terminal Padre Pelágio</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das Paróquias do Vicariato Nossa Senhora Aparecida da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header">
+        <span class="modal-dia-data">Sáb, 27/06</span>
+        <span class="modal-dia-titulo">Romaria da Juventude</span>
+      </div>
+      <div class="modal-evento"><span class="modal-hora">09h</span><span class="modal-desc">Romaria Regional dos Acólitos e Coroinhas <small>· Altar central da praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">10h</span><span class="modal-desc">Procissão <small>· Saindo do altar central da praça do Santuário à Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">10h30 e 12h</span><span class="modal-desc">Missas <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">16h</span><span class="modal-desc">Romaria Vocacional | Romaria da Juventude <small>· Trevo de Goiânia</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">16h30</span><span class="modal-desc">1ª Romaria do Grupo São Floriano do Corpo de Bombeiros Militar de Goiás</span></div>
+      <div class="modal-evento"><span class="modal-hora">17h</span><span class="modal-desc">Saída da 7ª Romaria Motociclista <small>· Terminal Padre Pelágio</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">17h</span><span class="modal-desc">IV Romaria do Colégio e Faculdade Aphonsiano <small>· Trevo de Goiânia</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">17h30</span><span class="modal-desc">Missa com os foliões e congadas <small>· Praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das pastorais do Vicariato para a Evangelização da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">22h</span><span class="modal-desc">Missa da Juventude <small>· Santuário Basílica</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header">
+        <span class="modal-dia-data">Dom, 28/06</span>
+        <span class="modal-dia-titulo">Romaria dos Ciclistas</span>
+      </div>
+      <div class="modal-evento"><span class="modal-hora">05h</span><span class="modal-desc">3ª Romaria Vicentina <small>· Trevo de Goiânia</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">10h30</span><span class="modal-desc">Missa das crianças — Romeirinhos do Divino Pai Eterno <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">12h</span><span class="modal-desc">Missa <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">16h30</span><span class="modal-desc">5ª Romaria dos Ciclistas <small>· Trevo de Goiânia</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">17h30</span><span class="modal-desc">Missa da Renovação Carismática e do grupo das Mães que Rezam pelos Filhos <small>· Praça do Santuário</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header">
+        <span class="modal-dia-data">Seg, 29/06</span>
+        <span class="modal-dia-titulo">Dias de Devoção</span>
+      </div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das Paróquias do Vicariato Nossa Senhora do Perpétuo Socorro da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header">
+        <span class="modal-dia-data">Ter, 30/06</span>
+        <span class="modal-dia-titulo">Dias de Devoção</span>
+      </div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das Paróquias do Vicariato Nossa Senhora da Piedade da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header">
+        <span class="modal-dia-data">Qua, 01/07</span>
+        <span class="modal-dia-titulo">Dias de Devoção</span>
+      </div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das Paróquias do Vicariato Nossa Senhora da Abadia da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header">
+        <span class="modal-dia-data">Qui, 02/07</span>
+        <span class="modal-dia-titulo">Romaria dos Carros de Boi 🐂</span>
+      </div>
+      <div class="modal-evento"><span class="modal-hora">07h30</span><span class="modal-desc">Romaria dos Carros de Boi, Cavaleiros e Muladeiros com bênção <small>· Praça Matriz</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">17h30</span><span class="modal-desc">Missa das Obras Sociais Redentoristas <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das Paróquias do Vicariato Nossa Senhora Auxiliadora da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header">
+        <span class="modal-dia-data">Sex, 03/07</span>
+        <span class="modal-dia-titulo">Show — Ana Castela 🎤</span>
+      </div>
+      <div class="modal-evento"><span class="modal-hora">12h</span><span class="modal-desc">Missa <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das pastorais sociais do Vicariato para a Solidariedade <small>· Praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação dos internos da Vila São Cottolengo <small>· Praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">À noite</span><span class="modal-desc">🎤 Show: Ana Castela</span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header">
+        <span class="modal-dia-data">Sáb, 04/07</span>
+        <span class="modal-dia-titulo">Show — Daniel 🎤</span>
+      </div>
+      <div class="modal-evento"><span class="modal-hora">08h</span><span class="modal-desc">Encontro dos carreiros, cavaleiros e muladeiros <small>· Antigo Clube Raio de Sol</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">12h</span><span class="modal-desc">Missa <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">17h30</span><span class="modal-desc">Missa com os carreiros, cavaleiros e muladeiros <small>· Praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das pastorais do Vicariato para a Cultura e Educação <small>· Praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">21h30</span><span class="modal-desc">Missa com a juventude e Noite da Copiosa <small>· Igreja do Santíssimo Redentor</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">À noite</span><span class="modal-desc">🎤 Show: Daniel</span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header">
+        <span class="modal-dia-data">Dom, 05/07</span>
+        <span class="modal-dia-titulo">Encerramento</span>
+      </div>
+      <div class="modal-evento"><span class="modal-hora">08h</span><span class="modal-desc">Missa das Autoridades</span></div>
+      <div class="modal-evento"><span class="modal-hora">17h30</span><span class="modal-desc">Procissão Luminosa e Missa de Encerramento <small>· Pátio da Basílica</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header">
+        <span class="modal-dia-data">Todos os dias</span>
+        <span class="modal-dia-titulo">Programação Diária</span>
+      </div>
+      <div class="modal-evento"><span class="modal-hora">05h</span><span class="modal-desc">Alvorada Festiva <small>· Praça do Santuário, Novo Santuário e Igreja Matriz</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">05h20</span><span class="modal-desc">Procissão da Penitência <small>· Da Igreja Matriz à Praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">06h</span><span class="modal-desc">Missa <small>· Praça do Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">07h</span><span class="modal-desc">Missa <small>· Carmelo da Santíssima Trindade</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">07h às 18h</span><span class="modal-desc">Visitas guiadas ao Novo Santuário — Trenzinho da Família de Amor e condução da Vila São Cottolengo</span></div>
+      <div class="modal-evento"><span class="modal-hora">07h15 às 14h</span><span class="modal-desc">Visita ao Santíssimo Sacramento e à Virgem Maria <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">08h e 14h</span><span class="modal-desc">Batismos <small>· Capela Pai Eterno no cruzeiro da obra</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">09h e 14h</span><span class="modal-desc">Missas com novena <small>· Igreja Matriz</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">10h</span><span class="modal-desc">Missa <small>· Igreja do Santíssimo Redentor</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">10h30 | 17h30 | 22h</span><span class="modal-desc">Missas <small>· Canteiro de Obras do Novo Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">16h</span><span class="modal-desc">Missa com novena <small>· Igreja do Santíssimo Redentor</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">18h</span><span class="modal-desc">Toque do sino Vox Patris <small>· Canteiro de Obras do Novo Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Missa com novena <small>· Praça do Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">6h às 21h</span><span class="modal-desc">Confissões <small>· Subsolo do Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">0h, 2h e 4h</span><span class="modal-desc">Missas na madrugada (27/06, 28/06, 03, 04 e 05/07) <small>· Santuário Basílica</small></span></div>
+    </div>
+
+  </div>
+</div>
 
 <section id="anunciantes" class="section-alt">
   <h2 class="section-title">Parceiros Recomendados</h2>
@@ -236,6 +396,22 @@
 </a>
 
 <script>
+// MODAL PROGRAMAÇÃO COMPLETA
+document.getElementById('btn-abrir-modal').addEventListener('click', () => {
+  document.getElementById('modal-prog').classList.add('aberto');
+  document.body.style.overflow = 'hidden';
+});
+document.getElementById('modal-fechar').addEventListener('click', () => {
+  document.getElementById('modal-prog').classList.remove('aberto');
+  document.body.style.overflow = '';
+});
+document.getElementById('modal-prog').addEventListener('click', function(e) {
+  if (e.target === this) {
+    this.classList.remove('aberto');
+    document.body.style.overflow = '';
+  }
+});
+
 // LIGHTBOX
 let lightboxFotos = [];
 let lightboxIdx = 0;
