@@ -25,79 +25,172 @@
         "data": "Sex, 26/06",
         "titulo": "Abertura — Romaria dos Militares",
         "eventos": [
-          { "horario": "06h", "descricao": "Saída da 17ª Romaria dos Militares — Trevo de Goiânia" },
-          { "horario": "10h30", "descricao": "Missa dos Militares — Santuário Basílica" },
-          { "horario": "17h", "descricao": "4ª Romaria da OAB e 10ª da Vila São Cottolengo" },
-          { "horario": "18h", "descricao": "10ª Romaria da Polícia Civil — Terminal Padre Pelágio" },
-          { "horario": "19h30", "descricao": "Participação de paróquias — Praça do Santuário" }
+          {
+            "horario": "06h",
+            "descricao": "Saída da 17ª Romaria dos Militares — Trevo de Goiânia"
+          },
+          {
+            "horario": "10h30",
+            "descricao": "Missa dos Militares — Santuário Basílica"
+          },
+          {
+            "horario": "17h",
+            "descricao": "4ª Romaria da OAB e 10ª da Vila São Cottolengo"
+          },
+          {
+            "horario": "18h",
+            "descricao": "10ª Romaria da Polícia Civil — Terminal Padre Pelágio"
+          },
+          {
+            "horario": "19h30",
+            "descricao": "Participação de paróquias — Praça do Santuário"
+          }
         ]
       },
       {
         "data": "Sáb, 27/06",
         "titulo": "Romaria da Juventude",
         "eventos": [
-          { "horario": "09h", "descricao": "Romaria dos Acólitos e Coroinhas" },
-          { "horario": "10h", "descricao": "Procissão — saindo da praça do Santuário à Basílica" },
-          { "horario": "10h30 e 12h", "descricao": "Missas — Santuário Basílica" },
-          { "horario": "16h", "descricao": "Romaria da Juventude" },
-          { "horario": "17h", "descricao": "Romaria Motociclista" },
-          { "horario": "17h30", "descricao": "Missa com foliões e Missa da Juventude" }
+          {
+            "horario": "09h",
+            "descricao": "Romaria dos Acólitos e Coroinhas"
+          },
+          {
+            "horario": "10h",
+            "descricao": "Procissão — saindo da praça do Santuário à Basílica"
+          },
+          {
+            "horario": "10h30 e 12h",
+            "descricao": "Missas — Santuário Basílica"
+          },
+          {
+            "horario": "16h",
+            "descricao": "Romaria da Juventude"
+          },
+          {
+            "horario": "17h",
+            "descricao": "Romaria Motociclista"
+          },
+          {
+            "horario": "17h30",
+            "descricao": "Missa com foliões e Missa da Juventude"
+          }
         ]
       },
       {
         "data": "Dom, 28/06",
         "titulo": "Romaria dos Ciclistas",
         "eventos": [
-          { "horario": "05h", "descricao": "Romaria Vicentina — Procissão de Penitência" },
-          { "horario": "10h30", "descricao": "Missa das crianças — Romeirinhos do Divino Pai Eterno" },
-          { "horario": "12h", "descricao": "Missa — Santuário Basílica" },
-          { "horario": "16h30", "descricao": "5ª Romaria dos Ciclistas — Trevo de Goiânia" },
-          { "horario": "17h30", "descricao": "Missa da Renovação Carismática e Mães que Rezam pelos Filhos" }
+          {
+            "horario": "05h",
+            "descricao": "Romaria Vicentina — Procissão de Penitência"
+          },
+          {
+            "horario": "10h30",
+            "descricao": "Missa das crianças — Romeirinhos do Divino Pai Eterno"
+          },
+          {
+            "horario": "12h",
+            "descricao": "Missa — Santuário Basílica"
+          },
+          {
+            "horario": "16h30",
+            "descricao": "5ª Romaria dos Ciclistas — Trevo de Goiânia"
+          },
+          {
+            "horario": "17h30",
+            "descricao": "Missa da Renovação Carismática e Mães que Rezam pelos Filhos"
+          }
         ]
       },
       {
         "data": "Seg a Qua, 29/06–01/07",
         "titulo": "Dias de Devoção",
         "eventos": [
-          { "horario": "05h", "descricao": "Procissão de Penitência — Igreja Matriz ao pátio da Basílica" },
-          { "horario": "09h e 14h", "descricao": "Missas com novena — Igreja Matriz" },
-          { "horario": "19h30", "descricao": "Participação de paróquias — Praça do Santuário" }
+          {
+            "horario": "05h",
+            "descricao": "Procissão de Penitência — Igreja Matriz ao pátio da Basílica"
+          },
+          {
+            "horario": "09h e 14h",
+            "descricao": "Missas com novena — Igreja Matriz"
+          },
+          {
+            "horario": "19h30",
+            "descricao": "Participação de paróquias — Praça do Santuário"
+          }
         ]
       },
       {
         "data": "Qui, 02/07",
         "titulo": "Romaria dos Carros de Boi 🐂",
         "eventos": [
-          { "horario": "07h30", "descricao": "Desfile de Carreiros, Cavaleiros e Muladeiros" },
-          { "horario": "17h30", "descricao": "Missa das Obras Sociais" },
-          { "horario": "19h30", "descricao": "Participação de paróquias — Praça do Santuário" }
+          {
+            "horario": "07h30",
+            "descricao": "Desfile de Carreiros, Cavaleiros e Muladeiros"
+          },
+          {
+            "horario": "17h30",
+            "descricao": "Missa das Obras Sociais"
+          },
+          {
+            "horario": "19h30",
+            "descricao": "Participação de paróquias — Praça do Santuário"
+          }
         ]
       },
       {
         "data": "Sex, 03/07",
         "titulo": "Show — Ana Castela 🎤",
         "eventos": [
-          { "horario": "12h", "descricao": "Missa — Santuário Basílica" },
-          { "horario": "19h30", "descricao": "Participações pastorais — Praça do Santuário" },
-          { "horario": "À noite", "descricao": "Show: Ana Castela" }
+          {
+            "horario": "12h",
+            "descricao": "Missa — Santuário Basílica"
+          },
+          {
+            "horario": "19h30",
+            "descricao": "Participações pastorais — Praça do Santuário"
+          },
+          {
+            "horario": "À noite",
+            "descricao": "Show: Ana Castela"
+          }
         ]
       },
       {
         "data": "Sáb, 04/07",
         "titulo": "Show — Daniel 🎤",
         "eventos": [
-          { "horario": "08h", "descricao": "Encontro de carreiros" },
-          { "horario": "12h e 17h30", "descricao": "Missas — Santuário Basílica" },
-          { "horario": "21h30", "descricao": "Missa com juventude" },
-          { "horario": "À noite", "descricao": "Show: Daniel" }
+          {
+            "horario": "08h",
+            "descricao": "Encontro de carreiros"
+          },
+          {
+            "horario": "12h e 17h30",
+            "descricao": "Missas — Santuário Basílica"
+          },
+          {
+            "horario": "21h30",
+            "descricao": "Missa com juventude"
+          },
+          {
+            "horario": "À noite",
+            "descricao": "Show: Daniel"
+          }
         ]
       },
       {
         "data": "Dom, 05/07",
         "titulo": "Encerramento",
         "eventos": [
-          { "horario": "08h", "descricao": "Missa das Autoridades" },
-          { "horario": "17h30", "descricao": "Procissão Luminosa e Missa de Encerramento — pátio da Basílica" }
+          {
+            "horario": "08h",
+            "descricao": "Missa das Autoridades"
+          },
+          {
+            "horario": "17h30",
+            "descricao": "Procissão Luminosa e Missa de Encerramento — pátio da Basílica"
+          }
         ]
       }
     ],
@@ -160,12 +253,19 @@
       "destaque": true
     },
     {
-      "nome": "Trenzinho Família de Amor — Oficial do Santuário",
-      "descricao": "Transporte oficial do Santuário do Divino Pai Eterno até a nova Casa do Pai. 33 lugares, acessível para PCDs. Saídas diárias das 8h às 19h. Ingresso: R$ 20 (ida e volta).",
-      "imagem": "./imagens/trezinhopaieterno.png",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": false
+      "nome": "Vila Barro Branco",
+      "descricao": "Refúgio de charme na GO-060, em Trindade, com hospedagem, day use, gastronomia e experiências em meio à natureza do Cerrado.",
+      "imagem": "./imagens/vilabarrobranco01.png",
+      "imagens_extras": [
+        "./imagens/vilabarrobranco02.png",
+        "./imagens/vilabarrobranco03.png"
+      ],
+      "instagram": "https://www.instagram.com/vilabarrobranco",
+      "whatsapp": "5562999050030",
+      "link": "https://www.vilabarrobranco.com.br/",
+      "texto_link": "Ver Site Oficial",
+      "endereco": "Rodovia GO-060 — Zona Rural de Trindade-GO",
+      "destaque": true
     },
     {
       "nome": "Vando Espetinhos",
@@ -173,15 +273,6 @@
       "imagem": "./imagens/vandoespetinho.jpeg",
       "imagens_extras": [],
       "instagram": "https://www.instagram.com/vandoespetinhos",
-      "whatsapp": "",
-      "destaque": true
-    },
-    {
-      "nome": "Aluguel por Temporada — Festa 2026",
-      "descricao": "Seu imóvel ou hospedagem com visibilidade garantida para a Romaria 2026. O Portal Trindade conecta proprietários a romeiros, famílias e visitantes que buscam onde ficar em Trindade.",
-      "imagem": "./imagens/portal_trindade_4x5.png",
-      "imagens_extras": [],
-      "instagram": "",
       "whatsapp": "",
       "destaque": true
     },
