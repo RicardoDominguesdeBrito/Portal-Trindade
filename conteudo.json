@@ -142,7 +142,6 @@
       "whatsapp": "5562995542614",
       "link": "https://delivery.yooga.app/cafe-restaurante-cibeles",
       "texto_link": "Ver Cardápio Virtual",
-      "endereco": "Avenida Coronel Anacleto, 445, Sala 1 — Trindade-GO",
       "destaque": true
     },
     {
@@ -154,7 +153,6 @@
       "whatsapp": "5562999050030",
       "link": "https://www.vilabarrobranco.com.br/",
       "texto_link": "Ver Site Oficial",
-      "endereco": "Rodovia GO-060 — Zona Rural de Trindade-GO",
       "destaque": true
     },
     {
@@ -223,7 +221,22 @@
     { "imagem": "/imagens/portalentrada.png", "legenda": "Portal de entrada da cidade" },
     { "imagem": "/imagens/painelrodovia.png", "legenda": "Painel na rodovia" },
     { "imagem": "/imagens/pordosoltrindade.png", "legenda": "Por do sol em Trindade" },
-    { "imagem": "/imagens/Imagem_Original_e_Milagrosa_do_Divino_Pai_Eterno.png", "legenda": "Imagem Original e Milagrosa do Divino Pai Eterno" }
+    { "imagem": "/imagens/Imagem_Original_e_Milagrosa_do_Divino_Pai_Eterno.png", "legenda": "Imagem Original e Milagrosa do Divino Pai Eterno" },
+    { "imagem": "/imagens/alef.png", "legenda": "" },
+    { "imagem": "/imagens/andreborges.png", "legenda": "" },
+    { "imagem": "/imagens/angela.png", "legenda": "" },
+    { "imagem": "/imagens/brenda.png", "legenda": "" },
+    { "imagem": "/imagens/breno2.png", "legenda": "" },
+    { "imagem": "/imagens/camila.png", "legenda": "" },
+    { "imagem": "/imagens/canopolis.png", "legenda": "" },
+    { "imagem": "/imagens/daniel.png", "legenda": "" },
+    { "imagem": "/imagens/estefane.png", "legenda": "" },
+    { "imagem": "/imagens/familiaantonioantonia.png", "legenda": "" },
+    { "imagem": "/imagens/FERNANDAGOLVEIA.png", "legenda": "" },
+    { "imagem": "/imagens/gaspar.png", "legenda": "" },
+    { "imagem": "/imagens/geovane.png", "legenda": "" },
+    { "imagem": "/imagens/raphaela.png", "legenda": "" },
+    { "imagem": "/imagens/tradicao.png", "legenda": "" }
   ],
   "contato": {
     "mensagem_whatsapp": "Olá! Vim pelo Portal Trindade e gostaria de mais informações.",
