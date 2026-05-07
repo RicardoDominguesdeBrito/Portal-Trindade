@@ -20,6 +20,87 @@
     "local": "Trindade, GO",
     "expectativa": "Superar 4,3 milhões de romeiros",
     "imagem_shows": "./imagens/danieleanacastela.png",
+    "programacao": [
+      {
+        "data": "Sex, 26/06",
+        "titulo": "Abertura — Romaria dos Militares",
+        "eventos": [
+          { "horario": "06h", "descricao": "Saída da 17ª Romaria dos Militares — Trevo de Goiânia" },
+          { "horario": "10h30", "descricao": "Missa dos Militares — Santuário Basílica" },
+          { "horario": "17h", "descricao": "4ª Romaria da OAB e 10ª da Vila São Cottolengo" },
+          { "horario": "18h", "descricao": "10ª Romaria da Polícia Civil — Terminal Padre Pelágio" },
+          { "horario": "19h30", "descricao": "Participação de paróquias — Praça do Santuário" }
+        ]
+      },
+      {
+        "data": "Sáb, 27/06",
+        "titulo": "Romaria da Juventude",
+        "eventos": [
+          { "horario": "09h", "descricao": "Romaria dos Acólitos e Coroinhas" },
+          { "horario": "10h", "descricao": "Procissão — saindo da praça do Santuário à Basílica" },
+          { "horario": "10h30 e 12h", "descricao": "Missas — Santuário Basílica" },
+          { "horario": "16h", "descricao": "Romaria da Juventude" },
+          { "horario": "17h", "descricao": "Romaria Motociclista" },
+          { "horario": "17h30", "descricao": "Missa com foliões e Missa da Juventude" }
+        ]
+      },
+      {
+        "data": "Dom, 28/06",
+        "titulo": "Romaria dos Ciclistas",
+        "eventos": [
+          { "horario": "05h", "descricao": "Romaria Vicentina — Procissão de Penitência" },
+          { "horario": "10h30", "descricao": "Missa das crianças — Romeirinhos do Divino Pai Eterno" },
+          { "horario": "12h", "descricao": "Missa — Santuário Basílica" },
+          { "horario": "16h30", "descricao": "5ª Romaria dos Ciclistas — Trevo de Goiânia" },
+          { "horario": "17h30", "descricao": "Missa da Renovação Carismática e Mães que Rezam pelos Filhos" }
+        ]
+      },
+      {
+        "data": "Seg a Qua, 29/06–01/07",
+        "titulo": "Dias de Devoção",
+        "eventos": [
+          { "horario": "05h", "descricao": "Procissão de Penitência — Igreja Matriz ao pátio da Basílica" },
+          { "horario": "09h e 14h", "descricao": "Missas com novena — Igreja Matriz" },
+          { "horario": "19h30", "descricao": "Participação de paróquias — Praça do Santuário" }
+        ]
+      },
+      {
+        "data": "Qui, 02/07",
+        "titulo": "Romaria dos Carros de Boi 🐂",
+        "eventos": [
+          { "horario": "07h30", "descricao": "Desfile de Carreiros, Cavaleiros e Muladeiros" },
+          { "horario": "17h30", "descricao": "Missa das Obras Sociais" },
+          { "horario": "19h30", "descricao": "Participação de paróquias — Praça do Santuário" }
+        ]
+      },
+      {
+        "data": "Sex, 03/07",
+        "titulo": "Show — Ana Castela 🎤",
+        "eventos": [
+          { "horario": "12h", "descricao": "Missa — Santuário Basílica" },
+          { "horario": "19h30", "descricao": "Participações pastorais — Praça do Santuário" },
+          { "horario": "À noite", "descricao": "Show: Ana Castela" }
+        ]
+      },
+      {
+        "data": "Sáb, 04/07",
+        "titulo": "Show — Daniel 🎤",
+        "eventos": [
+          { "horario": "08h", "descricao": "Encontro de carreiros" },
+          { "horario": "12h e 17h30", "descricao": "Missas — Santuário Basílica" },
+          { "horario": "21h30", "descricao": "Missa com juventude" },
+          { "horario": "À noite", "descricao": "Show: Daniel" }
+        ]
+      },
+      {
+        "data": "Dom, 05/07",
+        "titulo": "Encerramento",
+        "eventos": [
+          { "horario": "08h", "descricao": "Missa das Autoridades" },
+          { "horario": "17h30", "descricao": "Procissão Luminosa e Missa de Encerramento — pátio da Basílica" }
+        ]
+      }
+    ],
     "shows": [
       {
         "artista": "Desfile de Carros de Boi, Cavaleiros e Muladeiros",
@@ -38,7 +119,7 @@
   "anunciantes": [
     {
       "nome": "Hotel Recanto Goiano",
-      "descricao": "Hospedagem acolhedora em Trindade para romeiros, turistas e famílias. Quartos com ar-condicionado, Wi-Fi e frigobar. Refeições incluídas em ambiente familiar e bem localizado.",
+      "descricao": "Hospedagem acolhedora em Trindade, ideal para romeiros, turistas e famílias. Quartos privativos com ar-condicionado, Wi-Fi, frigobar e refeições incluídas, em ambiente familiar e bem localizado.",
       "imagem": "./imagens/pousadarecanto.jpeg",
       "imagens_extras": [
         "./imagens/pousadarecanto2.jpeg"
@@ -49,30 +130,15 @@
     },
     {
       "nome": "Pousada Padre Pelágio",
-      "descricao": "A poucos passos da Basílica do Divino Pai Eterno. Quartos com ar-condicionado, frigobar e Wi-Fi gratuito. Café da manhã incluso, com almoço e jantar caseiros disponíveis.",
+      "descricao": "Hospedagem privilegiada a poucos passos da Basílica. Quartos com ar-condicionado, frigobar e Wi-Fi gratuito. Café da manhã incluso, almoço e jantar caseiros para romeiros, famílias e grupos.",
       "imagem": "./imagens/posadapadrepelagio.png",
       "instagram": "",
       "whatsapp": "5562985921198",
       "destaque": true
     },
     {
-      "nome": "Vila Barro Branco — Pousada de Charme",
-      "descricao": "Refúgio de charme na zona rural de Trindade, à beira da GO-060. Piscina, gastronomia em fogão a lenha, jantar à la carte e experiências ao ar livre. A poucos minutos da Basílica do Divino Pai Eterno.",
-      "imagem": "./imagens/barrobranco01.png",
-      "imagens_extras": [
-        "./imagens/barrobranco02v.png",
-        "./imagens/barrobranco03v.png"
-      ],
-      "instagram": "https://www.instagram.com/vilabarrobranco",
-      "whatsapp": "556299050030",
-      "link": "https://www.vilabarrobranco.com.br",
-      "texto_link": "Ver site oficial",
-      "endereco": "Rodovia GO-060 — Zona Rural de Trindade-GO",
-      "destaque": true
-    },
-    {
       "nome": "Santo Santo Santo",
-      "descricao": "Loja de artigos religiosos artesanais em Trindade. Terços feitos à mão, imagens sacras pintadas, velas aromáticas e presentes com fé. Uma lembrança sagrada para levar da Capital da Fé.",
+      "descricao": "Loja que transforma fé em arte. Terços artesanais, imagens sacras pintadas à mão, velas aromáticas e muito mais. Um presente sagrado para levar de Trindade.",
       "imagem": "./imagens/loja_limpa.png",
       "instagram": "https://www.instagram.com/santosantosanto.trindade",
       "whatsapp": "",
@@ -80,7 +146,7 @@
     },
     {
       "nome": "Cibeles Café e Restaurante",
-      "descricao": "Café da manhã, almoço e lanches com sabor caseiro no centro de Trindade. Cardápio virtual disponível com pedidos pelo WhatsApp, retirada no local ou entrega.",
+      "descricao": "Café, almoço e lanches com sabor caseiro e atendimento cuidadoso. Cardápio virtual disponível com pedidos pelo WhatsApp e retirada ou entrega no local.",
       "imagem": "./imagens/imagem01cibele.png",
       "imagens_extras": [
         "./imagens/imagem02cibele.png",
@@ -94,8 +160,16 @@
       "destaque": true
     },
     {
+      "nome": "Trenzinho Família de Amor — Oficial do Santuário",
+      "descricao": "Transporte oficial do Santuário do Divino Pai Eterno até a nova Casa do Pai. 33 lugares, acessível para PCDs. Saídas diárias das 8h às 19h. Ingresso: R$ 20 (ida e volta).",
+      "imagem": "./imagens/trezinhopaieterno.png",
+      "instagram": "",
+      "whatsapp": "",
+      "destaque": false
+    },
+    {
       "nome": "Vando Espetinhos",
-      "descricao": "Espetinhos fresquinhos e bem temperados em Trindade. Ideal para uma parada rápida durante a romaria ou para quem mora na cidade.",
+      "descricao": "Comida boa, bem feita e sem complicação. O Vando Espetinhos é a pedida certa de quem mora em Trindade ou passa pela cidade. Espetinho no ponto, sempre fresquinho.",
       "imagem": "./imagens/vandoespetinho.jpeg",
       "imagens_extras": [],
       "instagram": "https://www.instagram.com/vandoespetinhos",
@@ -103,8 +177,17 @@
       "destaque": true
     },
     {
+      "nome": "Aluguel por Temporada — Festa 2026",
+      "descricao": "Seu imóvel ou hospedagem com visibilidade garantida para a Romaria 2026. O Portal Trindade conecta proprietários a romeiros, famílias e visitantes que buscam onde ficar em Trindade.",
+      "imagem": "./imagens/portal_trindade_4x5.png",
+      "imagens_extras": [],
+      "instagram": "",
+      "whatsapp": "",
+      "destaque": true
+    },
+    {
       "nome": "Manhãs com Jesus — Ricardo Brito",
-      "descricao": "180 reflexões diárias para quem atravessa dor, espera e recomeço com Deus. Um livro de fé para começar cada manhã com força e esperança. Disponível na Amazon.",
+      "descricao": "180 reflexões para quem atravessa dor, espera e recomeço com Deus. Um livro de fé para começar cada manhã com força e esperança. Disponível na Amazon.",
       "imagem": "./imagens/livro_manhas.png",
       "link": "https://www.amazon.com.br/dp/B0GWDHMPRJ",
       "texto_link": "Comprar na Amazon",
@@ -114,7 +197,7 @@
     },
     {
       "nome": "Do Lado de Dentro — Livro Gratuito",
-      "descricao": "Testemunho real de fé e recomeço escrito por Ricardo Brito. Distribuído gratuitamente — todas as contribuições voluntárias vão para pacientes oncológicos em dificuldade financeira.",
+      "descricao": "Testemunho real de fé, limite e recomeço, escrito por Ricardo Brito. Oferecido gratuitamente — 100% das contribuições voluntárias vão para pacientes oncológicos em dificuldade financeira.",
       "imagem": "./imagens/livro_dolado.png",
       "link": "https://ricardodominguesdebrito.github.io/Do-Lado-de-Dentro/",
       "texto_link": "Receber Gratuitamente",
@@ -124,7 +207,7 @@
     },
     {
       "nome": "Instrução aos Católicos — Santo Afonso de Ligório",
-      "descricao": "Clássico da espiritualidade católica sobre mandamentos, sacramentos e a veracidade da fé. Capa dura, 348 páginas. Frete grátis pelo Centro Dom Bosco.",
+      "descricao": "Clássico indispensável da fé católica sobre os mandamentos, sacramentos e a veracidade da fé. Capa dura, 348 páginas. Frete grátis pelo Centro Dom Bosco.",
       "imagem": "./imagens/livro_catolico.png",
       "link": "https://meli.la/2EstgTG",
       "texto_link": "Comprar no Mercado Livre",
