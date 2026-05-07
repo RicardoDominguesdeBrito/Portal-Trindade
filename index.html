@@ -214,7 +214,7 @@
     <h2 class="section-title" style="color:white; text-align:center">Programação Oficial · Romaria 2026</h2>
     <p class="section-sub" style="color:rgba(255,255,255,0.6); text-align:center">26 de junho a 5 de julho · Trindade, GO</p>
     <div class="divisor divisor-center"></div>
-    <div class="prog-grid" id="prog-grid"></div>
+    <p style="color:rgba(255,255,255,0.65); text-align:center; margin-bottom:2rem; font-size:1rem;">Missas, procissões, romarias temáticas, shows e muito mais ao longo de 10 dias de fé e celebração.</p>
     <div style="text-align:center">
       <button class="btn-prog-completa" id="btn-abrir-modal">📋 Ver Programação Completa</button>
     </div>
@@ -504,23 +504,6 @@ fetch('./conteudo.json')
       </div>`;
 
     const ag = document.getElementById('anunciantes-grid');
-
-    // Programação dia a dia
-    if (d.romaria.programacao) {
-      const progEl = document.getElementById('prog-grid');
-      if (progEl) {
-        progEl.innerHTML = d.romaria.programacao.map(dia => `
-          <div class="prog-card reveal">
-            <div class="prog-data">${dia.data}</div>
-            <div class="prog-titulo">${dia.titulo}</div>
-            ${dia.eventos.map(ev => `
-              <div class="prog-evento">
-                <span class="prog-hora">${ev.horario}</span>
-                <span class="prog-desc">${ev.descricao}</span>
-              </div>`).join('')}
-          </div>`).join('');
-      }
-    }
 
     ag.innerHTML = d.anunciantes.map((a, idx) => {
       const badge = a.destaque ? `<span class="anunciante-badge">⭐ Destaque</span>` : '';
