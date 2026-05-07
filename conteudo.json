@@ -255,10 +255,10 @@
     {
       "nome": "Vila Barro Branco",
       "descricao": "Refúgio de charme na GO-060, em Trindade, com hospedagem, day use, gastronomia e experiências em meio à natureza do Cerrado.",
-      "imagem": "./imagens/barrobranco01(3).png",
+      "imagem": "./imagens/barrobranco01.png",
       "imagens_extras": [
-        "./imagens/barrobranco02v(1).png",
-        "./imagens/barrobranco03v(1).png"
+        "./imagens/barrobranco02v.png",
+        "./imagens/barrobranco03v.png"
       ],
       "instagram": "https://www.instagram.com/vilabarrobranco",
       "whatsapp": "5562999050030",
