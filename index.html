@@ -74,9 +74,16 @@
     .shows-list li { color: white; font-size: 1rem; padding: 2px 0; }
     .shows-list li span { color: var(--dourado-claro); font-size: 0.85rem; }
 
-    /* IMAGEM SHOWS */
     .shows-img-wrapper { margin-top: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.4); max-height: 420px; }
     .shows-img-wrapper img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    /* BANNER PARCEIROS */
+    #parceiros-banner { background: var(--cinza); padding: 60px 5%; text-align: center; }
+    .parceiros-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--dourado); font-weight: 700; margin-bottom: 0.5rem; }
+    .parceiros-img { width: 100%; max-width: 960px; border-radius: 16px; box-shadow: 0 8px 40px rgba(26,43,74,0.12); display: block; margin: 0 auto; }
+    @media(max-width:768px) {
+      .parceiros-img { border-radius: 10px; }
+    }
 
     /* PROGRAMAÇÃO */
     #programacao { background: var(--azul); padding: 5rem 5%; }
@@ -106,6 +113,7 @@
     .modal-desc small { color: rgba(255,255,255,0.45); font-size: 0.78rem; }
     .btn-prog-completa { display: inline-block; margin-top: 2rem; background: transparent; border: 1px solid var(--dourado); color: var(--dourado-claro); padding: 10px 28px; border-radius: 8px; font-weight: 700; font-size: 0.9rem; cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em; }
     .btn-prog-completa:hover { background: var(--dourado); color: var(--azul); }
+
     .anunciantes-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 310px));
@@ -115,7 +123,6 @@
       max-width: 1180px;
       margin: 0 auto;
     }
-
     .anunciante-card {
       background: white;
       border-radius: 14px;
@@ -128,7 +135,6 @@
       max-width: 310px;
       margin: 0 auto;
     }
-
     .anunciante-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 20px 40px -10px rgba(26,43,74,0.12), 0 10px 20px -5px rgba(26,43,74,0.08);
@@ -143,7 +149,6 @@
       cursor: pointer;
       background: #0F1C30;
     }
-
     .anunciante-img-slider img {
       position: absolute;
       inset: 0;
@@ -167,7 +172,7 @@
     .btn-ig, .btn-wa { padding: 8px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; text-decoration: none; transition: opacity 0.2s; }
     .btn-ig { background: #E1306C; color: white; }
     .btn-wa { background: #25D366; color: white; }
-    .btn-link { background: var(--dourado); color: var(--azul); }
+    .btn-link { background: var(--dourado); color: var(--azul); padding: 8px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; text-decoration: none; transition: opacity 0.2s; }
     .btn-ig:hover, .btn-wa:hover, .btn-link:hover { opacity: 0.85; }
 
     .galeria-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
@@ -199,11 +204,7 @@
       justify-content: center;
       padding: 24px;
     }
-
-    #lightbox.aberto {
-      display: flex;
-    }
-
+    #lightbox.aberto { display: flex; }
     #lightbox img {
       width: auto;
       height: auto;
@@ -214,18 +215,7 @@
       box-shadow: 0 0 60px rgba(0,0,0,0.8);
       background: #0F1C30;
     }
-
-    #lightbox-fechar {
-      position: absolute;
-      top: 20px;
-      right: 28px;
-      color: white;
-      font-size: 2.5rem;
-      cursor: pointer;
-      line-height: 1;
-      z-index: 10000;
-    }
-
+    #lightbox-fechar { position: absolute; top: 20px; right: 28px; color: white; font-size: 2.5rem; cursor: pointer; line-height: 1; z-index: 10000; }
     #lightbox-anterior,
     #lightbox-proximo {
       position: absolute;
@@ -240,47 +230,17 @@
       border-radius: 8px;
       z-index: 10000;
     }
-
-    #lightbox-anterior {
-      left: 16px;
-    }
-
-    #lightbox-proximo {
-      right: 16px;
-    }
+    #lightbox-anterior { left: 16px; }
+    #lightbox-proximo { right: 16px; }
 
     @media(max-width:600px) {
-      .anunciantes-grid {
-        grid-template-columns: minmax(0, 1fr);
-        max-width: 360px;
-      }
-
-      .anunciante-card {
-        max-width: 100%;
-      }
-
-      #lightbox {
-        padding: 12px;
-      }
-
-      #lightbox img {
-        max-width: 92vw;
-        max-height: 88vh;
-      }
-
-      #lightbox-anterior,
-      #lightbox-proximo {
-        font-size: 2rem;
-        padding: 8px 13px;
-      }
-
-      #lightbox-anterior {
-        left: 6px;
-      }
-
-      #lightbox-proximo {
-        right: 6px;
-      }
+      .anunciantes-grid { grid-template-columns: minmax(0, 1fr); max-width: 360px; }
+      .anunciante-card { max-width: 100%; }
+      #lightbox { padding: 12px; }
+      #lightbox img { max-width: 92vw; max-height: 88vh; }
+      #lightbox-anterior, #lightbox-proximo { font-size: 2rem; padding: 8px 13px; }
+      #lightbox-anterior { left: 6px; }
+      #lightbox-proximo { right: 6px; }
     }
 
     #loading { position: fixed; inset: 0; background: var(--azul); display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity 0.5s; }
@@ -334,6 +294,18 @@
   <div class="romaria-cartaz" id="romaria-cartaz-box" style="margin-top:2rem;">
     <img id="romaria-cartaz" src="" alt="Cartaz Romaria 2026">
   </div>
+</section>
+
+<!-- BANNER PARCEIROS -->
+<section id="parceiros-banner">
+  <p class="parceiros-label">Rede de Parceiros</p>
+  <h2 class="section-title">Parceiros do Portal Trindade 2026</h2>
+  <div class="divisor divisor-center"></div>
+  <img
+    src="/imagens/parceiroportal.png"
+    alt="Parceiros do Portal Trindade 2026 — hotéis, pousadas, serviços e marcas locais"
+    class="parceiros-img"
+  >
 </section>
 
 <section id="programacao">
