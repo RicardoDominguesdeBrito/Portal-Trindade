@@ -1,6 +1,3 @@
-Aqui está o `index.html` completo com apenas essa linha alterada:
-
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -116,6 +113,19 @@ Aqui está o `index.html` completo com apenas essa linha alterada:
     .modal-desc small { color: rgba(255,255,255,0.45); font-size: 0.78rem; }
     .btn-prog-completa { display: inline-block; margin-top: 2rem; background: transparent; border: 1px solid var(--dourado); color: var(--dourado-claro); padding: 10px 28px; border-radius: 8px; font-weight: 700; font-size: 0.9rem; cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em; }
     .btn-prog-completa:hover { background: var(--dourado); color: var(--azul); }
+
+    /* GUIA DE TURISMO */
+    #guia { background: #0F1C30; padding: 60px 5%; text-align: center; }
+    .guia-iframe-wrapper { width: 100%; max-width: 860px; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.5); }
+    .guia-iframe-wrapper iframe { display: block; border: none; width: 100%; height: 560px; }
+    @media(max-width:768px) {
+      .guia-iframe-wrapper iframe { height: 420px; }
+    }
+    @media(max-width:480px) {
+      .guia-iframe-wrapper iframe { height: 320px; }
+    }
+    .btn-download-guia { display: inline-block; margin-top: 1.5rem; background: var(--dourado); color: var(--azul); padding: 12px 32px; border-radius: 8px; font-weight: 700; font-size: 0.95rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.06em; transition: all 0.2s; }
+    .btn-download-guia:hover { background: var(--dourado-claro); transform: translateY(-2px); }
 
     .anunciantes-grid {
       display: grid;
@@ -267,6 +277,7 @@ Aqui está o `index.html` completo com apenas essa linha alterada:
   <div class="nav-links">
     <a href="#romaria">Romaria 2026</a>
     <a href="#anunciantes">Parceiros</a>
+    <a href="#guia">Guia Turismo</a>
     <a href="#galeria">Galeria</a>
     <a href="#contato">Contato</a>
   </div>
@@ -468,6 +479,31 @@ Aqui está o `index.html` completo com apenas essa linha alterada:
   <p class="section-sub">Curadoria do Portal · Negócios locais de confiança</p>
   <div class="divisor"></div>
   <div class="anunciantes-grid" id="anunciantes-grid"></div>
+</section>
+
+<!-- GUIA DE TURISMO -->
+<section id="guia" style="background: #0F1C30; padding: 60px 5%; text-align: center;">
+  <p class="parceiros-label">Prefeitura de Trindade</p>
+  <h2 class="section-title" style="color: var(--dourado-claro);">Guia de Turismo de Trindade 2026</h2>
+  <div class="divisor divisor-center"></div>
+  <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto 2rem; font-size: 1rem; line-height: 1.7;">
+    Conheça a história, os pontos turísticos, a cultura e os roteiros de Trindade neste guia oficial da Prefeitura — 2ª edição 2026, com 176 páginas.
+  </p>
+  <div class="guia-iframe-wrapper">
+    <iframe
+      src="https://drive.google.com/file/d/173c1tNzJIsw9Kdi2rOH13cFqdN2SA9mU/preview"
+      width="100%"
+      height="560"
+      allow="autoplay"
+    ></iframe>
+  </div>
+  <a
+    href="https://drive.google.com/uc?export=download&id=173c1tNzJIsw9Kdi2rOH13cFqdN2SA9mU"
+    target="_blank"
+    class="btn-download-guia"
+  >
+    ⬇️ Baixar Guia (PDF)
+  </a>
 </section>
 
 <section id="galeria">
@@ -766,6 +802,3 @@ setTimeout(() => {
 </script>
 </body>
 </html>
-```
-
-A única mudança em relação ao original é a linha do banner de parceiros: `parceiroportal.png` → `parceirosatuais.png`.
