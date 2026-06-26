@@ -14,41 +14,99 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --azul: #1A2B4A; --dourado: #C9A84C; --dourado-claro: #F0D98D;
-      --branco: #FFFFFF; --cinza: #F5F7FA; --cinza-texto: #5a6a7a;
+      --azul: #1A2B4A;
+      --dourado: #C9A84C;
+      --dourado-claro: #F0D98D;
+      --branco: #FFFFFF;
+      --cinza: #F5F7FA;
+      --cinza-texto: #5a6a7a;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Lato', sans-serif; color: var(--azul); background: var(--branco); }
-    h1,h2,h3,h4 { font-family: 'Playfair Display', serif; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
 
-    nav { position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(26,43,74,0.97); backdrop-filter: blur(8px); display: flex; justify-content: space-between; align-items: center; padding: 0 5%; height: 64px; }
-    .nav-logo { color: var(--dourado-claro); font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; text-decoration: none; }
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: rgba(26,43,74,0.97); backdrop-filter: blur(8px);
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0 5%; height: 64px;
+    }
+    .nav-logo {
+      color: var(--dourado-claro); font-family: 'Playfair Display', serif;
+      font-size: 1.4rem; font-weight: 700; text-decoration: none;
+    }
     .nav-links { display: flex; gap: 2rem; }
-    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+    .nav-links a {
+      color: rgba(255,255,255,0.8); text-decoration: none;
+      font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+    }
     .nav-links a:hover { color: var(--dourado-claro); }
-    .nav-cta { background: var(--dourado); color: var(--azul); padding: 8px 20px; border-radius: 6px; font-weight: 700; font-size: 0.85rem; text-decoration: none; text-transform: uppercase; }
-    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
-    .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--dourado-claro); border-radius: 2px; transition: all 0.3s; }
+    .nav-cta {
+      background: var(--dourado); color: var(--azul); padding: 8px 20px;
+      border-radius: 6px; font-weight: 700; font-size: 0.85rem;
+      text-decoration: none; text-transform: uppercase;
+    }
+    .nav-hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; padding: 4px; background: none; border: none;
+    }
+    .nav-hamburger span {
+      display: block; width: 24px; height: 2px;
+      background: var(--dourado-claro); border-radius: 2px; transition: all 0.3s;
+    }
     .nav-hamburger.aberto span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
     .nav-hamburger.aberto span:nth-child(2) { opacity: 0; }
     .nav-hamburger.aberto span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-    @media(max-width:768px){
-      .nav-links { display: none; flex-direction: column; gap: 0; position: absolute; top: 64px; left: 0; right: 0; background: rgba(26,43,74,0.98); padding: 1rem 5%; }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none; flex-direction: column; gap: 0;
+        position: absolute; top: 64px; left: 0; right: 0;
+        background: rgba(26,43,74,0.98); padding: 1rem 5%;
+      }
       .nav-links.aberto { display: flex; }
       .nav-links a { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 1rem; }
       .nav-hamburger { display: flex; }
       .nav-cta { display: none; }
     }
 
-    #hero { margin-top: 64px; position: relative; height: calc(100vh - 64px); min-height: 500px; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
-    #hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
-    @media(max-width:768px){ #hero-bg { object-position: 60% center; } }
-    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,43,74,0.65) 0%, rgba(26,43,74,0.4) 60%, rgba(26,43,74,0.8) 100%); }
-    .hero-content { position: relative; z-index: 2; color: white; padding: 0 20px; max-width: 800px; }
-    .hero-content h1 { font-size: clamp(2.2rem, 6vw, 5rem); line-height: 1.1; margin-bottom: 1rem; text-shadow: 0 2px 20px rgba(0,0,0,0.4); }
-    .hero-content p { font-size: clamp(1rem, 2.5vw, 1.3rem); font-weight: 300; margin-bottom: 2rem; opacity: 0.9; }
-    .hero-btn { display: inline-block; background: var(--dourado); color: var(--azul); padding: 16px 40px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.08em; box-shadow: 0 8px 25px -5px rgba(201,168,76,0.6); transition: all 0.3s ease; }
-    .hero-btn:hover { background: var(--dourado-claro); transform: translateY(-2px); box-shadow: 0 12px 30px -5px rgba(201,168,76,0.8); }
+    #hero {
+      margin-top: 64px; position: relative;
+      height: calc(100vh - 64px); min-height: 500px;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; overflow: hidden;
+    }
+    #hero-bg {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; object-position: center top;
+    }
+    @media (max-width: 768px) { #hero-bg { object-position: 60% center; } }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(26,43,74,0.65) 0%, rgba(26,43,74,0.4) 60%, rgba(26,43,74,0.8) 100%);
+    }
+    .hero-content {
+      position: relative; z-index: 2; color: white;
+      padding: 0 20px; max-width: 800px;
+    }
+    .hero-content h1 {
+      font-size: clamp(2.2rem, 6vw, 5rem); line-height: 1.1;
+      margin-bottom: 1rem; text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+    }
+    .hero-content p {
+      font-size: clamp(1rem, 2.5vw, 1.3rem); font-weight: 300;
+      margin-bottom: 2rem; opacity: 0.9;
+    }
+    .hero-btn {
+      display: inline-block; background: var(--dourado); color: var(--azul);
+      padding: 16px 40px; border-radius: 8px; font-weight: 700; font-size: 1.05rem;
+      text-decoration: none; text-transform: uppercase; letter-spacing: 0.08em;
+      box-shadow: 0 8px 25px -5px rgba(201,168,76,0.6); transition: all 0.3s ease;
+    }
+    .hero-btn:hover {
+      background: var(--dourado-claro); transform: translateY(-2px);
+      box-shadow: 0 12px 30px -5px rgba(201,168,76,0.8);
+    }
 
     section { padding: 80px 5%; }
     .section-alt { background: var(--cinza); }
@@ -60,46 +118,64 @@
     .divisor { width: 60px; height: 3px; background: var(--dourado); border-radius: 2px; margin: 0.8rem 0 2.5rem; }
     .divisor-center { margin: 0.8rem auto 2.5rem; }
 
-    .romaria-layout { display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: start; }
-    @media(max-width:768px){ .romaria-layout { grid-template-columns: 1fr; } }
-    .romaria-cartaz { width: 260px; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.4); }
-    .romaria-cartaz img { width: 100%; display: block; }
-    @media(max-width:768px){ .romaria-cartaz { width: 100%; max-width: 300px; margin: 0 auto; } }
     .romaria-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-    @media(max-width:600px){ .romaria-grid { grid-template-columns: 1fr; } }
-    .romaria-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(201,168,76,0.3); border-radius: 12px; padding: 1.5rem; }
-    .romaria-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--dourado); font-weight: 700; margin-bottom: 0.4rem; }
+    @media (max-width: 600px) { .romaria-grid { grid-template-columns: 1fr; } }
+    .romaria-card {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 12px; padding: 1.5rem;
+    }
+    .romaria-label {
+      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--dourado); font-weight: 700; margin-bottom: 0.4rem;
+    }
     .romaria-value { font-size: 1.05rem; color: white; line-height: 1.4; }
     .shows-list { list-style: none; margin-top: 0.4rem; }
     .shows-list li { color: white; font-size: 1rem; padding: 2px 0; }
     .shows-list li span { color: var(--dourado-claro); font-size: 0.85rem; }
 
-    .shows-img-wrapper { margin-top: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.4); max-height: 420px; }
+    .shows-img-wrapper {
+      margin-top: 1.5rem; border-radius: 12px;
+      overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.4); max-height: 420px;
+    }
     .shows-img-wrapper img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-    /* BANNER PARCEIROS */
     #parceiros-banner { background: var(--cinza); padding: 60px 5%; text-align: center; }
-    .parceiros-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--dourado); font-weight: 700; margin-bottom: 0.5rem; }
-    .parceiros-img { width: 100%; max-width: 960px; border-radius: 16px; box-shadow: 0 8px 40px rgba(26,43,74,0.12); display: block; margin: 0 auto; }
-    @media(max-width:768px) {
-      .parceiros-img { border-radius: 10px; }
+    .parceiros-label {
+      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--dourado); font-weight: 700; margin-bottom: 0.5rem;
     }
+    .parceiros-img {
+      width: 100%; max-width: 960px; border-radius: 16px;
+      box-shadow: 0 8px 40px rgba(26,43,74,0.12); display: block; margin: 0 auto;
+    }
+    @media (max-width: 768px) { .parceiros-img { border-radius: 10px; } }
 
-    /* PROGRAMAÇÃO */
     #programacao { background: var(--azul); padding: 5rem 5%; }
-    .prog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.2rem; margin-top: 2.5rem; max-width: 1300px; margin-left: auto; margin-right: auto; }
-    .prog-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(201,168,76,0.25); border-radius: 12px; padding: 1.4rem; }
-    .prog-data { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--dourado); font-weight: 700; margin-bottom: 0.3rem; }
-    .prog-titulo { font-size: 1rem; color: white; font-weight: 700; margin-bottom: 1rem; line-height: 1.3; border-bottom: 1px solid rgba(201,168,76,0.2); padding-bottom: 0.7rem; }
-    .prog-evento { display: flex; gap: 0.8rem; margin-bottom: 0.6rem; align-items: flex-start; }
-    .prog-hora { font-size: 0.75rem; color: var(--dourado-claro); font-weight: 700; min-width: 52px; padding-top: 2px; }
-    .prog-desc { font-size: 0.85rem; color: rgba(255,255,255,0.8); line-height: 1.4; }
+    .btn-prog-completa {
+      display: inline-block; margin-top: 2rem; background: transparent;
+      border: 1px solid var(--dourado); color: var(--dourado-claro);
+      padding: 10px 28px; border-radius: 8px; font-weight: 700; font-size: 0.9rem;
+      cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em;
+    }
+    .btn-prog-completa:hover { background: var(--dourado); color: var(--azul); }
 
-    /* MODAL PROGRAMAÇÃO COMPLETA */
-    #modal-prog { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 9997; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 2rem 1rem; }
+    #modal-prog {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.85); z-index: 9997;
+      align-items: flex-start; justify-content: center;
+      overflow-y: auto; padding: 2rem 1rem;
+    }
     #modal-prog.aberto { display: flex; }
-    .modal-box { background: var(--azul); border: 1px solid rgba(201,168,76,0.3); border-radius: 16px; width: 100%; max-width: 900px; padding: 2.5rem; position: relative; margin: auto; }
-    .modal-fechar { position: absolute; top: 1.2rem; right: 1.5rem; color: var(--dourado-claro); font-size: 2rem; cursor: pointer; background: none; border: none; line-height: 1; }
+    .modal-box {
+      background: var(--azul); border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 16px; width: 100%; max-width: 900px;
+      padding: 2.5rem; position: relative; margin: auto;
+    }
+    .modal-fechar {
+      position: absolute; top: 1.2rem; right: 1.5rem;
+      color: var(--dourado-claro); font-size: 2rem;
+      cursor: pointer; background: none; border: none; line-height: 1;
+    }
     .modal-titulo { color: var(--dourado-claro); font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 0.3rem; }
     .modal-sub { color: rgba(255,255,255,0.55); font-size: 0.9rem; margin-bottom: 2rem; }
     .modal-dia { margin-bottom: 2rem; border-bottom: 1px solid rgba(201,168,76,0.15); padding-bottom: 1.5rem; }
@@ -111,42 +187,34 @@
     .modal-hora { font-size: 0.75rem; color: var(--dourado-claro); font-weight: 700; min-width: 56px; padding-top: 2px; flex-shrink: 0; }
     .modal-desc { font-size: 0.85rem; color: rgba(255,255,255,0.8); line-height: 1.5; }
     .modal-desc small { color: rgba(255,255,255,0.45); font-size: 0.78rem; }
-    .btn-prog-completa { display: inline-block; margin-top: 2rem; background: transparent; border: 1px solid var(--dourado); color: var(--dourado-claro); padding: 10px 28px; border-radius: 8px; font-weight: 700; font-size: 0.9rem; cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em; }
-    .btn-prog-completa:hover { background: var(--dourado); color: var(--azul); }
 
-    /* GUIA DE TURISMO */
     #guia { background: #0F1C30; padding: 60px 5%; text-align: center; }
-    .guia-iframe-wrapper { width: 100%; max-width: 860px; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.5); }
+    .guia-iframe-wrapper {
+      width: 100%; max-width: 860px; margin: 0 auto;
+      border-radius: 12px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+    }
     .guia-iframe-wrapper iframe { display: block; border: none; width: 100%; height: 560px; }
-    @media(max-width:768px) {
-      .guia-iframe-wrapper iframe { height: 420px; }
+    @media (max-width: 768px) { .guia-iframe-wrapper iframe { height: 420px; } }
+    @media (max-width: 480px) { .guia-iframe-wrapper iframe { height: 320px; } }
+    .btn-download-guia {
+      display: inline-block; margin-top: 1.5rem; background: var(--dourado);
+      color: var(--azul); padding: 12px 32px; border-radius: 8px;
+      font-weight: 700; font-size: 0.95rem; text-decoration: none;
+      text-transform: uppercase; letter-spacing: 0.06em; transition: all 0.2s;
     }
-    @media(max-width:480px) {
-      .guia-iframe-wrapper iframe { height: 320px; }
-    }
-    .btn-download-guia { display: inline-block; margin-top: 1.5rem; background: var(--dourado); color: var(--azul); padding: 12px 32px; border-radius: 8px; font-weight: 700; font-size: 0.95rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.06em; transition: all 0.2s; }
     .btn-download-guia:hover { background: var(--dourado-claro); transform: translateY(-2px); }
 
     .anunciantes-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 310px));
-      gap: 1.5rem;
-      justify-content: center;
-      align-items: start;
-      max-width: 1180px;
-      margin: 0 auto;
+      gap: 1.5rem; justify-content: center; align-items: start;
+      max-width: 1180px; margin: 0 auto;
     }
     .anunciante-card {
-      background: white;
-      border-radius: 14px;
-      overflow: hidden;
+      background: white; border-radius: 14px; overflow: hidden;
       box-shadow: 0 10px 30px -5px rgba(26,43,74,0.05), 0 4px 10px -5px rgba(26,43,74,0.02);
       transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      max-width: 310px;
-      margin: 0 auto;
+      display: flex; flex-direction: column; width: 100%; max-width: 310px; margin: 0 auto;
     }
     .anunciante-card:hover {
       transform: translateY(-8px);
@@ -155,36 +223,48 @@
     .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
     .anunciante-img-slider {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 4 / 5;
-      overflow: hidden;
-      cursor: pointer;
-      background: #0F1C30;
+      position: relative; width: 100%; aspect-ratio: 4 / 5;
+      overflow: hidden; cursor: pointer; background: #0F1C30;
     }
     .anunciante-img-slider img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      opacity: 0;
-      transition: opacity 0.6s;
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: contain; opacity: 0; transition: opacity 0.6s;
     }
     .anunciante-img-slider img.ativo { opacity: 1; }
-    .slider-dots { position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; z-index: 2; }
-    .slider-dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: background 0.3s; }
+    .slider-dots {
+      position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%);
+      display: flex; gap: 5px; z-index: 2;
+    }
+    .slider-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: rgba(255,255,255,0.5); cursor: pointer; transition: background 0.3s;
+    }
     .slider-dot.ativo { background: white; }
-    .zoom-icon { position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.5); color: white; border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; font-size: 16px; z-index: 2; opacity: 0; transition: opacity 0.3s; }
+    .zoom-icon {
+      position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.5);
+      color: white; border-radius: 50%; width: 32px; height: 32px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; z-index: 2; opacity: 0; transition: opacity 0.3s;
+    }
     .anunciante-img-slider:hover .zoom-icon { opacity: 1; }
     .anunciante-body { padding: 1.4rem; flex: 1; display: flex; flex-direction: column; }
-    .anunciante-badge { display: inline-block; background: var(--dourado); color: var(--azul); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 10px; border-radius: 20px; margin-bottom: 0.7rem; }
-    .anunciante-nome { font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--azul); line-height: 1.3; min-height: 2.6rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-    .anunciante-desc { font-size: 0.9rem; color: var(--cinza-texto); line-height: 1.6; margin-bottom: 1.2rem; min-height: 5.76rem; overflow: visible; }
+    .anunciante-badge {
+      display: inline-block; background: var(--dourado); color: var(--azul);
+      font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; padding: 3px 10px; border-radius: 20px; margin-bottom: 0.7rem;
+    }
+    .anunciante-nome {
+      font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--azul); line-height: 1.3;
+      min-height: 2.6rem; display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .anunciante-desc {
+      font-size: 0.9rem; color: var(--cinza-texto); line-height: 1.6;
+      margin-bottom: 1.2rem; min-height: 5.76rem; overflow: visible;
+    }
     .anunciante-btns { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: auto; }
-    .btn-ig, .btn-wa { padding: 8px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; text-decoration: none; transition: opacity 0.2s; }
-    .btn-ig { background: #E1306C; color: white; }
-    .btn-wa { background: #25D366; color: white; }
+    .btn-ig { background: #E1306C; color: white; padding: 8px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; text-decoration: none; transition: opacity 0.2s; }
+    .btn-wa { background: #25D366; color: white; padding: 8px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; text-decoration: none; transition: opacity 0.2s; }
     .btn-link { background: var(--dourado); color: var(--azul); padding: 8px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; text-decoration: none; transition: opacity 0.2s; }
     .btn-ig:hover, .btn-wa:hover, .btn-link:hover { opacity: 0.85; }
 
@@ -192,71 +272,76 @@
     .galeria-item { position: relative; border-radius: 10px; overflow: hidden; aspect-ratio: 4/3; cursor: pointer; }
     .galeria-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
     .galeria-item:hover img { transform: scale(1.06); }
-    .galeria-legenda { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(26,43,74,0.85)); color: white; font-size: 0.8rem; padding: 20px 12px 10px; transform: translateY(100%); transition: transform 0.3s; }
+    .galeria-legenda {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(26,43,74,0.85));
+      color: white; font-size: 0.8rem; padding: 20px 12px 10px;
+      transform: translateY(100%); transition: transform 0.3s;
+    }
     .galeria-item:hover .galeria-legenda { transform: translateY(0); }
 
-    .contato-box { background: var(--dourado); border-radius: 16px; padding: 3rem; text-align: center; max-width: 600px; margin: 0 auto; }
+    .contato-box {
+      background: var(--dourado); border-radius: 16px; padding: 3rem;
+      text-align: center; max-width: 600px; margin: 0 auto;
+    }
     .contato-box h2 { color: var(--azul); margin-bottom: 0.8rem; }
     .contato-box p { color: var(--azul); opacity: 0.8; margin-bottom: 2rem; font-size: 1.05rem; }
-    .btn-wa-grande { display: inline-flex; align-items: center; gap: 10px; background: var(--azul); color: white; padding: 16px 40px; border-radius: 8px; font-weight: 700; font-size: 1.05rem; text-decoration: none; }
+    .btn-wa-grande {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--azul); color: white; padding: 16px 40px;
+      border-radius: 8px; font-weight: 700; font-size: 1.05rem; text-decoration: none;
+    }
 
     footer { background: #0F1C30; color: rgba(255,255,255,0.55); text-align: center; padding: 28px 5%; font-size: 0.85rem; }
     footer a { color: var(--dourado); text-decoration: none; }
 
-    .wa-float { position: fixed; bottom: 22px; right: 22px; z-index: 999; background: #25D366; color: white; border-radius: 50px; padding: 13px 24px; font-weight: 700; font-size: 0.95rem; text-decoration: none; box-shadow: 0 4px 20px rgba(37,211,102,0.45); display: flex; align-items: center; gap: 8px; }
-    @media(max-width:500px){ .wa-float span.label { display: none; } }
+    .wa-float {
+      position: fixed; bottom: 22px; right: 22px; z-index: 999;
+      background: #25D366; color: white; border-radius: 50px; padding: 13px 24px;
+      font-weight: 700; font-size: 0.95rem; text-decoration: none;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.45); display: flex; align-items: center; gap: 8px;
+    }
+    @media (max-width: 500px) { .wa-float span.label { display: none; } }
 
-    /* LIGHTBOX */
     #lightbox {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.92);
-      z-index: 9998;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.92); z-index: 9998;
+      align-items: center; justify-content: center; padding: 24px;
     }
     #lightbox.aberto { display: flex; }
     #lightbox img {
-      width: auto;
-      height: auto;
-      max-width: min(90vw, 540px);
-      max-height: 90vh;
-      object-fit: contain;
-      border-radius: 10px;
-      box-shadow: 0 0 60px rgba(0,0,0,0.8);
-      background: #0F1C30;
+      width: auto; height: auto; max-width: min(90vw, 540px); max-height: 90vh;
+      object-fit: contain; border-radius: 10px;
+      box-shadow: 0 0 60px rgba(0,0,0,0.8); background: #0F1C30;
     }
     #lightbox-fechar { position: absolute; top: 20px; right: 28px; color: white; font-size: 2.5rem; cursor: pointer; line-height: 1; z-index: 10000; }
-    #lightbox-anterior,
-    #lightbox-proximo {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      color: white;
-      font-size: 2.5rem;
-      cursor: pointer;
-      background: rgba(255,255,255,0.1);
-      border: none;
-      padding: 10px 18px;
-      border-radius: 8px;
-      z-index: 10000;
+    #lightbox-anterior {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      color: white; font-size: 2.5rem; cursor: pointer;
+      background: rgba(255,255,255,0.1); border: none;
+      padding: 10px 18px; border-radius: 8px; z-index: 10000; left: 16px;
     }
-    #lightbox-anterior { left: 16px; }
-    #lightbox-proximo { right: 16px; }
+    #lightbox-proximo {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      color: white; font-size: 2.5rem; cursor: pointer;
+      background: rgba(255,255,255,0.1); border: none;
+      padding: 10px 18px; border-radius: 8px; z-index: 10000; right: 16px;
+    }
 
-    @media(max-width:600px) {
+    @media (max-width: 600px) {
       .anunciantes-grid { grid-template-columns: minmax(0, 1fr); max-width: 360px; }
       .anunciante-card { max-width: 100%; }
       #lightbox { padding: 12px; }
       #lightbox img { max-width: 92vw; max-height: 88vh; }
-      #lightbox-anterior, #lightbox-proximo { font-size: 2rem; padding: 8px 13px; }
-      #lightbox-anterior { left: 6px; }
-      #lightbox-proximo { right: 6px; }
+      #lightbox-anterior { font-size: 2rem; padding: 8px 13px; left: 6px; }
+      #lightbox-proximo { font-size: 2rem; padding: 8px 13px; right: 6px; }
     }
 
-    #loading { position: fixed; inset: 0; background: var(--azul); display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity 0.5s; }
+    #loading {
+      position: fixed; inset: 0; background: var(--azul);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 9999; transition: opacity 0.5s;
+    }
     #loading h2 { color: var(--dourado-claro); font-size: 1.8rem; }
   </style>
 </head>
@@ -264,7 +349,6 @@
 
 <div id="loading"><h2>Portal Trindade</h2></div>
 
-<!-- LIGHTBOX -->
 <div id="lightbox">
   <span id="lightbox-fechar">✕</span>
   <button id="lightbox-anterior">‹</button>
@@ -300,18 +384,487 @@
 <section id="romaria" class="section-dark">
   <h2 class="section-title" id="romaria-titulo"></h2>
   <div class="divisor"></div>
-  <div id="contador-box" style="display:flex; gap:15px; margin-bottom:2rem; justify-content:flex-start;"></div>
+  <div id="contador-box" style="display:flex; gap:15px; margin-bottom:2rem; justify-content:flex-start; flex-wrap:wrap;"></div>
   <div class="romaria-grid" id="romaria-grid"></div>
   <div class="shows-img-wrapper" id="shows-img-wrapper" style="display:none;">
     <img id="shows-img" src="./imagens/danieleanacastela.png" alt="Shows confirmados — Ana Castela e Daniel">
   </div>
-  <div class="romaria-cartaz" id="romaria-cartaz-box" style="margin-top:2rem;">
-    <img id="romaria-cartaz" src="" alt="Cartaz Romaria 2026">
+  <div id="romaria-cartaz-box" style="margin-top:2rem;">
+    <img id="romaria-cartaz" src="" alt="Cartaz Romaria 2026" style="width:260px; border-radius:12px; box-shadow:0 8px 40px rgba(0,0,0,0.4);">
   </div>
 </section>
 
-<!-- BANNER PARCEIROS -->
 <section id="parceiros-banner">
   <p class="parceiros-label">Rede de Parceiros</p>
   <h2 class="section-title">Parceiros do Portal Trindade 2026</h2>
-  <d
+  <div class="divisor divisor-center"></div>
+  <img src="/imagens/parceirosatuais.png" alt="Parceiros do Portal Trindade 2026" class="parceiros-img">
+</section>
+
+<section id="programacao">
+  <div>
+    <h2 class="section-title" style="color:white; text-align:center;">Programação Oficial · Romaria 2026</h2>
+    <p class="section-sub" style="color:rgba(255,255,255,0.6); text-align:center;">26 de junho a 5 de julho · Trindade, GO</p>
+    <div class="divisor divisor-center"></div>
+    <p style="color:rgba(255,255,255,0.65); text-align:center; margin-bottom:2rem; font-size:1rem;">Missas, procissões, romarias temáticas, shows e muito mais ao longo de 10 dias de fé e celebração.</p>
+    <div style="text-align:center;">
+      <button class="btn-prog-completa" id="btn-abrir-modal">📋 Ver Programação Completa</button>
+    </div>
+  </div>
+</section>
+
+<div id="modal-prog">
+  <div class="modal-box">
+    <button class="modal-fechar" id="modal-fechar">✕</button>
+    <h2 class="modal-titulo">Programação Completa · Romaria 2026</h2>
+    <p class="modal-sub">26 de junho a 5 de julho · Trindade, GO · 186ª edição</p>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header"><span class="modal-dia-data">Sex, 26/06</span><span class="modal-dia-titulo">Abertura — Romaria dos Militares</span></div>
+      <div class="modal-evento"><span class="modal-hora">06h</span><span class="modal-desc">Saída da 17ª Romaria dos Militares, Forças Armadas, Polícia e Segurança <small>· Trevo de Goiânia</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">10h30</span><span class="modal-desc">Missa dos Militares, das Forças Armadas, Polícia e Segurança <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">17h</span><span class="modal-desc">4ª Romaria da OAB | 10ª Romaria da Vila São Cottolengo <small>· Trevo de Goiânia</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">18h</span><span class="modal-desc">10ª Romaria da Polícia Civil <small>· Terminal Padre Pelágio</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das Paróquias do Vicariato Nossa Senhora Aparecida da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header"><span class="modal-dia-data">Sáb, 27/06</span><span class="modal-dia-titulo">Romaria da Juventude</span></div>
+      <div class="modal-evento"><span class="modal-hora">09h</span><span class="modal-desc">Romaria Regional dos Acólitos e Coroinhas <small>· Altar central da praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">10h</span><span class="modal-desc">Procissão <small>· Saindo do altar central da praça do Santuário à Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">10h30 e 12h</span><span class="modal-desc">Missas <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">16h</span><span class="modal-desc">Romaria Vocacional | Romaria da Juventude <small>· Trevo de Goiânia</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">16h30</span><span class="modal-desc">1ª Romaria do Grupo São Floriano do Corpo de Bombeiros Militar de Goiás</span></div>
+      <div class="modal-evento"><span class="modal-hora">17h</span><span class="modal-desc">Saída da 7ª Romaria Motociclista <small>· Terminal Padre Pelágio</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">17h</span><span class="modal-desc">IV Romaria do Colégio e Faculdade Aphonsiano <small>· Trevo de Goiânia</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">17h30</span><span class="modal-desc">Missa com os foliões e congadas <small>· Praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das pastorais do Vicariato para a Evangelização da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">22h</span><span class="modal-desc">Missa da Juventude <small>· Santuário Basílica</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header"><span class="modal-dia-data">Dom, 28/06</span><span class="modal-dia-titulo">Romaria dos Ciclistas</span></div>
+      <div class="modal-evento"><span class="modal-hora">05h</span><span class="modal-desc">3ª Romaria Vicentina <small>· Trevo de Goiânia</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">10h30</span><span class="modal-desc">Missa das crianças — Romeirinhos do Divino Pai Eterno <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">12h</span><span class="modal-desc">Missa <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">16h30</span><span class="modal-desc">5ª Romaria dos Ciclistas <small>· Trevo de Goiânia</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">17h30</span><span class="modal-desc">Missa da Renovação Carismática e do grupo das Mães que Rezam pelos Filhos <small>· Praça do Santuário</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header"><span class="modal-dia-data">Seg, 29/06</span><span class="modal-dia-titulo">Dias de Devoção</span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das Paróquias do Vicariato Nossa Senhora do Perpétuo Socorro da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header"><span class="modal-dia-data">Ter, 30/06</span><span class="modal-dia-titulo">Dias de Devoção</span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das Paróquias do Vicariato Nossa Senhora da Piedade da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header"><span class="modal-dia-data">Qua, 01/07</span><span class="modal-dia-titulo">Dias de Devoção</span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das Paróquias do Vicariato Nossa Senhora da Abadia da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header"><span class="modal-dia-data">Qui, 02/07</span><span class="modal-dia-titulo">Romaria dos Carros de Boi 🐂</span></div>
+      <div class="modal-evento"><span class="modal-hora">07h30</span><span class="modal-desc">Romaria dos Carros de Boi, Cavaleiros e Muladeiros com bênção <small>· Praça Matriz</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">17h30</span><span class="modal-desc">Missa das Obras Sociais Redentoristas <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das Paróquias do Vicariato Nossa Senhora Auxiliadora da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header"><span class="modal-dia-data">Sex, 03/07</span><span class="modal-dia-titulo">Show — Ana Castela 🎤</span></div>
+      <div class="modal-evento"><span class="modal-hora">12h</span><span class="modal-desc">Missa <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das pastorais sociais do Vicariato para a Solidariedade <small>· Praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação dos internos da Vila São Cottolengo <small>· Praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">À noite</span><span class="modal-desc">🎤 Show: Ana Castela</span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header"><span class="modal-dia-data">Sáb, 04/07</span><span class="modal-dia-titulo">Show — Daniel 🎤</span></div>
+      <div class="modal-evento"><span class="modal-hora">08h</span><span class="modal-desc">Encontro dos carreiros, cavaleiros e muladeiros <small>· Antigo Clube Raio de Sol</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">12h</span><span class="modal-desc">Missa <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">17h30</span><span class="modal-desc">Missa com os carreiros, cavaleiros e muladeiros <small>· Praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das pastorais do Vicariato para a Cultura e Educação <small>· Praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">21h30</span><span class="modal-desc">Missa com a juventude e Noite da Copiosa <small>· Igreja do Santíssimo Redentor</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">À noite</span><span class="modal-desc">🎤 Show: Daniel</span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header"><span class="modal-dia-data">Dom, 05/07</span><span class="modal-dia-titulo">Encerramento</span></div>
+      <div class="modal-evento"><span class="modal-hora">08h</span><span class="modal-desc">Missa das Autoridades</span></div>
+      <div class="modal-evento"><span class="modal-hora">17h30</span><span class="modal-desc">Procissão Luminosa e Missa de Encerramento <small>· Pátio da Basílica</small></span></div>
+    </div>
+
+    <div class="modal-dia">
+      <div class="modal-dia-header"><span class="modal-dia-data">Todos os dias</span><span class="modal-dia-titulo">Programação Diária</span></div>
+      <div class="modal-evento"><span class="modal-hora">05h</span><span class="modal-desc">Alvorada Festiva <small>· Praça do Santuário, Novo Santuário e Igreja Matriz</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">05h20</span><span class="modal-desc">Procissão da Penitência <small>· Da Igreja Matriz à Praça do Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">06h</span><span class="modal-desc">Missa <small>· Praça do Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">07h</span><span class="modal-desc">Missa <small>· Carmelo da Santíssima Trindade</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">07h às 18h</span><span class="modal-desc">Visitas guiadas ao Novo Santuário — Trenzinho da Família de Amor e condução da Vila São Cottolengo</span></div>
+      <div class="modal-evento"><span class="modal-hora">07h15 às 14h</span><span class="modal-desc">Visita ao Santíssimo Sacramento e à Virgem Maria <small>· Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">08h e 14h</span><span class="modal-desc">Batismos <small>· Capela Pai Eterno no cruzeiro da obra</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">09h e 14h</span><span class="modal-desc">Missas com novena <small>· Igreja Matriz</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">10h</span><span class="modal-desc">Missa <small>· Igreja do Santíssimo Redentor</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">10h30 | 17h30 | 22h</span><span class="modal-desc">Missas <small>· Canteiro de Obras do Novo Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">16h</span><span class="modal-desc">Missa com novena <small>· Igreja do Santíssimo Redentor</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">18h</span><span class="modal-desc">Toque do sino Vox Patris <small>· Canteiro de Obras do Novo Santuário</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Missa com novena <small>· Praça do Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">6h às 21h</span><span class="modal-desc">Confissões <small>· Subsolo do Santuário Basílica</small></span></div>
+      <div class="modal-evento"><span class="modal-hora">0h, 2h e 4h</span><span class="modal-desc">Missas na madrugada (27/06, 28/06, 03, 04 e 05/07) <small>· Santuário Basílica</small></span></div>
+    </div>
+  </div>
+</div>
+
+<section id="anunciantes" class="section-alt">
+  <h2 class="section-title">Parceiros Recomendados</h2>
+  <p class="section-sub">Curadoria do Portal · Negócios locais de confiança</p>
+  <div class="divisor"></div>
+  <div class="anunciantes-grid" id="anunciantes-grid"></div>
+</section>
+
+<section id="guia" style="background:#0F1C30; padding:60px 5%; text-align:center;">
+  <p class="parceiros-label">Prefeitura de Trindade</p>
+  <h2 class="section-title" style="color:var(--dourado-claro);">Guia de Turismo de Trindade 2026</h2>
+  <div class="divisor divisor-center"></div>
+  <p style="color:rgba(255,255,255,0.7); max-width:600px; margin:0 auto 2rem; font-size:1rem; line-height:1.7;">
+    Conheça a história, os pontos turísticos, a cultura e os roteiros de Trindade neste guia oficial da Prefeitura — 2ª edição 2026, com 176 páginas.
+  </p>
+  <div class="guia-iframe-wrapper">
+    <iframe
+      src="https://drive.google.com/file/d/173c1tNzJIsw9Kdi2rOH13cFqdN2SA9mU/preview"
+      width="100%"
+      height="560"
+      allow="autoplay"
+    ></iframe>
+  </div>
+  <a href="https://drive.google.com/uc?export=download&id=173c1tNzJIsw9Kdi2rOH13cFqdN2SA9mU" target="_blank" class="btn-download-guia">
+    ⬇️ Baixar Guia (PDF)
+  </a>
+</section>
+
+<section id="galeria">
+  <h2 class="section-title" style="text-align:center;">Galeria de Trindade</h2>
+  <div class="divisor divisor-center"></div>
+  <div class="galeria-grid" id="galeria-grid"></div>
+</section>
+
+<section id="contato" class="section-alt">
+  <div class="contato-box">
+    <h2>Fale com o Portal Trindade</h2>
+    <p>Dúvidas, anúncios ou informações sobre a cidade — estamos aqui.</p>
+    <a id="wa-btn" class="btn-wa-grande" href="#" target="_blank">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.533 5.845L.057 24l6.305-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.001-1.37l-.36-.214-3.733.979 1-3.647-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+      <span id="wa-btn-texto">Fale com o Portal</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p id="rodape-texto"></p>
+  <p style="margin-top:6px;"><a id="ig-link" href="#" target="_blank">@trindadeportal no Instagram</a></p>
+</footer>
+
+<a id="wa-float" class="wa-float" href="#" target="_blank">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.533 5.845L.057 24l6.305-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.001-1.37l-.36-.214-3.733.979 1-3.647-.234-.374A9.818 9.818 0 1112 21.818z"/></svg>
+  <span class="label">Fale Conosco</span>
+</a>
+
+<script>
+  // DATAS DA ROMARIA
+  var dataInicio = new Date('2026-06-26T00:00:00-03:00').getTime();
+  var dataFim    = new Date('2026-07-05T23:59:59-03:00').getTime();
+
+  // MODAL
+  document.getElementById('btn-abrir-modal').addEventListener('click', function() {
+    document.getElementById('modal-prog').classList.add('aberto');
+    document.body.style.overflow = 'hidden';
+  });
+  document.getElementById('modal-fechar').addEventListener('click', function() {
+    document.getElementById('modal-prog').classList.remove('aberto');
+    document.body.style.overflow = '';
+  });
+  document.getElementById('modal-prog').addEventListener('click', function(e) {
+    if (e.target === this) {
+      this.classList.remove('aberto');
+      document.body.style.overflow = '';
+    }
+  });
+
+  // LIGHTBOX
+  var lightboxFotos = [];
+  var lightboxIdx = 0;
+
+  function abrirLightbox(fotos, idx) {
+    lightboxFotos = fotos;
+    lightboxIdx = idx;
+    document.getElementById('lightbox-img').src = fotos[idx];
+    document.getElementById('lightbox').classList.add('aberto');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function fecharLightbox() {
+    document.getElementById('lightbox').classList.remove('aberto');
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('lightbox-fechar').addEventListener('click', fecharLightbox);
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) { fecharLightbox(); }
+  });
+  document.getElementById('lightbox-anterior').addEventListener('click', function(e) {
+    e.stopPropagation();
+    lightboxIdx = (lightboxIdx - 1 + lightboxFotos.length) % lightboxFotos.length;
+    document.getElementById('lightbox-img').src = lightboxFotos[lightboxIdx];
+  });
+  document.getElementById('lightbox-proximo').addEventListener('click', function(e) {
+    e.stopPropagation();
+    lightboxIdx = (lightboxIdx + 1) % lightboxFotos.length;
+    document.getElementById('lightbox-img').src = lightboxFotos[lightboxIdx];
+  });
+  document.addEventListener('keydown', function(e) {
+    if (!document.getElementById('lightbox').classList.contains('aberto')) { return; }
+    if (e.key === 'Escape') { fecharLightbox(); }
+    if (e.key === 'ArrowLeft') { document.getElementById('lightbox-anterior').click(); }
+    if (e.key === 'ArrowRight') { document.getElementById('lightbox-proximo').click(); }
+  });
+
+  // MENU HAMBÚRGUER
+  var hamburger = document.getElementById('nav-hamburger');
+  var navLinks = document.querySelector('.nav-links');
+  hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('aberto');
+    navLinks.classList.toggle('aberto');
+  });
+  navLinks.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      hamburger.classList.remove('aberto');
+      navLinks.classList.remove('aberto');
+    });
+  });
+
+  // CONTADOR
+  var contadorBox = document.getElementById('contador-box');
+
+  function renderContador() {
+    var agora = new Date().getTime();
+
+    if (agora >= dataInicio && agora <= dataFim) {
+      contadorBox.innerHTML = '<div style="background:rgba(201,168,76,0.15); border:1px solid rgba(201,168,76,0.4); border-radius:12px; padding:16px 28px; text-align:center;"><div style="font-size:1.4rem; font-weight:700; color:#F0D98D; font-family:Playfair Display,serif;">🙏 A Romaria Começou!</div><div style="font-size:0.9rem; color:rgba(255,255,255,0.65); margin-top:6px;">Celebração até 5 de julho · Trindade-GO</div></div>';
+      return;
+    }
+
+    if (agora > dataFim) {
+      contadorBox.innerHTML = '<div style="background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.3); border-radius:12px; padding:16px 28px; text-align:center;"><div style="font-size:1.1rem; font-weight:700; color:#F0D98D; font-family:Playfair Display,serif;">Até a próxima Romaria · 2027 🙏</div></div>';
+      return;
+    }
+
+    var distancia = dataInicio - agora;
+    var dias    = Math.floor(distancia / (1000 * 60 * 60 * 24));
+    var horas   = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+    contadorBox.innerHTML =
+      '<div style="text-align:center; background:rgba(201,168,76,0.1); padding:10px 15px; border-radius:8px; border:1px solid rgba(201,168,76,0.3);">' +
+        '<div style="font-size:1.8rem; font-weight:700; color:white; font-family:Playfair Display,serif;">' + dias + '</div>' +
+        '<div style="font-size:0.7rem; color:#C9A84C; text-transform:uppercase; letter-spacing:1px;">Dias</div>' +
+      '</div>' +
+      '<div style="text-align:center; background:rgba(201,168,76,0.1); padding:10px 15px; border-radius:8px; border:1px solid rgba(201,168,76,0.3);">' +
+        '<div style="font-size:1.8rem; font-weight:700; color:white; font-family:Playfair Display,serif;">' + horas + '</div>' +
+        '<div style="font-size:0.7rem; color:#C9A84C; text-transform:uppercase; letter-spacing:1px;">Horas</div>' +
+      '</div>' +
+      '<div style="text-align:center; background:rgba(201,168,76,0.1); padding:10px 15px; border-radius:8px; border:1px solid rgba(201,168,76,0.3);">' +
+        '<div style="font-size:1.8rem; font-weight:700; color:white; font-family:Playfair Display,serif;">' + minutos + '</div>' +
+        '<div style="font-size:0.7rem; color:#C9A84C; text-transform:uppercase; letter-spacing:1px;">Min</div>' +
+      '</div>';
+  }
+
+  renderContador();
+  setInterval(renderContador, 1000);
+
+  // FETCH JSON
+  fetch('./conteudo.json')
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      var wa = 'https://wa.me/' + d.site.whatsapp + '?text=' + encodeURIComponent(d.contato.mensagem_whatsapp);
+
+      document.querySelector('.nav-logo').textContent = d.site.titulo;
+      document.getElementById('nav-cta').href = wa;
+      document.getElementById('hero-bg').src = d.banner.imagem;
+      document.getElementById('hero-titulo').textContent = d.banner.titulo;
+      document.getElementById('hero-desc').textContent = d.banner.descricao;
+
+      // TÍTULO DA ROMARIA
+      var agora = new Date().getTime();
+      if (agora >= dataInicio && agora <= dataFim) {
+        document.getElementById('romaria-titulo').textContent = 'Romaria do Divino Pai Eterno · Em Andamento!';
+      } else if (agora > dataFim) {
+        document.getElementById('romaria-titulo').textContent = 'Romaria do Divino Pai Eterno · 2026';
+      } else {
+        document.getElementById('romaria-titulo').textContent = d.romaria.titulo;
+      }
+
+      if (d.romaria.cartaz) {
+        document.getElementById('romaria-cartaz').src = d.romaria.cartaz;
+      } else {
+        document.getElementById('romaria-cartaz-box').style.display = 'none';
+      }
+
+      document.getElementById('shows-img-wrapper').style.display = 'block';
+
+      var showsHtml = d.romaria.shows.map(function(s) {
+        return '<li>' + s.artista + ' <span>· ' + s.data + '</span></li>';
+      }).join('');
+
+      document.getElementById('romaria-grid').innerHTML =
+        '<div class="romaria-card">' +
+          '<div class="romaria-label">Tema</div><div class="romaria-value">' + d.romaria.tema + '</div>' +
+          '<div class="romaria-label" style="margin-top:1rem">Edição</div><div class="romaria-value">' + d.romaria.edicao + '</div>' +
+        '</div>' +
+        '<div class="romaria-card">' +
+          '<div class="romaria-label">Período</div><div class="romaria-value">' + d.romaria.periodo + '</div>' +
+          '<div class="romaria-label" style="margin-top:1rem">Expectativa</div><div class="romaria-value">' + d.romaria.expectativa + '</div>' +
+        '</div>' +
+        '<div class="romaria-card">' +
+          '<div class="romaria-label">Local</div><div class="romaria-value">' + d.romaria.local + '</div>' +
+        '</div>' +
+        '<div class="romaria-card">' +
+          '<div class="romaria-label">Shows confirmados</div>' +
+          '<ul class="shows-list">' + showsHtml + '</ul>' +
+        '</div>';
+
+      // PARCEIROS
+      var ag = document.getElementById('anunciantes-grid');
+      ag.innerHTML = d.anunciantes.map(function(a, idx) {
+        var badge = a.destaque ? '<span class="anunciante-badge">⭐ Destaque</span>' : '';
+        var btnIg = a.instagram ? '<a class="btn-ig" href="' + a.instagram + '" target="_blank">Instagram</a>' : '';
+        var btnWa = a.whatsapp ? '<a class="btn-wa" href="https://wa.me/' + a.whatsapp + '" target="_blank">WhatsApp</a>' : '';
+        var btnLink = a.link ? '<a class="btn-link" href="' + a.link + '" target="_blank">' + (a.texto_link || 'Saiba mais') + '</a>' : '';
+        var todasFotos = [a.imagem].concat(a.imagens_extras || []);
+        var imgsHtml = todasFotos.map(function(img, i) {
+          return '<img src="' + img + '" alt="' + a.nome + '" class="' + (i === 0 ? 'ativo' : '') + '" data-card="' + idx + '" data-slide="' + i + '">';
+        }).join('');
+        var dotsHtml = todasFotos.length > 1
+          ? '<div class="slider-dots">' + todasFotos.map(function(_, i) {
+              return '<div class="slider-dot ' + (i === 0 ? 'ativo' : '') + '" data-card="' + idx + '" data-slide="' + i + '"></div>';
+            }).join('') + '</div>'
+          : '';
+        return '<div class="anunciante-card">' +
+          '<div class="anunciante-img-slider" data-card="' + idx + '" data-fotos=\'' + JSON.stringify(todasFotos) + '\'>' +
+            imgsHtml + dotsHtml +
+            '<div class="zoom-icon">🔍</div>' +
+          '</div>' +
+          '<div class="anunciante-body">' +
+            badge +
+            '<h3 class="anunciante-nome">' + a.nome + '</h3>' +
+            '<p class="anunciante-desc">' + a.descricao + '</p>' +
+            '<div class="anunciante-btns">' + btnIg + btnWa + btnLink + '</div>' +
+          '</div>' +
+        '</div>';
+      }).join('');
+
+      // SLIDERS
+      var sliders = {};
+      document.querySelectorAll('.anunciante-img-slider').forEach(function(slider) {
+        var card = slider.dataset.card;
+        var fotos = JSON.parse(slider.dataset.fotos);
+        sliders[card] = { total: fotos.length, atual: 0, fotos: fotos };
+        slider.addEventListener('click', function(e) {
+          if (e.target.classList.contains('slider-dot')) { return; }
+          var atualImg = slider.querySelector('img.ativo');
+          var slideAtual = parseInt(atualImg ? atualImg.dataset.slide : 0);
+          abrirLightbox(fotos, slideAtual);
+        });
+      });
+
+      document.querySelectorAll('.slider-dot').forEach(function(dot) {
+        dot.addEventListener('click', function(e) {
+          e.stopPropagation();
+          irParaSlide(dot.dataset.card, parseInt(dot.dataset.slide));
+        });
+      });
+
+      function irParaSlide(card, slide) {
+        document.querySelectorAll('img[data-card="' + card + '"]').forEach(function(img) { img.classList.remove('ativo'); });
+        document.querySelectorAll('.slider-dot[data-card="' + card + '"]').forEach(function(d) { d.classList.remove('ativo'); });
+        var imgAlvo = document.querySelector('img[data-card="' + card + '"][data-slide="' + slide + '"]');
+        var dotAlvo = document.querySelector('.slider-dot[data-card="' + card + '"][data-slide="' + slide + '"]');
+        if (imgAlvo) { imgAlvo.classList.add('ativo'); }
+        if (dotAlvo) { dotAlvo.classList.add('ativo'); }
+        sliders[card].atual = slide;
+      }
+
+      Object.keys(sliders).forEach(function(card) {
+        if (sliders[card].total > 1) {
+          setInterval(function() {
+            var prox = (sliders[card].atual + 1) % sliders[card].total;
+            irParaSlide(card, prox);
+          }, 3000);
+        }
+      });
+
+      // GALERIA
+      var gg = document.getElementById('galeria-grid');
+      var fotosGaleria = d.galeria.map(function(g) { return g.imagem; });
+      gg.innerHTML = d.galeria.map(function(g, i) {
+        return '<div class="galeria-item" data-idx="' + i + '">' +
+          '<img src="' + g.imagem + '" alt="' + g.legenda + '" loading="lazy">' +
+          '<div class="galeria-legenda">' + g.legenda + '</div>' +
+        '</div>';
+      }).join('');
+
+      document.querySelectorAll('.galeria-item').forEach(function(item) {
+        item.addEventListener('click', function() {
+          abrirLightbox(fotosGaleria, parseInt(item.dataset.idx));
+        });
+      });
+
+      document.getElementById('wa-btn').href = wa;
+      document.getElementById('wa-btn-texto').textContent = d.contato.texto_botao;
+      document.getElementById('wa-float').href = wa;
+      document.getElementById('rodape-texto').textContent = d.contato.rodape;
+      document.getElementById('ig-link').href = d.site.instagram;
+
+      // ANIMAÇÕES
+      setTimeout(function() {
+        var elements = document.querySelectorAll('.anunciante-card, .galeria-item, .romaria-card, .contato-box');
+        elements.forEach(function(el) { el.classList.add('reveal'); });
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        elements.forEach(function(el) { observer.observe(el); });
+        setTimeout(function() {
+          elements.forEach(function(el) { el.classList.add('visible'); });
+        }, 3000);
+      }, 600);
+
+      var loading = document.getElementById('loading');
+      loading.style.opacity = '0';
+      setTimeout(function() { loading.remove(); }, 500);
+    })
+    .catch(function(err) {
+      console.error('Erro ao carregar conteudo.json:', err);
+      var loading = document.getElementById('loading');
+      if (loading) {
+        loading.style.opacity = '0';
+        setTimeout(function() { loading.remove(); }, 500);
+      }
+    });
+
+  // SEGURANÇA: remove loading após 5s
+  setTimeout(function() {
+    var loading = document.getElementById('loading');
+    if (loading) {
+      loading.style.opacity = '0';
+      setTimeout(function() { loading.remove(); }, 500);
+    }
+  }, 5000);
+</script>
+</body>
+</html>
