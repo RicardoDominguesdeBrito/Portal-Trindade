@@ -7,105 +7,22 @@
     "email": "contato@portaltrindade.com.br"
   },
   "banner": {
-    "imagem": "/imagens/imagemsite.png",
-    "titulo": "Trindade: A Cidade da Fé",
-    "descricao": "Seu portal completo para a Romaria do Divino Pai Eterno"
+    "imagem": "/imagens/file_000000009244720e921e53bc1298cfab.png",
+    "titulo": "XII Festival Gastronômico de Trindade",
+    "descricao": "Gastronomia local, cultura e grandes shows nacionais — celebrando o aniversário da cidade"
   },
-  "romaria": {
-    "titulo": "A Romaria 2026 está chegando",
-    "cartaz": "/imagens/festa2026.png",
-    "tema": "Clamamos: Abbá, Pai",
-    "edicao": "186ª edição",
-    "periodo": "26 de junho a 5 de julho de 2026",
+  "evento": {
+    "titulo": "XII Festival Gastronômico de Trindade",
+    "cartaz": "/imagens/file_000000009244720e921e53bc1298cfab.png",
+    "periodo": "28 a 30 de agosto de 2026",
     "local": "Trindade, GO",
-    "expectativa": "Superar 4,3 milhões de romeiros",
-    "imagem_shows": "/imagens/danieleanacastela.png",
-    "programacao": [
-      {
-        "data": "Sex, 26/06",
-        "titulo": "Abertura — Romaria dos Militares",
-        "eventos": [
-          { "horario": "06h", "descricao": "Saída da 17ª Romaria dos Militares — Trevo de Goiânia" },
-          { "horario": "10h30", "descricao": "Missa dos Militares — Santuário Basílica" },
-          { "horario": "17h", "descricao": "4ª Romaria da OAB e 10ª da Vila São Cottolengo" },
-          { "horario": "18h", "descricao": "10ª Romaria da Polícia Civil — Terminal Padre Pelágio" },
-          { "horario": "19h30", "descricao": "Participação de paróquias — Praça do Santuário" }
-        ]
-      },
-      {
-        "data": "Sáb, 27/06",
-        "titulo": "Romaria da Juventude",
-        "eventos": [
-          { "horario": "09h", "descricao": "Romaria dos Acólitos e Coroinhas" },
-          { "horario": "10h", "descricao": "Procissão — saindo da praça do Santuário à Basílica" },
-          { "horario": "10h30 e 12h", "descricao": "Missas — Santuário Basílica" },
-          { "horario": "16h", "descricao": "Romaria da Juventude" },
-          { "horario": "17h", "descricao": "Romaria Motociclista" },
-          { "horario": "17h30", "descricao": "Missa com foliões e Missa da Juventude" }
-        ]
-      },
-      {
-        "data": "Dom, 28/06",
-        "titulo": "Romaria dos Ciclistas",
-        "eventos": [
-          { "horario": "05h", "descricao": "Romaria Vicentina — Procissão de Penitência" },
-          { "horario": "10h30", "descricao": "Missa das crianças — Romeirinhos do Divino Pai Eterno" },
-          { "horario": "12h", "descricao": "Missa — Santuário Basílica" },
-          { "horario": "16h30", "descricao": "5ª Romaria dos Ciclistas — Trevo de Goiânia" },
-          { "horario": "17h30", "descricao": "Missa da Renovação Carismática e Mães que Rezam pelos Filhos" }
-        ]
-      },
-      {
-        "data": "Seg a Qua, 29/06–01/07",
-        "titulo": "Dias de Devoção",
-        "eventos": [
-          { "horario": "05h", "descricao": "Procissão de Penitência — Igreja Matriz ao pátio da Basílica" },
-          { "horario": "09h e 14h", "descricao": "Missas com novena — Igreja Matriz" },
-          { "horario": "19h30", "descricao": "Participação de paróquias — Praça do Santuário" }
-        ]
-      },
-      {
-        "data": "Qui, 02/07",
-        "titulo": "Romaria dos Carros de Boi 🐂",
-        "eventos": [
-          { "horario": "07h30", "descricao": "Desfile de Carreiros, Cavaleiros e Muladeiros" },
-          { "horario": "17h30", "descricao": "Missa das Obras Sociais" },
-          { "horario": "19h30", "descricao": "Participação de paróquias — Praça do Santuário" }
-        ]
-      },
-      {
-        "data": "Sex, 03/07",
-        "titulo": "Show — Ana Castela 🎤",
-        "eventos": [
-          { "horario": "12h", "descricao": "Missa — Santuário Basílica" },
-          { "horario": "19h30", "descricao": "Participações pastorais — Praça do Santuário" },
-          { "horario": "À noite", "descricao": "Show: Ana Castela" }
-        ]
-      },
-      {
-        "data": "Sáb, 04/07",
-        "titulo": "Show — Daniel 🎤",
-        "eventos": [
-          { "horario": "08h", "descricao": "Encontro de carreiros" },
-          { "horario": "12h e 17h30", "descricao": "Missas — Santuário Basílica" },
-          { "horario": "21h30", "descricao": "Missa com juventude" },
-          { "horario": "À noite", "descricao": "Show: Daniel" }
-        ]
-      },
-      {
-        "data": "Dom, 05/07",
-        "titulo": "Encerramento",
-        "eventos": [
-          { "horario": "08h", "descricao": "Missa das Autoridades" },
-          { "horario": "17h30", "descricao": "Procissão Luminosa e Missa de Encerramento — pátio da Basílica" }
-        ]
-      }
-    ],
+    "descricao": "Três noites especiais reunindo gastronomia local, cultura e grandes shows nacionais, celebrando também o aniversário da cidade. Uma iniciativa da Prefeitura de Trindade e da Secretaria de Turismo e Cultura.",
     "shows": [
-      { "artista": "Desfile de Carros de Boi, Cavaleiros e Muladeiros", "data": "2 de julho" },
-      { "artista": "Ana Castela", "data": "3 de julho" },
-      { "artista": "Daniel", "data": "4 de julho" }
-    ]
+      { "artista": "Vanessa da Mata", "data": "28 de agosto" },
+      { "artista": "Falamansa", "data": "29 de agosto" },
+      { "artista": "Frejat", "data": "30 de agosto" }
+    ],
+    "observacao": "A programação completa será divulgada em breve."
   },
   "anunciantes": [
     {
@@ -256,6 +173,8 @@
     { "imagem": "/imagens/painelrodovia.png", "legenda": "Painel na rodovia" },
     { "imagem": "/imagens/pordosoltrindade.png", "legenda": "Por do sol em Trindade" },
     { "imagem": "/imagens/Imagem_Original_e_Milagrosa_do_Divino_Pai_Eterno.png", "legenda": "Imagem Original e Milagrosa do Divino Pai Eterno" },
+    { "imagem": "/imagens/danieleanacastela.png", "legenda": "Romaria 2026 — Shows de Ana Castela e Daniel" },
+    { "imagem": "/imagens/festa2026.png", "legenda": "Cartaz oficial da 186ª Romaria do Divino Pai Eterno" },
     { "imagem": "/imagens/alef.png", "legenda": "" },
     { "imagem": "/imagens/andreborges.png", "legenda": "" },
     { "imagem": "/imagens/angela.png", "legenda": "" },
