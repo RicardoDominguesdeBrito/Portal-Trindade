@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal Trindade | Guia da Romaria e da Cidade Santa</title>
-  <meta name="description" content="Guia completo da Romaria do Divino Pai Eterno em Trindade-GO.">
-  <meta property="og:title" content="Portal Trindade | Guia da Romaria 2026">
-  <meta property="og:description" content="Seu portal completo para a Romaria do Divino Pai Eterno. Programação, pousadas e o guia da Cidade Santa.">
+  <title>Portal Trindade | Turismo, Fé e Eventos na Cidade Santa</title>
+  <meta name="description" content="Guia completo de turismo religioso, gastronomia e eventos em Trindade-GO.">
+  <meta property="og:title" content="Portal Trindade | Turismo, Fé e Eventos">
+  <meta property="og:description" content="Seu portal completo de Trindade-GO: eventos da cidade, parceiros locais e o guia da Cidade Santa.">
   <meta property="og:image" content="./imagens/basilicavista.png">
   <meta property="og:url" content="https://www.festadodivinopaieterno.com.br">
   <meta property="og:type" content="website">
@@ -359,7 +359,7 @@
 <nav>
   <a class="nav-logo" href="#">Portal Trindade</a>
   <div class="nav-links">
-    <a href="#romaria">Romaria 2026</a>
+    <a href="#evento">Festival Gastronômico</a>
     <a href="#anunciantes">Parceiros</a>
     <a href="#guia">Guia Turismo</a>
     <a href="#galeria">Galeria</a>
@@ -377,20 +377,17 @@
   <div class="hero-content">
     <h1 id="hero-titulo"></h1>
     <p id="hero-desc"></p>
-    <a class="hero-btn" href="#romaria">Ver Romaria 2026</a>
+    <a class="hero-btn" href="#evento">Ver Programação</a>
   </div>
 </section>
 
-<section id="romaria" class="section-dark">
-  <h2 class="section-title" id="romaria-titulo"></h2>
+<section id="evento" class="section-dark">
+  <h2 class="section-title" id="evento-titulo"></h2>
   <div class="divisor"></div>
   <div id="contador-box" style="display:flex; gap:15px; margin-bottom:2rem; justify-content:flex-start; flex-wrap:wrap;"></div>
-  <div class="romaria-grid" id="romaria-grid"></div>
-  <div class="shows-img-wrapper" id="shows-img-wrapper" style="display:none;">
-    <img id="shows-img" src="./imagens/danieleanacastela.png" alt="Shows confirmados — Ana Castela e Daniel">
-  </div>
-  <div id="romaria-cartaz-box" style="margin-top:2rem;">
-    <img id="romaria-cartaz" src="" alt="Cartaz Romaria 2026" style="width:260px; border-radius:12px; box-shadow:0 8px 40px rgba(0,0,0,0.4);">
+  <div class="romaria-grid" id="evento-grid"></div>
+  <div id="evento-cartaz-box" style="margin-top:2rem;">
+    <img id="evento-cartaz" src="" alt="Cartaz do Evento" style="width:100%; max-width:640px; border-radius:12px; box-shadow:0 8px 40px rgba(0,0,0,0.4);">
   </div>
 </section>
 
@@ -400,123 +397,6 @@
   <div class="divisor divisor-center"></div>
   <img src="/imagens/file_00000000f5c871f59a380f4e59f1e050.png" alt="Parceiros do Portal Trindade 2026" class="parceiros-img">
 </section>
-
-<section id="programacao">
-  <div>
-    <h2 class="section-title" style="color:white; text-align:center;">Programação Oficial · Romaria 2026</h2>
-    <p class="section-sub" style="color:rgba(255,255,255,0.6); text-align:center;">26 de junho a 5 de julho · Trindade, GO</p>
-    <div class="divisor divisor-center"></div>
-    <p style="color:rgba(255,255,255,0.65); text-align:center; margin-bottom:2rem; font-size:1rem;">Missas, procissões, romarias temáticas, shows e muito mais ao longo de 10 dias de fé e celebração.</p>
-    <div style="text-align:center;">
-      <button class="btn-prog-completa" id="btn-abrir-modal">📋 Ver Programação Completa</button>
-    </div>
-  </div>
-</section>
-
-<div id="modal-prog">
-  <div class="modal-box">
-    <button class="modal-fechar" id="modal-fechar">✕</button>
-    <h2 class="modal-titulo">Programação Completa · Romaria 2026</h2>
-    <p class="modal-sub">26 de junho a 5 de julho · Trindade, GO · 186ª edição</p>
-
-    <div class="modal-dia">
-      <div class="modal-dia-header"><span class="modal-dia-data">Sex, 26/06</span><span class="modal-dia-titulo">Abertura — Romaria dos Militares</span></div>
-      <div class="modal-evento"><span class="modal-hora">06h</span><span class="modal-desc">Saída da 17ª Romaria dos Militares, Forças Armadas, Polícia e Segurança <small>· Trevo de Goiânia</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">10h30</span><span class="modal-desc">Missa dos Militares, das Forças Armadas, Polícia e Segurança <small>· Santuário Basílica</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">17h</span><span class="modal-desc">4ª Romaria da OAB | 10ª Romaria da Vila São Cottolengo <small>· Trevo de Goiânia</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">18h</span><span class="modal-desc">10ª Romaria da Polícia Civil <small>· Terminal Padre Pelágio</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das Paróquias do Vicariato Nossa Senhora Aparecida da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
-    </div>
-
-    <div class="modal-dia">
-      <div class="modal-dia-header"><span class="modal-dia-data">Sáb, 27/06</span><span class="modal-dia-titulo">Romaria da Juventude</span></div>
-      <div class="modal-evento"><span class="modal-hora">09h</span><span class="modal-desc">Romaria Regional dos Acólitos e Coroinhas <small>· Altar central da praça do Santuário</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">10h</span><span class="modal-desc">Procissão <small>· Saindo do altar central da praça do Santuário à Basílica</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">10h30 e 12h</span><span class="modal-desc">Missas <small>· Santuário Basílica</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">16h</span><span class="modal-desc">Romaria Vocacional | Romaria da Juventude <small>· Trevo de Goiânia</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">16h30</span><span class="modal-desc">1ª Romaria do Grupo São Floriano do Corpo de Bombeiros Militar de Goiás</span></div>
-      <div class="modal-evento"><span class="modal-hora">17h</span><span class="modal-desc">Saída da 7ª Romaria Motociclista <small>· Terminal Padre Pelágio</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">17h</span><span class="modal-desc">IV Romaria do Colégio e Faculdade Aphonsiano <small>· Trevo de Goiânia</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">17h30</span><span class="modal-desc">Missa com os foliões e congadas <small>· Praça do Santuário</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das pastorais do Vicariato para a Evangelização da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">22h</span><span class="modal-desc">Missa da Juventude <small>· Santuário Basílica</small></span></div>
-    </div>
-
-    <div class="modal-dia">
-      <div class="modal-dia-header"><span class="modal-dia-data">Dom, 28/06</span><span class="modal-dia-titulo">Romaria dos Ciclistas</span></div>
-      <div class="modal-evento"><span class="modal-hora">05h</span><span class="modal-desc">3ª Romaria Vicentina <small>· Trevo de Goiânia</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">10h30</span><span class="modal-desc">Missa das crianças — Romeirinhos do Divino Pai Eterno <small>· Santuário Basílica</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">12h</span><span class="modal-desc">Missa <small>· Santuário Basílica</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">16h30</span><span class="modal-desc">5ª Romaria dos Ciclistas <small>· Trevo de Goiânia</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">17h30</span><span class="modal-desc">Missa da Renovação Carismática e do grupo das Mães que Rezam pelos Filhos <small>· Praça do Santuário</small></span></div>
-    </div>
-
-    <div class="modal-dia">
-      <div class="modal-dia-header"><span class="modal-dia-data">Seg, 29/06</span><span class="modal-dia-titulo">Dias de Devoção</span></div>
-      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das Paróquias do Vicariato Nossa Senhora do Perpétuo Socorro da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
-    </div>
-
-    <div class="modal-dia">
-      <div class="modal-dia-header"><span class="modal-dia-data">Ter, 30/06</span><span class="modal-dia-titulo">Dias de Devoção</span></div>
-      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das Paróquias do Vicariato Nossa Senhora da Piedade da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
-    </div>
-
-    <div class="modal-dia">
-      <div class="modal-dia-header"><span class="modal-dia-data">Qua, 01/07</span><span class="modal-dia-titulo">Dias de Devoção</span></div>
-      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das Paróquias do Vicariato Nossa Senhora da Abadia da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
-    </div>
-
-    <div class="modal-dia">
-      <div class="modal-dia-header"><span class="modal-dia-data">Qui, 02/07</span><span class="modal-dia-titulo">Romaria dos Carros de Boi 🐂</span></div>
-      <div class="modal-evento"><span class="modal-hora">07h30</span><span class="modal-desc">Romaria dos Carros de Boi, Cavaleiros e Muladeiros com bênção <small>· Praça Matriz</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">17h30</span><span class="modal-desc">Missa das Obras Sociais Redentoristas <small>· Santuário Basílica</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das Paróquias do Vicariato Nossa Senhora Auxiliadora da Arquidiocese de Goiânia <small>· Praça do Santuário</small></span></div>
-    </div>
-
-    <div class="modal-dia">
-      <div class="modal-dia-header"><span class="modal-dia-data">Sex, 03/07</span><span class="modal-dia-titulo">Show — Ana Castela 🎤</span></div>
-      <div class="modal-evento"><span class="modal-hora">12h</span><span class="modal-desc">Missa <small>· Santuário Basílica</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das pastorais sociais do Vicariato para a Solidariedade <small>· Praça do Santuário</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação dos internos da Vila São Cottolengo <small>· Praça do Santuário</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">À noite</span><span class="modal-desc">🎤 Show: Ana Castela</span></div>
-    </div>
-
-    <div class="modal-dia">
-      <div class="modal-dia-header"><span class="modal-dia-data">Sáb, 04/07</span><span class="modal-dia-titulo">Show — Daniel 🎤</span></div>
-      <div class="modal-evento"><span class="modal-hora">08h</span><span class="modal-desc">Encontro dos carreiros, cavaleiros e muladeiros <small>· Antigo Clube Raio de Sol</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">12h</span><span class="modal-desc">Missa <small>· Santuário Basílica</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">17h30</span><span class="modal-desc">Missa com os carreiros, cavaleiros e muladeiros <small>· Praça do Santuário</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Participação das pastorais do Vicariato para a Cultura e Educação <small>· Praça do Santuário</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">21h30</span><span class="modal-desc">Missa com a juventude e Noite da Copiosa <small>· Igreja do Santíssimo Redentor</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">À noite</span><span class="modal-desc">🎤 Show: Daniel</span></div>
-    </div>
-
-    <div class="modal-dia">
-      <div class="modal-dia-header"><span class="modal-dia-data">Dom, 05/07</span><span class="modal-dia-titulo">Encerramento</span></div>
-      <div class="modal-evento"><span class="modal-hora">08h</span><span class="modal-desc">Missa das Autoridades</span></div>
-      <div class="modal-evento"><span class="modal-hora">17h30</span><span class="modal-desc">Procissão Luminosa e Missa de Encerramento <small>· Pátio da Basílica</small></span></div>
-    </div>
-
-    <div class="modal-dia">
-      <div class="modal-dia-header"><span class="modal-dia-data">Todos os dias</span><span class="modal-dia-titulo">Programação Diária</span></div>
-      <div class="modal-evento"><span class="modal-hora">05h</span><span class="modal-desc">Alvorada Festiva <small>· Praça do Santuário, Novo Santuário e Igreja Matriz</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">05h20</span><span class="modal-desc">Procissão da Penitência <small>· Da Igreja Matriz à Praça do Santuário</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">06h</span><span class="modal-desc">Missa <small>· Praça do Santuário Basílica</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">07h</span><span class="modal-desc">Missa <small>· Carmelo da Santíssima Trindade</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">07h às 18h</span><span class="modal-desc">Visitas guiadas ao Novo Santuário — Trenzinho da Família de Amor e condução da Vila São Cottolengo</span></div>
-      <div class="modal-evento"><span class="modal-hora">07h15 às 14h</span><span class="modal-desc">Visita ao Santíssimo Sacramento e à Virgem Maria <small>· Santuário Basílica</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">08h e 14h</span><span class="modal-desc">Batismos <small>· Capela Pai Eterno no cruzeiro da obra</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">09h e 14h</span><span class="modal-desc">Missas com novena <small>· Igreja Matriz</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">10h</span><span class="modal-desc">Missa <small>· Igreja do Santíssimo Redentor</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">10h30 | 17h30 | 22h</span><span class="modal-desc">Missas <small>· Canteiro de Obras do Novo Santuário</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">16h</span><span class="modal-desc">Missa com novena <small>· Igreja do Santíssimo Redentor</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">18h</span><span class="modal-desc">Toque do sino Vox Patris <small>· Canteiro de Obras do Novo Santuário</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">19h30</span><span class="modal-desc">Missa com novena <small>· Praça do Santuário Basílica</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">6h às 21h</span><span class="modal-desc">Confissões <small>· Subsolo do Santuário Basílica</small></span></div>
-      <div class="modal-evento"><span class="modal-hora">0h, 2h e 4h</span><span class="modal-desc">Missas na madrugada (27/06, 28/06, 03, 04 e 05/07) <small>· Santuário Basílica</small></span></div>
-    </div>
-  </div>
-</div>
 
 <section id="anunciantes" class="section-alt">
   <h2 class="section-title">Parceiros Recomendados</h2>
@@ -573,25 +453,9 @@
 </a>
 
 <script>
-  // DATAS DA ROMARIA
-  var dataInicio = new Date('2026-06-26T00:00:00-03:00').getTime();
-  var dataFim    = new Date('2026-07-05T23:59:59-03:00').getTime();
-
-  // MODAL
-  document.getElementById('btn-abrir-modal').addEventListener('click', function() {
-    document.getElementById('modal-prog').classList.add('aberto');
-    document.body.style.overflow = 'hidden';
-  });
-  document.getElementById('modal-fechar').addEventListener('click', function() {
-    document.getElementById('modal-prog').classList.remove('aberto');
-    document.body.style.overflow = '';
-  });
-  document.getElementById('modal-prog').addEventListener('click', function(e) {
-    if (e.target === this) {
-      this.classList.remove('aberto');
-      document.body.style.overflow = '';
-    }
-  });
+  // DATAS DO EVENTO — XII Festival Gastronômico de Trindade
+  var dataInicio = new Date('2026-08-28T00:00:00-03:00').getTime();
+  var dataFim    = new Date('2026-08-30T23:59:59-03:00').getTime();
 
   // LIGHTBOX
   var lightboxFotos = [];
@@ -652,12 +516,12 @@
     var agora = new Date().getTime();
 
     if (agora >= dataInicio && agora <= dataFim) {
-      contadorBox.innerHTML = '<div style="background:rgba(201,168,76,0.15); border:1px solid rgba(201,168,76,0.4); border-radius:12px; padding:16px 28px; text-align:center;"><div style="font-size:1.4rem; font-weight:700; color:#F0D98D; font-family:Playfair Display,serif;">🙏 A Romaria Começou!</div><div style="font-size:0.9rem; color:rgba(255,255,255,0.65); margin-top:6px;">Celebração até 5 de julho · Trindade-GO</div></div>';
+      contadorBox.innerHTML = '<div style="background:rgba(201,168,76,0.15); border:1px solid rgba(201,168,76,0.4); border-radius:12px; padding:16px 28px; text-align:center;"><div style="font-size:1.4rem; font-weight:700; color:#F0D98D; font-family:Playfair Display,serif;">🎉 O Festival Começou!</div><div style="font-size:0.9rem; color:rgba(255,255,255,0.65); margin-top:6px;">Celebração até 30 de agosto · Trindade-GO</div></div>';
       return;
     }
 
     if (agora > dataFim) {
-      contadorBox.innerHTML = '<div style="background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.3); border-radius:12px; padding:16px 28px; text-align:center;"><div style="font-size:1.1rem; font-weight:700; color:#F0D98D; font-family:Playfair Display,serif;">Até a próxima Romaria · 2027 🙏</div></div>';
+      contadorBox.innerHTML = '<div style="background:rgba(201,168,76,0.1); border:1px solid rgba(201,168,76,0.3); border-radius:12px; padding:16px 28px; text-align:center;"><div style="font-size:1.1rem; font-weight:700; color:#F0D98D; font-family:Playfair Display,serif;">Fique de olho nos próximos eventos da cidade 🎉</div></div>';
       return;
     }
 
@@ -695,43 +559,38 @@
       document.getElementById('hero-titulo').textContent = d.banner.titulo;
       document.getElementById('hero-desc').textContent = d.banner.descricao;
 
-      // TÍTULO DA ROMARIA
+      // TÍTULO DO EVENTO
       var agora = new Date().getTime();
       if (agora >= dataInicio && agora <= dataFim) {
-        document.getElementById('romaria-titulo').textContent = 'Romaria do Divino Pai Eterno · Em Andamento!';
-      } else if (agora > dataFim) {
-        document.getElementById('romaria-titulo').textContent = 'Romaria do Divino Pai Eterno · 2026';
+        document.getElementById('evento-titulo').textContent = d.evento.titulo + ' · Em Andamento!';
       } else {
-        document.getElementById('romaria-titulo').textContent = d.romaria.titulo;
+        document.getElementById('evento-titulo').textContent = d.evento.titulo;
       }
 
-      if (d.romaria.cartaz) {
-        document.getElementById('romaria-cartaz').src = d.romaria.cartaz;
+      if (d.evento.cartaz) {
+        document.getElementById('evento-cartaz').src = d.evento.cartaz;
       } else {
-        document.getElementById('romaria-cartaz-box').style.display = 'none';
+        document.getElementById('evento-cartaz-box').style.display = 'none';
       }
 
-      document.getElementById('shows-img-wrapper').style.display = 'block';
-
-      var showsHtml = d.romaria.shows.map(function(s) {
+      var showsHtml = d.evento.shows.map(function(s) {
         return '<li>' + s.artista + ' <span>· ' + s.data + '</span></li>';
       }).join('');
 
-      document.getElementById('romaria-grid').innerHTML =
+      document.getElementById('evento-grid').innerHTML =
         '<div class="romaria-card">' +
-          '<div class="romaria-label">Tema</div><div class="romaria-value">' + d.romaria.tema + '</div>' +
-          '<div class="romaria-label" style="margin-top:1rem">Edição</div><div class="romaria-value">' + d.romaria.edicao + '</div>' +
+          '<div class="romaria-label">Período</div><div class="romaria-value">' + d.evento.periodo + '</div>' +
+          '<div class="romaria-label" style="margin-top:1rem">Local</div><div class="romaria-value">' + d.evento.local + '</div>' +
         '</div>' +
         '<div class="romaria-card">' +
-          '<div class="romaria-label">Período</div><div class="romaria-value">' + d.romaria.periodo + '</div>' +
-          '<div class="romaria-label" style="margin-top:1rem">Expectativa</div><div class="romaria-value">' + d.romaria.expectativa + '</div>' +
-        '</div>' +
-        '<div class="romaria-card">' +
-          '<div class="romaria-label">Local</div><div class="romaria-value">' + d.romaria.local + '</div>' +
+          '<div class="romaria-label">Sobre o Festival</div><div class="romaria-value">' + d.evento.descricao + '</div>' +
         '</div>' +
         '<div class="romaria-card">' +
           '<div class="romaria-label">Shows confirmados</div>' +
           '<ul class="shows-list">' + showsHtml + '</ul>' +
+        '</div>' +
+        '<div class="romaria-card">' +
+          '<div class="romaria-label">Programação completa</div><div class="romaria-value">' + d.evento.observacao + '</div>' +
         '</div>';
 
       // PARCEIROS
