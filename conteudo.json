@@ -13,7 +13,7 @@
   },
   "evento": {
     "titulo": "XII Festival Gastronômico de Trindade",
-    "cartaz": "/imagens/file_000000009244720e921e53bc1298cfab.png",
+    "cartaz": "/imagens/festivalgastronomico.png",
     "periodo": "28 a 30 de agosto de 2026",
     "local": "Trindade, GO",
     "descricao": "Três noites especiais reunindo gastronomia local, cultura e grandes shows nacionais, celebrando também o aniversário da cidade. Uma iniciativa da Prefeitura de Trindade e da Secretaria de Turismo e Cultura.",
@@ -43,14 +43,6 @@
       "destaque": true
     },
     {
-      "nome": "Santo Santo Santo",
-      "descricao": "Loja que transforma fé em arte. Terços artesanais, imagens sacras pintadas à mão, velas aromáticas e muito mais. Um presente sagrado para levar de Trindade.",
-      "imagem": "/imagens/loja_limpa.png",
-      "instagram": "https://www.instagram.com/santosantosanto.trindade",
-      "whatsapp": "",
-      "destaque": true
-    },
-    {
       "nome": "Cibeles Café e Restaurante",
       "descricao": "Café, almoço e lanches com sabor caseiro e atendimento cuidadoso. Cardápio virtual disponível com pedidos pelo WhatsApp e retirada ou entrega no local.",
       "imagem": "/imagens/imagem01cibele.png",
@@ -70,17 +62,6 @@
       "whatsapp": "5562999050030",
       "link": "https://www.vilabarrobranco.com.br/",
       "texto_link": "Ver Site Oficial",
-      "destaque": true
-    },
-    {
-      "nome": "Óticas Vitórya",
-      "descricao": "13 anos em Trindade, mais de 20 anos de experiência. Armações das melhores marcas, lentes com tecnologia avançada e atendimento de confiança. Duas lojas na cidade, parcelamento em até 6x sem juros e orientação para consulta oftalmológica.",
-      "imagem": "/imagens/novage.png",
-      "imagens_extras": [],
-      "instagram": "https://www.instagram.com/oticas_vitorya",
-      "whatsapp": "5562992114648",
-      "link": "https://wa.me/5562991473716",
-      "texto_link": "WhatsApp Loja 1",
       "destaque": true
     },
     {
@@ -115,15 +96,6 @@
       "imagens_extras": [],
       "instagram": "https://www.instagram.com/eskimo.trindade.go",
       "whatsapp": "5562993158520",
-      "destaque": true
-    },
-    {
-      "nome": "Vando Espetinhos",
-      "descricao": "Comida boa, bem feita e sem complicação. O Vando Espetinhos é a pedida certa de quem mora em Trindade ou passa pela cidade. Espetinho no ponto, sempre fresquinho.",
-      "imagem": "/imagens/vandoespetinho.jpeg",
-      "imagens_extras": [],
-      "instagram": "https://www.instagram.com/vandoespetinhos",
-      "whatsapp": "",
       "destaque": true
     },
     {
