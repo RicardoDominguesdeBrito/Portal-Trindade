@@ -7,7 +7,7 @@
     "email": "contato@portaltrindade.com.br"
   },
   "banner": {
-    "imagem": "/imagens/file_000000009244720e921e53bc1298cfab.png",
+    "imagem": "/imagens/Screenshot_2026-07-22-18-17-55-044_com.instagram.android-edit.jpg",
     "titulo": "XII Festival Gastronômico de Trindade",
     "descricao": "Gastronomia local, cultura e grandes shows nacionais — celebrando o aniversário da cidade"
   },
@@ -51,17 +51,6 @@
       "whatsapp": "5562995542614",
       "link": "https://delivery.yooga.app/cafe-restaurante-cibeles",
       "texto_link": "Ver Cardápio Virtual",
-      "destaque": true
-    },
-    {
-      "nome": "Vila Barro Branco",
-      "descricao": "Refúgio de charme na GO-060, em Trindade, com hospedagem, day use, gastronomia e experiências em meio à natureza do Cerrado.",
-      "imagem": "/imagens/barrobranco01.png",
-      "imagens_extras": ["/imagens/barrobranco02v.png", "/imagens/barrobranco03v.png"],
-      "instagram": "https://www.instagram.com/vilabarrobranco",
-      "whatsapp": "5562999050030",
-      "link": "https://www.vilabarrobranco.com.br/",
-      "texto_link": "Ver Site Oficial",
       "destaque": true
     },
     {
