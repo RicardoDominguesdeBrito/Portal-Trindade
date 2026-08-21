@@ -8,7 +8,7 @@
   <meta property="og:title" content="Portal Trindade | Turismo, Fé e Eventos">
   <meta property="og:description" content="Seu portal completo de Trindade-GO: eventos da cidade, parceiros locais e o guia da Cidade Santa.">
   <meta property="og:image" content="./imagens/basilicavista.png">
-  <meta property="og:url" content="https://www.festadodivinopaieterno.com.br">
+  <meta property="og:url" content="https://www.trindadeportal.com.br/">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -186,7 +186,21 @@
     .modal-evento { display: flex; gap: 1rem; margin-bottom: 0.5rem; align-items: flex-start; }
     .modal-hora { font-size: 0.75rem; color: var(--dourado-claro); font-weight: 700; min-width: 56px; padding-top: 2px; flex-shrink: 0; }
     .modal-desc { font-size: 0.85rem; color: rgba(255,255,255,0.8); line-height: 1.5; }
-    .modal-desc small { color: rgba(255,255,255,0.45); font-size: 0.78rem; }
+    .modal-desc small { color: rgba(255,255,255,0.6); font-size: 0.78rem; }
+    .modal-desc strong { color: white; }
+    .modal-fonte {
+      margin-top: 1.5rem; padding-top: 1rem;
+      border-top: 1px solid rgba(201,168,76,0.2);
+      color: rgba(255,255,255,0.55); font-size: 0.78rem; line-height: 1.5;
+    }
+    .modal-fonte a { color: var(--dourado-claro); }
+    @media (max-width: 600px) {
+      .modal-box { padding: 2rem 1.25rem 1.5rem; }
+      .modal-dia-header { display: block; }
+      .modal-dia-titulo { margin-top: 0.25rem; }
+      .modal-evento { gap: 0.7rem; }
+      .modal-hora { min-width: 48px; }
+    }
 
     #guia { background: #0F1C30; padding: 60px 5%; text-align: center; }
     .guia-iframe-wrapper {
@@ -354,6 +368,16 @@
   <button id="lightbox-anterior">‹</button>
   <img id="lightbox-img" src="" alt="">
   <button id="lightbox-proximo">›</button>
+</div>
+
+<div id="modal-prog" role="dialog" aria-modal="true" aria-labelledby="modal-prog-titulo">
+  <div class="modal-box">
+    <button class="modal-fechar" id="modal-prog-fechar" aria-label="Fechar programação">×</button>
+    <h2 class="modal-titulo" id="modal-prog-titulo">Programação completa</h2>
+    <p class="modal-sub" id="modal-prog-sub"></p>
+    <div id="modal-prog-conteudo"></div>
+    <p class="modal-fonte" id="modal-prog-fonte"></p>
+  </div>
 </div>
 
 <nav>
@@ -548,6 +572,143 @@
   fetch('./conteudo.json')
     .then(function(r) { return r.json(); })
     .then(function(d) {
+      // PROGRAMAÇÃO OFICIAL — XII Festival Gastronômico de Trindade
+      d.evento = {
+            "titulo": "XII Festival Gastronômico de Trindade",
+            "cartaz": "/imagens/festivalgastronomico.png",
+            "periodo": "28 a 30 de agosto de 2026",
+            "local": "Carreiródromo Ada Cyra (Carreiródromo Municipal) — Rua Antônio de Souza Aguiar, 436, Setor Cristina, Trindade-GO",
+            "descricao": "O festival integra as comemorações do aniversário de Trindade e reúne gastronomia local, cozinhas-show, oficinas gratuitas, Cozinha Kids e grandes atrações musicais. Uma realização da Prefeitura de Trindade, por meio da Secretaria Municipal de Turismo e Cultura.",
+            "entrada": "Entrada solidária: 2 kg de alimentos não perecíveis, com mais de três meses de validade. Não serão aceitos sal, fubá e açúcar.",
+            "shows": [
+                  {
+                        "artista": "Vanessa da Mata",
+                        "data": "sexta-feira, 28 de agosto",
+                        "horario": "19h"
+                  },
+                  {
+                        "artista": "Falamansa",
+                        "data": "sábado, 29 de agosto",
+                        "horario": "19h"
+                  },
+                  {
+                        "artista": "Frejat",
+                        "data": "domingo, 30 de agosto",
+                        "horario": "19h"
+                  }
+            ],
+            "observacao": "Confira os horários das cozinhas-show, da Cozinha Kids e das atrações musicais.",
+            "programacao": [
+                  {
+                        "data": "Sexta-feira, 28 de agosto",
+                        "titulo": "Abertura do festival",
+                        "itens": [
+                              {
+                                    "horario": "17h",
+                                    "titulo": "Cozinha Kids",
+                                    "descricao": "Oficina infantil gratuita."
+                              },
+                              {
+                                    "horario": "18h",
+                                    "titulo": "Chef Adílio Gomes",
+                                    "descricao": "Arancine de galinhada com espuma de milho e pequi."
+                              },
+                              {
+                                    "horario": "19h",
+                                    "titulo": "Chef Carô Borges",
+                                    "descricao": "Carpaccio de beterraba assada com hommus de lentilha, picles de cebola roxa, queijo Brioso Serra do Bálsamo, avelãs caramelizadas e molho de gengibre."
+                              },
+                              {
+                                    "horario": "19h",
+                                    "titulo": "Show nacional — Vanessa da Mata",
+                                    "descricao": "Atração musical da noite."
+                              },
+                              {
+                                    "horario": "20h",
+                                    "titulo": "Chef Lucas Corazza",
+                                    "descricao": "Bolo de banana caramelizado da vovó descolada."
+                              }
+                        ]
+                  },
+                  {
+                        "data": "Sábado, 29 de agosto",
+                        "titulo": "Segundo dia",
+                        "itens": [
+                              {
+                                    "horario": "16h",
+                                    "titulo": "Cozinha Kids",
+                                    "descricao": "Oficina infantil gratuita."
+                              },
+                              {
+                                    "horario": "17h",
+                                    "titulo": "Chefs Emiliana Azambuja e Humberto Marra",
+                                    "descricao": "Arroz + feijão multiculturais cheios de amor e umami."
+                              },
+                              {
+                                    "horario": "18h",
+                                    "titulo": "Chef Rayssa Lopes",
+                                    "descricao": "Sanduíche de porco com maxixe e molho oriental."
+                              },
+                              {
+                                    "horario": "19h",
+                                    "titulo": "Sommelier Honorato",
+                                    "descricao": "Amor de Verão."
+                              },
+                              {
+                                    "horario": "19h",
+                                    "titulo": "Chef Marco Túlio",
+                                    "descricao": "Ouro do Rio."
+                              },
+                              {
+                                    "horario": "19h",
+                                    "titulo": "Show nacional — Falamansa",
+                                    "descricao": "Atração musical da noite."
+                              },
+                              {
+                                    "horario": "20h",
+                                    "titulo": "Chef Júnior Marinho",
+                                    "descricao": "Bolinho de chica doida."
+                              }
+                        ]
+                  },
+                  {
+                        "data": "Domingo, 30 de agosto",
+                        "titulo": "Encerramento",
+                        "itens": [
+                              {
+                                    "horario": "16h",
+                                    "titulo": "Cozinha Kids",
+                                    "descricao": "Oficina infantil gratuita."
+                              },
+                              {
+                                    "horario": "17h",
+                                    "titulo": "Chef Marcos Livi",
+                                    "descricao": "Comida de uma panela só: entrevero de pinhão e cozido campeiro."
+                              },
+                              {
+                                    "horario": "18h",
+                                    "titulo": "Chef Danilo Campos",
+                                    "descricao": "Prime rib do Cerrado."
+                              },
+                              {
+                                    "horario": "19h",
+                                    "titulo": "Chef Dom Fabrizio",
+                                    "descricao": "Raviolo aberto do Cerrado."
+                              },
+                              {
+                                    "horario": "19h",
+                                    "titulo": "Show nacional — Frejat",
+                                    "descricao": "Atração musical de encerramento."
+                              }
+                        ]
+                  }
+            ],
+            "fonte": {
+                  "texto": "Prefeitura de Trindade / Secretaria Municipal de Turismo e Cultura",
+                  "url": "https://trindade.go.gov.br/xii-festival-gastronomico-de-trindade-reune-chefs-de-renome-internacional-nacional-e-goiano-em-programacao-especial/"
+            }
+      };
+
       var wa = 'https://wa.me/' + d.site.whatsapp + '?text=' + encodeURIComponent(d.contato.mensagem_whatsapp);
 
       document.querySelector('.nav-logo').textContent = d.site.titulo;
@@ -571,13 +732,15 @@
       }
 
       var showsHtml = d.evento.shows.map(function(s) {
-        return '<li>' + s.artista + ' <span>· ' + s.data + '</span></li>';
+        var horario = s.horario ? ' · ' + s.horario : '';
+        return '<li>' + s.artista + ' <span>· ' + s.data + horario + '</span></li>';
       }).join('');
 
       document.getElementById('evento-grid').innerHTML =
         '<div class="romaria-card">' +
           '<div class="romaria-label">Período</div><div class="romaria-value">' + d.evento.periodo + '</div>' +
           '<div class="romaria-label" style="margin-top:1rem">Local</div><div class="romaria-value">' + d.evento.local + '</div>' +
+          '<div class="romaria-label" style="margin-top:1rem">Entrada</div><div class="romaria-value">' + d.evento.entrada + '</div>' +
         '</div>' +
         '<div class="romaria-card">' +
           '<div class="romaria-label">Sobre o Festival</div><div class="romaria-value">' + d.evento.descricao + '</div>' +
@@ -588,7 +751,55 @@
         '</div>' +
         '<div class="romaria-card">' +
           '<div class="romaria-label">Programação completa</div><div class="romaria-value">' + d.evento.observacao + '</div>' +
+          '<button type="button" class="btn-prog-completa" id="abrir-programacao">Ver horários e atrações</button>' +
         '</div>';
+
+      var modalProgramacao = document.getElementById('modal-prog');
+      document.getElementById('modal-prog-sub').textContent = d.evento.periodo + ' · ' + d.evento.local;
+      document.getElementById('modal-prog-conteudo').innerHTML = d.evento.programacao.map(function(dia) {
+        var itens = dia.itens.map(function(item) {
+          var detalhe = item.descricao ? '<br><small>' + item.descricao + '</small>' : '';
+          return '<div class="modal-evento">' +
+            '<div class="modal-hora">' + item.horario + '</div>' +
+            '<div class="modal-desc"><strong>' + item.titulo + '</strong>' + detalhe + '</div>' +
+          '</div>';
+        }).join('');
+        return '<div class="modal-dia">' +
+          '<div class="modal-dia-header">' +
+            '<span class="modal-dia-data">' + dia.data + '</span>' +
+            '<span class="modal-dia-titulo">' + dia.titulo + '</span>' +
+          '</div>' +
+          itens +
+        '</div>';
+      }).join('');
+
+      var fonteProgramacao = d.evento.fonte;
+      document.getElementById('modal-prog-fonte').innerHTML =
+        'Informações verificadas nos cartazes oficiais e na divulgação da ' +
+        '<a href="' + fonteProgramacao.url + '" target="_blank" rel="noopener noreferrer">' +
+          fonteProgramacao.texto +
+        '</a>.';
+
+      function abrirProgramacao() {
+        modalProgramacao.classList.add('aberto');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function fecharProgramacao() {
+        modalProgramacao.classList.remove('aberto');
+        document.body.style.overflow = '';
+      }
+
+      document.getElementById('abrir-programacao').addEventListener('click', abrirProgramacao);
+      document.getElementById('modal-prog-fechar').addEventListener('click', fecharProgramacao);
+      modalProgramacao.addEventListener('click', function(e) {
+        if (e.target === modalProgramacao) { fecharProgramacao(); }
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modalProgramacao.classList.contains('aberto')) {
+          fecharProgramacao();
+        }
+      });
 
       // PARCEIROS
       var ag = document.getElementById('anunciantes-grid');
