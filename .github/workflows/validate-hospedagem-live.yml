@@ -1,0 +1,84 @@
+name: Validar diretório de hospedagem
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'hospedagem.html'
+      - 'hospedagem.css'
+      - 'hospedagem.js'
+      - 'hospedagens.json'
+      - '.github/workflows/validate-hospedagem-live.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validar arquivos e base local
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          data=json.loads(Path('hospedagens.json').read_text(encoding='utf-8'))
+          items=data.get('estabelecimentos', [])
+          assert data.get('total_confirmados') == 70
+          assert len(items) == 70
+          assert sum(i.get('tipo') == 'Hotel' for i in items) == 21
+          assert sum(i.get('tipo') == 'Pousada' for i in items) == 49
+          assert all(i.get('nome') and i.get('endereco') and i.get('telefone') for i in items)
+          names=[i['nome'].casefold() for i in items]
+          assert len(names) == len(set(names)), 'Há nomes duplicados na base'
+          print('Base local validada: 70 hospedagens, sem duplicidade nominal.')
+          PY
+          node --check hospedagem.js
+          grep -q 'href="./hospedagem.html">Hotéis e pousadas</a>' index.html
+          grep -q 'Ver todos os hotéis e pousadas' index.html
+          grep -q 'id="results"' hospedagem.html
+          grep -q 'hospedagens.json' hospedagem.js
+
+      - name: Aguardar publicação e validar site ao vivo
+        shell: bash
+        run: |
+          set -euo pipefail
+          base='https://www.trindadeportal.com.br'
+          ok=0
+          for attempt in $(seq 1 30); do
+            echo "Tentativa ${attempt}/30"
+            if curl -fsSL --max-time 20 "${base}/" -o /tmp/home.html \
+              && curl -fsSL --max-time 20 "${base}/hospedagem.html" -o /tmp/hospedagem.html \
+              && curl -fsSL --max-time 20 "${base}/hospedagens.json" -o /tmp/hospedagens.json \
+              && curl -fsSL --max-time 20 "${base}/hospedagem.js" -o /tmp/hospedagem.js \
+              && curl -fsSL --max-time 20 "${base}/hospedagem.css" -o /tmp/hospedagem.css \
+              && grep -q 'href="./hospedagem.html">Hotéis e pousadas</a>' /tmp/home.html \
+              && grep -q 'Ver todos os hotéis e pousadas' /tmp/home.html \
+              && grep -q 'Hotéis e pousadas em Trindade' /tmp/hospedagem.html; then
+                python - <<'PY'
+          import json
+          data=json.load(open('/tmp/hospedagens.json', encoding='utf-8'))
+          assert len(data.get('estabelecimentos', [])) == 70
+          assert data.get('hoteis') == 21
+          assert data.get('pousadas') == 49
+          PY
+                node --check /tmp/hospedagem.js
+                test -s /tmp/hospedagem.css
+                ok=1
+                break
+            fi
+            sleep 10
+          done
+          if [ "$ok" -ne 1 ]; then
+            echo 'A versão publicada não convergiu dentro da janela de validação.' >&2
+            exit 1
+          fi
+          echo 'Site ao vivo validado com sucesso.'
