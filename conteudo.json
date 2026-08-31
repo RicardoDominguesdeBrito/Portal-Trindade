@@ -31,7 +31,7 @@
         "nome": "Cibeles Café e Restaurante",
         "tag": "Café e restaurante",
         "descricao": "Café, almoço e lanches com sabor caseiro e atendimento cuidadoso. Consulte o cardápio virtual e faça seu pedido pelo WhatsApp.",
-        "imagem": "/imagens/imagem01cibele.png",
+        "imagem": "/imagens/logo-cibeles-card.webp",
         "imagens_extras": ["/imagens/imagem02cibele.png", "/imagens/imagem03cibele.png"],
         "instagram": "https://www.instagram.com/cafecibeles",
         "whatsapp": "5562995542614",
@@ -42,7 +42,7 @@
         "nome": "The Best Açaí",
         "tag": "Açaí e sorvetes",
         "descricao": "Açaí, sorvetes e acompanhamentos no self-service para você montar do seu jeito. Uma parada refrescante para todas as idades.",
-        "imagem": "/imagens/file_00000000802c71f5ba0ed9e27c18acff.png",
+        "imagem": "/imagens/logo-the-best-acai-card.webp",
         "instagram": "https://www.instagram.com/thebestacaitrindade",
         "whatsapp": "5562998853257"
       },
@@ -50,7 +50,7 @@
         "nome": "Florybal Chocolate Caseiro",
         "tag": "Chocolates",
         "descricao": "O chocolate artesanal de Gramado em Trindade. Trufas, bombons e presentes na Rua da Constituição, nº 01, no Centro, perto da Basílica.",
-        "imagem": "/imagens/florybalparceiro.jpeg",
+        "imagem": "/imagens/logo-florybal-card.webp",
         "instagram": "https://www.instagram.com/florybaltrindade",
         "whatsapp": "5562994090070"
       },
@@ -58,7 +58,7 @@
         "nome": "Eskimó Sorvetes Trindade",
         "tag": "Sorvetes",
         "descricao": "Sorvetes e picolés a preço de fábrica na Av. Manoel Monteiro, nº 1691, em frente ao Posto AG Petro.",
-        "imagem": "/imagens/file_000000001f10720ea3f7f097c9dc1a87.png",
+        "imagem": "/imagens/logo-eskimo-card.webp",
         "instagram": "https://www.instagram.com/eskimo.trindade.go",
         "whatsapp": "5562993158520"
       }
