@@ -1,0 +1,100 @@
+name: Atualizar navegação de hospedagem
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/add-hospedagem-nav.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Inserir nova aba e acessos ao diretório
+        shell: python
+        run: |
+          from pathlib import Path
+
+          path = Path('index.html')
+          text = path.read_text(encoding='utf-8')
+
+          desktop_old = '''        <a class="nav-link" href="#hospedagem">Hospedagem</a>\n        <a class="nav-link" href="#gastronomia">Gastronomia</a>'''
+          desktop_new = '''        <a class="nav-link" href="#hospedagem">Hospedagem</a>\n        <a class="nav-link" href="./hospedagem.html">Hotéis e pousadas</a>\n        <a class="nav-link" href="#gastronomia">Gastronomia</a>'''
+
+          mobile_old = '''        <a class="mobile-link" href="#hospedagem">Hospedagem</a>\n        <a class="mobile-link" href="#gastronomia">Gastronomia</a>'''
+          mobile_new = '''        <a class="mobile-link" href="#hospedagem">Hospedagem</a>\n        <a class="mobile-link" href="./hospedagem.html">Hotéis e pousadas</a>\n        <a class="mobile-link" href="#gastronomia">Gastronomia</a>'''
+
+          grid_old = '''        <div id="hospedagem-grid" class="grid gap-6 md:grid-cols-2" aria-live="polite">\n          <div class="loading-card"></div>\n          <div class="loading-card hidden md:block"></div>\n        </div>'''
+          grid_new = '''        <div id="hospedagem-grid" class="grid gap-6 md:grid-cols-2" aria-live="polite">\n          <div class="loading-card"></div>\n          <div class="loading-card hidden md:block"></div>\n        </div>\n        <div class="mt-8 flex justify-center">\n          <a href="./hospedagem.html" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#14213a] px-6 py-3.5 text-sm font-black text-white shadow-[0_14px_35px_-20px_rgba(20,33,58,.75)] transition hover:-translate-y-0.5 hover:bg-[#213457] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#b18b3d] focus-visible:ring-offset-2">\n            Ver todos os hotéis e pousadas\n            <svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 14 0m-5-5 5 5-5 5"/></svg>\n          </a>\n        </div>'''
+
+          footer_old = '''          <a class="footer-link" href="#hospedagem">Hospedagem</a>\n          <a class="footer-link" href="#gastronomia">Gastronomia</a>'''
+          footer_new = '''          <a class="footer-link" href="#hospedagem">Hospedagem</a>\n          <a class="footer-link" href="./hospedagem.html">Hotéis e pousadas</a>\n          <a class="footer-link" href="#gastronomia">Gastronomia</a>'''
+
+          replacements = [
+              ('desktop', desktop_old, desktop_new),
+              ('mobile', mobile_old, mobile_new),
+              ('cta', grid_old, grid_new),
+              ('footer', footer_old, footer_new),
+          ]
+
+          for label, old, new in replacements:
+              if new in text:
+                  continue
+              if old not in text:
+                  raise SystemExit(f'Bloco esperado não encontrado: {label}')
+              text = text.replace(old, new, 1)
+
+          required = [
+              'href="./hospedagem.html">Hotéis e pousadas</a>',
+              'Ver todos os hotéis e pousadas',
+          ]
+          for marker in required:
+              if marker not in text:
+                  raise SystemExit(f'Validação falhou: {marker}')
+
+          path.write_text(text, encoding='utf-8')
+
+      - name: Validar HTML e referências locais
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f hospedagem.html
+          test -f hospedagem.css
+          test -f hospedagem.js
+          test -f hospedagens.json
+          grep -q 'href="./hospedagem.html">Hotéis e pousadas</a>' index.html
+          grep -q 'Ver todos os hotéis e pousadas' index.html
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('hospedagens.json').read_text(encoding='utf-8'))
+          items=data.get('estabelecimentos', [])
+          assert len(items)==70, len(items)
+          assert sum(i.get('tipo')=='Hotel' for i in items)==21
+          assert sum(i.get('tipo')=='Pousada' for i in items)==49
+          assert all(i.get('nome') and i.get('endereco') and i.get('telefone') for i in items)
+          print('Base validada:', len(items), 'registros')
+          PY
+          node --check hospedagem.js
+
+      - name: Commit da navegação
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- index.html; then
+            echo 'Index já estava atualizado.'
+            exit 0
+          fi
+          git config user.name 'Portal Trindade Automation'
+          git config user.email 'actions@users.noreply.github.com'
+          git add index.html
+          git commit -m 'feat: adiciona aba de hotéis e pousadas à navegação'
+          git push origin main
