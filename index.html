@@ -15,7 +15,7 @@
   <link rel="canonical" href="https://www.trindadeportal.com.br/">
   <link rel="icon" type="image/jpeg" href="./imagens/logo-portal-trindade.jpg?v=20260831-logo-fix">
   <link rel="apple-touch-icon" href="./imagens/logo-portal-trindade.jpg?v=20260831-logo-fix">
-  <link rel="preload" as="image" href="./imagens/basilicavista.png" fetchpriority="high">
+  <link rel="preload" as="image" href="./imagens/hero-basilica-2026.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="./styles.css?v=20260831-logo-fix">
 </head>
 <body class="bg-[#f7f6f2] font-sans text-[#14213a] antialiased selection:bg-[#d6b875] selection:text-[#14213a]">
@@ -67,7 +67,7 @@
 
   <main id="conteudo">
     <section class="relative isolate min-h-[680px] overflow-hidden bg-[#14213a] sm:min-h-[720px]" aria-labelledby="hero-title">
-      <img src="./imagens/basilicavista.png" alt="Vista da Basílica do Divino Pai Eterno em Trindade, Goiás" class="absolute inset-0 -z-20 h-full w-full object-cover object-center" width="1600" height="1000" fetchpriority="high" decoding="async">
+      <img src="./imagens/hero-basilica-2026.webp" alt="Vista aérea atual da Basílica do Divino Pai Eterno em Trindade, Goiás" class="absolute inset-0 -z-20 h-full w-full object-cover" style="object-position:center 36%;" width="1600" height="1000" fetchpriority="high" decoding="async">
       <div class="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(11,25,48,.93)_0%,rgba(11,25,48,.78)_42%,rgba(11,25,48,.28)_100%)]"></div>
       <div class="absolute inset-x-0 bottom-0 -z-10 h-44 bg-gradient-to-t from-[#14213a] to-transparent"></div>
       <div class="pointer-events-none absolute -right-20 top-28 size-72 rounded-full border border-[#e2c47f]/20 sm:size-96" aria-hidden="true"></div>
@@ -385,7 +385,7 @@
       });
 
       const renderGallery = items => {
-        gallery = items.filter(item => item.imagem && item.legenda).slice(0, 8);
+        gallery = items.filter(item => item.imagem && item.legenda);
         $('#galeria-grid').innerHTML = gallery.map((item, index) => {
           const featured = index === 0 ? 'col-span-2 row-span-2 min-h-[360px] sm:min-h-[520px]' : 'min-h-[172px] sm:min-h-[252px]';
           return `<button type="button" class="group relative overflow-hidden rounded-[1.25rem] bg-[#d9d6ce] text-left ${featured} focus:outline-none focus-visible:ring-2 focus-visible:ring-[#b18b3d] focus-visible:ring-offset-4" data-gallery-index="${index}" aria-label="Ampliar: ${escapeHtml(item.legenda)}">

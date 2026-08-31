@@ -97,14 +97,20 @@
     }
   ],
   "galeria": [
-    { "imagem": "/imagens/basilicavista.png", "legenda": "Basílica do Divino Pai Eterno" },
-    { "imagem": "/imagens/altarmatriz.png", "legenda": "Altar da Igreja Matriz" },
-    { "imagem": "/imagens/capelacruzeiro.png", "legenda": "Capela do Cruzeiro" },
-    { "imagem": "/imagens/vitral.png", "legenda": "Vitral da Basílica" },
-    { "imagem": "/imagens/comidatipica.png", "legenda": "Sabores tradicionais de Trindade" },
-    { "imagem": "/imagens/castelinho.png", "legenda": "Castelinho de Trindade" },
-    { "imagem": "/imagens/gruta.png", "legenda": "Gruta de Trindade" },
-    { "imagem": "/imagens/portalentrada.png", "legenda": "Portal de entrada da cidade" }
+    { "imagem": "/imagens/igreja-matriz-2026.webp", "legenda": "Igreja Matriz de Trindade" },
+    { "imagem": "/imagens/basilica-vista-do-alto-2026.webp", "legenda": "Basílica do Divino Pai Eterno vista do alto" },
+    { "imagem": "/imagens/carreiros-trindade-2026-01.webp", "legenda": "Tradição dos carros de boi no centro de Trindade" },
+    { "imagem": "/imagens/galeria-altar-matriz.webp", "legenda": "Altar da Igreja Matriz" },
+    { "imagem": "/imagens/galeria-basilica.webp", "legenda": "Basílica do Divino Pai Eterno" },
+    { "imagem": "/imagens/galeria-capela-cruzeiro.webp", "legenda": "Capela do Cruzeiro" },
+    { "imagem": "/imagens/galeria-vitral.webp", "legenda": "Vitral da Basílica" },
+    { "imagem": "/imagens/paisagem-trindade-2026.webp", "legenda": "Paisagem urbana de Trindade" },
+    { "imagem": "/imagens/carreiros-trindade-2026-02.webp", "legenda": "Carreiros em frente à Igreja Matriz" },
+    { "imagem": "/imagens/carreiros-trindade-2026-03.webp", "legenda": "Romeiros acompanham a tradição dos carreiros" },
+    { "imagem": "/imagens/galeria-sabores.webp", "legenda": "Sabores tradicionais de Trindade" },
+    { "imagem": "/imagens/galeria-castelinho.webp", "legenda": "Castelinho de Trindade" },
+    { "imagem": "/imagens/galeria-gruta.webp", "legenda": "Gruta de Trindade" },
+    { "imagem": "/imagens/galeria-portal-entrada.webp", "legenda": "Portal de entrada da cidade" }
   ],
   "contato": {
     "mensagem_whatsapp": "Olá! Vim pelo Portal Trindade e gostaria de mais informações.",
