@@ -1,121 +1,99 @@
 {
   "site": {
     "titulo": "Portal Trindade",
-    "subtitulo": "Guia da Romaria e da Cidade Santa",
+    "subtitulo": "Turismo, Fé e Negócios na Capital da Fé.",
     "whatsapp": "5564984294110",
     "instagram": "https://www.instagram.com/trindadeportal",
     "email": "contato@portaltrindade.com.br"
   },
-  "banner": {
-    "imagem": "/imagens/Screenshot_2026-07-22-18-17-55-044_com.instagram.android-edit.jpg",
-    "titulo": "XII Festival Gastronômico de Trindade",
-    "descricao": "Gastronomia local, cultura e grandes shows nacionais — celebrando o aniversário da cidade"
-  },
-  "evento": {
-    "titulo": "XII Festival Gastronômico de Trindade",
-    "cartaz": "/imagens/festivalgastronomico.png",
-    "periodo": "28 a 30 de agosto de 2026",
-    "local": "Trindade, GO",
-    "descricao": "Três noites especiais reunindo gastronomia local, cultura e grandes shows nacionais, celebrando também o aniversário da cidade. Uma iniciativa da Prefeitura de Trindade e da Secretaria de Turismo e Cultura.",
-    "shows": [
-      { "artista": "Vanessa da Mata", "data": "28 de agosto" },
-      { "artista": "Falamansa", "data": "29 de agosto" },
-      { "artista": "Frejat", "data": "30 de agosto" }
+  "parceiros": {
+    "hospedagem": [
+      {
+        "nome": "Hotel Recanto Goiano",
+        "tag": "Hotel",
+        "descricao": "Hospedagem acolhedora em Trindade, ideal para romeiros, turistas e famílias. Quartos privativos com ar-condicionado, Wi-Fi, frigobar e refeições incluídas, em ambiente familiar e bem localizado.",
+        "imagem": "/imagens/pousadarecanto.jpeg",
+        "imagens_extras": ["/imagens/pousadarecanto2.jpeg"],
+        "instagram": "https://www.instagram.com/recantogoiano.hotel",
+        "whatsapp": "556239915854"
+      },
+      {
+        "nome": "Pousada Padre Pelágio",
+        "tag": "Pousada",
+        "descricao": "Hospedagem a poucos passos da Basílica, com quartos climatizados, frigobar, Wi-Fi gratuito e café da manhã incluso. Uma opção prática para romeiros, famílias e grupos.",
+        "imagem": "/imagens/posadapadrepelagio.png",
+        "instagram": "",
+        "whatsapp": "5562985921198"
+      }
     ],
-    "observacao": "A programação completa será divulgada em breve."
+    "gastronomia": [
+      {
+        "nome": "Cibeles Café e Restaurante",
+        "tag": "Café e restaurante",
+        "descricao": "Café, almoço e lanches com sabor caseiro e atendimento cuidadoso. Consulte o cardápio virtual e faça seu pedido pelo WhatsApp.",
+        "imagem": "/imagens/imagem01cibele.png",
+        "imagens_extras": ["/imagens/imagem02cibele.png", "/imagens/imagem03cibele.png"],
+        "instagram": "https://www.instagram.com/cafecibeles",
+        "whatsapp": "5562995542614",
+        "link": "https://delivery.yooga.app/cafe-restaurante-cibeles",
+        "texto_link": "Ver cardápio"
+      },
+      {
+        "nome": "The Best Açaí",
+        "tag": "Açaí e sorvetes",
+        "descricao": "Açaí, sorvetes e acompanhamentos no self-service para você montar do seu jeito. Uma parada refrescante para todas as idades.",
+        "imagem": "/imagens/file_00000000802c71f5ba0ed9e27c18acff.png",
+        "instagram": "https://www.instagram.com/thebestacaitrindade",
+        "whatsapp": "5562998853257"
+      },
+      {
+        "nome": "Florybal Chocolate Caseiro",
+        "tag": "Chocolates",
+        "descricao": "O chocolate artesanal de Gramado em Trindade. Trufas, bombons e presentes na Rua da Constituição, nº 01, no Centro, perto da Basílica.",
+        "imagem": "/imagens/florybalparceiro.jpeg",
+        "instagram": "https://www.instagram.com/florybaltrindade",
+        "whatsapp": "5562994090070"
+      },
+      {
+        "nome": "Eskimó Sorvetes Trindade",
+        "tag": "Sorvetes",
+        "descricao": "Sorvetes e picolés a preço de fábrica na Av. Manoel Monteiro, nº 1691, em frente ao Posto AG Petro.",
+        "imagem": "/imagens/file_000000001f10720ea3f7f097c9dc1a87.png",
+        "instagram": "https://www.instagram.com/eskimo.trindade.go",
+        "whatsapp": "5562993158520"
+      }
+    ]
   },
-  "anunciantes": [
-    {
-      "nome": "Hotel Recanto Goiano",
-      "descricao": "Hospedagem acolhedora em Trindade, ideal para romeiros, turistas e famílias. Quartos privativos com ar-condicionado, Wi-Fi, frigobar e refeições incluídas, em ambiente familiar e bem localizado.",
-      "imagem": "/imagens/pousadarecanto.jpeg",
-      "imagens_extras": ["/imagens/pousadarecanto2.jpeg"],
-      "instagram": "https://www.instagram.com/recantogoiano.hotel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-      "whatsapp": "556239915854",
-      "destaque": true
-    },
-    {
-      "nome": "Pousada Padre Pelágio",
-      "descricao": "Hospedagem privilegiada a poucos passos da Basílica. Quartos com ar-condicionado, frigobar e Wi-Fi gratuito. Café da manhã incluso, almoço e jantar caseiros para romeiros, famílias e grupos.",
-      "imagem": "/imagens/posadapadrepelagio.png",
-      "instagram": "",
-      "whatsapp": "5562985921198",
-      "destaque": true
-    },
-    {
-      "nome": "Cibeles Café e Restaurante",
-      "descricao": "Café, almoço e lanches com sabor caseiro e atendimento cuidadoso. Cardápio virtual disponível com pedidos pelo WhatsApp e retirada ou entrega no local.",
-      "imagem": "/imagens/imagem01cibele.png",
-      "imagens_extras": ["/imagens/imagem02cibele.png", "/imagens/imagem03cibele.png"],
-      "instagram": "https://www.instagram.com/cafecibeles",
-      "whatsapp": "5562995542614",
-      "link": "https://delivery.yooga.app/cafe-restaurante-cibeles",
-      "texto_link": "Ver Cardápio Virtual",
-      "destaque": true
-    },
-    {
-      "nome": "The Best Açaí",
-      "descricao": "A maior franquia de açaí e sorvetes chega a Trindade! 12 sabores de açaí, 24 de sorvete e mais de 40 acompanhamentos no self-service — você monta do seu jeito. Funcionamento de 12h às 21h (sáb e dom até 22h).",
-      "imagem": "/imagens/file_00000000802c71f5ba0ed9e27c18acff.png",
-      "imagens_extras": [
-        "/imagens/file_000000003874720ebb0ad1c33c5102af.png",
-        "/imagens/file_000000005ab0720e97ce6a335cc6f9f1.png",
-        "/imagens/file_00000000622c71f58a7d08841427d3bb.png",
-        "/imagens/file_000000007d64720e9f1352fcc67329af.png",
-        "/imagens/file_00000000b5f4720e9b7dd61c474b5a86.png",
-        "/imagens/file_00000000bba0720ebbdbc14b0523deb6.png"
-      ],
-      "instagram": "https://www.instagram.com/thebestacaitrindade",
-      "whatsapp": "5562998853257",
-      "destaque": true
-    },
-    {
-      "nome": "Florybal Chocolate Caseiro",
-      "descricao": "O chocolate artesanal de Gramado-RS agora em Trindade! Trufas, bombons e muito mais, feitos com amor e magia. A loja fica na Rua da Constituição, Nº 01 — Centro, pertinho da Basílica. Visite e saboreie cada momento.",
-      "imagem": "/imagens/florybalparceiro.jpeg",
-      "imagens_extras": [],
-      "instagram": "https://www.instagram.com/florybaltrindade",
-      "whatsapp": "5562994090070",
-      "destaque": true
-    },
-    {
-      "nome": "Eskimó Sorvetes Trindade",
-      "descricao": "Loja licenciada Eskimó em Trindade! Sorvetes a preço de fábrica — compre muito pagando pouco, todo dia é dia de sorvete. Av. Manoel Monteiro, Nº 1691, em frente ao Posto AG Petro.",
-      "imagem": "/imagens/file_000000001f10720ea3f7f097c9dc1a87.png",
-      "imagens_extras": [],
-      "instagram": "https://www.instagram.com/eskimo.trindade.go",
-      "whatsapp": "5562993158520",
-      "destaque": true
-    },
+  "guia": {
+    "titulo": "Guia de Turismo de Trindade 2026",
+    "descricao": "Conheça a história, os pontos turísticos, a cultura e os roteiros de Trindade neste guia oficial da Prefeitura — 2ª edição de 2026, com 176 páginas.",
+    "visualizar": "https://drive.google.com/file/d/173c1tNzJIsw9Kdi2rOH13cFqdN2SA9mU/preview",
+    "download": "https://drive.google.com/uc?export=download&id=173c1tNzJIsw9Kdi2rOH13cFqdN2SA9mU"
+  },
+  "leitura": [
     {
       "nome": "Manhãs com Jesus — Ricardo Brito",
-      "descricao": "180 reflexões para quem atravessa dor, espera e recomeço com Deus. Um livro de fé para começar cada manhã com força e esperança. Disponível na Amazon.",
+      "tag": "Reflexões",
+      "descricao": "180 reflexões para quem atravessa dor, espera e recomeço com Deus. Uma leitura de fé para começar cada manhã com força e esperança.",
       "imagem": "/imagens/livro_manhas.png",
       "link": "https://www.amazon.com.br/dp/B0GWDHMPRJ",
-      "texto_link": "Comprar na Amazon",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": true
+      "texto_link": "Ver na Amazon"
     },
     {
       "nome": "Do Lado de Dentro — Livro Gratuito",
-      "descricao": "Testemunho real de fé, limite e recomeço, escrito por Ricardo Brito. Oferecido gratuitamente — 100% das contribuições voluntárias vão para pacientes oncológicos em dificuldade financeira.",
+      "tag": "Testemunho",
+      "descricao": "Um testemunho real de fé, limite e recomeço, escrito por Ricardo Brito e oferecido gratuitamente.",
       "imagem": "/imagens/livro_dolado.png",
       "link": "https://ricardodominguesdebrito.github.io/Do-Lado-de-Dentro/",
-      "texto_link": "Receber Gratuitamente",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": true
+      "texto_link": "Receber gratuitamente"
     },
     {
-      "nome": "Instrução aos Católicos — Santo Afonso de Ligório",
-      "descricao": "Clássico indispensável da fé católica sobre os mandamentos, sacramentos e a veracidade da fé. Capa dura, 348 páginas. Frete grátis pelo Centro Dom Bosco.",
+      "nome": "Instrução aos Católicos",
+      "tag": "Fé católica",
+      "descricao": "Obra de Santo Afonso de Ligório sobre os mandamentos, os sacramentos e os fundamentos da fé católica.",
       "imagem": "/imagens/livro_catolico.png",
       "link": "https://meli.la/2EstgTG",
-      "texto_link": "Comprar no Mercado Livre",
-      "instagram": "",
-      "whatsapp": "",
-      "destaque": false
+      "texto_link": "Conhecer o livro"
     }
   ],
   "galeria": [
@@ -123,34 +101,10 @@
     { "imagem": "/imagens/altarmatriz.png", "legenda": "Altar da Igreja Matriz" },
     { "imagem": "/imagens/capelacruzeiro.png", "legenda": "Capela do Cruzeiro" },
     { "imagem": "/imagens/vitral.png", "legenda": "Vitral da Basílica" },
-    { "imagem": "/imagens/comidatipica.png", "legenda": "Comida típica de Trindade" },
+    { "imagem": "/imagens/comidatipica.png", "legenda": "Sabores tradicionais de Trindade" },
     { "imagem": "/imagens/castelinho.png", "legenda": "Castelinho de Trindade" },
-    { "imagem": "/imagens/medalhao.png", "legenda": "Medalhão do Divino Pai Eterno" },
-    { "imagem": "/imagens/caminhadadafe.png", "legenda": "Caminhada da Fé" },
     { "imagem": "/imagens/gruta.png", "legenda": "Gruta de Trindade" },
-    { "imagem": "/imagens/igrejasaojose.png", "legenda": "Igreja São José" },
-    { "imagem": "/imagens/novaigrejavistacima.png", "legenda": "Nova Igreja — vista aérea" },
-    { "imagem": "/imagens/portalentrada.png", "legenda": "Portal de entrada da cidade" },
-    { "imagem": "/imagens/painelrodovia.png", "legenda": "Painel na rodovia" },
-    { "imagem": "/imagens/pordosoltrindade.png", "legenda": "Por do sol em Trindade" },
-    { "imagem": "/imagens/Imagem_Original_e_Milagrosa_do_Divino_Pai_Eterno.png", "legenda": "Imagem Original e Milagrosa do Divino Pai Eterno" },
-    { "imagem": "/imagens/danieleanacastela.png", "legenda": "Romaria 2026 — Shows de Ana Castela e Daniel" },
-    { "imagem": "/imagens/festa2026.png", "legenda": "Cartaz oficial da 186ª Romaria do Divino Pai Eterno" },
-    { "imagem": "/imagens/alef.png", "legenda": "" },
-    { "imagem": "/imagens/andreborges.png", "legenda": "" },
-    { "imagem": "/imagens/angela.png", "legenda": "" },
-    { "imagem": "/imagens/brenda.png", "legenda": "" },
-    { "imagem": "/imagens/breno2.png", "legenda": "" },
-    { "imagem": "/imagens/camila.png", "legenda": "" },
-    { "imagem": "/imagens/canopolis.png", "legenda": "" },
-    { "imagem": "/imagens/daniel.png", "legenda": "" },
-    { "imagem": "/imagens/estefane.png", "legenda": "" },
-    { "imagem": "/imagens/familiaantonioantonia.png", "legenda": "" },
-    { "imagem": "/imagens/FERNANDAGOLVEIA.jpeg", "legenda": "" },
-    { "imagem": "/imagens/gaspar.jpeg", "legenda": "" },
-    { "imagem": "/imagens/geovane.png", "legenda": "" },
-    { "imagem": "/imagens/raphaela.png", "legenda": "" },
-    { "imagem": "/imagens/tradicao.png", "legenda": "" }
+    { "imagem": "/imagens/portalentrada.png", "legenda": "Portal de entrada da cidade" }
   ],
   "contato": {
     "mensagem_whatsapp": "Olá! Vim pelo Portal Trindade e gostaria de mais informações.",
