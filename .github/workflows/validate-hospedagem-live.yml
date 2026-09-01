@@ -9,6 +9,7 @@ on:
       - 'hospedagem.css'
       - 'hospedagem.js'
       - 'hospedagens.json'
+      - 'directory-cover.css'
       - '.github/workflows/validate-hospedagem-live.yml'
   workflow_dispatch:
 
@@ -32,16 +33,17 @@ jobs:
 
           data=json.loads(Path('hospedagens.json').read_text(encoding='utf-8'))
           items=data.get('estabelecimentos', [])
-          assert data.get('total_confirmados') == 70
-          assert len(items) == 70
+          assert data.get('total_confirmados') == 71
+          assert len(items) == 71
           assert sum(i.get('tipo') == 'Hotel' for i in items) == 21
-          assert sum(i.get('tipo') == 'Pousada' for i in items) == 49
+          assert sum(i.get('tipo') == 'Pousada' for i in items) == 50
           assert all(i.get('nome') and i.get('endereco') and i.get('telefone') for i in items)
           names=[i['nome'].casefold() for i in items]
           assert len(names) == len(set(names)), 'Há nomes duplicados na base'
-          print('Base local validada: 70 hospedagens, sem duplicidade nominal.')
+          print('Base local validada: 71 hospedagens, sem duplicidade nominal.')
           PY
           node --check hospedagem.js
+          test -s directory-cover.css
           grep -q 'href="./hospedagem.html">Hotéis e pousadas</a>' index.html
           grep -q 'Ver todos os hotéis e pousadas' index.html
           grep -q 'id="results"' hospedagem.html
@@ -60,18 +62,20 @@ jobs:
               && curl -fsSL --max-time 20 "${base}/hospedagens.json" -o /tmp/hospedagens.json \
               && curl -fsSL --max-time 20 "${base}/hospedagem.js" -o /tmp/hospedagem.js \
               && curl -fsSL --max-time 20 "${base}/hospedagem.css" -o /tmp/hospedagem.css \
+              && curl -fsSL --max-time 20 "${base}/directory-cover.css" -o /tmp/directory-cover.css \
               && grep -q 'href="./hospedagem.html">Hotéis e pousadas</a>' /tmp/home.html \
               && grep -q 'Ver todos os hotéis e pousadas' /tmp/home.html \
               && grep -q 'Hotéis e pousadas em Trindade' /tmp/hospedagem.html; then
                 python - <<'PY'
           import json
           data=json.load(open('/tmp/hospedagens.json', encoding='utf-8'))
-          assert len(data.get('estabelecimentos', [])) == 70
+          assert len(data.get('estabelecimentos', [])) == 71
           assert data.get('hoteis') == 21
-          assert data.get('pousadas') == 49
+          assert data.get('pousadas') == 50
           PY
                 node --check /tmp/hospedagem.js
                 test -s /tmp/hospedagem.css
+                test -s /tmp/directory-cover.css
                 ok=1
                 break
             fi

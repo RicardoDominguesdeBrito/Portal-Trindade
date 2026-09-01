@@ -7,25 +7,7 @@
     "email": "contato@portaltrindade.com.br"
   },
   "parceiros": {
-    "hospedagem": [
-      {
-        "nome": "Hotel Recanto Goiano",
-        "tag": "Hotel",
-        "descricao": "Hospedagem acolhedora em Trindade, ideal para romeiros, turistas e famílias. Quartos privativos com ar-condicionado, Wi-Fi, frigobar e refeições incluídas, em ambiente familiar e bem localizado.",
-        "imagem": "/imagens/pousadarecanto.jpeg",
-        "imagens_extras": ["/imagens/pousadarecanto2.jpeg"],
-        "instagram": "https://www.instagram.com/recantogoiano.hotel",
-        "whatsapp": "556239915854"
-      },
-      {
-        "nome": "Pousada Padre Pelágio",
-        "tag": "Pousada",
-        "descricao": "Hospedagem a poucos passos da Basílica, com quartos climatizados, frigobar, Wi-Fi gratuito e café da manhã incluso. Uma opção prática para romeiros, famílias e grupos.",
-        "imagem": "/imagens/posadapadrepelagio.png",
-        "instagram": "",
-        "whatsapp": "5562985921198"
-      }
-    ],
+    "hospedagem": [],
     "gastronomia": [
       {
         "nome": "Cibeles Café e Restaurante",

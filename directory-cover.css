@@ -1,0 +1,203 @@
+.lodging-directory-cover {
+  display: grid;
+  overflow: hidden;
+  border: 1px solid rgba(20, 33, 58, .12);
+  border-radius: 2rem;
+  background: #14213a;
+  color: #fff;
+  box-shadow: 0 28px 80px -48px rgba(20, 33, 58, .9);
+  text-decoration: none;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.lodging-directory-cover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 34px 90px -46px rgba(20, 33, 58, .95);
+}
+
+.lodging-directory-cover:focus-visible {
+  outline: 3px solid #b18b3d;
+  outline-offset: 4px;
+}
+
+.lodging-cover-copy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(1.75rem, 6vw, 4.75rem);
+  isolation: isolate;
+}
+
+.lodging-cover-copy::before {
+  position: absolute;
+  z-index: -1;
+  right: -7rem;
+  bottom: -9rem;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 999px;
+  background: rgba(226, 196, 127, .09);
+  content: "";
+}
+
+.lodging-cover-kicker {
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .2em;
+  color: #e2c47f;
+  text-transform: uppercase;
+}
+
+.lodging-cover-copy h2 {
+  max-width: 13ch;
+  margin-top: 1rem;
+  font-size: clamp(2.45rem, 7vw, 5rem);
+  font-weight: 900;
+  line-height: .98;
+  letter-spacing: -.055em;
+  text-wrap: balance;
+}
+
+.lodging-cover-copy p {
+  max-width: 39rem;
+  margin-top: 1.5rem;
+  color: rgba(255, 255, 255, .7);
+  font-size: clamp(.95rem, 1.6vw, 1.1rem);
+  line-height: 1.75;
+}
+
+.lodging-cover-action {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 3rem;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: .65rem;
+  border-radius: 999px;
+  background: #fff;
+  padding: .8rem 1.15rem;
+  color: #14213a;
+  font-size: .82rem;
+  font-weight: 900;
+  text-align: center;
+  box-shadow: 0 16px 34px -22px rgba(0, 0, 0, .8);
+}
+
+.lodging-cover-action svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform .25s ease;
+}
+
+.lodging-directory-cover:hover .lodging-cover-action svg {
+  transform: translateX(3px);
+}
+
+.lodging-cover-visual {
+  position: relative;
+  min-height: 17rem;
+  overflow: hidden;
+  background: #d8d3c8;
+}
+
+.lodging-cover-visual::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 17, 31, .04), rgba(7, 17, 31, .48));
+  content: "";
+}
+
+.lodging-cover-visual img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 48%;
+  transition: transform .7s ease;
+}
+
+.lodging-directory-cover:hover .lodging-cover-visual img {
+  transform: scale(1.035);
+}
+
+.lodging-cover-badge {
+  position: absolute;
+  z-index: 1;
+  left: 1rem;
+  bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  border: 1px solid rgba(255, 255, 255, .3);
+  border-radius: 1rem;
+  background: rgba(10, 21, 40, .8);
+  padding: .7rem .85rem;
+  box-shadow: 0 12px 35px -20px #000;
+  backdrop-filter: blur(12px);
+}
+
+.lodging-cover-badge strong {
+  font-size: 1.65rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #f0d99f;
+}
+
+.lodging-cover-badge span {
+  max-width: 7rem;
+  font-size: .68rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, .9);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.lodging-cover-place {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  bottom: 1.3rem;
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, .65);
+}
+
+@media (min-width: 48rem) {
+  .lodging-directory-cover {
+    grid-template-columns: minmax(0, 1.08fr) minmax(20rem, .92fr);
+    min-height: 31rem;
+  }
+
+  .lodging-cover-visual {
+    min-height: 100%;
+  }
+
+  .lodging-cover-badge {
+    left: 1.5rem;
+    bottom: 1.5rem;
+  }
+
+  .lodging-cover-place {
+    right: 1.5rem;
+    bottom: 1.85rem;
+  }
+}
+
+@media (max-width: 26rem) {
+  .lodging-cover-place {
+    display: none;
+  }
+}

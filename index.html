@@ -17,6 +17,7 @@
   <link rel="apple-touch-icon" href="./imagens/logo-portal-trindade.jpg?v=20260831-logo-fix">
   <link rel="preload" as="image" href="./imagens/hero-basilica-2026.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="./styles.css?v=20260831-logo-fix">
+  <link rel="stylesheet" href="./directory-cover.css?v=20260831">
 </head>
 <body class="bg-[#f7f6f2] font-sans text-[#14213a] antialiased selection:bg-[#d6b875] selection:text-[#14213a]">
   <a href="#conteudo" class="fixed left-4 top-3 z-[100] -translate-y-20 rounded-full bg-[#14213a] px-5 py-3 text-sm font-bold text-white shadow-xl transition-transform focus:translate-y-0">
@@ -121,24 +122,22 @@
 
     <section id="hospedagem" class="scroll-mt-24 py-20 sm:py-28" aria-labelledby="hospedagem-title">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="mb-10 flex flex-col gap-5 sm:mb-14 sm:flex-row sm:items-end sm:justify-between">
-          <div class="max-w-2xl">
-            <p class="eyebrow">Diretório de parceiros</p>
-            <h2 id="hospedagem-title" class="section-heading">Hospedagem em Trindade</h2>
-            <p class="section-copy">Encontre uma estadia acolhedora para sua visita, viagem em família ou peregrinação.</p>
+        <a class="lodging-directory-cover" href="./hospedagem.html" aria-label="Ver todos os hotéis e pousadas em Trindade">
+          <div class="lodging-cover-copy">
+            <span class="lodging-cover-kicker">Guia de hospedagem</span>
+            <h2 id="hospedagem-title">Onde se hospedar em Trindade</h2>
+            <p>Consulte hotéis e pousadas da cidade em uma lista organizada, com endereço, telefone e acesso direto aos contatos.</p>
+            <span class="lodging-cover-action">
+              Ver a lista completa
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 14 0m-5-5 5 5-5 5"/></svg>
+            </span>
           </div>
-          <span class="section-number" aria-hidden="true">01</span>
-        </div>
-        <div id="hospedagem-grid" class="grid gap-6 md:grid-cols-2" aria-live="polite">
-          <div class="loading-card"></div>
-          <div class="loading-card hidden md:block"></div>
-        </div>
-        <div class="mt-8 flex justify-center">
-          <a href="./hospedagem.html" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#14213a] px-6 py-3.5 text-sm font-black text-white shadow-[0_14px_35px_-20px_rgba(20,33,58,.75)] transition hover:-translate-y-0.5 hover:bg-[#213457] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#b18b3d] focus-visible:ring-offset-2">
-            Ver todos os hotéis e pousadas
-            <svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 14 0m-5-5 5 5-5 5"/></svg>
-          </a>
-        </div>
+          <div class="lodging-cover-visual" aria-hidden="true">
+            <img src="/imagens/hero-basilica-2026.webp" alt="" width="1600" height="1000" loading="lazy" decoding="async">
+            <span class="lodging-cover-badge"><strong>71</strong><span>opções confirmadas</span></span>
+            <span class="lodging-cover-place">Trindade · Goiás</span>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -423,7 +422,6 @@
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           const data = await response.json();
           const partners = data.parceiros || {};
-          $('#hospedagem-grid').innerHTML = (partners.hospedagem || []).map(item => renderPartner(item, 'Hospedagem')).join('');
           $('#gastronomia-grid').innerHTML = (partners.gastronomia || []).map(item => renderPartner(item, 'Gastronomia')).join('');
           $('#leitura-grid').innerHTML = (data.leitura || []).map(renderReading).join('');
           renderGallery(data.galeria || []);
@@ -438,7 +436,6 @@
         } catch (error) {
           console.error('Não foi possível carregar o conteúdo do Portal.', error);
           const fallback = '<div class="rounded-3xl border border-[#14213a]/10 bg-white p-6 text-sm font-semibold text-[#14213a]/65">O conteúdo está sendo atualizado. Tente novamente em instantes.</div>';
-          $('#hospedagem-grid').innerHTML = fallback;
           $('#gastronomia-grid').innerHTML = fallback;
           $('#leitura-grid').innerHTML = '<div class="rounded-3xl border border-white/10 bg-white/10 p-6 text-sm font-semibold text-white/65">Materiais temporariamente indisponíveis.</div>';
           $('#galeria-grid').innerHTML = fallback;
