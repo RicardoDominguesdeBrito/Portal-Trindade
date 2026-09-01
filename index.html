@@ -355,8 +355,8 @@
       const renderReading = item => {
         const name = escapeHtml(item.nome);
         return `<article class="group grid grid-cols-[92px_1fr] gap-4 rounded-[1.6rem] border border-white/10 bg-white/[0.07] p-4 transition hover:-translate-y-0.5 hover:bg-white/[0.1] sm:grid-cols-[108px_1fr]">
-          <div class="aspect-[4/5] overflow-hidden rounded-2xl bg-white/10">
-            <img src="${escapeHtml(imagePath(item.imagem))}" alt="Capa de ${name}" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" width="320" height="400" loading="lazy" decoding="async">
+          <div class="aspect-[2/3] self-center overflow-hidden rounded-2xl bg-white/10 shadow-lg shadow-black/15">
+            <img src="${escapeHtml(imagePath(item.imagem))}" alt="Capa de ${name}" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" width="320" height="480" loading="lazy" decoding="async">
           </div>
           <div class="flex min-w-0 flex-col justify-center py-1">
             <span class="text-[0.65rem] font-black uppercase tracking-[0.18em] text-[#e2c47f]">${escapeHtml(item.tag || 'Leitura')}</span>
