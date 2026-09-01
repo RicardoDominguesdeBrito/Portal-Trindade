@@ -255,7 +255,6 @@
         <h2 class="text-xs font-black uppercase tracking-[0.18em] text-[#8b6d2f]">Contato oficial</h2>
         <div class="mt-4 grid gap-2 text-sm font-bold text-[#14213a]/70">
           <a id="footer-instagram" class="footer-link" href="https://www.instagram.com/trindadeportal" target="_blank" rel="noopener noreferrer">@trindadeportal</a>
-          <a id="footer-email" class="footer-link" href="mailto:contato@portaltrindade.com.br">contato@portaltrindade.com.br</a>
           <a id="footer-whatsapp" class="footer-link" href="#" target="_blank" rel="noopener noreferrer">WhatsApp do Portal</a>
         </div>
       </div>
@@ -410,8 +409,6 @@
         const href = waUrl(site.whatsapp, contact.mensagem_whatsapp || 'Olá! Vim pelo Portal Trindade e gostaria de mais informações.');
         ['#contact-cta', '#whatsapp-float', '#footer-whatsapp'].forEach(selector => $(selector).href = href);
         $('#footer-instagram').href = safeUrl(site.instagram);
-        $('#footer-email').href = `mailto:${site.email || ''}`;
-        $('#footer-email').textContent = site.email || '';
         $('#footer-copy').textContent = contact.rodape || `© ${new Date().getFullYear()} Portal Trindade · Trindade-GO`;
         $('#hero-description').textContent = site.subtitulo || 'Turismo, Fé e Negócios na Capital da Fé.';
       };
