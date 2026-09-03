@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Portal Trindade | Turismo, Fé e Negócios na Capital da Fé</title>
-  <meta name="description" content="Hospedagem, gastronomia, cultura e turismo em Trindade, Goiás. Encontre parceiros locais e planeje sua visita à Capital da Fé.">
+  <meta name="description" content="Hospedagem, parceiros locais, cultura e turismo em Trindade, Goiás. Encontre serviços e planeje sua visita à Capital da Fé.">
   <meta name="theme-color" content="#13233e">
   <meta name="color-scheme" content="light">
   <meta property="og:title" content="Portal Trindade | Turismo, Fé e Negócios">
@@ -39,7 +39,7 @@
       <div class="hidden items-center gap-7 lg:flex">
         <a class="nav-link" href="#hospedagem">Hospedagem</a>
         <a class="nav-link" href="./hospedagem.html">Hotéis e pousadas</a>
-        <a class="nav-link" href="#gastronomia">Gastronomia</a>
+        <a class="nav-link" href="#gastronomia">Parceiros</a>
         <a class="nav-link" href="#cultura">Cultura</a>
         <a class="nav-link" href="#contato">Contato</a>
       </div>
@@ -60,7 +60,7 @@
       <div class="mx-auto grid max-w-7xl gap-1">
         <a class="mobile-link" href="#hospedagem">Hospedagem</a>
         <a class="mobile-link" href="./hospedagem.html">Hotéis e pousadas</a>
-        <a class="mobile-link" href="#gastronomia">Gastronomia</a>
+        <a class="mobile-link" href="#gastronomia">Parceiros</a>
         <a class="mobile-link" href="#cultura">Cultura e leitura</a>
         <a class="mobile-link" href="#galeria">Galeria</a>
         <a class="mobile-link" href="#contato">Contato</a>
@@ -145,14 +145,14 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="mb-10 flex flex-col gap-5 sm:mb-14 sm:flex-row sm:items-end sm:justify-between">
           <div class="max-w-2xl">
-            <p class="eyebrow">Sabores da cidade</p>
-            <h2 id="gastronomia-title" class="section-heading">Gastronomia local</h2>
-            <p class="section-copy">Cafés, sobremesas e sabores para descobrir Trindade também pela mesa.</p>
+            <p class="eyebrow">Quem está com o Portal</p>
+            <h2 id="gastronomia-title" class="section-heading">Parceiros do Portal Trindade</h2>
+            <p class="section-copy">Conheça os negócios que fazem parte do Portal Trindade e acesse diretamente seus canais de contato.</p>
           </div>
           <span class="section-number" aria-hidden="true">02</span>
         </div>
-        <div id="gastronomia-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4" aria-live="polite">
-          <div class="loading-card"></div><div class="loading-card"></div><div class="loading-card hidden sm:block"></div><div class="loading-card hidden lg:block"></div>
+        <div id="gastronomia-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" aria-live="polite">
+          <div class="loading-card"></div><div class="loading-card"></div><div class="loading-card hidden sm:block"></div>
         </div>
       </div>
     </section>
@@ -246,7 +246,7 @@
         <div class="mt-4 grid gap-2 text-sm font-bold text-[#14213a]/70">
           <a class="footer-link" href="#hospedagem">Hospedagem</a>
           <a class="footer-link" href="./hospedagem.html">Hotéis e pousadas</a>
-          <a class="footer-link" href="#gastronomia">Gastronomia</a>
+          <a class="footer-link" href="#gastronomia">Parceiros</a>
           <a class="footer-link" href="#cultura">Guia Turístico</a>
           <a class="footer-link" href="#galeria">Galeria</a>
         </div>
@@ -419,7 +419,7 @@
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           const data = await response.json();
           const partners = data.parceiros || {};
-          $('#gastronomia-grid').innerHTML = (partners.gastronomia || []).map(item => renderPartner(item, 'Gastronomia')).join('');
+          $('#gastronomia-grid').innerHTML = (partners.gastronomia || []).map(item => renderPartner(item, 'Parceiro')).join('');
           $('#leitura-grid').innerHTML = (data.leitura || []).map(renderReading).join('');
           renderGallery(data.galeria || []);
           applyContact(data);
