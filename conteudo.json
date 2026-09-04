@@ -34,6 +34,14 @@
         "imagem": "/imagens/logo-eskimo-card.webp",
         "instagram": "https://www.instagram.com/eskimo.trindade.go",
         "whatsapp": "5562993158520"
+      },
+      {
+        "nome": "Empório Santa Fé",
+        "tag": "Gastronomia e petiscos",
+        "descricao": "Petiscos, pratos e cerveja gelada, com atendimento de quarta a domingo a partir das 16h. Consulte novidades e informações nos canais oficiais.",
+        "imagem": "/imagens/logo-santa-fe-card.svg",
+        "instagram": "https://www.instagram.com/santafeemporio",
+        "whatsapp": "5562996376630"
       }
     ]
   },
