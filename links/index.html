@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Ricardo Brito | Links</title>
+  <meta name="description" content="Links rápidos: Pix, WhatsApp, Portal Trindade e livros de Ricardo Brito.">
+  <meta name="theme-color" content="#14213a">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="icon" type="image/jpeg" href="/imagens/logo-portal-trindade.jpg?v=20260831-logo-fix">
+  <link rel="apple-touch-icon" href="/imagens/logo-portal-trindade.jpg?v=20260831-logo-fix">
+  <style>
+    :root {
+      --navy: #14213a;
+      --navy-2: #213457;
+      --gold: #d6b875;
+      --gold-light: #f0d99f;
+      --paper: #f7f6f2;
+      --white: #ffffff;
+      --muted: #697386;
+      --border: rgba(20,33,58,.10);
+      --shadow: 0 18px 55px rgba(20,33,58,.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--navy);
+      background:
+        radial-gradient(circle at 100% 0%, rgba(214,184,117,.22), transparent 34rem),
+        linear-gradient(180deg, #fbfaf7 0%, var(--paper) 100%);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+
+    .page {
+      width: min(100%, 620px);
+      margin: 0 auto;
+      padding: max(24px, env(safe-area-inset-top)) 18px max(34px, env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      text-align: center;
+      padding: 12px 4px 22px;
+    }
+
+    .logo-wrap {
+      width: 88px;
+      height: 88px;
+      margin: 0 auto 16px;
+      overflow: hidden;
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .logo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.08);
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: rgba(214,184,117,.16);
+      color: #8b6d2f;
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 14px 0 7px;
+      font-size: clamp(2rem, 7vw, 2.85rem);
+      line-height: .98;
+      letter-spacing: -.045em;
+      font-weight: 900;
+    }
+
+    .subtitle {
+      margin: 0 auto;
+      max-width: 34rem;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .stack {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .action {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      min-height: 72px;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: rgba(255,255,255,.92);
+      box-shadow: 0 10px 34px rgba(20,33,58,.07);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .action:hover,
+    .action:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(177,139,61,.35);
+      box-shadow: 0 15px 42px rgba(20,33,58,.11);
+      outline: none;
+    }
+
+    .action.primary {
+      color: #fff;
+      background: var(--navy);
+      border-color: transparent;
+    }
+
+    .action.gold {
+      background: var(--gold);
+      color: var(--navy);
+      border-color: transparent;
+    }
+
+    .icon {
+      flex: 0 0 46px;
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      background: rgba(20,33,58,.07);
+    }
+
+    .primary .icon { background: rgba(255,255,255,.12); }
+    .gold .icon { background: rgba(20,33,58,.10); }
+
+    .icon svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    .action-copy {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .action-title {
+      display: block;
+      font-size: 1rem;
+      font-weight: 850;
+      letter-spacing: -.015em;
+    }
+
+    .action-subtitle {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+
+    .primary .action-subtitle { color: rgba(255,255,255,.68); }
+    .gold .action-subtitle { color: rgba(20,33,58,.72); }
+
+    .arrow {
+      flex: 0 0 auto;
+      opacity: .55;
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    .section-label {
+      margin: 28px 4px 10px;
+      color: #8b6d2f;
+      font-size: .76rem;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .book {
+      display: grid;
+      grid-template-columns: 74px 1fr auto;
+      gap: 14px;
+      align-items: center;
+      min-height: 108px;
+      padding: 13px;
+    }
+
+    .book-cover {
+      width: 74px;
+      height: 96px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 9px 22px rgba(20,33,58,.16);
+      background: #ece9df;
+    }
+
+    .book .action-subtitle { margin-top: 6px; }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: max(22px, env(safe-area-inset-bottom));
+      z-index: 20;
+      transform: translate(-50%, 16px);
+      padding: 12px 16px;
+      border-radius: 999px;
+      background: var(--navy);
+      color: #fff;
+      box-shadow: 0 14px 40px rgba(20,33,58,.28);
+      font-size: .86rem;
+      font-weight: 800;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .2s ease, transform .2s ease;
+      white-space: nowrap;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    footer {
+      padding: 28px 8px 8px;
+      text-align: center;
+      color: var(--muted);
+      font-size: .78rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 390px) {
+      .book { grid-template-columns: 62px 1fr auto; }
+      .book-cover { width: 62px; height: 82px; }
+      .action { border-radius: 19px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero" aria-labelledby="titulo">
+      <div class="logo-wrap" aria-hidden="true">
+        <img src="/imagens/logo-portal-trindade.jpg?v=20260831-logo-fix" alt="">
+      </div>
+      <span class="kicker">Portal Trindade</span>
+      <h1 id="titulo">Ricardo Brito</h1>
+      <p class="subtitle">Acesse rapidamente meus contatos, o Portal Trindade e meus livros.</p>
+    </section>
+
+    <section class="stack" aria-label="Links principais">
+      <button class="action gold" type="button" id="pix-button" aria-describedby="pix-key">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m12 3 3.3 3.3a2.4 2.4 0 0 0 3.4 0l.1-.1M12 21l-3.3-3.3a2.4 2.4 0 0 0-3.4 0l-.1.1M3 12l3.3-3.3a2.4 2.4 0 0 0 0-3.4l-.1-.1M21 12l-3.3 3.3a2.4 2.4 0 0 0 0 3.4l.1.1"/>
+            <path d="m8.6 8.6 6.8 6.8M15.4 8.6l-6.8 6.8"/>
+          </svg>
+        </span>
+        <span class="action-copy">
+          <span class="action-title">Copiar chave Pix</span>
+          <span class="action-subtitle" id="pix-key">ricardodebrito@gmail.com</span>
+        </span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </button>
+
+      <a class="action primary" href="https://wa.me/5564984294110?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20links%20do%20Portal%20Trindade." target="_blank" rel="noopener noreferrer">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 11.6a8 8 0 0 1-11.8 7L4 20l1.4-4A8 8 0 1 1 20 11.6Z"/>
+            <path d="M8.7 8.4c.2-.4.5-.4.8-.4h.3c.2 0 .4.1.5.4l.8 1.8c.1.3.1.5-.1.7l-.6.8c-.2.2-.2.4-.1.6.5.9 1.2 1.7 2.1 2.2.2.1.4.1.6-.1l.8-.9c.2-.2.4-.3.7-.1l1.8.8c.3.1.4.3.4.5 0 .5-.2 1.3-.7 1.8-.5.5-1.2.8-2 .8-1.2 0-2.8-.6-4.4-2.1-1.8-1.7-2.8-3.8-2.8-5.2 0-.7.2-1.2.5-1.6Z"/>
+          </svg>
+        </span>
+        <span class="action-copy">
+          <span class="action-title">Falar pelo WhatsApp</span>
+          <span class="action-subtitle">Abrir conversa com Ricardo</span>
+        </span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a class="action" href="https://www.trindadeportal.com.br/" target="_blank" rel="noopener noreferrer">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M3 12h18M12 3a14.5 14.5 0 0 1 0 18M12 3a14.5 14.5 0 0 0 0 18"/>
+          </svg>
+        </span>
+        <span class="action-copy">
+          <span class="action-title">Portal Trindade</span>
+          <span class="action-subtitle">Turismo, fé e negócios na Capital da Fé</span>
+        </span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+    </section>
+
+    <p class="section-label">Meus livros</p>
+
+    <section class="stack" aria-label="Livros">
+      <a class="action book" href="https://www.amazon.com.br/dp/B0GWDHMPRJ" target="_blank" rel="noopener noreferrer">
+        <img class="book-cover" src="/imagens/livro_manhas.png" alt="Capa do livro Manhãs com Jesus" loading="lazy" decoding="async">
+        <span class="action-copy">
+          <span class="action-title">Manhãs com Jesus</span>
+          <span class="action-subtitle">180 reflexões para começar cada manhã com fé e esperança · Amazon</span>
+        </span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a class="action book" href="https://ricardodominguesdebrito.github.io/Do-Lado-de-Dentro/" target="_blank" rel="noopener noreferrer">
+        <img class="book-cover" src="/imagens/livro-do-lado-de-dentro.webp" alt="Capa do livro Do Lado de Dentro" loading="lazy" decoding="async">
+        <span class="action-copy">
+          <span class="action-title">Do Lado de Dentro</span>
+          <span class="action-subtitle">Testemunho de fé, limite e recomeço · leitura gratuita</span>
+        </span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+    </section>
+
+    <footer>
+      Portal Trindade · Trindade-GO<br>
+      Página otimizada para acesso por NFC e celular.
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Chave Pix copiada</div>
+
+  <script>
+    const PIX_KEY = 'ricardodebrito@gmail.com';
+    const pixButton = document.getElementById('pix-button');
+    const toast = document.getElementById('toast');
+    let toastTimer;
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('show'), 2200);
+    }
+
+    async function copyPix() {
+      try {
+        await navigator.clipboard.writeText(PIX_KEY);
+        showToast('Chave Pix copiada');
+      } catch (error) {
+        const input = document.createElement('textarea');
+        input.value = PIX_KEY;
+        input.setAttribute('readonly', '');
+        input.style.position = 'fixed';
+        input.style.opacity = '0';
+        document.body.appendChild(input);
+        input.select();
+        const copied = document.execCommand('copy');
+        input.remove();
+        showToast(copied ? 'Chave Pix copiada' : PIX_KEY);
+      }
+    }
+
+    pixButton.addEventListener('click', copyPix);
+  </script>
+</body>
+</html>
