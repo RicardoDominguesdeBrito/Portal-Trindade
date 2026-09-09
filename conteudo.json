@@ -69,6 +69,38 @@
       "texto_link": "Receber gratuitamente"
     },
     {
+      "nome": "O Ativo Mais Caro do Mundo — Ricardo Brito",
+      "tag": "Vida e propósito",
+      "descricao": "Como um diagnóstico destruiu a ilusão do sucesso e revelou o único ouro que realmente possuímos.",
+      "imagem": "/imagens/o-ativo-mais-caro-do-mundo.jpg",
+      "link": "https://www.amazon.com.br/dp/B0GRWWPFKZ",
+      "texto_link": "Ver na Amazon"
+    },
+    {
+      "nome": "O Peso das Palavras — Ricardo Brito",
+      "tag": "Cuidado e presença",
+      "descricao": "O que ninguém te ensinou sobre acompanhar alguém com uma doença grave.",
+      "imagem": "/imagens/o-peso-das-palavras.jpg",
+      "link": "https://www.amazon.com.br/dp/B0GNYVBBN7",
+      "texto_link": "Ver na Amazon"
+    },
+    {
+      "nome": "Você Não É o Que Queria — Ricardo Brito",
+      "tag": "Autoconhecimento",
+      "descricao": "Uma jornada de autodescoberta e aceitação.",
+      "imagem": "/imagens/voce-nao-e-o-que-queria.jpg",
+      "link": "https://www.amazon.com.br/dp/B0GSMQ3LX9",
+      "texto_link": "Ver na Amazon"
+    },
+    {
+      "nome": "A Expansão do Ser — Ricardo Brito",
+      "tag": "Desenvolvimento pessoal",
+      "descricao": "Como transformar o vazio existencial em movimento e sentido.",
+      "imagem": "/imagens/expansao-do-ser.jpg",
+      "link": "https://www.amazon.com.br/s?i=stripbooks&k=%22A+Expans%C3%A3o+do+Ser%22+%22Ricardo+Brito%22",
+      "texto_link": "Ver na Amazon"
+    },
+    {
       "nome": "Instrução aos Católicos",
       "tag": "Fé católica",
       "descricao": "Obra de Santo Afonso de Ligório sobre os mandamentos, os sacramentos e os fundamentos da fé católica.",
