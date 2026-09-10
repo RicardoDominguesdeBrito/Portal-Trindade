@@ -11,7 +11,7 @@
       {
         "nome": "Cibeles Café e Restaurante",
         "tag": "Café e restaurante",
-        "descricao": "Café, almoço e lanches com sabor caseiro e atendimento cuidadoso. Consulte o cardápio virtual e faça seu pedido pelo WhatsApp.",
+        "descricao": "Café, almoço e lanches com sabor caseiro, com pedidos pelo cardápio virtual.",
         "imagem": "/imagens/logo-cibeles-card.webp",
         "imagens_extras": ["/imagens/imagem02cibele.png", "/imagens/imagem03cibele.png"],
         "instagram": "https://www.instagram.com/cafecibeles",
@@ -22,7 +22,7 @@
       {
         "nome": "The Best Açaí",
         "tag": "Açaí e sorvetes",
-        "descricao": "Açaí, sorvetes e acompanhamentos no self-service para você montar do seu jeito. Uma parada refrescante para todas as idades.",
+        "descricao": "Açaí, sorvetes e acompanhamentos no self-service, para montar do seu jeito.",
         "imagem": "/imagens/logo-the-best-acai-card.webp",
         "instagram": "https://www.instagram.com/thebestacaitrindade",
         "whatsapp": "5562998853257"
@@ -30,7 +30,7 @@
       {
         "nome": "Eskimó Sorvetes Trindade",
         "tag": "Sorvetes",
-        "descricao": "Sorvetes e picolés a preço de fábrica na Av. Manoel Monteiro, nº 1691, em frente ao Posto AG Petro.",
+        "descricao": "Sorvetes e picolés a preço de fábrica na Av. Manoel Monteiro, nº 1691.",
         "imagem": "/imagens/logo-eskimo-card.webp",
         "instagram": "https://www.instagram.com/eskimo.trindade.go",
         "whatsapp": "5562993158520"
@@ -38,7 +38,7 @@
       {
         "nome": "Empório Santa Fé",
         "tag": "Gastronomia",
-        "descricao": "Petiscos, pratos e cerveja gelada, com atendimento de quarta a domingo a partir das 16h. Consulte novidades e informações nos canais oficiais.",
+        "descricao": "Petiscos, pratos e cerveja gelada, com atendimento de quarta a domingo.",
         "imagem": "/imagens/logo-santa-fe-card.svg",
         "instagram": "https://www.instagram.com/santafeemporio",
         "whatsapp": "5562996376630"
@@ -46,7 +46,7 @@
       {
         "nome": "Pesque Pague Pintado",
         "tag": "Pesque-pague e restaurante",
-        "descricao": "Peixes, almoço, pescaria, lazer e contato com a natureza em Trindade. Pintado, caranha, piau e tilápia fazem parte das opções divulgadas pela casa.",
+        "descricao": "Peixes, almoço, pescaria, lazer e natureza, com pintado, caranha, piau e tilápia.",
         "imagem": "/imagens/logo-pesque-pague-pintado-card.svg",
         "instagram": "https://www.instagram.com/pesquepaguepintado",
         "whatsapp": "5562985709421"
