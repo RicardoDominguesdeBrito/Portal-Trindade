@@ -69,7 +69,7 @@
         const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${item.nome}, ${item.endereco}`)}`;
         if (phoneHref) actions.push(`<a class="action action-primary" href="tel:${escapeHtml(phoneHref)}">${icons.phone}Ligar</a>`);
         if (whatsappNumber) actions.push(`<a class="action action-whatsapp" href="${waUrl(whatsappNumber, item.nome)}" target="_blank" rel="noopener noreferrer">${icons.whatsapp}WhatsApp</a>`);
-        actions.push(`<a class="action action-secondary" href="${safeUrl(mapUrl)}" target="_blank" rel="noopener noreferrer">${icons.map}Localizar</a>`);
+        if (item.endereco) actions.push(`<a class="action action-secondary" href="${safeUrl(mapUrl)}" target="_blank" rel="noopener noreferrer">${icons.map}Localizar</a>`);
         if (item.site) actions.push(`<a class="action action-secondary" href="${safeUrl(item.site)}" target="_blank" rel="noopener noreferrer">${icons.link}Site</a>`);
         if (item.instagram) actions.push(`<a class="action action-secondary" href="${safeUrl(item.instagram)}" target="_blank" rel="noopener noreferrer">Instagram</a>`);
 
@@ -77,7 +77,7 @@
           <div class="card-top"><span class="type-pill">${escapeHtml(item.tipo)}</span>${ratingHtml}</div>
           <h3>${name}</h3>
           <div class="neighborhood">${escapeHtml(item.bairro || 'Trindade - GO')}</div>
-          <p class="address">${escapeHtml(item.endereco)}</p>
+          ${item.endereco ? `<p class="address">${escapeHtml(item.endereco)}</p>` : ''}
           <div class="contact-list">${contactLines}</div>
           <div class="card-actions">${actions.join('')}</div>
         </article>`;
