@@ -1,6 +1,6 @@
 {
-  "atualizado_em": "31/08/2026",
-  "total_confirmados": 71,
+  "atualizado_em": "12/09/2026",
+  "total_confirmados": 72,
   "hoteis": 21,
   "pousadas": 50,
   "estabelecimentos": [
@@ -718,6 +718,16 @@
       "site": "https://www.vilabarrobranco.com.br/",
       "nota_google": 4.7,
       "avaliacoes_google": 2016
+    },
+    {
+      "nome": "Chalé Trindade",
+      "tipo": "Chalé",
+      "bairro": "Zona Rural",
+      "endereco": "A 15 km de Trindade e 30 km de Goiânia - GO",
+      "telefone": "+55 (62) 9988-2198",
+      "whatsapp": "+55 (62) 9988-2198",
+      "site": "https://chaletrindade.lovable.app/",
+      "instagram": "https://www.instagram.com/chaletrindade"
     }
   ]
 }
