@@ -9,6 +9,8 @@ import sys
 
 root=Path(__file__).resolve().parents[1]
 out=root/(sys.argv[1] if len(sys.argv)>1 else '.')
+if not out.is_dir():
+    sys.exit(f'Diretório de validação inexistente: {out}')
 class Document(HTMLParser):
     def __init__(self):super().__init__();self.refs=[];self.ids=[];self.h1=0;self.missing_alt=0
     def handle_starttag(self,tag,attrs):
@@ -23,6 +25,8 @@ for path in list(out.glob('*.html'))+list((out/'guias').glob('*.html')):
     if path.name=='responsive-check.html' or path.name.startswith('google'):continue
     doc=Document();doc.feed(path.read_text());docs[path.resolve()]=doc
 errors=[];count=0
+if not docs:
+    sys.exit(f'Nenhuma página encontrada em {out}')
 for path,doc in docs.items():
     if doc.h1!=1:errors.append(f'{path.name}: {doc.h1} títulos H1')
     if doc.missing_alt:errors.append(f'{path.name}: imagens sem texto alternativo')

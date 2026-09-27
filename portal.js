@@ -20,7 +20,7 @@
       let count = 0;
       cards.forEach(card => { const hit = (category === 'todos' || card.dataset.categoryName === category) && terms.every(t => normalize(card.dataset.search).includes(t)); card.hidden = !hit; if (hit) count++; });
       filters.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.category === category)));
-      $('#result-count').textContent = `${count} ${count === 1 ? 'guia encontrado' : 'guias encontrados'}`;
+      $('#result-count').textContent = `${count} ${count === 1 ? 'conteúdo encontrado' : 'conteúdos encontrados'}`;
       $('#empty-state').hidden = count > 0;
       const q = new URLSearchParams(); if (search.value.trim()) q.set('q',search.value.trim()); if (category !== 'todos') q.set('categoria',category);
       history.replaceState(null,'',location.pathname + (q.size ? '?' + q : '') + location.hash);
@@ -29,6 +29,26 @@
     filters.forEach(b => b.addEventListener('click', () => { category = b.dataset.category; apply(); }));
     $('#clear-guides')?.addEventListener('click', () => { search.value = ''; category = 'todos'; apply(); search.focus(); });
     apply();
+  }
+  const faqSearch = $('#faq-search');
+  if (faqSearch) {
+    const topic = $('#faq-topic'), cards = $$('[data-faq]');
+    faqSearch.value = params.get('q') || '';
+    topic.value = [...topic.options].some(o => o.value === params.get('tema')) ? params.get('tema') : '';
+    const apply = () => {
+      const terms = normalize(faqSearch.value).split(/\s+/).filter(Boolean);
+      let count = 0;
+      cards.forEach(card => { const hit = (!topic.value || card.dataset.topic === topic.value) && terms.every(t => normalize(card.dataset.search).includes(t)); card.hidden = !hit; if (hit) count++; card.open = hit && terms.length > 0; });
+      $('#faq-count').textContent = `${count} ${count === 1 ? 'resposta encontrada' : 'respostas encontradas'}`;
+      $('#faq-empty').hidden = count > 0;
+      $('#faq-clear').hidden = !(faqSearch.value || topic.value);
+      const q = new URLSearchParams(); if (faqSearch.value.trim()) q.set('q', faqSearch.value.trim()); if (topic.value) q.set('tema', topic.value);
+      history.replaceState(null,'',location.pathname + (q.size ? '?' + q : '') + location.hash);
+    };
+    faqSearch.addEventListener('input',apply); topic.addEventListener('change',apply);
+    $('#faq-clear').addEventListener('click',() => {faqSearch.value='';topic.value='';apply();faqSearch.focus();});
+    apply();
+    const anchored = cards.find(card => '#'+card.id === location.hash); if (anchored) anchored.open = true;
   }
   const lodgingSearch = $('#lodging-search');
   if (lodgingSearch) {

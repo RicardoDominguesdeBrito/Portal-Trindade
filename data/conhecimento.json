@@ -1,0 +1,762 @@
+{
+  "revisado_em": "2026-09-27",
+  "fontes": {
+    "ibge-historia": {
+      "instituicao": "IBGE",
+      "titulo": "Histórico e formação administrativa de Trindade",
+      "url": "https://www.ibge.gov.br/biblioteca/visualizacao/dtb/goias/trindade.pdf",
+      "nota": "Histórico municipal; usado para a formação administrativa."
+    },
+    "ibge-censo": {
+      "instituicao": "IBGE",
+      "titulo": "Trindade (GO) — Cidades e Estados",
+      "url": "https://www.ibge.gov.br/cidades-e-estados/go/trindade.html",
+      "nota": "População do Censo 2022; não é uma estimativa de 2026."
+    },
+    "prefeitura-historia": {
+      "instituicao": "Prefeitura de Trindade",
+      "titulo": "História da cidade",
+      "url": "https://trindade.go.gov.br/historia-da-cidade/",
+      "nota": "Memória histórica local. A própria página assinala incertezas de data; indicadores antigos não foram reutilizados."
+    },
+    "devocao": {
+      "instituicao": "Santuário / Portal Pai Eterno",
+      "titulo": "Devoção ao Pai Eterno",
+      "url": "https://www.paieterno.com.br/santuario/origem-devocao/",
+      "nota": "Narrativa da tradição religiosa, atualizada em 29/12/2023."
+    },
+    "matriz": {
+      "instituicao": "Santuário / Portal Pai Eterno",
+      "titulo": "História do Santuário e da Igreja Matriz",
+      "url": "https://www.paieterno.com.br/santuario/basilica/historia/",
+      "nota": "Usada para a inauguração da Matriz em 1912. Datas divergentes das etapas de tombamento não foram reproduzidas."
+    },
+    "basilica": {
+      "instituicao": "Santuário / Portal Pai Eterno",
+      "titulo": "Santuário Basílica do Divino Pai Eterno",
+      "url": "https://www.paieterno.com.br/home-basilica/santuario-basilica/",
+      "nota": "Título de Basílica Menor em 2006. Consulte a instituição para a programação da visita."
+    },
+    "novo-santuario": {
+      "instituicao": "Santuário / Portal Pai Eterno",
+      "titulo": "Nova Casa do Pai avança com concretagem",
+      "url": "https://www.paieterno.com.br/2026/09/25/nova-casa-do-pai-avanca-com-concretagem/",
+      "nota": "Notícia de 25/09/2026: construção ainda em andamento."
+    },
+    "romaria": {
+      "instituicao": "Santuário / Portal Pai Eterno",
+      "titulo": "Romaria de Trindade",
+      "url": "https://www.paieterno.com.br/home-basilica/romaria/",
+      "nota": "Referência para o calendário tradicional e a peregrinação; não é a agenda de uma próxima edição."
+    },
+    "iphan": {
+      "instituicao": "Iphan",
+      "titulo": "Plano de salvaguarda da Romaria de Carros de Bois da Festa do Divino de Trindade",
+      "url": "https://www.gov.br/iphan/pt-br/assuntos/noticias/plano-de-salvaguarda-da-romaria-de-carros-de-bois-da-festa-do-divino-de-trindade-go-sera-lancado",
+      "nota": "Publicação de 2022. Reconhecimento da manifestação cultural específica desde 2016."
+    },
+    "inventario": {
+      "instituicao": "Goiás Turismo / Observatório do Turismo",
+      "titulo": "Inventário da Oferta Turística de Trindade — 2020",
+      "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeGeral-9b6.pdf",
+      "nota": "Identificação e contexto dos locais. Horários e telefones do inventário não foram tratados como atuais."
+    },
+    "museu": {
+      "instituicao": "Prefeitura de Trindade",
+      "titulo": "Revitalização do Museu da Memória de Trindade",
+      "url": "https://trindade.go.gov.br/prefeitura-municipal-inaugura-revitalizacao-do-museu-de-trindade/",
+      "nota": "Notícia de 24/08/2022, atualizada em 04/05/2023. Usada para o acervo e a referência de localização."
+    },
+    "cultura": {
+      "instituicao": "Prefeitura de Trindade",
+      "titulo": "Secretaria Municipal de Turismo e Cultura",
+      "url": "https://trindade.go.gov.br/estrutura/secretaria-municipal-de-turismo-e-cultura/",
+      "nota": "Relação de equipamentos culturais e do Centro de Atendimento ao Turista."
+    },
+    "kart": {
+      "instituicao": "Prefeitura de Trindade",
+      "titulo": "Suspensão temporária das atividades no Kartódromo Municipal",
+      "url": "https://trindade.go.gov.br/prefeitura-de-trindade-informa-suspensao-temporaria-das-atividades-no-kartodromo-municipal/",
+      "nota": "Comunicado de 03/06/2026, sem data de reabertura na publicação."
+    },
+    "gastronomia": {
+      "instituicao": "Goiás Turismo / Observatório do Turismo",
+      "titulo": "PNAD Turismo 2024 — Goiás: contexto do turismo cultural e gastronômico",
+      "url": "https://goias.gov.br/observatoriodoturismo/wp-content/uploads/sites/64/2026/01/PNAD-Turismo-2024-GOIAS.pdf",
+      "nota": "Referências regionais de alimentação e ingredientes, especialmente p. 38 do PDF."
+    },
+    "festival": {
+      "instituicao": "Prefeitura de Trindade",
+      "titulo": "Apresentação do XII Festival Gastronômico de Trindade",
+      "url": "https://trindade.go.gov.br/prefeitura-de-trindade-anuncia-xii-festival-gastronomico-com-atracoes-nacionais-e-valorizacao-da-culinaria-local/",
+      "nota": "Usada para a proposta gastronômica daquela edição. A notícia apresenta inconsistência entre datas e dias da semana; a agenda não foi reproduzida."
+    },
+    "goinfra": {
+      "instituicao": "Goinfra / Governo de Goiás",
+      "titulo": "Obras na Região Metropolitana de Goiânia e rodovias estaduais",
+      "url": "https://goias.gov.br/goinfra/obras-na-regiao-metropolitana-de-goiania-alteram-trafego-em-rodovias-estaduais/",
+      "nota": "Atualizada em 07/08/2026. Confirma a ligação Goiânia–Trindade pela GO-060; desvios não foram presumidos vigentes."
+    }
+  },
+  "artigos": [
+    {
+      "slug": "historia-de-trindade",
+      "categoria": "historia",
+      "titulo": "História de Trindade: de Barro Preto à Capital da Fé",
+      "curto": "História de Trindade",
+      "resumo": "Entenda as origens de Barro Preto, a formação do município e as datas que ajudam a contar a história de Trindade.",
+      "imagem": "imagens/igreja-matriz-2026.webp",
+      "alt": "Fachada da Igreja Matriz de Trindade",
+      "legenda": "Igreja Matriz de Trindade. Imagem do acervo do Portal.",
+      "abertura": "Conhecer Trindade começa por olhar para o encontro entre a vida no campo, a oração e a formação da cidade. O que hoje o visitante percorre como um roteiro turístico também é memória de famílias, trabalho e devoção.",
+      "secoes": [
+        {
+          "id": "barro-preto",
+          "titulo": "Antes de Trindade, Barro Preto",
+          "paragrafos": [
+            "A história municipal situa a origem do povoado junto ao Córrego Barro Preto, em uma região ligada a Campinas. O desenvolvimento da agricultura e da pecuária em Goiás ajuda a compreender esse ambiente rural. Foi ali que a devoção reuniu moradores e visitantes, antes da existência dos grandes templos.",
+            "Segundo a tradição registrada pela Prefeitura, Constantino Xavier e Ana Rosa encontraram um medalhão religioso e passaram a reunir a comunidade para rezar. A origem da devoção é situada na década de 1840; as fontes não apresentam uma cronologia inteiramente uniforme para seus primeiros acontecimentos."
+          ],
+          "fontes": [
+            "prefeitura-historia"
+          ]
+        },
+        {
+          "id": "municipio",
+          "titulo": "O aniversário da cidade e a emancipação",
+          "paragrafos": [
+            "O IBGE registra a criação da vila por lei de 16 de julho de 1920 e sua instalação em 31 de agosto daquele ano, separada de Campinas. A data de 31 de agosto marca o aniversário municipal. A condição de cidade veio em 1927. Após um período de vinculação a Goiânia, Trindade voltou à condição de município em 1943."
+          ],
+          "fontes": [
+            "ibge-historia"
+          ]
+        },
+        {
+          "id": "memoria",
+          "titulo": "Como perceber essa história no passeio",
+          "paragrafos": [
+            "Comece pela Matriz e observe o conjunto da praça, a fachada e os detalhes do interior, respeitando as celebrações. Depois, procure o Museu da Memória: aproximar os espaços religiosos dos registros da vida cotidiana ajuda a enxergar a cidade por mais de um ponto de vista.",
+            "A dica do Portal é reservar tempo para conhecer e ouvir. Uma visita fica mais rica quando o lugar deixa de ser apenas uma parada para fotografia e passa a ter uma história para contar."
+          ],
+          "fontes": []
+        }
+      ],
+      "linha_do_tempo": [
+        [
+          "Década de 1840",
+          "Origens da devoção no povoado de Barro Preto.",
+          "prefeitura-historia"
+        ],
+        [
+          "1909",
+          "Criação do distrito de Trindade, subordinado a Campinas.",
+          "ibge-historia"
+        ],
+        [
+          "1912",
+          "Inauguração da Igreja Matriz.",
+          "matriz"
+        ],
+        [
+          "1920",
+          "Instalação da vila em 31 de agosto.",
+          "ibge-historia"
+        ],
+        [
+          "1927",
+          "Elevação da sede à condição de cidade.",
+          "ibge-historia"
+        ],
+        [
+          "1943",
+          "Retorno à condição de município, desmembrado de Goiânia.",
+          "ibge-historia"
+        ]
+      ],
+      "relacionados": [
+        "devocao-e-santuarios",
+        "cultura-e-memoria",
+        "romaria-e-carreiros"
+      ]
+    },
+    {
+      "slug": "devocao-e-santuarios",
+      "categoria": "fe",
+      "titulo": "Divino Pai Eterno: a devoção, a Matriz e os santuários de Trindade",
+      "curto": "Devoção e santuários",
+      "resumo": "Conheça a narrativa do medalhão e entenda a diferença entre Igreja Matriz, Santuário Basílica e Novo Santuário.",
+      "imagem": "imagens/galeria-vitral.webp",
+      "alt": "Vitral no Santuário Basílica do Divino Pai Eterno",
+      "legenda": "Vitral da Basílica. Imagem do acervo do Portal.",
+      "abertura": "Para quem chega pela primeira vez, os nomes dos templos podem causar dúvida. Eles fazem parte da mesma devoção, mas são lugares distintos, com histórias e formas de visita diferentes.",
+      "secoes": [
+        {
+          "id": "medalhao",
+          "titulo": "A história do medalhão",
+          "paragrafos": [
+            "Na narrativa preservada pelo Santuário, Constantino Xavier e Ana Rosa encontraram um medalhão de barro que representava a Santíssima Trindade coroando a Virgem Maria. A oração começou em casa, com familiares e vizinhos, e ganhou novos participantes.",
+            "A tradição também associa a imagem em madeira ao artista goiano Veiga Valle, procurado por Constantino em Pirenópolis. Esses relatos explicam o sentido religioso dos objetos para os devotos e a ligação entre a fé e a origem da cidade."
+          ],
+          "fontes": [
+            "devocao"
+          ]
+        },
+        {
+          "id": "matriz",
+          "titulo": "Igreja Matriz: o Santuário Velho",
+          "paragrafos": [
+            "A Matriz foi inaugurada em 1912, por iniciativa do missionário redentorista padre Antão Jorge, para acolher os romeiros. Também conhecida como Santuário Velho, é uma referência da memória religiosa de Trindade. Visitar seu interior é uma oportunidade de observar a escala e os detalhes de um templo histórico."
+          ],
+          "fontes": [
+            "matriz"
+          ]
+        },
+        {
+          "id": "basilica",
+          "titulo": "Santuário Basílica: o templo em funcionamento",
+          "paragrafos": [
+            "O Santuário recebeu de Bento XVI o título de Basílica Menor em 4 de abril de 2006. A instalação ocorreu em 18 de novembro do mesmo ano. É o templo que muitos visitantes reconhecem pela grande cobertura branca e pela cúpula, presente nas imagens do Portal.",
+            "O título de basílica é uma distinção concedida pela Igreja Católica. Para participar de uma missa ou incluir outros espaços no passeio, consulte a programação do Santuário para o dia escolhido."
+          ],
+          "fontes": [
+            "basilica"
+          ]
+        },
+        {
+          "id": "novo",
+          "titulo": "Novo Santuário: uma obra em andamento",
+          "paragrafos": [
+            "O Novo Santuário é outro complexo. Em notícia de 25 de setembro de 2026, a instituição relatava trabalhos de concretagem no setor H. Portanto, nesta revisão, a construção continuava em andamento; ela não deve ser confundida com a Basílica já em funcionamento.",
+            "Quem deseja conhecer a obra deve consultar os canais do Santuário sobre os espaços autorizados para visitantes e a programação de acolhimento."
+          ],
+          "fontes": [
+            "novo-santuario"
+          ]
+        }
+      ],
+      "relacionados": [
+        "historia-de-trindade",
+        "romaria-e-carreiros",
+        "planeje-sua-visita"
+      ]
+    },
+    {
+      "slug": "romaria-e-carreiros",
+      "categoria": "fe",
+      "titulo": "Romaria de Trindade e carros de boi: fé e patrimônio vivo",
+      "curto": "Romaria e carros de boi",
+      "resumo": "O calendário tradicional da Festa do Divino Pai Eterno, a peregrinação e o significado cultural dos carreiros.",
+      "imagem": "imagens/carreiros-trindade-2026-01.webp",
+      "alt": "Carro de boi e público durante a passagem dos carreiros em Trindade",
+      "legenda": "A tradição dos carreiros em Trindade. Imagem do acervo do Portal.",
+      "abertura": "Há quem conheça Trindade pela chegada ao Santuário. Para os romeiros, porém, a experiência pode começar muito antes: na preparação, na estrada e na companhia de quem percorre o caminho.",
+      "secoes": [
+        {
+          "id": "calendario",
+          "titulo": "Quando acontece a Romaria?",
+          "paragrafos": [
+            "O calendário tradicional concentra o encerramento da Festa do Divino Pai Eterno no primeiro domingo de julho, precedido por nove dias de celebrações. Missas, novenas e procissões fazem parte desse período. A programação de cada edição deve ser consultada no Santuário.",
+            "A caminhada pela Rodovia dos Romeiros liga Goiânia a Trindade. A referência institucional descreve um percurso de aproximadamente 18 quilômetros; a distância efetiva muda conforme o ponto de partida e o destino final."
+          ],
+          "fontes": [
+            "romaria"
+          ]
+        },
+        {
+          "id": "carreiros",
+          "titulo": "Por que os carros de boi são patrimônio?",
+          "paragrafos": [
+            "A Romaria de Carros de Bois da Festa do Divino Pai Eterno de Trindade é reconhecida pelo Iphan como Patrimônio Cultural do Brasil desde 2016. O reconhecimento é dessa manifestação específica, ligada à peregrinação e aos modos de vida do campo.",
+            "Preservar a tradição envolve também os conhecimentos de quem constrói e conduz os carros, prepara a viagem e transmite essa experiência à família. O plano de salvaguarda do Iphan reúne ações para apoiar sua continuidade."
+          ],
+          "fontes": [
+            "iphan"
+          ]
+        },
+        {
+          "id": "via-sacra",
+          "titulo": "A Via Sacra na Rodovia dos Romeiros",
+          "paragrafos": [
+            "Ao longo da GO-060, a Via Sacra é representada em 14 painéis de autoria de Omar Souto, conforme o inventário da Goiás Turismo. A arte acompanha o caminho de peregrinação e convida a conhecer a relação entre expressão religiosa e paisagem."
+          ],
+          "fontes": [
+            "inventario"
+          ]
+        },
+        {
+          "id": "participar",
+          "titulo": "Como acompanhar com respeito",
+          "paragrafos": [
+            "Escolha na programação oficial os momentos que deseja acompanhar e planeje a chegada. Para fotografar, fique fora da passagem dos participantes e dos animais. Peça autorização antes de fazer um retrato próximo de uma pessoa.",
+            "Se a ideia é conhecer a cidade com mais tranquilidade, uma visita fora do período da grande festa permite montar outro ritmo de passeio. A escolha depende do que você procura: participar da celebração coletiva ou dedicar mais tempo aos lugares."
+          ],
+          "fontes": []
+        }
+      ],
+      "relacionados": [
+        "devocao-e-santuarios",
+        "cultura-e-memoria",
+        "planeje-sua-visita"
+      ]
+    },
+    {
+      "slug": "cultura-e-memoria",
+      "categoria": "cultura",
+      "titulo": "Cultura em Trindade: Museu da Memória, artesanato e espaços da cidade",
+      "curto": "Museu, artesanato e cultura",
+      "resumo": "Museu, artesanato e parque ajudam a conhecer Trindade para além dos templos e a aproximar a visita da vida local.",
+      "imagem": "imagens/paisagem-trindade-2026.webp",
+      "alt": "Vista do lago e das áreas verdes do Parque Lara Guimarães em Trindade",
+      "legenda": "Parque Lara Guimarães. Imagem do acervo do Portal.",
+      "abertura": "Um roteiro cultural pode começar com uma pergunta simples: o que os moradores guardaram sobre a própria cidade? Documentos, objetos, técnicas de trabalho e espaços de convivência também contam a história de Trindade.",
+      "secoes": [
+        {
+          "id": "museu",
+          "titulo": "Museu da Memória de Trindade",
+          "paragrafos": [
+            "A Prefeitura registrou, na revitalização de 2022, a incorporação de peças, móveis e documentos ao acervo do museu, incluindo registros de 1908 e 1920. Parte desse conjunto chegou por doação de moradores.",
+            "A referência de localização publicada pelo município é o encontro das ruas 16 de Julho e Major Manoel Alves. Para conhecer o acervo ou levar um grupo, confirme a abertura e as orientações de visita com a área municipal de Turismo e Cultura."
+          ],
+          "fontes": [
+            "museu"
+          ]
+        },
+        {
+          "id": "artesanato",
+          "titulo": "Artesanato e produção cultural",
+          "paragrafos": [
+            "A Secretaria de Turismo e Cultura relaciona entre suas estruturas a Escola Municipal de Artesanato e Escultura de Santa Maria, a Casa da Cultura e o CEU das Artes. Esses nomes são bons pontos de partida para procurar atividades, oficinas e produção cultural local.",
+            "Consulte a programação: oficinas e apresentações podem ocorrer em datas específicas."
+          ],
+          "fontes": [
+            "cultura"
+          ]
+        },
+        {
+          "id": "parque",
+          "titulo": "Parque Lara Guimarães: uma pausa na cidade",
+          "paragrafos": [
+            "O Parque Lara Guimarães aparece no inventário turístico estadual como espaço de lazer de Trindade. Ele permite incluir no planejamento uma parada fora do circuito de templos."
+          ],
+          "fontes": [
+            "inventario"
+          ]
+        },
+        {
+          "id": "kart",
+          "titulo": "Uma informação importante sobre o kart",
+          "paragrafos": [
+            "Em 3 de junho de 2026, a Prefeitura anunciou a suspensão temporária da pista do kartódromo situada no parque. A nota não informou data de reabertura. Consulte um comunicado posterior antes de planejar essa atividade."
+          ],
+          "fontes": [
+            "kart"
+          ]
+        },
+        {
+          "id": "olhar",
+          "titulo": "Um roteiro com atenção às pessoas",
+          "paragrafos": [
+            "Combine uma visita de memória, uma atividade cultural disponível na data e uma pausa para conversar ou experimentar um sabor local. Em espaços de atendimento social ou religioso, respeite as orientações de acesso e a privacidade de quem vive ou trabalha ali.",
+            "As sugestões do Portal ajudam a escolher o passeio; a agenda deve acompanhar a rotina de cada instituição."
+          ],
+          "fontes": []
+        }
+      ],
+      "relacionados": [
+        "historia-de-trindade",
+        "sabores-de-trindade",
+        "planeje-sua-visita"
+      ]
+    },
+    {
+      "slug": "sabores-de-trindade",
+      "categoria": "gastronomia",
+      "titulo": "Gastronomia de Trindade: sabores goianos, feiras e festival",
+      "curto": "Gastronomia de Trindade",
+      "resumo": "Conheça referências da cozinha goiana, a proposta do Festival Gastronômico e os caminhos para escolher onde comer em Trindade.",
+      "imagem": "imagens/milhopamonha.png",
+      "alt": "Pamonha e espigas de milho em imagem de apresentação da gastronomia",
+      "legenda": "Milho e pamonha. Imagem ilustrativa do acervo do Portal.",
+      "abertura": "Entre um passeio e outro, a mesa é uma boa oportunidade de se aproximar da região. Em Trindade, você pode combinar a procura por sabores goianos com as indicações de feiras, pamonharias e restaurantes reunidas pelo Portal.",
+      "secoes": [
+        {
+          "id": "cozinha-goiana",
+          "titulo": "O que procurar na cozinha goiana",
+          "paragrafos": [
+            "Arroz com pequi, pamonha e empadão goiano estão entre as referências gastronômicas destacadas pelo Observatório do Turismo de Goiás. Ingredientes do Cerrado, como o baru, e doces tradicionais também fazem parte desse repertório regional.",
+            "Essas são referências de Goiás, não pratos de origem exclusiva de Trindade. Ao escolher um restaurante, veja o cardápio do dia: citar uma tradição regional não significa que todos os estabelecimentos a sirvam."
+          ],
+          "fontes": [
+            "gastronomia"
+          ]
+        },
+        {
+          "id": "festival",
+          "titulo": "O Festival Gastronômico e a criação local",
+          "paragrafos": [
+            "Na apresentação do XII Festival Gastronômico de Trindade, a Prefeitura destacou pratos exclusivos com carne suína e mandioca, reunindo restaurantes, cozinheiros, empreendedores e produtores. Os ingredientes faziam parte da proposta daquela edição.",
+            "O livro de receitas disponível no Portal permite conhecer preparos ligados ao festival. Ele também é uma forma de guardar essa produção depois do evento. Para próximas edições, consulte a divulgação oficial; uma programação antiga não confirma novas datas."
+          ],
+          "fontes": [
+            "festival"
+          ]
+        },
+        {
+          "id": "mercado",
+          "titulo": "Mercado, feiras e encontro com a cidade",
+          "paragrafos": [
+            "O inventário estadual registra o Mercado Municipal como referência de comércio de alimentos e produtos tradicionais no centro de Trindade."
+          ],
+          "fontes": [
+            "inventario"
+          ]
+        },
+        {
+          "id": "escolher",
+          "titulo": "Como escolher onde comer",
+          "paragrafos": [
+            "Comece pelo tipo de experiência: uma pamonha no lanche, um almoço em família, petiscos ou uma refeição perto da hospedagem. Depois confira localização, funcionamento e cardápio com o estabelecimento.",
+            "Os guias do Portal reúnem perfis e indicações locais. Nas seleções originadas de enquetes, os nomes refletem a participação dos seguidores; não representam uma classificação técnica de melhor restaurante. Os parceiros anunciantes são identificados na página principal."
+          ],
+          "fontes": []
+        }
+      ],
+      "relacionados": [
+        "cultura-e-memoria",
+        "planeje-sua-visita",
+        "historia-de-trindade"
+      ]
+    },
+    {
+      "slug": "planeje-sua-visita",
+      "categoria": "turismo",
+      "titulo": "Turismo em Trindade: como chegar e organizar sua visita",
+      "curto": "Como planejar sua visita",
+      "resumo": "Organize a chegada, escolha as paradas e encontre hospedagem, alimentação e canais oficiais para conferir a programação.",
+      "imagem": "imagens/hero-basilica-2026.webp",
+      "alt": "Vista aérea do Santuário Basílica do Divino Pai Eterno",
+      "legenda": "Santuário Basílica, em Trindade. Imagem do acervo do Portal.",
+      "abertura": "Um bom roteiro começa com o que importa para você. Participar de uma celebração, conhecer a história da cidade e experimentar a gastronomia pedem escolhas diferentes. Use este guia para montar uma visita possível, sem transformar o dia em uma corrida.",
+      "secoes": [
+        {
+          "id": "chegada",
+          "titulo": "Como chegar saindo de Goiânia",
+          "paragrafos": [
+            "A GO-060 faz a ligação entre Goiânia e Trindade. O tempo de viagem depende do ponto de saída, do destino na cidade e das condições de trânsito. Consulte a rota no dia da visita e os avisos da Goinfra; informes de obras têm data e podem mudar."
+          ],
+          "fontes": [
+            "goinfra"
+          ]
+        },
+        {
+          "id": "um-dia",
+          "titulo": "Sugestão do Portal para um dia",
+          "paragrafos": [
+            "Se você quer combinar fé e memória, considere começar pela Matriz, reservar uma parada para almoço e dedicar outro período à Basílica. O Museu da Memória pode entrar no planejamento depois de confirmar a abertura. Inverta a ordem se uma celebração tiver horário prioritário para você.",
+            "Para decidir o que cabe, escolha duas ou três paradas principais. Confira o deslocamento entre elas e deixe espaço para descanso. Este é um modelo de organização do Portal, não um pacote turístico com duração garantida."
+          ],
+          "fontes": []
+        },
+        {
+          "id": "mais-tempo",
+          "titulo": "Se puder ficar mais tempo",
+          "paragrafos": [
+            "Uma segunda etapa pode ser dedicada à programação cultural, às feiras e à gastronomia. Quem pretende conhecer o Novo Santuário deve verificar separadamente as condições de visita à obra.",
+            "No guia de hospedagem, filtre por bairro e tipo de estabelecimento. Compare o endereço com os lugares que pretende visitar e confirme diretamente itens que fazem diferença para sua família, como estacionamento, elevador e acessibilidade."
+          ],
+          "fontes": []
+        },
+        {
+          "id": "checklist",
+          "titulo": "O que conferir antes de sair",
+          "paragrafos": [
+            "Escolha a data, consulte os horários de celebração, confirme a abertura das atrações e confira como será o retorno. Para grupos, pergunte sobre agendamento e local de embarque. Guarde os endereços e os contatos confirmados."
+          ],
+          "fontes": []
+        },
+        {
+          "id": "confirmar",
+          "titulo": "Orientação turística municipal",
+          "paragrafos": [
+            "A Secretaria de Turismo e Cultura inclui o Centro de Atendimento ao Turista entre suas estruturas. É um canal municipal para buscar orientações sobre a visita e os equipamentos culturais."
+          ],
+          "fontes": [
+            "cultura"
+          ]
+        },
+        {
+          "id": "familia",
+          "titulo": "Com crianças ou pessoas com mobilidade reduzida",
+          "paragrafos": [
+            "Prefira menos deslocamentos e combine pausas. Pergunte ao local e à hospedagem sobre rampas, banheiros, distâncias internas e pontos de desembarque, conforme a necessidade do grupo. As condições de acessibilidade não devem ser presumidas apenas por uma fotografia ou descrição geral."
+          ],
+          "fontes": []
+        }
+      ],
+      "relacionados": [
+        "devocao-e-santuarios",
+        "cultura-e-memoria",
+        "sabores-de-trindade"
+      ]
+    }
+  ],
+  "perguntas": [
+    {
+      "q": "Onde fica Trindade, em Goiás?",
+      "a": "Trindade fica na Região Metropolitana de Goiânia. A ligação rodoviária com a capital passa pela GO-060. Este guia trata de Trindade (GO), e não de localidades homônimas em outros estados.",
+      "artigo": "planeje-sua-visita",
+      "fontes": [
+        "goinfra"
+      ]
+    },
+    {
+      "q": "Quem nasce em Trindade é chamado de quê?",
+      "a": "O gentílico registrado pelo IBGE é trindadense.",
+      "artigo": "historia-de-trindade",
+      "fontes": [
+        "ibge-historia"
+      ]
+    },
+    {
+      "q": "Qual é a população de Trindade?",
+      "a": "O Censo 2022 do IBGE registrou 142.431 habitantes. Esse número se refere ao censo daquele ano, não à população estimada para 2026.",
+      "artigo": "historia-de-trindade",
+      "fontes": [
+        "ibge-censo"
+      ]
+    },
+    {
+      "q": "Quando é o aniversário de Trindade?",
+      "a": "Em 31 de agosto. A instalação da vila ocorreu em 31 de agosto de 1920, conforme o histórico administrativo do IBGE.",
+      "artigo": "historia-de-trindade",
+      "fontes": [
+        "ibge-historia"
+      ]
+    },
+    {
+      "q": "Qual era o antigo nome de Trindade?",
+      "a": "O povoado era conhecido como Barro Preto, nome associado ao córrego da região.",
+      "artigo": "historia-de-trindade",
+      "fontes": [
+        "prefeitura-historia"
+      ]
+    },
+    {
+      "q": "A devoção e o município começaram na mesma data?",
+      "a": "Não. A devoção é situada na década de 1840; a instalação da vila ocorreu em 1920. São marcos diferentes da história local.",
+      "artigo": "historia-de-trindade",
+      "fontes": [
+        "ibge-historia",
+        "prefeitura-historia"
+      ]
+    },
+    {
+      "q": "Por que Trindade é conhecida como Capital da Fé?",
+      "a": "O nome está associado à devoção ao Divino Pai Eterno e à tradição de peregrinação que marcou a formação da cidade.",
+      "artigo": "devocao-e-santuarios",
+      "fontes": [
+        "prefeitura-historia"
+      ]
+    },
+    {
+      "q": "Quem foram Constantino Xavier e Ana Rosa?",
+      "a": "São o casal de agricultores associado, na tradição religiosa local, ao encontro do medalhão que deu origem à devoção ao Divino Pai Eterno.",
+      "artigo": "devocao-e-santuarios",
+      "fontes": [
+        "devocao"
+      ]
+    },
+    {
+      "q": "O que representa o medalhão do Divino Pai Eterno?",
+      "a": "Na narrativa do Santuário, o medalhão representa a Santíssima Trindade coroando a Virgem Maria.",
+      "artigo": "devocao-e-santuarios",
+      "fontes": [
+        "devocao"
+      ]
+    },
+    {
+      "q": "A Igreja Matriz e a Basílica são o mesmo lugar?",
+      "a": "Não. A Matriz, inaugurada em 1912, é conhecida como Santuário Velho. O Santuário Basílica é outro templo, que recebeu o título de Basílica Menor em 2006.",
+      "artigo": "devocao-e-santuarios",
+      "fontes": [
+        "matriz",
+        "basilica"
+      ]
+    },
+    {
+      "q": "O Novo Santuário já está pronto?",
+      "a": "Na revisão de 27/09/2026, a obra permanecia em andamento. A instituição publicou avanços de concretagem em 25/09/2026. Confira as áreas de visitação e a situação atual nos canais do Santuário.",
+      "artigo": "devocao-e-santuarios",
+      "fontes": [
+        "novo-santuario"
+      ]
+    },
+    {
+      "q": "Onde conferir os horários das missas?",
+      "a": "Consulte a programação oficial do templo que pretende visitar. Matriz, Basílica e atividades na obra do Novo Santuário podem ter agendas diferentes. A página sobre a devoção reúne os links institucionais.",
+      "artigo": "devocao-e-santuarios",
+      "fontes": [
+        "basilica"
+      ]
+    },
+    {
+      "q": "Quando acontece a Festa do Divino Pai Eterno?",
+      "a": "Tradicionalmente, o encerramento ocorre no primeiro domingo de julho, após nove dias de celebrações. Confira o calendário oficial de cada edição antes de planejar a viagem.",
+      "artigo": "romaria-e-carreiros",
+      "fontes": [
+        "romaria"
+      ]
+    },
+    {
+      "q": "A Romaria dos Carros de Boi é patrimônio cultural?",
+      "a": "Sim. A Romaria de Carros de Bois da Festa do Divino Pai Eterno de Trindade é reconhecida pelo Iphan como Patrimônio Cultural do Brasil desde 2016.",
+      "artigo": "romaria-e-carreiros",
+      "fontes": [
+        "iphan"
+      ]
+    },
+    {
+      "q": "Por que os carreiros fazem parte da história de Trindade?",
+      "a": "A peregrinação com carros de boi mantém vínculos com a vida rural e com conhecimentos transmitidos entre famílias. Seu valor cultural envolve a viagem, os saberes e a devoção, além da passagem dos carros pela cidade.",
+      "artigo": "romaria-e-carreiros",
+      "fontes": [
+        "iphan"
+      ]
+    },
+    {
+      "q": "Quantos quilômetros tem a caminhada de Goiânia a Trindade?",
+      "a": "O Santuário informa aproximadamente 18 quilômetros para o percurso tradicional pela Rodovia dos Romeiros. A distância muda conforme os pontos escolhidos para começar e terminar.",
+      "artigo": "romaria-e-carreiros",
+      "fontes": [
+        "romaria"
+      ]
+    },
+    {
+      "q": "Quem criou os painéis da Via Sacra?",
+      "a": "O inventário da Goiás Turismo atribui a Omar Souto os 14 painéis da Via Sacra na Rodovia dos Romeiros, ao longo da GO-060.",
+      "artigo": "romaria-e-carreiros",
+      "fontes": [
+        "inventario"
+      ]
+    },
+    {
+      "q": "O que conhecer além das igrejas?",
+      "a": "Considere o Museu da Memória, o Parque Lara Guimarães e a programação dos espaços de artesanato e cultura. Confira os dias de abertura e as atividades disponíveis para sua data.",
+      "artigo": "cultura-e-memoria",
+      "fontes": [
+        "cultura",
+        "inventario"
+      ]
+    },
+    {
+      "q": "O que há no Museu da Memória de Trindade?",
+      "a": "A Prefeitura descreve um acervo de peças, móveis e documentos relacionados à memória local, ampliado na revitalização de 2022 e por doações de moradores.",
+      "artigo": "cultura-e-memoria",
+      "fontes": [
+        "museu"
+      ]
+    },
+    {
+      "q": "Onde fica o Museu da Memória?",
+      "a": "A Prefeitura o situa no encontro das ruas 16 de Julho e Major Manoel Alves. Confirme a abertura e a orientação de acesso antes da visita.",
+      "artigo": "cultura-e-memoria",
+      "fontes": [
+        "museu"
+      ]
+    },
+    {
+      "q": "Onde procurar artesanato e atividades culturais?",
+      "a": "A estrutura municipal inclui a Escola de Artesanato e Escultura de Santa Maria, a Casa da Cultura e o CEU das Artes. Consulte a Secretaria de Turismo e Cultura sobre a programação desses espaços.",
+      "artigo": "cultura-e-memoria",
+      "fontes": [
+        "cultura"
+      ]
+    },
+    {
+      "q": "A pista de kart do Parque Lara Guimarães está disponível?",
+      "a": "Um comunicado municipal de 03/06/2026 suspendeu temporariamente o uso da pista, sem indicar reabertura. Verifique um anúncio posterior da Prefeitura antes de planejar a atividade.",
+      "artigo": "cultura-e-memoria",
+      "fontes": [
+        "kart"
+      ]
+    },
+    {
+      "q": "Quais sabores goianos procurar em uma visita?",
+      "a": "Pamonha, empadão goiano e arroz com pequi são referências regionais citadas pela Goiás Turismo. Confira o cardápio do estabelecimento: a oferta varia, e esses pratos não são exclusivos de Trindade.",
+      "artigo": "sabores-de-trindade",
+      "fontes": [
+        "gastronomia"
+      ]
+    },
+    {
+      "q": "O que é o Festival Gastronômico de Trindade?",
+      "a": "É um evento de valorização da produção gastronômica local. Na apresentação da XII edição, a Prefeitura destacou a participação de restaurantes, cozinheiros, empreendedores e produtores, com pratos de carne suína e mandioca.",
+      "artigo": "sabores-de-trindade",
+      "fontes": [
+        "festival"
+      ]
+    },
+    {
+      "q": "Onde encontrar as receitas do festival?",
+      "a": "A página Cultura e leitura do Portal disponibiliza o livro de receitas do XII Festival Gastronômico de Trindade em PDF.",
+      "artigo": "sabores-de-trindade",
+      "fontes": []
+    },
+    {
+      "q": "Como encontrar pamonharias, restaurantes e feiras?",
+      "a": "Use a busca do Portal por assunto ou nome. Há guias de pamonharias, pizzarias, bares, hambúrgueres, açaí e feiras, com os canais apresentados nas publicações locais.",
+      "artigo": "sabores-de-trindade",
+      "fontes": []
+    },
+    {
+      "q": "Dá para conhecer Trindade em um dia?",
+      "a": "Um dia permite selecionar algumas paradas. Como sugestão, escolha os locais prioritários, confira a programação e reserve tempo para alimentação e descanso. Conhecer tudo em uma única visita depende do ritmo e dos deslocamentos do grupo.",
+      "artigo": "planeje-sua-visita",
+      "fontes": []
+    },
+    {
+      "q": "É melhor visitar durante ou fora da Romaria?",
+      "a": "Depende da experiência desejada. O período da festa é indicado para quem quer acompanhar a programação especial. Fora dele, você pode organizar o roteiro de acordo com as atividades regulares de cada espaço.",
+      "artigo": "planeje-sua-visita",
+      "fontes": []
+    },
+    {
+      "q": "Onde procurar hotéis e pousadas em Trindade?",
+      "a": "O diretório do Portal reúne 72 hospedagens, com busca por nome, tipo e bairro. Preços, disponibilidade e reservas são confirmados diretamente com os estabelecimentos.",
+      "artigo": "planeje-sua-visita",
+      "fontes": []
+    },
+    {
+      "q": "Como planejar um passeio com crianças?",
+      "a": "Escolha menos paradas, combine pausas e verifique alimentação, banheiros e deslocamentos. Ajuste o roteiro ao ritmo da família e à programação disponível na data.",
+      "artigo": "planeje-sua-visita",
+      "fontes": []
+    },
+    {
+      "q": "Como conferir acessibilidade antes de viajar?",
+      "a": "Pergunte aos locais e à hospedagem sobre rampas, elevadores, banheiros e pontos de desembarque adequados às necessidades do grupo. Uma descrição geral não confirma todas essas condições.",
+      "artigo": "planeje-sua-visita",
+      "fontes": []
+    },
+    {
+      "q": "Onde buscar orientação turística oficial?",
+      "a": "Procure os canais da Secretaria Municipal de Turismo e Cultura, responsável também pelo Centro de Atendimento ao Turista. Use os canais do Santuário para questões de celebrações e visita aos espaços religiosos.",
+      "artigo": "planeje-sua-visita",
+      "fontes": [
+        "cultura"
+      ]
+    },
+    {
+      "q": "Os guias do Portal são rankings de melhores lugares?",
+      "a": "Não. Há seleções editoriais e listas originadas de enquetes, identificadas nas páginas. Elas ajudam a descobrir estabelecimentos; a escolha depende do que você procura e das informações confirmadas com cada negócio.",
+      "artigo": "sabores-de-trindade",
+      "fontes": []
+    },
+    {
+      "q": "Como avisar o Portal sobre uma informação desatualizada?",
+      "a": "Use o contato do Portal e envie o endereço da página, a informação que mudou e, se possível, uma fonte atual. Isso ajuda a conferir e corrigir o conteúdo.",
+      "artigo": "planeje-sua-visita",
+      "fontes": []
+    }
+  ]
+}
