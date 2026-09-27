@@ -5,12 +5,11 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import json
+import re
 import sys
 
 root=Path(__file__).resolve().parents[1]
 out=root/(sys.argv[1] if len(sys.argv)>1 else '.')
-if not out.is_dir():
-    sys.exit(f'Diretório de validação inexistente: {out}')
 if not out.is_dir():
     sys.exit(f'Diretório de validação inexistente: {out}')
 class Document(HTMLParser):
@@ -27,7 +26,6 @@ for path in list(out.glob('*.html'))+list((out/'guias').glob('*.html')):
     if path.name=='responsive-check.html' or path.name.startswith('google'):continue
     doc=Document();doc.feed(path.read_text());docs[path.resolve()]=doc
 errors=[];count=0
-if not docs:errors.append('Nenhuma página encontrada para validar.')
 if not docs:
     sys.exit(f'Nenhuma página encontrada em {out}')
 for path,doc in docs.items():
@@ -37,6 +35,9 @@ for path,doc in docs.items():
     if dup:errors.append(f'{path.name}: IDs duplicados {dup}')
     for raw in doc.refs:
         u=urlsplit(raw)
+        number=u.path.lstrip('+') if u.scheme=='tel' else u.path.strip('/') if u.netloc=='wa.me' else None
+        if number is not None and not re.fullmatch(r'55[1-9]\d(?:[2-5]\d{7}|9\d{8})',number):
+            errors.append(f'{path.name}: número de contato em formato inválido {raw}')
         if u.scheme or u.netloc:continue
         count+=1
         if u.path:
@@ -45,8 +46,8 @@ for path,doc in docs.items():
         if not target.exists():errors.append(f'{path.name}: arquivo ausente {raw}')
         if u.fragment and target in docs and unquote(u.fragment) not in docs[target].ids:errors.append(f'{path.name}: âncora ausente {raw}')
 d=json.loads((root/'hospedagens.json').read_text());items=d['estabelecimentos']
-assert len(items)==d['total_confirmados']==72
+assert len(items)==d['total_registros']==72
 assert len({i['nome'].casefold() for i in items})==len(items)
 assert Counter(i['tipo'] for i in items)=={'Hotel':21,'Pousada':50,'Chalé':1}
 if errors:print('\n'.join(errors));sys.exit(1)
-print(f'OK: {len(docs)} páginas, {count} referências locais e 72 hospedagens verificadas.')
+print(f'OK: {len(docs)} páginas, {count} referências locais e 72 registros de hospedagem íntegros.')

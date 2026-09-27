@@ -1,0 +1,299 @@
+{
+  "data": "2026-09-27",
+  "escopo": {
+    "referencias": 16,
+    "materias": 6,
+    "faqs": 34,
+    "faqs_sem_fonte_externa": 9,
+    "metodo": "Conferência do texto atribuído a cada chave contra páginas oficiais indexadas/abertas; sem alteração do repositório."
+  },
+  "falhas_materiais": [
+    {
+      "prioridade": "moderada",
+      "problema": "Fonte municipal do XII Festival publicada em 2026 combina 28/08–30/08 com quinta–sábado; em 2026 são sexta–domingo. Portal não republicou a agenda.",
+      "url": "https://trindade.go.gov.br/prefeitura-de-trindade-anuncia-xii-festival-gastronomico-com-atracoes-nacionais-e-valorizacao-da-culinaria-local/",
+      "acao": "Não usar a agenda da notícia; manter nota precisa e consultar errata."
+    },
+    {
+      "prioridade": "baixa",
+      "problema": "Cronologias 1843/1848 divergem entre IBGE e Prefeitura, e a nota histórica municipal tem aparente '1930' incompatível com periódico de 1924. Portal usa a década e atribui a tradição.",
+      "urls": [
+        "https://trindade.go.gov.br/historia-da-cidade/",
+        "https://www.ibge.gov.br/biblioteca/visualizacao/dtb/goias/trindade.pdf"
+      ],
+      "acao": "Não datar o achado ou a primeira capela com precisão."
+    },
+    {
+      "prioridade": "acesso",
+      "problema": "IBGE Cidades retornou 403 e notícia Iphan 401 no leitor. Ambos aparecem indexados; página oficial alternativa Iphan abriu. Bloqueios não provam link quebrado.",
+      "urls": [
+        "https://www.ibge.gov.br/cidades-e-estados/go/trindade.html",
+        "https://www.gov.br/iphan/pt-br/assuntos/noticias/plano-de-salvaguarda-da-romaria-de-carros-de-bois-da-festa-do-divino-de-trindade-go-sera-lancado",
+        "https://www.gov.br/iphan/pt-br/superintendencias/goias/patrimonio-imaterial"
+      ],
+      "acao": "Manter cautela com URL e oferecer alternativa oficial Iphan."
+    }
+  ],
+  "fontes": {
+    "ibge-historia": {
+      "status": "confirmada",
+      "url": "https://www.ibge.gov.br/biblioteca/visualizacao/dtb/goias/trindade.pdf",
+      "usos": {
+        "artigos": [
+          "historia-de-trindade/municipio"
+        ],
+        "faq": [
+          2,
+          4,
+          6
+        ]
+      },
+      "fatos_suportados": "Distrito em 1909; vila pela lei de 16/07/1920, instalada em 31/08; cidade em 1927; restauração municipal em 1943; gentílico trindadense.",
+      "fatos_nao_suportados_ou_limites": "O PDF não declara explicitamente que 31/08 é 'aniversário'; essa denominação é inferência da instalação. O texto narrativo fala em distrito de Goiânia em 1935, e a formação administrativa detalha anexação em 1938.",
+      "correcao_proposta": "Manter marcos e, se necessário, atribuir a celebração do aniversário a uma fonte municipal."
+    },
+    "ibge-censo": {
+      "status": "403 no leitor; confirmado pelo índice oficial",
+      "url": "https://www.ibge.gov.br/cidades-e-estados/go/trindade.html",
+      "usos": {
+        "artigos": [],
+        "faq": [
+          3
+        ]
+      },
+      "fatos_suportados": "Censo 2022: 142.431 habitantes.",
+      "fatos_nao_suportados_ou_limites": "O corpo da página não abriu nesta ferramenta; fragmento indexado do próprio IBGE confirma número e ano. Não é estimativa 2026.",
+      "correcao_proposta": "Manter a qualificação Censo 2022; não trocar URL só pelo 403."
+    },
+    "prefeitura-historia": {
+      "status": "confirmada com divergência de cronologia",
+      "url": "https://trindade.go.gov.br/historia-da-cidade/",
+      "usos": {
+        "artigos": [
+          "historia-de-trindade/barro-preto"
+        ],
+        "faq": [
+          5,
+          6,
+          7
+        ]
+      },
+      "fatos_suportados": "Córrego Barro Preto e Campinas, agricultura/pecuária, tradição de Constantino Xavier e Ana Rosa com medalhão, devoção na década de 1840 e Capital da Fé.",
+      "fatos_nao_suportados_ou_limites": "Prefeitura situa capela por volta de 1848, IBGE fala em 1843; nota municipal cita aparente '1930' apesar de referir periódico de 1924. Há indicadores antigos não reutilizados.",
+      "correcao_proposta": "Preservar 'segundo a tradição' e década aproximada, sem datar precisamente achado ou primeira capela."
+    },
+    "devocao": {
+      "status": "confirmada",
+      "url": "https://www.paieterno.com.br/santuario/origem-devocao/",
+      "usos": {
+        "artigos": [
+          "devocao-e-santuarios/medalhao"
+        ],
+        "faq": [
+          8,
+          9
+        ]
+      },
+      "fatos_suportados": "Narrativa institucional do casal, medalhão de barro com Santíssima Trindade coroando Maria, orações em casa e réplica de madeira associada a Veiga Valle em Pirenópolis.",
+      "fatos_nao_suportados_ou_limites": "Tradição religiosa narrada pela instituição, não prova independente do achado.",
+      "correcao_proposta": "Manter atribuição explícita à narrativa do Santuário."
+    },
+    "matriz": {
+      "status": "confirmada",
+      "url": "https://www.paieterno.com.br/santuario/basilica/historia/",
+      "usos": {
+        "artigos": [
+          "devocao-e-santuarios/matriz"
+        ],
+        "faq": [
+          10
+        ]
+      },
+      "fatos_suportados": "Matriz inaugurada em 1912 e construída pelo padre redentorista Antão Jorge para acolher romeiros.",
+      "fatos_nao_suportados_ou_limites": "A página menciona tombamento mas o Portal corretamente evita data e detalhe controverso.",
+      "correcao_proposta": "Nenhuma."
+    },
+    "basilica": {
+      "status": "confirmada",
+      "url": "https://www.paieterno.com.br/home-basilica/santuario-basilica/",
+      "usos": {
+        "artigos": [
+          "devocao-e-santuarios/basilica"
+        ],
+        "faq": [
+          10,
+          12
+        ]
+      },
+      "fatos_suportados": "Bento XVI concedeu título em 04/04/2006; instalação em 18/11/2006.",
+      "fatos_nao_suportados_ou_limites": "Descrição da cobertura/cúpula depende das imagens, não da passagem textual; horários requerem agenda do dia.",
+      "correcao_proposta": "Nenhuma."
+    },
+    "novo-santuario": {
+      "status": "confirmada na data da notícia",
+      "url": "https://www.paieterno.com.br/2026/09/25/nova-casa-do-pai-avanca-com-concretagem/",
+      "usos": {
+        "artigos": [
+          "devocao-e-santuarios/novo"
+        ],
+        "faq": [
+          11
+        ]
+      },
+      "fatos_suportados": "Notícia de 25/09/2026 relata concretagem do setor H e obra ainda inconclusa.",
+      "fatos_nao_suportados_ou_limites": "Não comprova situação depois da notícia ou regras de acesso público às áreas da obra.",
+      "correcao_proposta": "Manter data da constatação e instrução de consultar canais do Santuário."
+    },
+    "romaria": {
+      "status": "confirmada como calendário tradicional",
+      "url": "https://www.paieterno.com.br/home-basilica/romaria/",
+      "usos": {
+        "artigos": [
+          "romaria-e-carreiros/calendario"
+        ],
+        "faq": [
+          13,
+          16
+        ]
+      },
+      "fatos_suportados": "Grande Festa no primeiro domingo de julho, precedida por nove dias; missas, novenas, procissões; caminhada GO-060 Goiânia–Trindade de aproximadamente 18 km.",
+      "fatos_nao_suportados_ou_limites": "Página atualizada em 2022 não é agenda da próxima edição; distância varia por origem/destino.",
+      "correcao_proposta": "Manter orientação de consultar programação anual."
+    },
+    "iphan": {
+      "status": "401 no URL da notícia; núcleo confirmado em página oficial alternativa",
+      "url": "https://www.gov.br/iphan/pt-br/assuntos/noticias/plano-de-salvaguarda-da-romaria-de-carros-de-bois-da-festa-do-divino-de-trindade-go-sera-lancado",
+      "usos": {
+        "artigos": [
+          "romaria-e-carreiros/carreiros"
+        ],
+        "faq": [
+          14,
+          15
+        ]
+      },
+      "fatos_suportados": "Iphan reconheceu especificamente a Romaria de Carros de Bois da Festa do Divino Pai Eterno de Trindade como Patrimônio Cultural Brasileiro em 2016, no Livro das Celebrações; plano de salvaguarda elaborado com detentores.",
+      "fatos_nao_suportados_ou_limites": "Texto integral da notícia original não pôde ser lido. Detalhes sobre construção/condução e transmissão familiar são síntese interpretativa; a página alternativa não demonstra todos individualmente.",
+      "correcao_proposta": "Adicionar como fonte complementar https://www.gov.br/iphan/pt-br/superintendencias/goias/patrimonio-imaterial; atribuir interpretação dos saberes ou apontar plano integral."
+    },
+    "inventario": {
+      "status": "confirmada; documento de 2020",
+      "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeGeral-9b6.pdf",
+      "usos": {
+        "artigos": [
+          "romaria-e-carreiros/via-sacra",
+          "cultura-e-memoria/parque",
+          "sabores-de-trindade/mercado"
+        ],
+        "faq": [
+          17,
+          18
+        ]
+      },
+      "fatos_suportados": "14 painéis da Via Sacra de Omar Souto ao longo da GO-060; Parque Lara Guimarães como lazer; Mercado Municipal no centro com comércio tradicional de alimentos.",
+      "fatos_nao_suportados_ou_limites": "Documento de 2020 não prova horários ou funcionamento atuais; tais detalhes não foram copiados.",
+      "correcao_proposta": "Nenhuma; verificar operação atual antes de qualquer guia prático."
+    },
+    "museu": {
+      "status": "confirmada como notícia de 2022",
+      "url": "https://trindade.go.gov.br/prefeitura-municipal-inaugura-revitalizacao-do-museu-de-trindade/",
+      "usos": {
+        "artigos": [
+          "cultura-e-memoria/museu"
+        ],
+        "faq": [
+          19,
+          20
+        ]
+      },
+      "fatos_suportados": "Revitalização em 2022, peças/móveis/documentos de 1908 e 1920, doações e localização entre ruas 16 de Julho e Major Manoel Alves.",
+      "fatos_nao_suportados_ou_limites": "Horários da notícia podem estar obsoletos. A notícia confunde a lei distrital com 1920, em tensão com IBGE 1909; o Portal não repete essa caracterização.",
+      "correcao_proposta": "Manter confirmação prévia de visita e não chamar documento de 1920 de criação do distrito."
+    },
+    "cultura": {
+      "status": "confirmada",
+      "url": "https://trindade.go.gov.br/estrutura/secretaria-municipal-de-turismo-e-cultura/",
+      "usos": {
+        "artigos": [
+          "cultura-e-memoria/artesanato",
+          "planeje-sua-visita/confirmar"
+        ],
+        "faq": [
+          18,
+          21,
+          32
+        ]
+      },
+      "fatos_suportados": "Secretaria relaciona Escola Municipal de Artesanato e Escultura de Santa Maria, Casa da Cultura, CEU das Artes, Museu e Centro de Atendimento ao Turista.",
+      "fatos_nao_suportados_ou_limites": "Página de competência não estabelece funcionamento ou programação em 2026.",
+      "correcao_proposta": "Manter orientação de consulta à secretaria."
+    },
+    "kart": {
+      "status": "confirmada na data do comunicado",
+      "url": "https://trindade.go.gov.br/prefeitura-de-trindade-informa-suspensao-temporaria-das-atividades-no-kartodromo-municipal/",
+      "usos": {
+        "artigos": [
+          "cultura-e-memoria/kart"
+        ],
+        "faq": [
+          22
+        ]
+      },
+      "fatos_suportados": "Em 03/06/2026, Prefeitura anunciou suspensão temporária da pista no Parque Lara Guimarães, sem data de reabertura.",
+      "fatos_nao_suportados_ou_limites": "A notícia não prova que a suspensão perdurava em 27/09/2026; Portal relata o anúncio datado.",
+      "correcao_proposta": "Manter formulação histórica e pedido de atualização, sem afirmar fechamento atual como fato confirmado."
+    },
+    "gastronomia": {
+      "status": "confirmada; regional, não local exclusiva",
+      "url": "https://goias.gov.br/observatoriodoturismo/wp-content/uploads/sites/64/2026/01/PNAD-Turismo-2024-GOIAS.pdf",
+      "usos": {
+        "artigos": [
+          "sabores-de-trindade/cozinha-goiana"
+        ],
+        "faq": [
+          23
+        ]
+      },
+      "fatos_suportados": "Relatório estadual inclui arroz com pequi, pamonha, empadão goiano, baru e doçaria regional.",
+      "fatos_nao_suportados_ou_limites": "Não prova disponibilidade em restaurantes específicos de Trindade; Portal avisa isso.",
+      "correcao_proposta": "Nenhuma."
+    },
+    "festival": {
+      "status": "proposta gastronômica confirmada; calendário da fonte inconsistente",
+      "url": "https://trindade.go.gov.br/prefeitura-de-trindade-anuncia-xii-festival-gastronomico-com-atracoes-nacionais-e-valorizacao-da-culinaria-local/",
+      "usos": {
+        "artigos": [
+          "sabores-de-trindade/festival"
+        ],
+        "faq": [
+          24
+        ]
+      },
+      "fatos_suportados": "Notícia de 21/07/2026, atualizada 22/07, descreve XII edição, restaurantes, chefs/cozinheiros, empreendedores/produtores e carne suína e mandioca obrigatórias.",
+      "fatos_nao_suportados_ou_limites": "A notícia chama 28–30/08 de quinta a sábado; em 2026 caem sexta a domingo. Não confirma realização efetiva nem edições futuras. Portal não reproduz agenda.",
+      "correcao_proposta": "Precisar na nota que os dias da semana não correspondem às datas de 2026; buscar errata oficial antes de publicar agenda."
+    },
+    "goinfra": {
+      "status": "confirmada; aviso datado",
+      "url": "https://goias.gov.br/goinfra/obras-na-regiao-metropolitana-de-goiania-alteram-trafego-em-rodovias-estaduais/",
+      "usos": {
+        "artigos": [
+          "planeje-sua-visita/chegada"
+        ],
+        "faq": [
+          1
+        ]
+      },
+      "fatos_suportados": "GO-060 entre Goiânia e Trindade; informe publicado em 28/07/2026 e atualizado 07/08/2026.",
+      "fatos_nao_suportados_ou_limites": "Desvios narrados em agosto podem ter mudado; Portal não os presume vigentes.",
+      "correcao_proposta": "Nenhuma."
+    }
+  },
+  "limitacoes": [
+    "401/403 podem refletir a ferramenta, não necessariamente navegação pública.",
+    "Avisos de obra, pista e eventos são verificações datadas; não garantem situação presente futura.",
+    "Nove FAQs sem referências externas tratam majoritariamente de sugestões ou dados internos, inclusive '72 hospedagens' e livro de receitas; esses dados internos não são comprovados pelas 16 fontes.",
+    "A comparação não garante exatidão histórica absoluta ou condições atuais de visita."
+  ],
+  "nota_arquivo": "Registro dos achados antes das correções; consultar docs/AUDITORIA-2026-09-27.md e o conteúdo atual para as ações aplicadas."
+}

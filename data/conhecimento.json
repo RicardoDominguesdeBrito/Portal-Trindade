@@ -51,9 +51,10 @@
     },
     "iphan": {
       "instituicao": "Iphan",
-      "titulo": "Plano de salvaguarda da Romaria de Carros de Bois da Festa do Divino de Trindade",
-      "url": "https://www.gov.br/iphan/pt-br/assuntos/noticias/plano-de-salvaguarda-da-romaria-de-carros-de-bois-da-festa-do-divino-de-trindade-go-sera-lancado",
-      "nota": "Publicação de 2022. Reconhecimento da manifestação cultural específica desde 2016."
+      "titulo": "Patrimônio imaterial em Goiás — Romaria de Carros de Bois",
+      "url": "https://www.gov.br/iphan/pt-br/superintendencias/goias/patrimonio-imaterial",
+      "nota": "Página institucional confirma o registro em 2016 no Livro de Celebrações. A notícia original foi preservada no histórico de fontes.",
+      "url_original": "https://www.gov.br/iphan/pt-br/assuntos/noticias/plano-de-salvaguarda-da-romaria-de-carros-de-bois-da-festa-do-divino-de-trindade-go-sera-lancado"
     },
     "inventario": {
       "instituicao": "Goiás Turismo / Observatório do Turismo",
@@ -96,6 +97,12 @@
       "titulo": "Obras na Região Metropolitana de Goiânia e rodovias estaduais",
       "url": "https://goias.gov.br/goinfra/obras-na-regiao-metropolitana-de-goiania-alteram-trafego-em-rodovias-estaduais/",
       "nota": "Atualizada em 07/08/2026. Confirma a ligação Goiânia–Trindade pela GO-060; desvios não foram presumidos vigentes."
+    },
+    "aniversario": {
+      "instituicao": "Prefeitura de Trindade",
+      "titulo": "Celebrações dos 102 anos e data oficial do aniversário municipal",
+      "url": "https://trindade.go.gov.br/missa-em-acao-de-gracas-na-matriz-do-divino-pai-eterno-abencoou-festejos-pelos-102-anos-de-trindade/",
+      "nota": "Notícia de 01/08/2022 identifica 31 de agosto como data oficial do aniversário; usada somente para a data histórica, não para agenda atual."
     }
   },
   "artigos": [
@@ -128,7 +135,8 @@
             "O IBGE registra a criação da vila por lei de 16 de julho de 1920 e sua instalação em 31 de agosto daquele ano, separada de Campinas. A data de 31 de agosto marca o aniversário municipal. A condição de cidade veio em 1927. Após um período de vinculação a Goiânia, Trindade voltou à condição de município em 1943."
           ],
           "fontes": [
-            "ibge-historia"
+            "ibge-historia",
+            "aniversario"
           ]
         },
         {
@@ -530,7 +538,8 @@
       "a": "Em 31 de agosto. A instalação da vila ocorreu em 31 de agosto de 1920, conforme o histórico administrativo do IBGE.",
       "artigo": "historia-de-trindade",
       "fontes": [
-        "ibge-historia"
+        "ibge-historia",
+        "aniversario"
       ]
     },
     {

@@ -1,0 +1,465 @@
+{
+  "auditado_em": "2026-09-27",
+  "escopo": [
+    "feiras",
+    "cultura-e-lazer",
+    "espacos-do-santuario",
+    "igrejas-alem-do-roteiro",
+    "roteiro-turistico-um-dia"
+  ],
+  "metodo": "Leitura dos 23 itens e busca em fontes primárias do responsável pelo local, Prefeitura, Arquidiocese, Santuário e Vila São Cottolengo; fonte local independente complementar quando disponível. Publicações antigas não provam acesso ou horário em setembro de 2026. A publicação do próprio Portal é origem editorial, não confirmação independente.",
+  "itens": [
+    {
+      "guia": "feiras",
+      "nome": "Feira da Vila Pai Eterno",
+      "veredito": "parcial; localização exata e horário atuais pendentes",
+      "fontes": [
+        {
+          "url": "https://www.instagram.com/trindadeportal/p/Dcx-PtEDZRM/",
+          "tipo": "origem Portal"
+        },
+        {
+          "url": "https://trindade.go.gov.br/prefeitura-de-trindade-promove-mutirao-saude-na-feira-para-moradores-da-vila-pai-eterno/",
+          "tipo": "Prefeitura; terça-feira na Praça Thaynara Karoline em 2024"
+        },
+        {
+          "url": "https://trindadego.com.br/feira-da-vila-pai-eterno/",
+          "tipo": "guia local independente; terças 18h–21h30, Rua 30"
+        }
+      ],
+      "conclusao": "Feira, dia e horário têm corroboração, mas a fonte local aponta Rua 30 e a Prefeitura Praça Thaynara Karoline. Não foi verificada a expressão 'entre as ruas 28 e 30' nem operação nesta semana.",
+      "texto_seguro": "Feira da Vila Pai Eterno — terças à noite, nas imediações da Praça Thaynara Karoline/Rua 30, conforme registros consultados; confirme o ponto e o horário com a organização."
+    },
+    {
+      "guia": "feiras",
+      "nome": "Feira do Sol Dourado",
+      "veredito": "corroborado por guia local; horário atual não confirmado pelo organizador",
+      "fontes": [
+        {
+          "url": "https://www.instagram.com/trindadeportal/p/Dcx-PtEDZRM/",
+          "tipo": "origem Portal"
+        },
+        {
+          "url": "https://trindadego.com.br/feira-do-sol-dourado/",
+          "tipo": "guia local independente; Praça do Avivamento, Rua 213, Quadra 18, quartas 18h–21h30"
+        }
+      ],
+      "conclusao": "Nome, bairro, praça, dia e intervalo coincidem com guia local; faltou confirmação municipal recente da rotina.",
+      "texto_seguro": "Feira do Sol Dourado — Praça do Avivamento, Rua 213, Quadra 18; indicada para quartas, das 18h às 21h30. Confirme antes de ir."
+    },
+    {
+      "guia": "feiras",
+      "nome": "Feira de Santos Reis",
+      "veredito": "corroborado; acesso e horário atual pendentes",
+      "fontes": [
+        {
+          "url": "https://www.instagram.com/trindadeportal/p/Dcx-PtEDZRM/",
+          "tipo": "origem Portal"
+        },
+        {
+          "url": "https://trindadego.com.br/feira-dos-santos-reis/",
+          "tipo": "guia local independente; Av. Manoel Monteiro 2315, quintas 18h–21h30"
+        }
+      ],
+      "conclusao": "Endereço em frente à capela e rotina descrita têm outra fonte; a Arquidiocese confirma comunidade Santos Reis no Setor Oeste, mas indica o endereço eclesial Rua 5 com Aleixo Antônio Alves, não o endereço da feira.",
+      "texto_seguro": "Feira de Santos Reis — Av. Manoel Monteiro, 2315, Setor Oeste, em frente à capela; indicada para quintas, das 18h às 21h30. Confirme antes da visita."
+    },
+    {
+      "guia": "feiras",
+      "nome": "Feira da Terra",
+      "veredito": "local atual corroborado por registro de setembro de 2026; guia local desatualizado conflita",
+      "fontes": [
+        {
+          "url": "https://www.instagram.com/trindadeportal/p/Dcx-PtEDZRM/",
+          "tipo": "origem Portal"
+        },
+        {
+          "url": "https://trindade.go.gov.br/feira-da-terra-e-realizada-pela-primeira-vez-no-centro-de-eventos-e-feiras/",
+          "tipo": "Prefeitura; mudança em 2021 explicitamente provisória"
+        },
+        {
+          "url": "https://www.trindadeuai.com.br/noticia/coronel-edson-volta-a-falar-sobre-suposta-ligacao-do-trafico-com-politica-em-tri",
+          "tipo": "registro jornalístico independente de feira no Carreiródromo em 18/09/2026"
+        },
+        {
+          "url": "https://trindadego.com.br/feira-da-terra/",
+          "tipo": "guia local com endereço antigo ao lado da rodoviária"
+        }
+      ],
+      "conclusao": "Carreiródromo e sexta-feira corroborados em 2026. A página de guia local exibe Viela da Feira junto à rodoviária e está em conflito com notícia de 18/09/2026; não reaproveitar esse endereço antigo. 'A partir de 18h' tem base apenas na seleção do Portal/guia local; organização pode alterar.",
+      "texto_seguro": "Feira da Terra — sextas-feiras no Centro de Eventos e Feiras Juarez de Almeida Freire (Carreiródromo), conforme registro de setembro de 2026; confirme o horário antes de ir."
+    },
+    {
+      "guia": "feiras",
+      "nome": "Feira de Domingo",
+      "veredito": "corroborado por fontes independentes; horário atual não confirmado pelo organizador",
+      "fontes": [
+        {
+          "url": "https://www.instagram.com/trindadeportal/p/Dcx-PtEDZRM/",
+          "tipo": "origem Portal"
+        },
+        {
+          "url": "https://trindade.go.gov.br/em-novo-local-feira-de-domingo-tem-aprovacao-de-comerciantes-e-de-frequentadores/",
+          "tipo": "Prefeitura; traslado provisório ao Carreiródromo em 2021"
+        },
+        {
+          "url": "https://trindadego.com.br/feira-livre-de-domingo/",
+          "tipo": "guia local independente; domingos 6h–11h, Rua Antônio de Souza Aguiar"
+        },
+        {
+          "url": "https://jornalgazetacentroeste.com.br/trindade/10059/cabecao-requer-bebedouro-refrigerado-na-feira-de-domingo/",
+          "tipo": "jornal local confirma Carreiródromo em 2024"
+        }
+      ],
+      "conclusao": "Dia, Carreiródromo e rua corroborados. Prefeitura dizia que a transferência poderia ser revertida, mas guia local e jornal a registravam depois; checar eventual mudança posterior.",
+      "texto_seguro": "Feira de Domingo — manhã de domingo no Carreiródromo Municipal Ada Cyra, Rua Antônio de Souza Aguiar; horário indicado das 6h às 11h. Confirme antes de ir."
+    },
+    {
+      "guia": "cultura-e-lazer",
+      "nome": "Escola Municipal de Artesanato e Escultura Gercina Alves de Freitas",
+      "veredito": "escola e atividades confirmadas; nome honorífico sem fonte independente",
+      "fontes": [
+        {
+          "url": "https://www.instagram.com/trindadeportal/p/DdleIlYnCHI/",
+          "tipo": "origem Portal; única fonte encontrada para Gercina Alves de Freitas"
+        },
+        {
+          "url": "https://trindade.go.gov.br/prefeitura-de-trindade-por-meio-da-secretaria-de-turismo-e-cultura-expande-projetos-e-eventos/",
+          "tipo": "Prefeitura; escola no distrito e oficinas de pintura e argila"
+        },
+        {
+          "url": "https://agenciasebrae.com.br/cultura-empreendedora/artesanato-ganha-espaco-na-romaria-de-trindade/",
+          "tipo": "Sebrae; escola a 18 km da cidade e exposição de peças em evento"
+        },
+        {
+          "url": "https://trindade.go.gov.br/distrito-de-santa-maria-ganha-escola-de-artesanato-e-feira-de-cultura-mensal/",
+          "tipo": "Prefeitura; existência e peças artesanais em 2021"
+        }
+      ],
+      "conclusao": "Denominação municipal usada nas fontes oficiais é Escola Municipal de Artesanato e Escultura de Santa Maria. 'Gercina Alves de Freitas', venda permanente e visitação atual não foram confirmadas fora da publicação do Portal.",
+      "texto_seguro": "Escola Municipal de Artesanato e Escultura de Santa Maria, no distrito a cerca de 18 km de Trindade. Há registros de oficinas de argila e pintura; consulte atividades e visitação atuais."
+    },
+    {
+      "guia": "cultura-e-lazer",
+      "nome": "Mobicine Trindade",
+      "veredito": "cinema e programação confirmados; endereço apenas fonte secundária",
+      "fontes": [
+        {
+          "url": "https://grupomobicine.com.br/trindade-go/",
+          "tipo": "operador do cinema; programação de Trindade"
+        },
+        {
+          "url": "https://www.adorocinema.com/programacao/cinema-G0FLT/mapa/",
+          "tipo": "guia de cinema; Av. Rondônia, quadra 14 lote 1-A"
+        }
+      ],
+      "conclusao": "Operador mantém página de sessões e ressalva alteração sem aviso; endereço do guia é corroborado por diretório, mas não se encontrou na página oficial.",
+      "texto_seguro": "Mobi Cine Trindade, Av. Rondônia, quadra 14, lote 1-A, Vila João Braz. Confira sessões, preços e endereço na programação do cinema."
+    },
+    {
+      "guia": "cultura-e-lazer",
+      "nome": "Parque Municipal Lara Guimarães",
+      "veredito": "correção material urgente: pista do kartódromo suspensa",
+      "fontes": [
+        {
+          "url": "https://trindade.go.gov.br/monitorado-pela-prefeitura-acesso-ao-parque-lara-guimaraes-cresceu-em-julho/",
+          "tipo": "Prefeitura; infraestrutura, incluindo represas, pista, quadras, academia e kart"
+        },
+        {
+          "url": "https://trindade.go.gov.br/prefeitura-de-trindade-informa-suspensao-temporaria-das-atividades-no-kartodromo-municipal/",
+          "tipo": "Prefeitura; uso da pista suspenso desde 03/06/2026"
+        },
+        {
+          "url": "https://trindadego.com.br/parque-municipal-lara-guimaraes/",
+          "tipo": "guia local; endereço Rua Santo Antônio 626"
+        }
+      ],
+      "conclusao": "Estrutura física existe, mas indicação de kart sem explicar suspensão pode induzir visitante a esperar atividade indisponível. Não se encontrou revogação da suspensão.",
+      "texto_seguro": "Parque Lara Guimarães, Rua Santo Antônio, 626: pista de caminhada, quadras, parquinho, academia ao ar livre e represas. A pista do kartódromo teve uso temporariamente suspenso pela Prefeitura em 3 de junho de 2026; confira a situação atual antes de planejar a visita."
+    },
+    {
+      "guia": "cultura-e-lazer",
+      "nome": "Museu da Memória de Trindade",
+      "veredito": "acervo e logradouro confirmados; endereço de bairro tem fontes divergentes",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/inovacao/museus-do-estado-de-goias/",
+          "tipo": "Estado; Avenida Major Manoel Alves s/n, esquina Rua 16 de Julho, Setor Oeste"
+        },
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeGeral-9b6.pdf",
+          "tipo": "inventário estadual; acervo e localização, menciona Vila Augusto em outra seção"
+        },
+        {
+          "url": "https://trindade.go.gov.br/prefeitura-municipal-inaugura-revitalizacao-do-museu-de-trindade/",
+          "tipo": "Prefeitura; rua e avenida, funcionamento publicado em 2022"
+        }
+      ],
+      "conclusao": "Acervo e esquina confirmados. Setor Oeste aparece na lista estadual, Vila Augusto na Prefeitura e no inventário; dispensar bairro em endereçamento. Não tomar horário de 2022 como atual.",
+      "texto_seguro": "Museu da Memória de Trindade, na esquina da Av. Major Manoel Alves com a Rua 16 de Julho. Acervo de objetos, documentos, fotografias e arte ligado à história local; confirme dias e horários de visita."
+    },
+    {
+      "guia": "cultura-e-lazer",
+      "nome": "Loja Pai Eterno",
+      "veredito": "confirmado em dois espaços; novo santuário é canteiro de obras",
+      "fontes": [
+        {
+          "url": "https://www.paieterno.com.br/2026/04/28/loja-pai-eterno-e-reinaugurada-no-santuario/",
+          "tipo": "Santuário; loja no complexo da Basílica"
+        },
+        {
+          "url": "https://www.paieterno.com.br/2026/08/19/fe-acolhimento-e-sabor-conheca-a-casa-do-abba/",
+          "tipo": "Santuário; loja ao lado da Casa do Abbá no canteiro de obras"
+        }
+      ],
+      "conclusao": "Artigos religiosos e ambas as localidades confirmados; cuidado para não comunicar o Novo Santuário como templo pronto ou visita irrestrita.",
+      "texto_seguro": "Loja Pai Eterno no Santuário Basílica e junto à Casa do Abbá, no espaço de visitação da obra do Novo Santuário. Consulte o Santuário antes de ir."
+    },
+    {
+      "guia": "espacos-do-santuario",
+      "nome": "Sala dos Milagres",
+      "veredito": "confirmado",
+      "fontes": [
+        {
+          "url": "https://www.paieterno.com.br/2026/01/22/santuario-pai-eterno-conta-com-visita-guiada/",
+          "tipo": "Santuário; ex-votos e objetos"
+        },
+        {
+          "url": "https://www.paieterno.com.br/2023/06/27/romaria-2023-pontos-de-peregrinacao-em-trindade-go/",
+          "tipo": "Santuário; subsolo"
+        }
+      ],
+      "conclusao": "Nome, subsolo e acervo de fotografias e objetos estão corroborados; acesso pode mudar com celebrações e reforma.",
+      "texto_seguro": "Sala dos Milagres, no subsolo da Basílica, reúne fotografias e objetos deixados por devotos. Consulte o Santuário para a visita."
+    },
+    {
+      "guia": "espacos-do-santuario",
+      "nome": "Gruta de Nossa Senhora de Lourdes",
+      "veredito": "confirmado; nome específico correto",
+      "fontes": [
+        {
+          "url": "https://www.paieterno.com.br/2026/01/22/santuario-pai-eterno-conta-com-visita-guiada/",
+          "tipo": "Santuário; área externa"
+        },
+        {
+          "url": "https://www.paieterno.com.br/2015/04/08/conheca-a-gruta-de-nossa-senhora-de-lourdes/",
+          "tipo": "Santuário; praça externa"
+        }
+      ],
+      "conclusao": "A gruta de Lourdes é distinta da Gruta da Intercessão, também na área do Santuário.",
+      "texto_seguro": "Gruta de Nossa Senhora de Lourdes, na praça externa do Santuário Basílica."
+    },
+    {
+      "guia": "espacos-do-santuario",
+      "nome": "Capela do Santíssimo Sacramento",
+      "veredito": "confirmado",
+      "fontes": [
+        {
+          "url": "https://www.paieterno.com.br/2018/11/17/conheca-os-pontos-de-visitacao-do-santuario-basilica/",
+          "tipo": "Santuário; capela no interior"
+        },
+        {
+          "url": "https://www.paieterno.com.br/2014/09/24/capela-do-santissimo-sacramento-local-de-paz-e-aproximacao-com-o-pai/",
+          "tipo": "Santuário"
+        }
+      ],
+      "conclusao": "Capela e caráter de adoração corroborados; fonte antiga não garante qualquer faixa horária de acesso hoje.",
+      "texto_seguro": "Capela do Santíssimo Sacramento, no interior da Basílica, espaço de oração e recolhimento."
+    },
+    {
+      "guia": "espacos-do-santuario",
+      "nome": "Visita à Imagem do Divino Pai Eterno",
+      "veredito": "confirmado; visita guiada demanda agendamento",
+      "fontes": [
+        {
+          "url": "https://www.paieterno.com.br/2026/01/22/santuario-pai-eterno-conta-com-visita-guiada/",
+          "tipo": "Santuário; imagem original em madeira por Veiga Valle e roteiro guiado agendado"
+        },
+        {
+          "url": "https://www.paieterno.com.br/2024/06/28/imagem-do-divino-pai-eterno-restaurada/",
+          "tipo": "Santuário; restauro e nicho"
+        },
+        {
+          "url": "https://www.paieterno.com.br/2018/11/17/conheca-os-pontos-de-visitacao-do-santuario-basilica/",
+          "tipo": "Santuário; percurso Visita à Imagem"
+        }
+      ],
+      "conclusao": "Imagem original de cerca de 30 cm em madeira e autoria de Veiga Valle confirmadas. A matéria de janeiro de 2026 condiciona visita guiada ao agendamento; a passagem devocional comum é descrita em fonte antiga, cuja disponibilidade atual não foi verificada.",
+      "texto_seguro": "Visita à Imagem do Divino Pai Eterno, com a escultura original em madeira atribuída a Veiga Valle. Confirme acesso e agende previamente caso queira a visita guiada."
+    },
+    {
+      "guia": "igrejas-alem-do-roteiro",
+      "nome": "Carmelo das Irmãs Carmelitas Descalças",
+      "veredito": "confirmado; atualizar nome institucional",
+      "fontes": [
+        {
+          "url": "https://www.paieterno.com.br/2024/04/18/participe-da-santa-missa-do-carmelo/",
+          "tipo": "Santuário; capela, pátio, locutórios e endereço em 2024"
+        },
+        {
+          "url": "https://arquidiocesedegoiania.org.br/paroquia/divino-pai-eterno-trindade/",
+          "tipo": "Arquidiocese; Carmelo da Santíssima Trindade"
+        }
+      ],
+      "conclusao": "Estrutura e mosteiro confirmados; monjas vivem em clausura e o contato é pelos locutórios. Não transformar a rotina de 2024 em promessa de atendimento atual.",
+      "texto_seguro": "Carmelo da Santíssima Trindade, das Irmãs Carmelitas Descalças, Av. Cel. Gabriel Alves de Carvalho, 875. Dispõe de capela pública, pátio e locutórios; confirme acolhimento e horários."
+    },
+    {
+      "guia": "igrejas-alem-do-roteiro",
+      "nome": "Capela Nossa Senhora das Graças",
+      "veredito": "confirmado; público em celebrações, não acesso contínuo",
+      "fontes": [
+        {
+          "url": "https://cottolengo.org.br/romaria-2025-fe-cultura-e-solidariedade-na-vila-sao-cottolengo-2/",
+          "tipo": "Vila São Cottolengo; celebrações e visitantes na Romaria 2025"
+        },
+        {
+          "url": "https://cottolengo.org.br/inclusao-na-romaria-de-trindade-missas-na-vila-sao-cottolengo-com-interprete-de-libras/",
+          "tipo": "Vila São Cottolengo; missas abertas durante Romaria"
+        },
+        {
+          "url": "https://arquidiocesedegoiania.org.br/paroquia/divino-pai-eterno-trindade/",
+          "tipo": "Arquidiocese; comunidade Vila Cottolengo na Av. Cel. Gabriel Alves de Carvalho 163"
+        }
+      ],
+      "conclusao": "Capela na Vila e momentos de oração confirmados, inclusive visitantes em eventos. Não se verificou abertura contínua ou irrestrita ao público.",
+      "texto_seguro": "Capela Nossa Senhora das Graças, na Vila São José Bento Cottolengo, recebe celebrações; confirme a possibilidade de visita com a instituição."
+    },
+    {
+      "guia": "igrejas-alem-do-roteiro",
+      "nome": "Capela dos Santos Reis",
+      "veredito": "capela e endereço confirmados; descrição de vínculo com Folia é contextual",
+      "fontes": [
+        {
+          "url": "https://arquidiocesedegoiania.org.br/paroquia/divino-pai-eterno-trindade/",
+          "tipo": "Arquidiocese; Comunidade Santos Reis, Rua 5 com Aleixo Antônio Alves, Setor Oeste"
+        },
+        {
+          "url": "https://repositorio.bc.ufg.br/tedeserver/api/core/bitstreams/659647fe-4189-40b8-b2cc-6135f25713c6/content",
+          "tipo": "estudo acadêmico; relação da capela com Festa de Santos Reis"
+        }
+      ],
+      "conclusao": "A própria comunidade e Setor Oeste são confirmados. A vinculação à tradição da Folia é plausível e documentada academicamente; especificar nome como Santos Reis em vez de atribuir qualquer agenda atual.",
+      "texto_seguro": "Capela/Comunidade Santos Reis, Rua 5 com Rua Aleixo Antônio Alves, Setor Oeste, ligada à devoção aos Reis Magos."
+    },
+    {
+      "guia": "igrejas-alem-do-roteiro",
+      "nome": "Capela São José",
+      "veredito": "confirmado; distinguir homônima de Goiânia",
+      "fontes": [
+        {
+          "url": "https://arquidiocesedegoiania.org.br/paroquia/divino-pai-eterno-trindade/",
+          "tipo": "Arquidiocese; Comunidade São José, Av. São Pedro 270, Setor Santo Onofre"
+        },
+        {
+          "url": "https://www.paieterno.com.br/2022/07/12/com-missas-em-latim-capela-mantem-viva-a-liturgia-tradicional/",
+          "tipo": "Santuário; outra Capela São José situada no Setor São José de Goiânia"
+        }
+      ],
+      "conclusao": "A comunidade trindadense da paróquia é real. A fonte de 1901 e missas em latim refere-se à capela homônima de Goiânia e não deve ser usada para esta atração.",
+      "texto_seguro": "Comunidade São José da Paróquia do Divino Pai Eterno, Av. São Pedro, 270, Setor Santo Onofre, Trindade. Confirme os horários de visita."
+    },
+    {
+      "guia": "roteiro-turistico-um-dia",
+      "nome": "Santuário Basílica do Divino Pai Eterno",
+      "veredito": "confirmado",
+      "fontes": [
+        {
+          "url": "https://www.paieterno.com.br/2026/01/22/santuario-pai-eterno-conta-com-visita-guiada/",
+          "tipo": "Santuário; vitrais, imagem e Sala dos Milagres"
+        },
+        {
+          "url": "https://www.paieterno.com.br/2023/06/27/romaria-2023-pontos-de-peregrinacao-em-trindade-go/",
+          "tipo": "Santuário; gruta e subsolo"
+        }
+      ],
+      "conclusao": "Os pontos descritos pertencem à Basílica e complexo; a cúpula não foi isoladamente checada em fonte consultada. Reforma em 2026 pode afetar rotas internas.",
+      "texto_seguro": "Santuário Basílica, com vitrais, imagem original, Sala dos Milagres e, na praça externa, a Gruta de Nossa Senhora de Lourdes. Verifique o percurso disponível."
+    },
+    {
+      "guia": "roteiro-turistico-um-dia",
+      "nome": "Igreja do Padre Pelágio",
+      "veredito": "sepultamento e vista panorâmica confirmados",
+      "fontes": [
+        {
+          "url": "https://www.paieterno.com.br/2025/06/18/romaria-2025-visite-a-igreja-do-santissimo-redentor/",
+          "tipo": "Santuário; restos mortais, terreno elevado, vista e endereço"
+        },
+        {
+          "url": "https://www.paieterno.com.br/2022/11/01/vamos-rezar-juntos-pela-beatificacao-de-pe-pelagio-sauter-2/",
+          "tipo": "Santuário; restos mortais"
+        }
+      ],
+      "conclusao": "Nome oficial é Igreja do Santíssimo Redentor, conhecida como Igreja do Padre Pelágio, Praça do Cruzeiro, Setor Ana Rosa. Vista é propriedade do terreno elevado, não garantia de acesso em data específica.",
+      "texto_seguro": "Igreja do Santíssimo Redentor (Igreja do Padre Pelágio), que guarda seus restos mortais, em terreno elevado com vista panorâmica da cidade."
+    },
+    {
+      "guia": "roteiro-turistico-um-dia",
+      "nome": "Igreja Matriz de Trindade (Santuário Velho)",
+      "veredito": "afirmação histórica confirmada",
+      "fontes": [
+        {
+          "url": "https://romaria.paieterno.com.br/historia-da-romaria",
+          "tipo": "cronologia oficial da Romaria; primeiro Santuário inaugurado em 1912"
+        },
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeGeral-9b6.pdf",
+          "tipo": "inventário turístico estadual; primeiro Santuário em 1912"
+        }
+      ],
+      "conclusao": "Correto chamá-la de primeiro Santuário inaugurado em 1912, desde que não se diga primeira capela: havia capelas anteriores, a primeira por volta de 1843.",
+      "texto_seguro": "Igreja Matriz (Santuário Velho), primeiro Santuário do Divino Pai Eterno, inaugurado em 1912, após as capelas que o antecederam."
+    },
+    {
+      "guia": "roteiro-turistico-um-dia",
+      "nome": "Portal da Fé",
+      "veredito": "monumento e cruz confirmados; iconografia específica requer prudência",
+      "fontes": [
+        {
+          "url": "https://www.paieterno.com.br/santuario/trindade/pontos-turisticos-e-religiosos/",
+          "tipo": "Santuário; cruz, imagem do Divino Pai Eterno, entrada da cidade"
+        },
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeGeral-9b6.pdf",
+          "tipo": "inventário estadual; Pai, Filho e Maria, cruz"
+        },
+        {
+          "url": "https://trindadego.com.br/portal-da-fe/",
+          "tipo": "guia local independente; descreve Pai, Cristo, Maria e dois anjos"
+        }
+      ],
+      "conclusao": "Estrutura em forma de cruz e imagem religiosa na entrada são certas. Formulação 'Santíssima Trindade coroando a Virgem Maria' reflete a iconografia do medalhão e pode não descrever exatamente a escultura do Portal, que outras fontes descrevem diferentemente.",
+      "texto_seguro": "Portal da Fé, monumento em forma de cruz na entrada de Trindade, com escultura religiosa alusiva ao Divino Pai Eterno."
+    },
+    {
+      "guia": "roteiro-turistico-um-dia",
+      "nome": "Vila São José Bento Cottolengo",
+      "veredito": "instituição e capela confirmadas; abertura irrestrita não demonstrada",
+      "fontes": [
+        {
+          "url": "https://www.paieterno.com.br/home-basilica/trindade/",
+          "tipo": "Santuário; instituição filantrópica e atividades sociais"
+        },
+        {
+          "url": "https://cottolengo.org.br/romaria-2025-fe-cultura-e-solidariedade-na-vila-sao-cottolengo-2/",
+          "tipo": "Vila; missas e visitantes durante Romaria 2025"
+        },
+        {
+          "url": "https://arquidiocesedegoiania.org.br/paroquia/divino-pai-eterno-trindade/",
+          "tipo": "Arquidiocese; comunidade Vila São José Cottolengo"
+        }
+      ],
+      "conclusao": "Vila filantrópica e Capela Nossa Senhora das Graças confirmadas, porém 'aberto ao público' sem qualificação extrapola evidência de celebrações em datas específicas.",
+      "texto_seguro": "Vila São José Bento Cottolengo, instituição filantrópica que abriga a Capela Nossa Senhora das Graças. Consulte a instituição sobre celebrações e visitação."
+    }
+  ],
+  "falhas_materiais": [
+    "Parque: kartódromo listado sem a suspensão oficial da pista desde 03/06/2026.",
+    "Escola de artesanato: nome honorífico Gercina Alves de Freitas não confirmado por fonte independente; Prefeitura usa denominação genérica.",
+    "Portal da Fé: iconografia 'Trindade coroando Virgem Maria' pode confundir escultura do Portal com a do medalhão/imagem original; usar descrição neutra.",
+    "Vila Cottolengo: abertura da capela ao público não pode ser generalizada a qualquer dia.",
+    "Feira da Terra: fontes locais retêm endereço antigo da rodoviária; notícia datada de 18/09/2026 situa a feira no Carreiródromo."
+  ],
+  "nao_confirmado_em_tempo_real": "Não houve contato com administradores. Horários, funcionamento, visitação e suspensão vigente em 27/09/2026 não são garantidos apenas pela publicação consultada.",
+  "nota_arquivo": "Registro dos achados antes das correções; consultar docs/AUDITORIA-2026-09-27.md e o conteúdo atual para as ações aplicadas."
+}

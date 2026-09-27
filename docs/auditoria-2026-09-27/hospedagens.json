@@ -1,0 +1,1796 @@
+{
+  "revisado_em": "2026-09-27",
+  "escopo": "Leitura dos 72 registros; comparação com inventário estadual de 2020, páginas dos estabelecimentos, perfis informados e checagens de formato. Não testa funcionamento das linhas nem conclui que empresas encerraram operação.",
+  "sumario_da_base_recebida": {
+    "total_registros": 72,
+    "tipos": {
+      "Hotel": 21,
+      "Pousada": 50,
+      "Chalé": 1
+    },
+    "com_endereco": 68,
+    "com_site": 22,
+    "com_instagram": 8,
+    "com_nota_google_sem_data_fonte": 68,
+    "localizados_inventario_estadual_2020": 54,
+    "pagina_propria_ou_perfil_rastreado": 19,
+    "sem_fonte_externa_suficiente": 7,
+    "achados_pontuais": 31,
+    "somente_fonte_terceira": 4
+  },
+  "criterio": "Página própria confirma somente campos explicitamente publicados; inventário de 2020 é histórico; fonte ausente, erro HTTP ou falta de indexação não indicam fechamento. Telefones em formato plausível não tiveram chamada ou mensagem de teste. Os totais de fonte não são mutuamente exclusivos.",
+  "registros": [
+    {
+      "nome": "Hotel Alines",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=69",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "endereco_diferente_do_inventario",
+          "prioridade": "baixa",
+          "campo": "endereco",
+          "comparacao": "Inventário de 2020 usa quadra/lote sem número; não fornece comparação suficiente.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=69"
+          ],
+          "acao_sugerida": "Confirmar o nº 433 se rota exata for publicada.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento.",
+        "endereco_a_confirmar": true,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Basílica 1",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=57",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Basílica 3",
+      "proveniencia": "apenas_base_anterior_sem_fonte_externa_suficiente",
+      "fontes": [],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "homonimo_distinto",
+          "prioridade": "media",
+          "campo": "nome/tipo/endereco",
+          "comparacao": "Inventário 2020 lista Pousada Basílica III na Rua 8, nº 46, com outro telefone; não tratá-la como evidência do registro #3.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=17"
+          ],
+          "acao_sugerida": "Buscar confirmação independente da unidade Hotel Basílica 3.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento.",
+        "endereco_a_confirmar": true,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Bom Jesus",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=13",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "endereco_ausente",
+          "prioridade": "media",
+          "campo": "endereco",
+          "comparacao": "Inventário de 2020 aponta Avenida da Saudade, nº 26, Santo Onofre.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=13"
+          ],
+          "acao_sugerida": "Pedir confirmação atual antes de preencher.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento.",
+        "endereco_a_confirmar": true,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Coração de Jesus",
+      "proveniencia": "apenas_base_anterior_sem_fonte_externa_suficiente",
+      "fontes": [],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel e Pousada Rosa de Sarom",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=52",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Impérios",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=43",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        },
+        {
+          "url": "https://hotelimperios.com.br/",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Hotel Liguori",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=21",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        },
+        {
+          "url": "https://www.liguorihotel.com.br/contato",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Hotel Marina Torrano III",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://www.pousadamarinatorrano.com.br/hotel-3",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "unidade_nomeada_sem_endereco_proprio",
+          "prioridade": "media",
+          "campo": "nome/endereco",
+          "comparacao": "Site próprio nomeia Hotel Marina Torrano 3, mas sua página geral só mostra endereço da pousada no Centro e da unidade II; listagens de reserva mostram 702.",
+          "fontes": [
+            "https://www.pousadamarinatorrano.com.br/",
+            "https://www.booking.com/hotel/br/marina-torrano.pt-br.html"
+          ],
+          "acao_sugerida": "Manter III como unidade distinta, mas solicitar confirmação do endereço ao grupo.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento.",
+        "endereco_a_confirmar": true,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Hotel Matriz",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=10",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Modelo",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=70",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "endereco_ausente",
+          "prioridade": "media",
+          "campo": "endereco",
+          "comparacao": "Inventário oficial de 2020 lista Hotel Modelo na Rua Boa Vista, nº 105 (Jardim Salvador), mas também hotéis Modelo I/II em outros endereços.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=70"
+          ],
+          "acao_sugerida": "Não preencher sem distinguir a unidade atual.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento.",
+        "endereco_a_confirmar": true,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Monsenhor",
+      "proveniencia": "link_publicado_inacessivel_mais_base_anterior",
+      "fontes": [],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "link_inacessivel",
+          "prioridade": "media",
+          "campo": "site",
+          "comparacao": "HTTP 502 nesta consulta, estado transitório possível.",
+          "fontes": [
+            "https://hotelmonsenhortrindade.com.br/"
+          ],
+          "acao_sugerida": "Revalidar mais tarde e solicitar link se necessário.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "O site próprio apresentou indisponibilidade nesta revisão. Confirme os dados pelo contato do estabelecimento.",
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Hotel Oliveiras",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=9",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        },
+        {
+          "url": "https://hoteloliveiras.com/?page_id=20",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Hotel Portal da Fé",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=46",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        },
+        {
+          "url": "https://www.hotelportaldafe.com.br/",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Hotel Pousada Arcanjos",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=25",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Pousada Casa Grande",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=51",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Pousada Cláudia Torrano",
+      "proveniencia": "apenas_base_anterior_sem_fonte_externa_suficiente",
+      "fontes": [],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Pousada Descanso",
+      "proveniencia": "link_publicado_inacessivel_mais_inventario_2020",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=16",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "link_inacessivel",
+          "prioridade": "media",
+          "campo": "site",
+          "comparacao": "HTTP 502 nesta consulta, estado transitório possível.",
+          "fontes": [
+            "https://www.pousadadescanso.com.br/",
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=16"
+          ],
+          "acao_sugerida": "Revalidar mais tarde e solicitar link se necessário.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "O site próprio apresentou indisponibilidade nesta revisão. Confirme os dados pelo contato do estabelecimento.",
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Hotel Pousada dos Anjos",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=33",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Pousada Grecco Borges",
+      "proveniencia": "diretorio_ou_plataforma_de_reservas_sem_confirmacao_primaria",
+      "fontes": [
+        {
+          "url": "https://www.solutudo.com.br/empresas/go/trindade/hoteis?pagina=2",
+          "data_referencia": "consulta 2026-09-27",
+          "alcance": "nome/endereço em plataforma de terceiro; não equivale a confirmação do estabelecimento"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Pousada Nossa Senhora de Lourdes",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=38",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Pousada Recanto do Pai",
+      "proveniencia": "link_publicado_inacessivel_mais_inventario_2020",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=30",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "link_inacessivel",
+          "prioridade": "media",
+          "campo": "site",
+          "comparacao": "HTTP 404 nesta consulta; inventário oficial antigo indica o estabelecimento, mas não valida o domínio atual.",
+          "fontes": [
+            "http://www.recantodopai.com.br/",
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=30"
+          ],
+          "acao_sugerida": "Checar URL com responsável antes de manter link.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "O endereço do site está em revisão. Confirme os dados diretamente com a hospedagem.",
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Pousada Santo Onofre",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=34",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "estabelecimentos_vizinhos",
+          "prioridade": "baixa",
+          "campo": "duplicata",
+          "comparacao": "Pousada dos Anjos (#19) aparece na mesma quadra/lote vizinho, Rua 2 nº 165; nomes e números distintos.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=33",
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=34"
+          ],
+          "acao_sugerida": "Manter cadastros separados; confirmar operações atuais.",
+          "confianca": "alta"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Pousada Ágape",
+      "proveniencia": "pagina_propria_identidade_sem_confirmacao_integral",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=20",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        },
+        {
+          "url": "https://www.pousadaagape.com.br/",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Hotel Recanto Goiano",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=32",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        },
+        {
+          "url": "https://www.pousadarecantogoiano.com.br/",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        },
+        {
+          "url": "https://www.instagram.com/recantogoiano.hotel/",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "numero_compartilhado",
+          "prioridade": "alta",
+          "campo": "telefone",
+          "comparacao": "Mesmo número aparece no cadastro da Pousada Padre Pelágio (#51); site/perfil do Hotel Recanto Goiano atribuem o número ao Hotel Recanto Goiano.",
+          "fontes": [
+            "https://www.pousadarecantogoiano.com.br/",
+            "https://www.instagram.com/recantogoiano.hotel/"
+          ],
+          "acao_sugerida": "Não alterar #25; perguntar à Pousada Padre Pelágio se o número também atende suas reservas.",
+          "confianca": "alta"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Hotel Santos Reis",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=65",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Santuário",
+      "proveniencia": "apenas_base_anterior_sem_fonte_externa_suficiente",
+      "fontes": [],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel São Paulo Trindade",
+      "proveniencia": "diretorio_ou_plataforma_de_reservas_sem_confirmacao_primaria",
+      "fontes": [
+        {
+          "url": "https://www.solutudo.com.br/empresas/go/trindade/hoteis?mais_buscadas=1&pagina=2",
+          "data_referencia": "consulta 2026-09-27",
+          "alcance": "nome/endereço em plataforma de terceiro; não equivale a confirmação do estabelecimento"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Hotel Turismo Trindade",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://hotelturismotrindade.com/",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "site_com_numero_antigo",
+          "prioridade": "media",
+          "campo": "telefone",
+          "comparacao": "Site próprio exibe (62) 8462-9299 e botão wa.me/556284629299, sem nono dígito. O cadastro corrigiu a sintaxe, mas a operação da linha não foi validada.",
+          "fontes": [
+            "https://hotelturismotrindade.com/",
+            "https://www.gov.br/anatel/pt-br/regulado/numeracao/nono-digito"
+          ],
+          "acao_sugerida": "Solicitar ao hotel atualização de seu site e validar se 98462-9299 é a linha atual.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Os contatos da base ainda precisam de confirmação atual. Confira a identidade do estabelecimento antes de fazer uma reserva.",
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Hotel Via Sacra",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=66",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Ana Rosa",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=4",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "endereco_conflitante_historico",
+          "prioridade": "alta",
+          "campo": "endereco",
+          "comparacao": "Inventário oficial de 2020 aponta Rua 121, nº 348, quadra 59, lotes 04 e 12; mesmo telefone.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=4"
+          ],
+          "acao_sugerida": "Solicitar confirmação do número 20 ou 348; não substituir automaticamente por dado histórico.",
+          "confianca": "alta"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento.",
+        "endereco_a_confirmar": true,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Anacleto",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=31",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Boa Nova",
+      "proveniencia": "diretorio_ou_plataforma_de_reservas_sem_confirmacao_primaria",
+      "fontes": [
+        {
+          "url": "https://www.tripadvisor.com.br/Hotel_Review-g1450997-d3453165-Reviews-Hotel_Pousada_Boa_Nova-Trindade_State_of_Goias.html",
+          "data_referencia": "consulta 2026-09-27",
+          "alcance": "nome/endereço em plataforma de terceiro; não equivale a confirmação do estabelecimento"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Campos",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=60",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Cantinho da Vovó",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=59",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "endereco_conflitante_historico",
+          "prioridade": "media",
+          "campo": "endereco",
+          "comparacao": "Inventário 2020 aponta nº 147, quadra 65 lote 24; censo 2018/19 aponta nº 142. Fontes antigas são mutuamente divergentes.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=59",
+            "https://www.abihgo.org.br/sitewp/wp-content/uploads/2019/03/Censo-Hoteleiro-de-Trindade-2018-2019.pdf"
+          ],
+          "acao_sugerida": "Confirmar numeração com o estabelecimento; 94 aparece em listagens atuais mas não é prova primária.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento.",
+        "endereco_a_confirmar": true,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Carneiro",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=39",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Central",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=75",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Centro Oeste",
+      "proveniencia": "apenas_base_anterior_sem_fonte_externa_suficiente",
+      "fontes": [],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada da Paz",
+      "proveniencia": "apenas_base_anterior_sem_fonte_externa_suficiente",
+      "fontes": [],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Flor dos Ipês",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=12",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        },
+        {
+          "url": "https://pousadaflordosipes.com.br/",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Pousada Gaivota",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=8",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Hobby Ludy",
+      "proveniencia": "pagina_propria_identidade_sem_confirmacao_integral",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=14",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        },
+        {
+          "url": "https://www.pousadahobbyludy.com.br/",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "site_estado_inconsistente",
+          "prioridade": "media",
+          "campo": "site",
+          "comparacao": "Uma consulta da busca mostrou domínio suspenso (crawl de 9 meses), enquanto a requisição HTTP direta neste exame respondeu 200 com página do hotel.",
+          "fontes": [
+            "https://www.pousadahobbyludy.com.br/"
+          ],
+          "acao_sugerida": "Revalidar acesso na publicação; não inferir fechamento nem apagar link apenas por cache antigo.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Pousada Jerusalém",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=45",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Jesus de Nazaré",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=5",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        },
+        {
+          "url": "https://www.pousadajesusdenazare.com.br/",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Pousada Marina Torrano",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=15",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        },
+        {
+          "url": "https://www.pousadamarinatorrano.com.br/fale-conosco",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "endereco_ausente",
+          "prioridade": "alta",
+          "campo": "endereco",
+          "comparacao": "Site próprio: Rua Elisa Meireles Bittencourt, nº 81, Centro, Trindade-GO; inventário de 2020 também indica o nº 81.",
+          "fontes": [
+            "https://www.pousadamarinatorrano.com.br/fale-conosco",
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=15"
+          ],
+          "acao_sugerida": "Preencher o endereço conforme site próprio; manter unidades Marina Torrano separadas.",
+          "confianca": "alta"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": "https://www.pousadamarinatorrano.com.br/",
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Pousada Marina Torrano II",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=53",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        },
+        {
+          "url": "https://www.pousadamarinatorrano.com.br/fale-conosco",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "unidade_compartilha_contato",
+          "prioridade": "baixa",
+          "campo": "duplicata",
+          "comparacao": "Site próprio indica duas unidades com mesmos contatos de reservas; o compartilhamento não prova duplicidade.",
+          "fontes": [
+            "https://www.pousadamarinatorrano.com.br/fale-conosco"
+          ],
+          "acao_sugerida": "Manter unidades separadas.",
+          "confianca": "alta"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Pousada Medalhão",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=27",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Menino Jesus",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=22",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "endereco_incompleto_ou_conflitante_historico",
+          "prioridade": "media",
+          "campo": "endereco/bairro",
+          "comparacao": "Inventário de 2020: Av. Dom Pedro II, nº 156, Jardim Salvador; a base atual informa Rua Dom Pedro II, Centro, sem número.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=22"
+          ],
+          "acao_sugerida": "Pedir confirmação atual diretamente à pousada antes de inserir número ou alterar bairro.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento.",
+        "endereco_a_confirmar": true,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Nascimento",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=73",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Nossa Senhora da Guia",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=19",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "endereco_incompleto_ou_conflitante_historico",
+          "prioridade": "media",
+          "campo": "endereco/bairro",
+          "comparacao": "Inventário de 2020: Av. Marinho de Melo Filho, nº 120, quadra 10 lote 19, Setor Cristina; a base não tem número.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=19"
+          ],
+          "acao_sugerida": "Pedir confirmação atual diretamente à pousada antes de inserir número ou alterar bairro.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento.",
+        "endereco_a_confirmar": true,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Padre Pelágio",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=48",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "numero_compartilhado",
+          "prioridade": "alta",
+          "campo": "telefone/whatsapp",
+          "comparacao": "Número anunciado pelo Hotel Recanto Goiano; documento oficial de 2020 indicava (62) 3505-1198 para Padre Pelágio. O vínculo atual da pousada ao 98592-1198 não foi estabelecido.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=48",
+            "https://www.pousadarecantogoiano.com.br/"
+          ],
+          "acao_sugerida": "Confirmar com a Pousada Padre Pelágio antes de usar o WhatsApp; o fixo histórico 3505-1198 não é prova de funcionamento atual.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Contato telefônico em revisão. O Portal ainda não confirmou um número seguro para este cadastro.",
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": false,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Pai Eterno",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=58",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "endereco_incompleto_ou_conflitante_historico",
+          "prioridade": "media",
+          "campo": "endereco/bairro",
+          "comparacao": "Inventário de 2020: Rua 113, nº 222, quadra 57 lote 22, Ana Rosa; a base registra Setor Ana Rosa / Santuário sem número.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=58"
+          ],
+          "acao_sugerida": "Pedir confirmação atual diretamente à pousada antes de inserir número ou alterar bairro.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento.",
+        "endereco_a_confirmar": true,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Palmeira Imperial",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=64",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Paraíso",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=63",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        },
+        {
+          "url": "https://www.pousadaparaisotrindade.com.br/",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Pousada Pôr do Sol",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=54",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Recanto do Carreiro",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=41",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Romeiros do Pai Eterno",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://linktr.ee/pousadaromeiros",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Pousada Santa Clara",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=74",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "endereco_incompleto_ou_conflitante_historico",
+          "prioridade": "media",
+          "campo": "endereco/bairro",
+          "comparacao": "Inventário de 2020: Rua José Teixeira de Deus, quadra 12 lote 14, Setor Cristina II; a base abrevia Rua José Teixeira sem quadra/lote.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=74"
+          ],
+          "acao_sugerida": "Pedir confirmação atual diretamente à pousada antes de inserir número ou alterar bairro.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento.",
+        "endereco_a_confirmar": true,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Santa Luzia",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=62",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Santana",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=28",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        },
+        {
+          "url": "https://www.pousadasantana.net/contato",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Pousada Santíssima Trindade",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=24",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "bairro_endereco_incoerentes",
+          "prioridade": "alta",
+          "campo": "bairro/endereco",
+          "comparacao": "Inventário 2020 e consulta cadastral posterior apontam Rua Dr. Irany Ferreira, nº 398, Centro.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=24",
+            "https://www.solutudo.com.br/empresas/go/trindade/hoteis/pousada-santissima-trindade-ltda-16920550"
+          ],
+          "acao_sugerida": "Não sugerir rota a Vila Santo Onofre; confirmar localização atual antes de alterar.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento.",
+        "endereco_a_confirmar": true,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada São Geraldo Magela",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=44",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "endereco_incompleto_ou_conflitante_historico",
+          "prioridade": "media",
+          "campo": "endereco/bairro",
+          "comparacao": "Inventário de 2020: Rua Dr. Irany Ferreira, nº 435, Centro; a base registra Vila Santo Onofre sem número.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=44"
+          ],
+          "acao_sugerida": "Pedir confirmação atual diretamente à pousada antes de inserir número ou alterar bairro.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento.",
+        "endereco_a_confirmar": true,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada São José",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=50",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada São José e Maria",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=35",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "endereco_conflitante_historico",
+          "prioridade": "media",
+          "campo": "endereco",
+          "comparacao": "Inventário 2020: Rua 03, nº 255, quadra 05 lote 12.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=35"
+          ],
+          "acao_sugerida": "Verificar diretamente eventual mudança ou erro de número.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento.",
+        "endereco_a_confirmar": true,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada São Miguel Arcanjo",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=26",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "endereco_conflitante_historico",
+          "prioridade": "media",
+          "campo": "endereco",
+          "comparacao": "Inventário 2020: Rua 8, nº 268, quadra 2 lote 12.",
+          "fontes": [
+            "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=26"
+          ],
+          "acao_sugerida": "Verificar diretamente eventual mudança ou erro de número.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento.",
+        "endereco_a_confirmar": true,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Trindade da Fé",
+      "proveniencia": "apenas_base_anterior_sem_fonte_externa_suficiente",
+      "fontes": [],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Trindade Santa",
+      "proveniencia": "pagina_propria_identidade_sem_confirmacao_integral",
+      "fontes": [
+        {
+          "url": "https://www.instagram.com/pousadatrindadesanta2008/",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "telefone_whatsapp_divergem",
+          "prioridade": "media",
+          "campo": "telefone/whatsapp",
+          "comparacao": "Números diferem em um dígito; nenhum canal próprio acessível confirmou qual é válido.",
+          "fontes": [
+            "https://www.instagram.com/pousadatrindadesanta2008/"
+          ],
+          "acao_sugerida": "Conferir ambos diretamente; evitar inferir erro de digitação.",
+          "confianca": "baixa"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Os contatos da base ainda precisam de confirmação atual. Confira a identidade do estabelecimento antes de fazer uma reserva.",
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Pousada Três Poderes",
+      "proveniencia": "inventario_oficial_2020_apenas_historico",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=18",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        }
+      ],
+      "achados_na_base_recebida": [],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Santorini Hotel",
+      "proveniencia": "diretorio_ou_plataforma_de_reservas_sem_confirmacao_primaria",
+      "fontes": [
+        {
+          "url": "https://www.booking.com/hotel/br/santorini-trindade.pt-br.html",
+          "data_referencia": "consulta 2026-09-27",
+          "alcance": "nome/endereço em plataforma de terceiro; não equivale a confirmação do estabelecimento"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "telefone_conflitante_terceiro",
+          "prioridade": "alta",
+          "campo": "telefone",
+          "comparacao": "Diretório Solutudo exibe +55 (62) 98518-1898 para Santorini Hotel Ltda no mesmo endereço; a base traz +55 (62) 99808-5588.",
+          "fontes": [
+            "https://www.solutudo.com.br/empresas/go/trindade/hoteis?pagina=2",
+            "https://www.booking.com/hotel/br/santorini-trindade.pt-br.html"
+          ],
+          "acao_sugerida": "Confirmar com o hotel qual telefone atende reservas, sem trocar com base somente em agregador.",
+          "confianca": "media"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Os contatos da base ainda precisam de confirmação atual. Confira a identidade do estabelecimento antes de fazer uma reserva.",
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": true,
+        "site_publicado": false
+      }
+    },
+    {
+      "nome": "Trindade Plaza Hotel",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeMeiodehospedagem-b1a.pdf#page=67",
+          "data_referencia": "2020",
+          "alcance": "nome/endereco/contato históricos; não atesta operação em 2026"
+        },
+        {
+          "url": "https://trindadeplazahotel.com.br/",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "contato_primario_diverge",
+          "prioridade": "alta",
+          "campo": "telefone",
+          "comparacao": "Rodapé do site próprio privilegia +55 (62) 3110-0801 (o whatsapp já cadastrado); metadados da página ainda contêm 0101.",
+          "fontes": [
+            "https://trindadeplazahotel.com.br/"
+          ],
+          "acao_sugerida": "Priorizar 3110-0801 e confirmar se 0101 ainda atende telefonemas.",
+          "confianca": "alta"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": "https://trindadeplazahotel.com.br/",
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Vila Barro Branco",
+      "proveniencia": "pagina_propria_parcial_ou_integral",
+      "fontes": [
+        {
+          "url": "https://www.vilabarrobranco.com.br/",
+          "data_referencia": "consulta 2026-09-27, publicação pode ser anterior",
+          "alcance": "página/perfil do negócio; consultar achados para limites por campo"
+        }
+      ],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "telefone_principal_ambiguo",
+          "prioridade": "alta",
+          "campo": "telefone",
+          "comparacao": "Site próprio exibe apenas WhatsApp +55 (62) 99905-0030, que já está no campo whatsapp.",
+          "fontes": [
+            "https://www.vilabarrobranco.com.br/"
+          ],
+          "acao_sugerida": "Priorizar +55 (62) 99905-0030 para contato; confirmar se 0050 ainda pertence ao negócio.",
+          "confianca": "alta"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": null,
+        "endereco_a_confirmar": false,
+        "fonte_contato": "https://www.vilabarrobranco.com.br/",
+        "telefone_publicado": true,
+        "site_publicado": true
+      }
+    },
+    {
+      "nome": "Chalé Trindade",
+      "proveniencia": "link_publicado_inacessivel_mais_base_anterior",
+      "fontes": [],
+      "achados_na_base_recebida": [
+        {
+          "tipo": "telefone_movel_incompleto",
+          "prioridade": "critica",
+          "campo": "telefone/whatsapp",
+          "comparacao": "Nono dígito obrigatório para móvel no DDD 62 desde 2016; não foi possível apurar o número correto.",
+          "fontes": [
+            "https://www.gov.br/anatel/pt-br/regulado/numeracao/nono-digito",
+            "https://chaletrindade.lovable.app/"
+          ],
+          "acao_sugerida": "Suspender os botões Ligar e WhatsApp deste cadastro até confirmação diretamente com o responsável; não presumir que basta prefixar 9.",
+          "confianca": "alta"
+        },
+        {
+          "tipo": "link_inacessivel",
+          "prioridade": "alta",
+          "campo": "site",
+          "comparacao": "HTTP 404 nesta consulta; serviço pode mudar de estado.",
+          "fontes": [
+            "https://chaletrindade.lovable.app/"
+          ],
+          "acao_sugerida": "Ocultar link até confirmar URL nova; solicitar endereço e contato ao estabelecimento.",
+          "confianca": "alta"
+        }
+      ],
+      "tratamento_no_site": {
+        "observacao": "Contato telefônico em revisão. O Portal ainda não confirmou um número seguro para este cadastro.",
+        "endereco_a_confirmar": false,
+        "fonte_contato": null,
+        "telefone_publicado": false,
+        "site_publicado": false
+      }
+    }
+  ]
+}

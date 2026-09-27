@@ -1,6 +1,5 @@
 {
   "atualizado_em": "12/09/2026",
-  "total_confirmados": 72,
   "hoteis": 21,
   "pousadas": 50,
   "estabelecimentos": [
@@ -11,17 +10,15 @@
       "endereco": "Rua 1, 433 - Bairro Santuário, Trindade - GO",
       "telefone": "+55 (62) 99143-8586",
       "telefone_alternativo": "+55 (62) 3506-4003",
-      "nota_google": 4.4,
-      "avaliacoes_google": 16
+      "endereco_a_confirmar": true,
+      "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento."
     },
     {
       "nome": "Hotel Basílica 1",
       "tipo": "Hotel",
       "bairro": "Centro",
       "endereco": "Esquina Rua Dr. Irany Ferreira / Rua Rocha Lima - Centro, Trindade - GO",
-      "telefone": "+55 (62) 3506-1570",
-      "nota_google": 4.2,
-      "avaliacoes_google": 156
+      "telefone": "+55 (62) 3506-1570"
     },
     {
       "nome": "Hotel Basílica 3",
@@ -29,8 +26,8 @@
       "bairro": "Santuário",
       "endereco": "Rua Oito, Qd. 06, Lt. 1A, nº 271 - Bairro Santuário, Trindade - GO",
       "telefone": "+55 (62) 98521-0587",
-      "nota_google": 2.8,
-      "avaliacoes_google": 32
+      "endereco_a_confirmar": true,
+      "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento."
     },
     {
       "nome": "Hotel Bom Jesus",
@@ -38,26 +35,22 @@
       "bairro": "Vila Santo Onofre",
       "telefone": "+55 (62) 3506-1876",
       "email": "hotelbjesus@hotmail.com",
-      "nota_google": 4.4,
-      "avaliacoes_google": 99
+      "endereco_a_confirmar": true,
+      "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento."
     },
     {
       "nome": "Hotel Coração de Jesus",
       "tipo": "Hotel",
       "bairro": "Vila Santo Onofre",
       "endereco": "Rua da Saudade, 48, Qd. D, Lt. 06 - Vila Santo Onofre, Trindade - GO",
-      "telefone": "+55 (62) 3110-3606",
-      "nota_google": 4.5,
-      "avaliacoes_google": 39
+      "telefone": "+55 (62) 3110-3606"
     },
     {
       "nome": "Hotel e Pousada Rosa de Sarom",
       "tipo": "Pousada",
       "bairro": "Centro",
       "endereco": "Rua Rocha Lima, 221 - Centro, Trindade - GO",
-      "telefone": "+55 (62) 3110-2876",
-      "nota_google": 5,
-      "avaliacoes_google": 11
+      "telefone": "+55 (62) 3110-2876"
     },
     {
       "nome": "Hotel Impérios",
@@ -67,9 +60,7 @@
       "telefone": "+55 (62) 99813-7078",
       "whatsapp": "+55 (62) 99813-7078",
       "telefone_alternativo": "+55 (62) 3506-1083",
-      "site": "https://hotelimperios.com.br/",
-      "nota_google": 4.3,
-      "avaliacoes_google": 118
+      "site": "https://hotelimperios.com.br/"
     },
     {
       "nome": "Hotel Liguori",
@@ -77,9 +68,7 @@
       "bairro": "Vila João Braz",
       "endereco": "Av. Raimundo de Aquino, 1000 - Vila João Braz, Trindade - GO, 75388-412",
       "telefone": "+55 (62) 3506-9898",
-      "site": "https://www.liguorihotel.com.br/",
-      "nota_google": 4.6,
-      "avaliacoes_google": 1142
+      "site": "https://www.liguorihotel.com.br/"
     },
     {
       "nome": "Hotel Marina Torrano III",
@@ -90,25 +79,23 @@
       "telefone_alternativo": "+55 (62) 98413-0032",
       "email": "contato@pousadamarinatorrano.com.br",
       "site": "https://www.pousadamarinatorrano.com.br/",
-      "nota_google": 4.4,
-      "avaliacoes_google": 141
+      "endereco_a_confirmar": true,
+      "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento."
     },
     {
       "nome": "Hotel Matriz",
       "tipo": "Hotel",
       "bairro": "Centro",
       "endereco": "Rua Bacharel Valdir José das Neves, 70 - Centro, Trindade - GO",
-      "telefone": "+55 (62) 3505-0987",
-      "nota_google": 4,
-      "avaliacoes_google": 55
+      "telefone": "+55 (62) 3505-0987"
     },
     {
       "nome": "Hotel Modelo",
       "tipo": "Hotel",
       "bairro": "Centro",
       "telefone": "+55 (62) 3505-4594",
-      "nota_google": 4.4,
-      "avaliacoes_google": 139
+      "endereco_a_confirmar": true,
+      "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento."
     },
     {
       "nome": "Hotel Monsenhor",
@@ -117,8 +104,7 @@
       "endereco": "Av. E, nº 69 - Bairro Santuário, Trindade - GO, 75388-590",
       "telefone": "+55 (62) 99671-3023",
       "site": "https://hotelmonsenhortrindade.com.br/",
-      "nota_google": 4.4,
-      "avaliacoes_google": 65
+      "observacao": "O site próprio apresentou indisponibilidade nesta revisão. Confirme os dados pelo contato do estabelecimento."
     },
     {
       "nome": "Hotel Oliveiras",
@@ -127,9 +113,7 @@
       "endereco": "Rua 1, 151 - Bairro Santuário, Trindade - GO, 75388-563",
       "telefone": "+55 (62) 3505-3877",
       "whatsapp": "+55 (62) 98588-7350",
-      "site": "https://hoteloliveiras.com/",
-      "nota_google": 4.5,
-      "avaliacoes_google": 309
+      "site": "https://hoteloliveiras.com/"
     },
     {
       "nome": "Hotel Portal da Fé",
@@ -139,9 +123,7 @@
       "telefone": "+55 (62) 3110-1728",
       "whatsapp": "+55 (62) 99808-9780",
       "email": "hotelportaldafe@gmail.com",
-      "site": "https://www.hotelportaldafe.com.br/",
-      "nota_google": 4.7,
-      "avaliacoes_google": 219
+      "site": "https://www.hotelportaldafe.com.br/"
     },
     {
       "nome": "Hotel Pousada Arcanjos",
@@ -149,27 +131,21 @@
       "bairro": "Vila Pai Eterno",
       "endereco": "Av. Raimundo de Aquino, 195 - Vila Pai Eterno, Trindade - GO",
       "telefone": "+55 (62) 99354-3721",
-      "telefone_alternativo": "+55 (62) 3506-4579",
-      "nota_google": 4.2,
-      "avaliacoes_google": 61
+      "telefone_alternativo": "+55 (62) 3506-4579"
     },
     {
       "nome": "Hotel Pousada Casa Grande",
       "tipo": "Pousada",
       "bairro": "Centro",
       "endereco": "Rua Pereira Lima, 320 - Setor Central, Trindade - GO",
-      "telefone": "+55 (62) 99192-8158",
-      "nota_google": 4.9,
-      "avaliacoes_google": 41
+      "telefone": "+55 (62) 99192-8158"
     },
     {
       "nome": "Hotel Pousada Cláudia Torrano",
       "tipo": "Pousada",
       "bairro": "Setor Ana Rosa",
       "endereco": "Av. Constantino Xavier, 50 - Setor Ana Rosa, Trindade - GO",
-      "telefone": "+55 (62) 3505-1969",
-      "nota_google": 4.8,
-      "avaliacoes_google": 18
+      "telefone": "+55 (62) 3505-1969"
     },
     {
       "nome": "Hotel Pousada Descanso",
@@ -181,17 +157,14 @@
       "email": "cleisyfernandes@gmail.com",
       "site": "https://www.pousadadescanso.com.br/",
       "instagram": "https://www.instagram.com/pousadadescanso",
-      "nota_google": 4.6,
-      "avaliacoes_google": 46
+      "observacao": "O site próprio apresentou indisponibilidade nesta revisão. Confirme os dados pelo contato do estabelecimento."
     },
     {
       "nome": "Hotel Pousada dos Anjos",
       "tipo": "Pousada",
       "bairro": "Vila Santo Onofre",
       "endereco": "Rua 2, Qd. D, Lt. 09, nº 165 - Vila Santo Onofre, Trindade - GO",
-      "telefone": "+55 (62) 99602-0300",
-      "nota_google": 4.3,
-      "avaliacoes_google": 75
+      "telefone": "+55 (62) 99602-0300"
     },
     {
       "nome": "Hotel Pousada Grecco Borges",
@@ -200,18 +173,14 @@
       "endereco": "Rua 3, nº 230/250 - Vila Santo Onofre, Trindade - GO",
       "telefone": "+55 (62) 99131-0059",
       "whatsapp": "+55 (62) 99131-0059",
-      "email": "hotelpousadagbtrindade@gmail.com",
-      "nota_google": 4.4,
-      "avaliacoes_google": 132
+      "email": "hotelpousadagbtrindade@gmail.com"
     },
     {
       "nome": "Hotel Pousada Nossa Senhora de Lourdes",
       "tipo": "Pousada",
       "bairro": "Santuário",
       "endereco": "Rua 4, Qd. 15, Lt. 07 - Bairro Santuário, Trindade - GO",
-      "telefone": "+55 (62) 98143-2012",
-      "nota_google": 4.7,
-      "avaliacoes_google": 53
+      "telefone": "+55 (62) 98143-2012"
     },
     {
       "nome": "Hotel Pousada Recanto do Pai",
@@ -220,18 +189,14 @@
       "endereco": "Rua Dr. Irany Ferreira, 772 - Vila William, Trindade - GO",
       "telefone": "+55 (62) 3110-3313",
       "email": "recantodopai.luisalberto@hotmail.com",
-      "site": "http://www.recantodopai.com.br/",
-      "nota_google": 4.6,
-      "avaliacoes_google": 119
+      "observacao": "O endereço do site está em revisão. Confirme os dados diretamente com a hospedagem."
     },
     {
       "nome": "Hotel Pousada Santo Onofre",
       "tipo": "Pousada",
       "bairro": "Vila Santo Onofre",
       "endereco": "Rua 2, Qd. D, Lt. 10, nº 155 - Vila Santo Onofre, Trindade - GO",
-      "telefone": "+55 (62) 98607-6099",
-      "nota_google": 4.2,
-      "avaliacoes_google": 75
+      "telefone": "+55 (62) 98607-6099"
     },
     {
       "nome": "Hotel Pousada Ágape",
@@ -241,9 +206,7 @@
       "telefone": "+55 (62) 99958-0152",
       "whatsapp": "+55 (62) 99958-0152",
       "telefone_alternativo": "+55 (62) 3505-2413",
-      "site": "https://www.pousadaagape.com.br/",
-      "nota_google": 4.5,
-      "avaliacoes_google": 243
+      "site": "https://www.pousadaagape.com.br/"
     },
     {
       "nome": "Hotel Recanto Goiano",
@@ -254,36 +217,28 @@
       "whatsapp": "+55 (62) 98319-6740",
       "email": "pousadarecantogoiano@gmail.com",
       "site": "https://www.pousadarecantogoiano.com.br/",
-      "instagram": "https://www.instagram.com/recantogoiano.hotel",
-      "nota_google": 4.8,
-      "avaliacoes_google": 24
+      "instagram": "https://www.instagram.com/recantogoiano.hotel"
     },
     {
       "nome": "Hotel Santos Reis",
       "tipo": "Hotel",
       "bairro": "Vila Santo Onofre",
       "endereco": "Rua da Saudade, 140 - Vila Santo Onofre, Trindade - GO",
-      "telefone": "+55 (62) 99964-8545",
-      "nota_google": 5,
-      "avaliacoes_google": 6
+      "telefone": "+55 (62) 99964-8545"
     },
     {
       "nome": "Hotel Santuário",
       "tipo": "Hotel",
       "bairro": "Vila Santo Onofre",
       "endereco": "Rua Dr. Irany Ferreira, 639 - Vila Santo Onofre, Trindade - GO",
-      "telefone": "+55 (62) 98552-9249",
-      "nota_google": 4.9,
-      "avaliacoes_google": 18
+      "telefone": "+55 (62) 98552-9249"
     },
     {
       "nome": "Hotel São Paulo Trindade",
       "tipo": "Hotel",
       "bairro": "Setor Ana Rosa",
       "endereco": "Av. Constantino Xavier, 127, Lt. 17, Qd. 68 - Setor Ana Rosa, Trindade - GO",
-      "telefone": "+55 (62) 99642-8720",
-      "nota_google": 4.8,
-      "avaliacoes_google": 69
+      "telefone": "+55 (62) 99642-8720"
     },
     {
       "nome": "Hotel Turismo Trindade",
@@ -294,17 +249,14 @@
       "whatsapp": "+55 (62) 98462-9299",
       "email": "hotelturismotrindade@gmail.com",
       "site": "https://hotelturismotrindade.com/",
-      "nota_google": 4.5,
-      "avaliacoes_google": 37
+      "observacao": "Os contatos da base ainda precisam de confirmação atual. Confira a identidade do estabelecimento antes de fazer uma reserva."
     },
     {
       "nome": "Hotel Via Sacra",
       "tipo": "Hotel",
       "bairro": "Setor Ana Rosa",
       "endereco": "Av. Constantino Xavier, 387 - Setor Ana Rosa, Trindade - GO",
-      "telefone": "+55 (62) 3506-3662",
-      "nota_google": 4.3,
-      "avaliacoes_google": 49
+      "telefone": "+55 (62) 3506-3662"
     },
     {
       "nome": "Pousada Ana Rosa",
@@ -312,17 +264,15 @@
       "bairro": "Setor Ana Rosa",
       "endereco": "Rua 121, 20 - Setor Ana Rosa, Trindade - GO",
       "telefone": "+55 (62) 98118-2884",
-      "nota_google": 4.4,
-      "avaliacoes_google": 80
+      "endereco_a_confirmar": true,
+      "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento."
     },
     {
       "nome": "Pousada Anacleto",
       "tipo": "Pousada",
       "bairro": "Centro",
       "endereco": "Rua Cel. Anacleto, 288 - Centro, Trindade - GO",
-      "telefone": "+55 (62) 3110-2700",
-      "nota_google": 4.7,
-      "avaliacoes_google": 29
+      "telefone": "+55 (62) 3110-2700"
     },
     {
       "nome": "Pousada Boa Nova",
@@ -330,18 +280,14 @@
       "bairro": "Setor Ana Rosa",
       "endereco": "Rua 104, nº 325, Qd. 60, Lt. 13/14 - Setor Ana Rosa, Trindade - GO",
       "telefone": "+55 (62) 99430-6322",
-      "telefone_alternativo": "+55 (62) 3505-8312",
-      "nota_google": 4,
-      "avaliacoes_google": 13
+      "telefone_alternativo": "+55 (62) 3505-8312"
     },
     {
       "nome": "Pousada Campos",
       "tipo": "Pousada",
       "bairro": "Setor Ana Rosa",
       "endereco": "Rua 113, 200, Qd. 57 - Setor Ana Rosa, Trindade - GO",
-      "telefone": "+55 (62) 98426-6392",
-      "nota_google": 4.9,
-      "avaliacoes_google": 42
+      "telefone": "+55 (62) 98426-6392"
     },
     {
       "nome": "Pousada Cantinho da Vovó",
@@ -349,8 +295,8 @@
       "bairro": "Setor Ana Rosa",
       "endereco": "Rua 113, 94, Lt. 24 - Setor Ana Rosa, Trindade - GO",
       "telefone": "+55 (62) 98491-7161",
-      "nota_google": 4.5,
-      "avaliacoes_google": 37
+      "endereco_a_confirmar": true,
+      "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento."
     },
     {
       "nome": "Pousada Carneiro",
@@ -358,36 +304,28 @@
       "bairro": "Jardim Salvador",
       "endereco": "Av. Bahia, 57 - Jardim Salvador, Trindade - GO",
       "telefone": "+55 (62) 3505-8021",
-      "telefone_alternativo": "+55 (62) 3505-6552",
-      "nota_google": 3.5,
-      "avaliacoes_google": 44
+      "telefone_alternativo": "+55 (62) 3505-6552"
     },
     {
       "nome": "Pousada Central",
       "tipo": "Pousada",
       "bairro": "Centro",
       "endereco": "Rua Bacharel Valdir José das Neves, 171 - Centro, Trindade - GO",
-      "telefone": "+55 (62) 3506-4578",
-      "nota_google": 4.2,
-      "avaliacoes_google": 5
+      "telefone": "+55 (62) 3506-4578"
     },
     {
       "nome": "Pousada Centro Oeste",
       "tipo": "Pousada",
       "bairro": "Setor Ana Rosa",
       "endereco": "Av. E, Qd. 67, Lt. 6 - Setor Ana Rosa, Trindade - GO",
-      "telefone": "+55 (62) 98556-6198",
-      "nota_google": 4.7,
-      "avaliacoes_google": 15
+      "telefone": "+55 (62) 98556-6198"
     },
     {
       "nome": "Pousada da Paz",
       "tipo": "Pousada",
       "bairro": "Santuário",
       "endereco": "Rua 03, Qd. 05, Lt. 02 - Bairro Santuário, Trindade - GO",
-      "telefone": "+55 (62) 99110-4730",
-      "nota_google": 4.9,
-      "avaliacoes_google": 16
+      "telefone": "+55 (62) 99110-4730"
     },
     {
       "nome": "Pousada Flor dos Ipês",
@@ -397,18 +335,14 @@
       "telefone": "+55 (62) 3299-2750",
       "whatsapp": "+55 (62) 99902-7671 / +55 (62) 99933-0201",
       "email": "fordosipes@gmail.com",
-      "site": "https://pousadaflordosipes.com.br/",
-      "nota_google": 4.6,
-      "avaliacoes_google": 230
+      "site": "https://pousadaflordosipes.com.br/"
     },
     {
       "nome": "Pousada Gaivota",
       "tipo": "Pousada",
       "bairro": "Jardim Primavera",
       "endereco": "Rua Oito, s/n - Jardim Primavera, Trindade - GO",
-      "telefone": "+55 (62) 98517-1312",
-      "nota_google": 4.4,
-      "avaliacoes_google": 32
+      "telefone": "+55 (62) 98517-1312"
     },
     {
       "nome": "Pousada Hobby Ludy",
@@ -418,18 +352,14 @@
       "telefone": "+55 (62) 3505-0763",
       "whatsapp": "+55 (62) 98102-0994",
       "email": "milatur23@hotmail.com",
-      "site": "https://www.pousadahobbyludy.com.br/",
-      "nota_google": 4.4,
-      "avaliacoes_google": 52
+      "site": "https://www.pousadahobbyludy.com.br/"
     },
     {
       "nome": "Pousada Jerusalém",
       "tipo": "Pousada",
       "bairro": "Setor Ana Rosa",
       "endereco": "Rua 104, 60 - Setor Ana Rosa, Trindade - GO",
-      "telefone": "+55 (62) 3506-1086",
-      "nota_google": 4.3,
-      "avaliacoes_google": 37
+      "telefone": "+55 (62) 3506-1086"
     },
     {
       "nome": "Pousada Jesus de Nazaré",
@@ -441,9 +371,7 @@
       "telefone_alternativo": "+55 (62) 3505-4798",
       "email": "pousadajesusdenazare@gmail.com",
       "site": "https://www.pousadajesusdenazare.com.br/",
-      "instagram": "https://www.instagram.com/pousada_jesus_de_nazare_",
-      "nota_google": 4.9,
-      "avaliacoes_google": 154
+      "instagram": "https://www.instagram.com/pousada_jesus_de_nazare_"
     },
     {
       "nome": "Pousada Marina Torrano",
@@ -453,8 +381,8 @@
       "telefone_alternativo": "+55 (62) 98413-0032",
       "email": "contato@pousadamarinatorrano.com.br",
       "site": "https://www.pousadamarinatorrano.com.br/",
-      "nota_google": 4.4,
-      "avaliacoes_google": 148
+      "endereco": "Rua Elisa Meireles Bittencourt, 81 - Centro, Trindade - GO",
+      "fonte_contato": "https://www.pousadamarinatorrano.com.br/"
     },
     {
       "nome": "Pousada Marina Torrano II",
@@ -465,9 +393,7 @@
       "whatsapp": "+55 (62) 98413-0032",
       "telefone_alternativo": "+55 (62) 3505-6527",
       "email": "contato@pousadamarinatorrano.com.br",
-      "site": "https://www.pousadamarinatorrano.com.br/",
-      "nota_google": 4.5,
-      "avaliacoes_google": 21
+      "site": "https://www.pousadamarinatorrano.com.br/"
     },
     {
       "nome": "Pousada Medalhão",
@@ -475,9 +401,7 @@
       "bairro": "Santuário",
       "endereco": "Rua Oito, 269 - Bairro Santuário, Trindade - GO",
       "telefone": "+55 (62) 98502-5732",
-      "telefone_alternativo": "+55 (62) 3506-1231",
-      "nota_google": 5,
-      "avaliacoes_google": 1
+      "telefone_alternativo": "+55 (62) 3506-1231"
     },
     {
       "nome": "Pousada Menino Jesus",
@@ -485,17 +409,15 @@
       "bairro": "Centro",
       "endereco": "Rua Dom Pedro II - Centro, Trindade - GO",
       "telefone": "+55 (62) 99277-7492",
-      "nota_google": 5,
-      "avaliacoes_google": 4
+      "endereco_a_confirmar": true,
+      "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento."
     },
     {
       "nome": "Pousada Nascimento",
       "tipo": "Pousada",
       "bairro": "Setor Ana Rosa",
       "endereco": "Av. Constantino Xavier, 133 - Setor Ana Rosa, Trindade - GO",
-      "telefone": "+55 (62) 98433-8752",
-      "nota_google": 4.7,
-      "avaliacoes_google": 31
+      "telefone": "+55 (62) 98433-8752"
     },
     {
       "nome": "Pousada Nossa Senhora da Guia",
@@ -503,17 +425,15 @@
       "bairro": "Setor Cristina II",
       "endereco": "Av. Marinho de Melo Filho - Setor Cristina II, Trindade - GO",
       "telefone": "+55 (62) 3506-3069",
-      "nota_google": 4.5,
-      "avaliacoes_google": 57
+      "endereco_a_confirmar": true,
+      "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento."
     },
     {
       "nome": "Pousada Padre Pelágio",
       "tipo": "Pousada",
       "bairro": "Vila Santo Onofre",
       "endereco": "Rua Padre Pelágio, 260, Qd. A, Lt. 23 - Vila Santo Onofre, Trindade - GO, 75380-001",
-      "telefone": "+55 (62) 98592-1198",
-      "whatsapp": "+55 (62) 98592-1198",
-      "telefone_alternativo": "+55 (62) 3505-1198"
+      "observacao": "Contato telefônico em revisão. O Portal ainda não confirmou um número seguro para este cadastro."
     },
     {
       "nome": "Pousada Pai Eterno",
@@ -521,16 +441,16 @@
       "bairro": "Setor Ana Rosa",
       "endereco": "Rua 113, Setor Ana Rosa / Santuário, Trindade - GO",
       "telefone": "+55 (62) 99650-1076",
-      "telefone_alternativo": "+55 (62) 3505-0606"
+      "telefone_alternativo": "+55 (62) 3505-0606",
+      "endereco_a_confirmar": true,
+      "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento."
     },
     {
       "nome": "Pousada Palmeira Imperial",
       "tipo": "Pousada",
       "bairro": "Jardim Salvador",
       "endereco": "Av. Rondônia, 634 - Jardim Salvador, Trindade - GO",
-      "telefone": "+55 (62) 3505-2905",
-      "nota_google": 4.8,
-      "avaliacoes_google": 10
+      "telefone": "+55 (62) 3505-2905"
     },
     {
       "nome": "Pousada Paraíso",
@@ -540,18 +460,14 @@
       "telefone": "+55 (62) 3505-2777",
       "whatsapp": "+55 (62) 99623-7572",
       "email": "pousadaparaiso.trindade@gmail.com",
-      "site": "https://www.pousadaparaisotrindade.com.br/",
-      "nota_google": 4.6,
-      "avaliacoes_google": 168
+      "site": "https://www.pousadaparaisotrindade.com.br/"
     },
     {
       "nome": "Pousada Pôr do Sol",
       "tipo": "Pousada",
       "bairro": "Santuário",
       "endereco": "Rua 5, 113/179 - Bairro Santuário, Trindade - GO",
-      "telefone": "+55 (62) 98442-9070",
-      "nota_google": 4.5,
-      "avaliacoes_google": 26
+      "telefone": "+55 (62) 98442-9070"
     },
     {
       "nome": "Pousada Recanto do Carreiro",
@@ -559,9 +475,7 @@
       "bairro": "Centro",
       "endereco": "Rua Bacharel Valdir José das Neves, 290 - Centro, Trindade - GO",
       "telefone": "+55 (62) 98582-7366",
-      "telefone_alternativo": "+55 (62) 3505-6057",
-      "nota_google": 4.5,
-      "avaliacoes_google": 36
+      "telefone_alternativo": "+55 (62) 3505-6057"
     },
     {
       "nome": "Pousada Romeiros do Pai Eterno",
@@ -570,9 +484,7 @@
       "endereco": "Rua da Constituição, 243 - Centro, Trindade - GO",
       "telefone": "+55 (62) 99982-6377",
       "site": "https://linktr.ee/pousadaromeiros",
-      "instagram": "https://www.instagram.com/pousadaromeiros",
-      "nota_google": 4.5,
-      "avaliacoes_google": 52
+      "instagram": "https://www.instagram.com/pousadaromeiros"
     },
     {
       "nome": "Pousada Santa Clara",
@@ -580,17 +492,15 @@
       "bairro": "Setor Cristina II",
       "endereco": "Rua José Teixeira - Setor Cristina II, Trindade - GO",
       "telefone": "+55 (62) 3505-4508",
-      "nota_google": 4.4,
-      "avaliacoes_google": 26
+      "endereco_a_confirmar": true,
+      "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento."
     },
     {
       "nome": "Pousada Santa Luzia",
       "tipo": "Pousada",
       "bairro": "Vila Santo Onofre",
       "endereco": "Rua da Saudade, Qd. 01, Lt. 04 - Vila Santo Onofre, Trindade - GO",
-      "telefone": "+55 (62) 3505-3882",
-      "nota_google": 4.2,
-      "avaliacoes_google": 118
+      "telefone": "+55 (62) 3505-3882"
     },
     {
       "nome": "Pousada Santana",
@@ -602,9 +512,7 @@
       "telefone_alternativo": "+55 (62) 98451-0254",
       "email": "contato@pousadasantana.net",
       "site": "https://www.pousadasantana.net/",
-      "instagram": "https://www.instagram.com/pousadasantanatrindadego",
-      "nota_google": 4.6,
-      "avaliacoes_google": 200
+      "instagram": "https://www.instagram.com/pousadasantanatrindadego"
     },
     {
       "nome": "Pousada Santíssima Trindade",
@@ -613,24 +521,24 @@
       "endereco": "Vila Santo Onofre, Trindade - GO",
       "telefone": "+55 (62) 99663-6890",
       "telefone_alternativo": "+55 (62) 3505-1197",
-      "nota_google": 4.1,
-      "avaliacoes_google": 109
+      "endereco_a_confirmar": true,
+      "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento."
     },
     {
       "nome": "Pousada São Geraldo Magela",
       "tipo": "Pousada",
       "bairro": "Vila Santo Onofre",
       "endereco": "Rua Dr. Irany Ferreira - Vila Santo Onofre, Trindade - GO",
-      "telefone": "+55 (62) 99962-0979"
+      "telefone": "+55 (62) 99962-0979",
+      "endereco_a_confirmar": true,
+      "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento."
     },
     {
       "nome": "Pousada São José",
       "tipo": "Pousada",
       "bairro": "Vila Padre Renato",
       "endereco": "Av. São Pedro, 210 - Vila Padre Renato, Trindade - GO",
-      "telefone": "+55 (62) 3505-3230",
-      "nota_google": 3.7,
-      "avaliacoes_google": 3
+      "telefone": "+55 (62) 3505-3230"
     },
     {
       "nome": "Pousada São José e Maria",
@@ -638,8 +546,8 @@
       "bairro": "Santuário",
       "endereco": "Rua 3, 202 - Bairro Santuário, Trindade - GO",
       "telefone": "+55 (62) 99902-0400",
-      "nota_google": 4.2,
-      "avaliacoes_google": 14
+      "endereco_a_confirmar": true,
+      "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento."
     },
     {
       "nome": "Pousada São Miguel Arcanjo",
@@ -647,17 +555,15 @@
       "bairro": "Santuário",
       "endereco": "Rua Oito, 270 - Bairro Santuário, Trindade - GO",
       "telefone": "+55 (62) 3505-6768",
-      "nota_google": 4.6,
-      "avaliacoes_google": 18
+      "endereco_a_confirmar": true,
+      "observacao": "Confirme o endereço e a localização com a hospedagem antes do deslocamento."
     },
     {
       "nome": "Pousada Trindade da Fé",
       "tipo": "Pousada",
       "bairro": "Setor Ana Rosa",
       "endereco": "Rua 113, 142 - Setor Ana Rosa, Trindade - GO",
-      "telefone": "+55 (62) 98239-1132",
-      "nota_google": 4.5,
-      "avaliacoes_google": 16
+      "telefone": "+55 (62) 98239-1132"
     },
     {
       "nome": "Pousada Trindade Santa",
@@ -668,17 +574,14 @@
       "whatsapp": "+55 (62) 98222-0264",
       "email": "pousadatrindadesanta2008@gmail.com",
       "instagram": "https://www.instagram.com/pousadatrindadesanta2008",
-      "nota_google": 4.6,
-      "avaliacoes_google": 43
+      "observacao": "Os contatos da base ainda precisam de confirmação atual. Confira a identidade do estabelecimento antes de fazer uma reserva."
     },
     {
       "nome": "Pousada Três Poderes",
       "tipo": "Pousada",
       "bairro": "Setor Cristina",
       "endereco": "Rua Tobias de Melo, 246 - Setor Cristina, Trindade - GO",
-      "telefone": "+55 (62) 99973-7859",
-      "nota_google": 4.1,
-      "avaliacoes_google": 44
+      "telefone": "+55 (62) 99973-7859"
     },
     {
       "nome": "Santorini Hotel",
@@ -687,43 +590,40 @@
       "endereco": "Av. Cel. Gabriel Alves de Carvalho, 226 - Trindade - GO",
       "telefone": "+55 (62) 99808-5588",
       "telefone_alternativo": "+55 (62) 98518-1898",
-      "nota_google": 4.8,
-      "avaliacoes_google": 22
+      "observacao": "Os contatos da base ainda precisam de confirmação atual. Confira a identidade do estabelecimento antes de fazer uma reserva."
     },
     {
       "nome": "Trindade Plaza Hotel",
       "tipo": "Hotel",
       "bairro": "Vila João Braz",
       "endereco": "Av. Brasília, 293 - Vila João Braz, Trindade - GO, 75388-406",
-      "telefone": "+55 (62) 3110-0101",
+      "telefone": "+55 (62) 3110-0801",
       "whatsapp": "+55 (62) 3110-0801",
-      "telefone_alternativo": "+55 (62) 3110-0101",
       "email": "reservas@trindadeplazahotel.com.br",
       "site": "https://trindadeplazahotel.com.br/",
       "instagram": "https://www.instagram.com/trindadeplazahotel",
-      "nota_google": 4.4,
-      "avaliacoes_google": 708
+      "fonte_contato": "https://trindadeplazahotel.com.br/"
     },
     {
       "nome": "Vila Barro Branco",
       "tipo": "Pousada",
       "bairro": "Zona Rural",
       "endereco": "Rodovia GO-060, s/n - Zona Rural, Trindade - GO",
-      "telefone": "+55 (62) 99905-0050",
+      "telefone": "+55 (62) 99905-0030",
       "whatsapp": "+55 (62) 99905-0030",
       "email": "adm.vilabarrobranco@gmail.com",
       "site": "https://www.vilabarrobranco.com.br/",
-      "nota_google": 4.7,
-      "avaliacoes_google": 2016
+      "fonte_contato": "https://www.vilabarrobranco.com.br/"
     },
     {
       "nome": "Chalé Trindade",
       "tipo": "Chalé",
       "bairro": "Zona Rural",
-      "telefone": "+55 (62) 9988-2198",
-      "whatsapp": "+55 (62) 9988-2198",
-      "site": "https://chaletrindade.lovable.app/",
-      "instagram": "https://www.instagram.com/chaletrindade"
+      "instagram": "https://www.instagram.com/chaletrindade",
+      "observacao": "Contato telefônico em revisão. O Portal ainda não confirmou um número seguro para este cadastro."
     }
-  ]
+  ],
+  "total_registros": 72,
+  "revisado_em": "27/09/2026",
+  "nota_verificacao": "Revisão documental parcial; não confirma operação atual ou funcionamento das linhas. Consulte o estabelecimento antes de reservar."
 }

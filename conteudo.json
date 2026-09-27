@@ -13,7 +13,10 @@
         "tag": "Café e restaurante",
         "descricao": "Café, almoço e lanches com sabor caseiro, com pedidos pelo cardápio virtual.",
         "imagem": "/imagens/logo-cibeles-card.webp",
-        "imagens_extras": ["/imagens/imagem02cibele.png", "/imagens/imagem03cibele.png"],
+        "imagens_extras": [
+          "/imagens/imagem02cibele.png",
+          "/imagens/imagem03cibele.png"
+        ],
         "instagram": "https://www.instagram.com/cafecibeles",
         "whatsapp": "5562995542614",
         "link": "https://delivery.yooga.app/cafe-restaurante-cibeles",
@@ -55,7 +58,7 @@
   },
   "guia": {
     "titulo": "Guia de Turismo de Trindade 2026",
-    "descricao": "Conheça a história, os pontos turísticos, a cultura e os roteiros de Trindade neste guia oficial da Prefeitura — 2ª edição de 2026, com 176 páginas.",
+    "descricao": "Trindade Turismo, 2ª edição (2026), da Editora Formato 2, com colaboração de secretarias municipais. História, pontos turísticos, cultura e roteiros.",
     "visualizar": "https://drive.google.com/file/d/173c1tNzJIsw9Kdi2rOH13cFqdN2SA9mU/preview",
     "download": "https://drive.google.com/uc?export=download&id=173c1tNzJIsw9Kdi2rOH13cFqdN2SA9mU"
   },
@@ -118,20 +121,62 @@
     }
   ],
   "galeria": [
-    { "imagem": "/imagens/igreja-matriz-2026.webp", "legenda": "Igreja Matriz de Trindade" },
-    { "imagem": "/imagens/basilica-vista-do-alto-2026.webp", "legenda": "Basílica do Divino Pai Eterno vista do alto" },
-    { "imagem": "/imagens/carreiros-trindade-2026-01.webp", "legenda": "Tradição dos carros de boi no centro de Trindade" },
-    { "imagem": "/imagens/galeria-altar-matriz.webp", "legenda": "Altar da Igreja Matriz" },
-    { "imagem": "/imagens/galeria-basilica.webp", "legenda": "Basílica do Divino Pai Eterno" },
-    { "imagem": "/imagens/galeria-capela-cruzeiro.webp", "legenda": "Capela do Cruzeiro" },
-    { "imagem": "/imagens/galeria-vitral.webp", "legenda": "Vitral da Basílica" },
-    { "imagem": "/imagens/paisagem-trindade-2026.webp", "legenda": "Paisagem urbana de Trindade" },
-    { "imagem": "/imagens/carreiros-trindade-2026-02.webp", "legenda": "Carreiros em frente à Igreja Matriz" },
-    { "imagem": "/imagens/carreiros-trindade-2026-03.webp", "legenda": "Romeiros acompanham a tradição dos carreiros" },
-    { "imagem": "/imagens/galeria-sabores.webp", "legenda": "Sabores tradicionais de Trindade" },
-    { "imagem": "/imagens/galeria-castelinho.webp", "legenda": "Castelinho de Trindade" },
-    { "imagem": "/imagens/galeria-gruta.webp", "legenda": "Gruta de Trindade" },
-    { "imagem": "/imagens/galeria-portal-entrada.webp", "legenda": "Portal de entrada da cidade" }
+    {
+      "imagem": "/imagens/igreja-matriz-2026.webp",
+      "legenda": "Igreja Matriz de Trindade"
+    },
+    {
+      "imagem": "/imagens/basilica-vista-do-alto-2026.webp",
+      "legenda": "Basílica do Divino Pai Eterno vista do alto"
+    },
+    {
+      "imagem": "/imagens/carreiros-trindade-2026-01.webp",
+      "legenda": "Tradição dos carros de boi no centro de Trindade"
+    },
+    {
+      "imagem": "/imagens/galeria-altar-matriz.webp",
+      "legenda": "Altar da Igreja Matriz"
+    },
+    {
+      "imagem": "/imagens/galeria-basilica.webp",
+      "legenda": "Basílica do Divino Pai Eterno"
+    },
+    {
+      "imagem": "/imagens/galeria-capela-cruzeiro.webp",
+      "legenda": "Capela do Cruzeiro"
+    },
+    {
+      "imagem": "/imagens/galeria-vitral.webp",
+      "legenda": "Vitral da Basílica"
+    },
+    {
+      "imagem": "/imagens/paisagem-trindade-2026.webp",
+      "legenda": "Paisagem urbana de Trindade"
+    },
+    {
+      "imagem": "/imagens/carreiros-trindade-2026-02.webp",
+      "legenda": "Carreiros em frente à Igreja Matriz"
+    },
+    {
+      "imagem": "/imagens/carreiros-trindade-2026-03.webp",
+      "legenda": "Romeiros acompanham a tradição dos carreiros"
+    },
+    {
+      "imagem": "/imagens/galeria-sabores.webp",
+      "legenda": "Sabores tradicionais de Trindade"
+    },
+    {
+      "imagem": "/imagens/galeria-castelinho.webp",
+      "legenda": "Castelinho de Trindade"
+    },
+    {
+      "imagem": "/imagens/galeria-gruta.webp",
+      "legenda": "Gruta de Trindade"
+    },
+    {
+      "imagem": "/imagens/galeria-portal-entrada.webp",
+      "legenda": "Portal de entrada da cidade"
+    }
   ],
   "contato": {
     "mensagem_whatsapp": "Olá! Vim pelo Portal Trindade e gostaria de mais informações.",

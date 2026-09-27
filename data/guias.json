@@ -258,8 +258,8 @@
     "observacao": "Consulte cada espaço sobre programação, horários de visita e condições de acesso.",
     "itens": [
       {
-        "nome": "Escola Municipal de Artesanato e Escultura Gercina Alves de Freitas",
-        "descricao": "Atividades com argila e pintura, além de exposição e venda de peças de alunos e artesãos.",
+        "nome": "Escola Municipal de Artesanato e Escultura de Santa Maria",
+        "descricao": "Escola do distrito de Santa Maria com registros de oficinas de argila e pintura e participação de artesãos em exposições. Consulte as atividades e a possibilidade de visita.",
         "instagram": "https://www.instagram.com/escola_de_artesanato_stmaria/",
         "endereco": "Distrito de Santa Maria, a aproximadamente 18 km da região central de Trindade."
       },
@@ -271,18 +271,40 @@
       },
       {
         "nome": "Parque Municipal Lara Guimarães",
-        "descricao": "Espaço público com pista de caminhada, campos, quadras, parquinho, academia ao ar livre, kartódromo e represas.",
+        "descricao": "Espaço público com pista de caminhada, campos, quadras, parquinho, academia ao ar livre e represas. Em 3 de junho de 2026, a Prefeitura anunciou a suspensão temporária da pista de kart, sem data de reabertura na nota. Consulte um comunicado posterior antes de planejar essa atividade.",
         "endereco": "Rua Santo Antônio, 626, Vila Padre Renato."
       },
       {
         "nome": "Museu da Memória de Trindade",
         "descricao": "Acervo de objetos, fotografias, documentos e obras sobre a formação da cidade e a devoção ao Divino Pai Eterno.",
-        "endereco": "Avenida Major Manoel Alves, s/n, esquina com a Rua 16 de Julho, Setor Oeste."
+        "endereco": "Avenida Major Manoel Alves, s/n, esquina com a Rua 16 de Julho, Trindade-GO."
       },
       {
         "nome": "Loja Pai Eterno",
-        "descricao": "Terços, imagens, livros e lembranças religiosas nos espaços do Santuário Basílica e do Novo Santuário.",
-        "endereco": "Santuário Basílica: Praça Dom Antônio Ribeiro de Oliveira, bairro Santuário. Novo Santuário: ao lado da Casa do Abbá."
+        "descricao": "Terços, imagens, livros e lembranças religiosas no Santuário Basílica e junto à Casa do Abbá, no espaço de visitação da obra do Novo Santuário. Consulte as condições de acesso.",
+        "endereco": "Santuário Basílica: Praça Dom Antônio Ribeiro de Oliveira, bairro Santuário. Obra do Novo Santuário: ao lado da Casa do Abbá."
+      }
+    ],
+    "fontes_verificacao": [
+      {
+        "titulo": "Prefeitura: escola e ações culturais (balanço 2021–2023)",
+        "url": "https://trindade.go.gov.br/prefeitura-de-trindade-por-meio-da-secretaria-de-turismo-e-cultura-expande-projetos-e-eventos/"
+      },
+      {
+        "titulo": "Prefeitura: aviso sobre o kartódromo (03/06/2026)",
+        "url": "https://trindade.go.gov.br/prefeitura-de-trindade-informa-suspensao-temporaria-das-atividades-no-kartodromo-municipal/"
+      },
+      {
+        "titulo": "Prefeitura: Museu da Memória (2022; confirme horários atuais)",
+        "url": "https://trindade.go.gov.br/prefeitura-municipal-inaugura-revitalizacao-do-museu-de-trindade/"
+      },
+      {
+        "titulo": "Mobicine: programação da unidade de Trindade",
+        "url": "https://grupomobicine.com.br/trindade-go/"
+      },
+      {
+        "titulo": "Santuário: Casa do Abbá e Loja Pai Eterno (19/08/2026)",
+        "url": "https://www.paieterno.com.br/2026/08/19/fe-acolhimento-e-sabor-conheca-a-casa-do-abba/"
       }
     ],
     "imagem": "imagens/paisagem-trindade-2026.webp",
@@ -316,6 +338,12 @@
         "descricao": "Percurso de aproximação da imagem original em madeira esculpida por Veiga Valle, no Santuário Basílica."
       }
     ],
+    "fontes_verificacao": [
+      {
+        "titulo": "Santuário: espaços e visita guiada (agendamento prévio)",
+        "url": "https://www.paieterno.com.br/2026/01/22/santuario-pai-eterno-conta-com-visita-guiada/"
+      }
+    ],
     "imagem": "imagens/galeria-gruta.webp",
     "tipo_imagem": "foto",
     "atualizado_em": "2026-09-27"
@@ -329,12 +357,12 @@
     "observacao": "Os locais têm rotinas próprias de celebração e acolhimento. Confirme a possibilidade de visita antes de sair.",
     "itens": [
       {
-        "nome": "Carmelo das Irmãs Carmelitas Descalças",
+        "nome": "Carmelo da Santíssima Trindade",
         "descricao": "Mosteiro com capela pública, pátio externo e locutórios para conversa e oração."
       },
       {
         "nome": "Capela Nossa Senhora das Graças",
-        "descricao": "Capela da Vila São José Bento Cottolengo que acolhe momentos de oração e celebrações.",
+        "descricao": "Capela da Vila São José Bento Cottolengo que recebe celebrações e momentos de oração. Confirme com a instituição a possibilidade de visita.",
         "endereco": "Vila São José Bento Cottolengo, Trindade-GO."
       },
       {
@@ -346,6 +374,20 @@
         "nome": "Capela São José",
         "descricao": "Comunidade religiosa da Paróquia do Divino Pai Eterno no bairro Santo Onofre.",
         "endereco": "Setor Santo Onofre, Trindade-GO."
+      }
+    ],
+    "fontes_verificacao": [
+      {
+        "titulo": "Santuário: pontos turísticos e religiosos",
+        "url": "https://www.paieterno.com.br/santuario/trindade/pontos-turisticos-e-religiosos/"
+      },
+      {
+        "titulo": "Arquidiocese: comunidades da Paróquia do Divino Pai Eterno",
+        "url": "https://arquidiocesedegoiania.org.br/paroquia/divino-pai-eterno-trindade/"
+      },
+      {
+        "titulo": "Vila São Cottolengo: celebrações na capela (Romaria de 2024)",
+        "url": "https://cottolengo.org.br/inclusao-na-romaria-de-trindade-missas-na-vila-sao-cottolengo-com-interprete-de-libras/"
       }
     ],
     "imagem": "imagens/igrejasaojose.png",
@@ -365,8 +407,8 @@
         "descricao": "Basílica com vitrais, cúpula, imagem do Divino Pai Eterno, Sala dos Milagres e gruta."
       },
       {
-        "nome": "Igreja do Padre Pelágio",
-        "descricao": "Igreja dedicada à memória do missionário, com seu local de sepultamento e vista panorâmica da cidade."
+        "nome": "Igreja do Santíssimo Redentor (Padre Pelágio)",
+        "descricao": "Igreja que guarda os restos mortais do Padre Pelágio, com vista da cidade a partir da região elevada onde está localizada."
       },
       {
         "nome": "Igreja Matriz de Trindade (Santuário Velho)",
@@ -374,11 +416,25 @@
       },
       {
         "nome": "Portal da Fé",
-        "descricao": "Monumento de entrada da cidade com cruz e representação da Santíssima Trindade coroando a Virgem Maria."
+        "descricao": "Monumento na entrada da cidade com cruz e imagem do Divino Pai Eterno."
       },
       {
         "nome": "Vila São José Bento Cottolengo",
-        "descricao": "Instituição filantrópica que abriga a Capela Nossa Senhora das Graças, espaço de oração aberto ao público."
+        "descricao": "Instituição filantrópica que abriga a Capela Nossa Senhora das Graças. Consulte a instituição sobre celebrações e visitação."
+      }
+    ],
+    "fontes_verificacao": [
+      {
+        "titulo": "Santuário: pontos turísticos e religiosos",
+        "url": "https://www.paieterno.com.br/santuario/trindade/pontos-turisticos-e-religiosos/"
+      },
+      {
+        "titulo": "Santuário: Igreja do Santíssimo Redentor (2025)",
+        "url": "https://www.paieterno.com.br/2025/06/18/romaria-2025-visite-a-igreja-do-santissimo-redentor/"
+      },
+      {
+        "titulo": "Vila São Cottolengo: celebrações na capela (Romaria de 2024)",
+        "url": "https://cottolengo.org.br/inclusao-na-romaria-de-trindade-missas-na-vila-sao-cottolengo-com-interprete-de-libras/"
       }
     ],
     "imagem": "imagens/igreja-matriz-2026.webp",
