@@ -1,0 +1,342 @@
+{
+  "fonte": "Capturas de publicações do Instagram @trindadeportal reunidas em portal-instagram-audit-2026-09-27.json",
+  "colecoes": [
+    {
+      "slug": "gastronomia-de-bar",
+      "titulo": "Bares e lugares para sair à noite",
+      "categoria": "gastronomia",
+      "resumo": "Uma seleção de bares e restaurantes citados pelo Portal Trindade para aproveitar a noite na cidade.",
+      "fonte_url": "https://www.instagram.com/trindadeportal/p/DcdoNuwFhLr/",
+      "observacao": "Seleção editorial sem ordem de preferência; consulte cada estabelecimento para confirmar horários e programação.",
+      "itens": [
+        {
+          "nome": "Adega & Restaurante Bentos",
+          "descricao": "Opção citada na seleção de lugares para sair à noite; a publicação menciona culinária portuguesa entre as propostas do conjunto."
+        },
+        {
+          "nome": "Empório Santa Fé",
+          "descricao": "Bar com petiscos, porções, bebidas e programação musical.",
+          "instagram": "https://www.instagram.com/santafeemporio/"
+        },
+        {
+          "nome": "La Casa Bar e Cozinha",
+          "descricao": "Bar e cozinha incluído na seleção de opções noturnas."
+        },
+        {
+          "nome": "Torresmo com Mandioca",
+          "descricao": "Lugar citado entre as opções de gastronomia e vida noturna."
+        },
+        {
+          "nome": "Carne com Mandioca",
+          "descricao": "Lugar citado entre as opções de gastronomia e vida noturna."
+        }
+      ]
+    },
+    {
+      "slug": "pizzarias",
+      "titulo": "Pizzarias em Trindade",
+      "categoria": "gastronomia",
+      "resumo": "Pizzarias reunidas em uma seleção local, com uma indicação adicional publicada pelo Portal.",
+      "fonte_url": "https://www.instagram.com/trindadeportal/p/DcjUjxbHDPc/",
+      "fontes_adicionais": [
+        "https://www.instagram.com/trindadeportal/p/DdfSin0txvJ/"
+      ],
+      "observacao": "A publicação apresenta uma seleção, sem ranking; confirme cardápio, preços e funcionamento diretamente com cada pizzaria.",
+      "itens": [
+        {
+          "nome": "@prosear_pizzaria",
+          "descricao": "Pizzaria incluída na seleção local.",
+          "instagram": "https://www.instagram.com/prosear_pizzaria/"
+        },
+        {
+          "nome": "@pizza_do_gaucho",
+          "descricao": "Pizzaria incluída na seleção local.",
+          "instagram": "https://www.instagram.com/pizza_do_gaucho/"
+        },
+        {
+          "nome": "@sanpaolocantina",
+          "descricao": "Cantina incluída na seleção de pizzarias.",
+          "instagram": "https://www.instagram.com/sanpaolocantina/"
+        },
+        {
+          "nome": "@pcasarao",
+          "descricao": "Pizzaria incluída na seleção local.",
+          "instagram": "https://www.instagram.com/pcasarao/"
+        },
+        {
+          "nome": "@napolipizzas_",
+          "descricao": "Pizzaria incluída na seleção local.",
+          "instagram": "https://www.instagram.com/napolipizzas_/"
+        },
+        {
+          "nome": "@pizzariacarinhodevo",
+          "descricao": "Indicação espontânea do Portal, que destaca pizza de fermentação natural e entrega.",
+          "instagram": "https://www.instagram.com/pizzariacarinhodevo/"
+        }
+      ]
+    },
+    {
+      "slug": "pamonharias",
+      "titulo": "Pamonharias lembradas pelo público",
+      "categoria": "gastronomia",
+      "resumo": "Três pamonharias citadas com frequência em uma enquete do Portal Trindade.",
+      "fonte_url": "https://www.instagram.com/trindadeportal/p/DdSVrisjUoC/",
+      "observacao": "São indicações de participantes da enquete, sem ordem de colocação ou avaliação técnica.",
+      "itens": [
+        {
+          "nome": "Indústria do Milho",
+          "descricao": "Pamonharia lembrada pelos participantes da enquete.",
+          "instagram": "https://www.instagram.com/industriadomilho.oficial/"
+        },
+        {
+          "nome": "Pamonharia Borges",
+          "descricao": "Pamonharia lembrada pelos participantes da enquete.",
+          "instagram": "https://www.instagram.com/pamonhariaborgesoficial/"
+        },
+        {
+          "nome": "Arte do Milho",
+          "descricao": "Pamonharia lembrada pelos participantes da enquete.",
+          "instagram": "https://www.instagram.com/arte_domilho/"
+        }
+      ]
+    },
+    {
+      "slug": "hamburguerias",
+      "titulo": "Hamburguerias lembradas pelo público",
+      "categoria": "gastronomia",
+      "resumo": "Cinco perfis citados com frequência pelos seguidores em uma enquete sobre hambúrguer em Trindade.",
+      "fonte_url": "https://www.instagram.com/trindadeportal/p/DdDSeHvDbwH/",
+      "observacao": "Lista baseada em comentários de seguidores, sem ordem de colocação, avaliação técnica ou classificação de qualidade; nomes comerciais não foram confirmados na legenda.",
+      "itens": [
+        {
+          "nome": "@chamagastrobar",
+          "descricao": "Perfil citado na enquete de hamburguerias.",
+          "instagram": "https://www.instagram.com/chamagastrobar/"
+        },
+        {
+          "nome": "@bsanduicheria",
+          "descricao": "Perfil citado na enquete de hamburguerias.",
+          "instagram": "https://www.instagram.com/bsanduicheria/"
+        },
+        {
+          "nome": "@casa22.food",
+          "descricao": "Perfil citado na enquete de hamburguerias.",
+          "instagram": "https://www.instagram.com/casa22.food/"
+        },
+        {
+          "nome": "@rota060humbugeria",
+          "descricao": "Perfil citado na enquete de hamburguerias, com a grafia do usuário conforme a publicação.",
+          "instagram": "https://www.instagram.com/rota060humbugeria/"
+        },
+        {
+          "nome": "@omelhor.burger",
+          "descricao": "Perfil citado na enquete de hamburguerias.",
+          "instagram": "https://www.instagram.com/omelhor.burger/"
+        }
+      ]
+    },
+    {
+      "slug": "acai",
+      "titulo": "Açaí em Trindade",
+      "categoria": "gastronomia",
+      "resumo": "Açaíterias lembradas em uma enquete e uma loja apresentada recentemente pelo Portal.",
+      "fonte_url": "https://www.instagram.com/trindadeportal/p/DdorRqiHOJe/",
+      "fontes_adicionais": [
+        "https://www.instagram.com/trindadeportal/reel/Ddwgh3-Rk5q/"
+      ],
+      "observacao": "Os cinco primeiros locais vieram de uma enquete, sem avaliação técnica ou ranking; a promoção de inauguração da Ibá em 26/09 não está vigente nesta coleção.",
+      "itens": [
+        {
+          "nome": "Açaí da Tribo",
+          "descricao": "Açaíteria lembrada na enquete do Portal.",
+          "instagram": "https://www.instagram.com/acaidatribotrindade/"
+        },
+        {
+          "nome": "Bronx Açaí",
+          "descricao": "Açaíteria lembrada na enquete do Portal.",
+          "instagram": "https://www.instagram.com/bronxacai/"
+        },
+        {
+          "nome": "The Best Açaí",
+          "descricao": "Açaíteria lembrada na enquete do Portal.",
+          "instagram": "https://www.instagram.com/thebestacaitrindade/"
+        },
+        {
+          "nome": "Açaí do Ninja",
+          "descricao": "Açaíteria lembrada na enquete do Portal.",
+          "instagram": "https://www.instagram.com/acaidoninja_trindade/"
+        },
+        {
+          "nome": "Açaí Delícias da Família",
+          "descricao": "Açaíteria lembrada na enquete do Portal.",
+          "instagram": "https://www.instagram.com/acaideliciasdafamilia/"
+        },
+        {
+          "nome": "@ibaacai.trindade",
+          "descricao": "Loja apresentada pelo Portal com açaí, sorvetes, opções sem açúcar, frutas, cremes e coberturas.",
+          "instagram": "https://www.instagram.com/ibaacai.trindade/",
+          "endereco": "Av. Manoel Monteiro, 1050, esquina com a Rua 13, em frente à Natureza Produtos Agropecuários, Trindade-GO."
+        }
+      ]
+    },
+    {
+      "slug": "feiras",
+      "titulo": "Feiras de Trindade",
+      "categoria": "cultura",
+      "resumo": "Cinco feiras em diferentes dias da semana, com locais e horários informados pelo Portal.",
+      "fonte_url": "https://www.instagram.com/trindadeportal/p/Dcx-PtEDZRM/",
+      "observacao": "Horários podem mudar em feriados, eventos especiais ou por decisão da organização; confirme antes de ir.",
+      "itens": [
+        {
+          "nome": "Feira da Vila Pai Eterno",
+          "descricao": "Feira de bairro com produtos e encontro da comunidade.",
+          "endereco": "Praça Thaynara Karoline, entre as ruas 28 e 30.",
+          "horario": "Terça-feira, das 18h às 21h30."
+        },
+        {
+          "nome": "Feira do Sol Dourado",
+          "descricao": "Feira de bairro com produtos e encontro da comunidade.",
+          "endereco": "Praça do Avivamento, Rua 213, Quadra 18.",
+          "horario": "Quarta-feira, das 18h às 21h30."
+        },
+        {
+          "nome": "Feira de Santos Reis",
+          "descricao": "Feira de bairro com produtos e encontro da comunidade.",
+          "endereco": "Av. Manoel Monteiro, 2315, em frente à Capela de Santos Reis.",
+          "horario": "Quinta-feira, das 18h às 21h30."
+        },
+        {
+          "nome": "Feira da Terra",
+          "descricao": "Feira apresentada entre as opções de produtos, gastronomia e convivência.",
+          "endereco": "Centro de Eventos e Feiras Juarez de Almeida Freire — Carreiródromo Municipal Ada Cyra.",
+          "horario": "Sexta-feira, a partir das 18h."
+        },
+        {
+          "nome": "Feira de Domingo",
+          "descricao": "Feira dominical apresentada entre as opções de produtos, gastronomia e convivência.",
+          "endereco": "Carreiródromo Municipal Ada Cyra, Rua Antônio de Souza Aguiar.",
+          "horario": "Domingo, das 6h às 11h."
+        }
+      ]
+    },
+    {
+      "slug": "cultura-e-lazer",
+      "titulo": "Cultura e lazer",
+      "categoria": "cultura",
+      "resumo": "Artesanato, cinema, parque e memória local em uma seleção de lugares para conhecer.",
+      "fonte_url": "https://www.instagram.com/trindadeportal/p/DdleIlYnCHI/",
+      "observacao": "Nomes do parque e do museu confirmados visualmente nos slides 5 e 6 da publicação em 27/09/2026. Consulte programação e acesso antes da visita.",
+      "itens": [
+        {
+          "nome": "Escola Municipal de Artesanato e Escultura Gercina Alves de Freitas",
+          "descricao": "Atividades com argila e pintura, além de exposição e venda de peças de alunos e artesãos.",
+          "instagram": "https://www.instagram.com/escola_de_artesanato_stmaria/",
+          "endereco": "Distrito de Santa Maria, a aproximadamente 18 km da região central de Trindade."
+        },
+        {
+          "nome": "@mobicinetrindade",
+          "descricao": "Cinema com filmes em cartaz; horários e valores dependem da programação.",
+          "instagram": "https://www.instagram.com/mobicinetrindade/",
+          "endereco": "Avenida Rondônia, quadra 14, lote 1-A, Vila João Braz."
+        },
+        {
+          "nome": "Parque Municipal Lara Guimarães",
+          "descricao": "Espaço público com pista de caminhada, campos, quadras, parquinho, academia ao ar livre, kartódromo e represas.",
+          "endereco": "Rua Santo Antônio, 626, Vila Padre Renato."
+        },
+        {
+          "nome": "Museu da Memória de Trindade",
+          "descricao": "Acervo de objetos, fotografias, documentos e obras sobre a formação da cidade e a devoção ao Divino Pai Eterno.",
+          "endereco": "Avenida Major Manoel Alves, s/n, esquina com a Rua 16 de Julho, Setor Oeste."
+        }
+      ]
+    },
+    {
+      "slug": "espacos-do-santuario",
+      "titulo": "Espaços do Santuário Basílica",
+      "categoria": "fe",
+      "resumo": "Quatro espaços identificados na publicação sobre a visita ao Santuário Basílica do Divino Pai Eterno.",
+      "fonte_url": "https://www.instagram.com/trindadeportal/p/DdFeL3pmWeZ/",
+      "observacao": "A legenda capturada anuncia cinco espaços, mas termina durante o quarto; o quinto não pôde ser identificado.",
+      "itens": [
+        {
+          "nome": "Sala dos Milagres",
+          "descricao": "Espaço no subsolo que reúne fotografias, ex-votos e objetos deixados por devotos em agradecimento.",
+          "endereco": "Subsolo do Santuário Basílica do Divino Pai Eterno."
+        },
+        {
+          "nome": "Gruta de Nossa Senhora de Lourdes",
+          "descricao": "Local de oração diante da imagem de Nossa Senhora de Lourdes, na área externa do Santuário.",
+          "endereco": "Praça do Santuário, área externa do Santuário Basílica."
+        },
+        {
+          "nome": "Capela do Santíssimo Sacramento",
+          "descricao": "Espaço de adoração, silêncio e oração dentro do Santuário Basílica."
+        },
+        {
+          "nome": "Visita à Imagem do Divino Pai Eterno",
+          "descricao": "Percurso de aproximação da imagem original em madeira esculpida por Veiga Valle, no Santuário Basílica."
+        }
+      ]
+    },
+    {
+      "slug": "igrejas-alem-do-roteiro",
+      "titulo": "Outros espaços de fé em Trindade",
+      "categoria": "fe",
+      "resumo": "Capelas e um mosteiro apresentados pelo Portal como visitas além dos grandes santuários.",
+      "fonte_url": "https://www.instagram.com/trindadeportal/p/DdKWTJ8D-V3/",
+      "observacao": "A legenda capturada anuncia cinco locais, mas identifica apenas quatro; endereços completos e horários não constam.",
+      "itens": [
+        {
+          "nome": "Carmelo das Irmãs Carmelitas Descalças",
+          "descricao": "Mosteiro com capela pública, pátio externo e locutórios para conversa e oração."
+        },
+        {
+          "nome": "Capela Nossa Senhora das Graças",
+          "descricao": "Capela da Vila São José Bento Cottolengo que acolhe momentos de oração e celebrações.",
+          "endereco": "Vila São José Bento Cottolengo, Trindade-GO."
+        },
+        {
+          "nome": "Capela dos Santos Reis",
+          "descricao": "Capela ligada à Folia de Reis e à devoção aos três Reis Magos.",
+          "endereco": "Setor Oeste, Trindade-GO."
+        },
+        {
+          "nome": "Capela São José",
+          "descricao": "Comunidade religiosa da Paróquia do Divino Pai Eterno no bairro Santo Onofre.",
+          "endereco": "Setor Santo Onofre, Trindade-GO."
+        }
+      ]
+    },
+    {
+      "slug": "roteiro-turistico-um-dia",
+      "titulo": "Um dia de fé e história em Trindade",
+      "categoria": "turismo",
+      "resumo": "Cinco paradas sugeridas pelo Portal para conhecer símbolos religiosos, históricos e sociais da cidade em um dia.",
+      "fonte_url": "https://www.instagram.com/trindadeportal/p/DcoLvT2HNyT/",
+      "observacao": "Sugestão de percurso sem horários de funcionamento ou de celebrações; confirme programação e acesso antes da visita.",
+      "itens": [
+        {
+          "nome": "Santuário Basílica do Divino Pai Eterno",
+          "descricao": "Basílica com vitrais, cúpula, imagem do Divino Pai Eterno, Sala dos Milagres e gruta."
+        },
+        {
+          "nome": "Igreja do Padre Pelágio",
+          "descricao": "Igreja dedicada à memória do missionário, com seu local de sepultamento e vista panorâmica da cidade."
+        },
+        {
+          "nome": "Igreja Matriz de Trindade (Santuário Velho)",
+          "descricao": "Primeiro Santuário do Divino Pai Eterno, inaugurado em 1912, ligado à história da devoção e da Romaria."
+        },
+        {
+          "nome": "Portal da Fé",
+          "descricao": "Monumento de entrada da cidade com cruz e representação da Santíssima Trindade coroando a Virgem Maria."
+        },
+        {
+          "nome": "Vila São José Bento Cottolengo",
+          "descricao": "Instituição filantrópica que abriga a Capela Nossa Senhora das Graças, espaço de oração aberto ao público."
+        }
+      ]
+    }
+  ]
+}
