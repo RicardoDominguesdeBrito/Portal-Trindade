@@ -20,7 +20,7 @@ class Document(HTMLParser):
             if a.get(k):self.refs.append(a[k])
 docs={}
 for path in list(out.glob('*.html'))+list((out/'guias').glob('*.html')):
-    if path.name=='responsive-check.html':continue
+    if path.name=='responsive-check.html' or path.name.startswith('google'):continue
     doc=Document();doc.feed(path.read_text());docs[path.resolve()]=doc
 errors=[];count=0
 for path,doc in docs.items():

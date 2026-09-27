@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /previa-2026/
+Sitemap: https://www.trindadeportal.com.br/sitemap.xml
