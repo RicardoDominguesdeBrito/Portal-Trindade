@@ -1,0 +1,17 @@
+/* Destaque isolado do evento. A arte original não é cortada nem alterada. */
+.starlight-event{padding:48px 0 12px;scroll-margin-top:110px}
+.starlight-card{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center;padding:30px;border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:3px;background:var(--paper)}
+.starlight-art{display:block;min-width:0;width:100%;max-width:360px;margin-inline:auto;background:#0b0906;line-height:0}
+.starlight-art img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain}
+.starlight-copy{min-width:0}
+.starlight-copy .eyebrow{font-size:10px;line-height:1.7;letter-spacing:.12em}
+.starlight-copy h2{font-size:clamp(29px,3.1vw,42px);line-height:1.15;margin:16px 0 20px;max-width:600px}
+.starlight-description{font-size:15px;line-height:1.85}
+.starlight-description strong{color:var(--ink);font-weight:650}
+.starlight-contact{font-size:14px;line-height:1.8;margin-top:18px}
+.starlight-contact a{color:var(--blue);font-weight:650;text-decoration:underline;text-underline-offset:3px}
+.starlight-cta{margin-top:22px;min-height:48px}
+.starlight-copy .starlight-disclosure{font-size:12px;line-height:1.7;margin-top:20px;color:var(--muted)}
+@media(max-width:900px) and (min-width:761px){.starlight-card{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);padding:24px;gap:26px}.starlight-copy h2{font-size:30px}.starlight-description{font-size:14px}}
+@media(max-width:760px){.starlight-event{padding:32px 0 8px}.starlight-card{grid-template-columns:minmax(0,1fr);padding:20px;gap:26px}.starlight-copy h2{font-size:32px}.starlight-copy .eyebrow{font-size:9px;letter-spacing:.08em}.starlight-cta{width:100%}}
+@media(max-width:380px){.starlight-card{padding:16px}.starlight-copy h2{font-size:29px}.starlight-description{font-size:14px}}
