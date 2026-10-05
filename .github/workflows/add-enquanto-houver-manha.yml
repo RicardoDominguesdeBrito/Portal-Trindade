@@ -1,8 +1,9 @@
-name: Adicionar capa e livro Enquanto Houver Manhã
+name: Adicionar capa de Enquanto Houver Manhã
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
     paths:
       - '.github/workflows/add-enquanto-houver-manha.yml'
 
@@ -10,7 +11,7 @@ permissions:
   contents: write
 
 jobs:
-  add-book:
+  add-cover:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -18,62 +19,25 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Baixar capa original
-        shell: bash
+      - name: Baixar capa original da Amazon
         run: |
           set -euo pipefail
           mkdir -p imagens
-          curl -fL --retry 3 --retry-delay 2 -A 'Mozilla/5.0' \
-            'https://m.media-amazon.com/images/I/31NrLyOG3vL._SY445_SX342_ML2_.jpg' \
+          curl -fL --retry 3 --retry-delay 2 -A "Mozilla/5.0" \
+            "https://m.media-amazon.com/images/I/615jUvHGIoL._SL1499_.jpg" \
             -o imagens/enquanto-houver-manha.jpg
           test -s imagens/enquanto-houver-manha.jpg
-          file imagens/enquanto-houver-manha.jpg
+          file imagens/enquanto-houver-manha.jpg | grep -Ei "JPEG|image"
 
-      - name: Adicionar livro à página de links
-        shell: python
-        run: |
-          from pathlib import Path
-
-          path = Path('links/index.html')
-          text = path.read_text(encoding='utf-8')
-
-          marker = '''      <a class="action book" href="https://www.amazon.com.br/dp/B0GWDHMPRJ" target="_blank" rel="noopener noreferrer">
-        <img class="book-cover" src="/imagens/livro_manhas.png" alt="Capa do livro Manhãs com Jesus" loading="lazy" decoding="async">
-        <span class="action-copy"><span class="action-title">Manhãs com Jesus</span><span class="action-subtitle">180 reflexões para começar cada manhã com fé e esperança · Amazon</span></span><span class="arrow" aria-hidden="true">›</span>
-      </a>'''
-
-          addition = marker + '''
-
-      <a class="action book" href="https://www.amazon.com.br/dp/B0HJRQ2W2W" target="_blank" rel="noopener noreferrer">
-        <img class="book-cover" src="/imagens/enquanto-houver-manha.jpg" alt="Capa do livro Enquanto Houver Manhã" loading="lazy" decoding="async">
-        <span class="action-copy"><span class="action-title">Enquanto Houver Manhã</span><span class="action-subtitle">180 encontros com Jesus para atravessar um dia de cada vez · Amazon</span></span><span class="arrow" aria-hidden="true">›</span>
-      </a>'''
-
-          if 'https://www.amazon.com.br/dp/B0HJRQ2W2W' not in text:
-              if marker not in text:
-                  raise SystemExit('Bloco de Manhãs com Jesus não encontrado.')
-              text = text.replace(marker, addition, 1)
-
-          path.write_text(text, encoding='utf-8')
-
-      - name: Validar
-        shell: bash
+      - name: Commit da capa
         run: |
           set -euo pipefail
-          test -s imagens/enquanto-houver-manha.jpg
-          grep -q 'B0HJRQ2W2W' links/index.html
-          grep -q '/imagens/enquanto-houver-manha.jpg' links/index.html
-
-      - name: Commit
-        shell: bash
-        run: |
-          set -euo pipefail
-          if git diff --quiet -- links/index.html imagens/enquanto-houver-manha.jpg; then
-            echo 'Livro e capa já estavam atualizados.'
+          git config user.name "Portal Trindade Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add imagens/enquanto-houver-manha.jpg
+          if git diff --cached --quiet; then
+            echo "Capa já estava atualizada."
             exit 0
           fi
-          git config user.name 'Portal Trindade Automation'
-          git config user.email 'actions@users.noreply.github.com'
-          git add links/index.html imagens/enquanto-houver-manha.jpg
-          git commit -m 'feat: adiciona Enquanto Houver Manhã aos livros'
+          git commit -m "feat: adiciona capa de Enquanto Houver Manhã"
           git push origin main
