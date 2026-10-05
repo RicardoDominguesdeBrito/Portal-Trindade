@@ -23,8 +23,8 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p imagens
-          curl -fL --retry 3 --retry-delay 2 \
-            'https://images.thalia.media/-/BF750-750/27a035f2c55b40ec8095fd126c707fb4/enquanto-houver-manha-taschenbuch-ricardo-brito-portugiesisch.jpeg' \
+          curl -fL --retry 3 --retry-delay 2 -A 'Mozilla/5.0' \
+            'https://m.media-amazon.com/images/I/31NrLyOG3vL._SY445_SX342_ML2_.jpg' \
             -o imagens/enquanto-houver-manha.jpg
           test -s imagens/enquanto-houver-manha.jpg
           file imagens/enquanto-houver-manha.jpg
