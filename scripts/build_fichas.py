@@ -4,9 +4,18 @@ from pathlib import Path
 import html,json,re
 ROOT=Path(__file__).resolve().parents[1]
 e=lambda v:html.escape(str(v),quote=True)
+def add_visual_navigation(s):
+ mobile='<nav id="mobile-nav" class="mobile-nav" aria-label="Menu do celular" hidden>'
+ link='<a href="/lugares.html">Guia visual · 112 fichas</a>'
+ if mobile+link not in s:s=s.replace(mobile,mobile+link,1)
+ hero='<div class="hero-actions">'
+ button='<a class="btn btn-gold" href="/lugares.html">Guia visual · 112 fichas →</a>'
+ if hero+button not in s:s=s.replace(hero,hero+button,1)
+ return s
+
 def build(out=ROOT):
  out=Path(out);data=json.loads((ROOT/'data/fichas.json').read_text());items=data['fichas']
- source=(out/'index.html').read_text();headbody=source.split('<body>',1)[1].split('<main',1)[0];footer='<footer'+source.rsplit('<footer',1)[1]
+ source=(out/'index.html').read_text();headbody=add_visual_navigation(source).split('<body>',1)[1].split('<main',1)[0];footer='<footer'+source.rsplit('<footer',1)[1]
  cards=[]
  for i in items:
   links=f'<a href="/{e(i["imagem"])}" target="_blank" rel="noopener">Abrir arte completa ↗</a>'
@@ -30,7 +39,7 @@ def build(out=ROOT):
   p=out/name;s=p.read_text();s=re.sub(r'<!-- fichas-start -->.*?<!-- fichas-end -->','',s,flags=re.S)
   # Guide directory gets a prominent entry before its existing content; home retains existing sections.
   s=s.replace('<main id="conteudo">','<main id="conteudo">'+cta,1) if name=='guia.html' else s.replace('</main>',cta+'</main>',1)
-  p.write_text(s)
+  p.write_text(add_visual_navigation(s))
  sitemap=out/'sitemap.xml'
  if sitemap.exists():
   s=sitemap.read_text();url='https://www.trindadeportal.com.br/lugares.html'
