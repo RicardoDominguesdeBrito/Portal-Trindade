@@ -1,6 +1,6 @@
 # Guia visual de Trindade
 
-O diretório `lugares.html` reúne 99 fichas de comércios e serviços e 13 de turismo e cultura. A inclusão é editorial e não identifica automaticamente um anunciante ou uma parceria paga.
+O diretório `lugares.html` reúne 103 fichas de comércios e serviços e 18 de turismo e cultura. A inclusão é editorial e não identifica automaticamente um anunciante ou uma parceria paga.
 
 - Conteúdo público: `data/fichas.json`.
 - Artes originais: `imagens/fichas/`, PNG 1080 × 1920. Exibir sempre a composição inteira, sem recorte.
@@ -11,3 +11,5 @@ O diretório `lugares.html` reúne 99 fichas de comércios e serviços e 13 de t
 Preservar créditos, licença e contexto histórico em cada registro. A fotografia do Portal da Fé tem licença CC BY 3.0. A fotografia e a adaptação da ficha do Cineteatro Afipe têm licença CC BY-SA 4.0. As demais artes não recebem licença aberta por extensão. Fotografias de arquivo não comprovam a aparência ou o funcionamento atuais; a fotografia das obras do Novo Santuário foi publicada em junho de 2026 e tem data de captura não confirmada.
 
 Esta seleção não inclui fichas pendentes nem Natsuk, Embelleze, Anhanguera ou Eskimó. Não substituir os roteiros temáticos existentes nem a seção de anunciantes por esta lista. Preservar o restante do site e as divulgações com data definida.
+
+Atualização de19/10: cinco lugares de turismo e quatro gelados. Imagens ilustrativas identificadas nas fichas; registros de arquivo mantêm seus créditos e datas de publicação.

@@ -42,6 +42,21 @@
       "id": "adega-restaurante-bentos"
     },
     {
+      "id": "agape",
+      "nome": "Ágape",
+      "categoria": "Sorvetes e Açaí",
+      "grupo": "Comércios e serviços",
+      "descricao": "Uma opção para se refrescar em Trindade.",
+      "imagem": "imagens/fichas/portal-trindade-agape-1080x1920.png",
+      "fontes": [
+        "https://www.instagram.com/p/DeMLwG-HJh_/"
+      ],
+      "nota": "Imagem ilustrativa do acervo. Recriação ilustrativa previamente aprovada; não é fotografia original Confirme funcionamento e produtos diretamente com o estabelecimento.",
+      "instagram": "https://www.instagram.com/sorveteriaagape1992/",
+      "credito": "Arte do acervo editorial do Portal Trindade. A representação foi recriada em outubro de 2026; não é fotografia original.",
+      "tipo_imagem": "Recriação ilustrativa do acervo"
+    },
+    {
       "nome": "Agridoce Sabores",
       "categoria": "Doces",
       "grupo": "Comércios e serviços",
@@ -134,6 +149,21 @@
       "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
       "imagem": "imagens/fichas/portal-trindade-bruttie-casa-de-paes-1080x1920.png",
       "id": "bruttie-casa-de-paes"
+    },
+    {
+      "id": "cafe-com-pistache",
+      "nome": "Café com Pistache",
+      "categoria": "Sorvetes e Açaí",
+      "grupo": "Comércios e serviços",
+      "descricao": "Uma opção para se refrescar em Trindade.",
+      "imagem": "imagens/fichas/portal-trindade-cafe-com-pistache-1080x1920.png",
+      "fontes": [
+        "https://www.instagram.com/p/DeMLwG-HJh_/"
+      ],
+      "nota": "Imagem ilustrativa do acervo. Recriação ilustrativa previamente aprovada; não é fotografia original Confirme funcionamento e produtos diretamente com o estabelecimento.",
+      "instagram": "https://www.instagram.com/cafecompistache/",
+      "credito": "Arte do acervo editorial do Portal Trindade. A representação foi recriada em outubro de 2026; não é fotografia original.",
+      "tipo_imagem": "Recriação ilustrativa do acervo"
     },
     {
       "nome": "Caminho da Paixão",
@@ -461,6 +491,37 @@
       "id": "frutos-de-goias"
     },
     {
+      "id": "gruta-da-intercessao",
+      "nome": "Gruta da Intercessão",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "Conhecida como Gruta das Fitinhas, reúne pedidos e orações dos devotos.",
+      "imagem": "imagens/fichas/portal-trindade-gruta-intercessao-1080x1920.png",
+      "fontes": [
+        "https://www.paieterno.com.br/2023/12/14/gruta-da-intercessao-e-lugar-de-visitacao-no-santuario-basilica/",
+        "https://www.paieterno.com.br/2025/07/01/romaria-do-pai-eterno-conta-com-pontos-de-peregrinacao/"
+      ],
+      "nota": "Imagem de arquivo fornecida. Fotografia de arquivo fornecida e identificada pelo usuário; data de captura e autoria não declaradas. Confirme condições de visita nos canais oficiais.",
+      "localizacao": "Pátio do Santuário Basílica · Trindade · GO",
+      "credito": "Imagem de arquivo fornecida"
+    },
+    {
+      "id": "gruta-nossa-senhora-de-lourdes",
+      "nome": "Gruta Nossa Senhora de Lourdes",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "Um espaço de oração e recolhimento junto à cascata, na praça da Basílica.",
+      "imagem": "imagens/fichas/portal-trindade-gruta-lourdes-1080x1920.png",
+      "fontes": [
+        "https://www.paieterno.com.br/2025/07/01/romaria-do-pai-eterno-conta-com-pontos-de-peregrinacao/",
+        "https://www.paieterno.com.br/2026/01/22/santuario-pai-eterno-conta-com-visita-guiada/",
+        "https://www.instagram.com/reel/DZ7ieegx2ib/"
+      ],
+      "nota": "Arquivo publicado em junho de 2026 · Portal Trindade. Frame real de vídeo publicado pelo Portal Trindade em junho de 2026; data de captura exata não confirmada. Confirme condições de visita nos canais oficiais.",
+      "localizacao": "Praça do Santuário Basílica · Trindade · GO",
+      "credito": "Arquivo publicado em junho de 2026 · Portal Trindade"
+    },
+    {
       "nome": "Hotel e Pousada Arcanjos",
       "categoria": "Hospedagem",
       "grupo": "Comércios e serviços",
@@ -579,6 +640,21 @@
       "nota": "Fotografia de arquivo. Confirme horários, programação e condições de acesso antes da visita.",
       "imagem": "imagens/fichas/portal-trindade-igreja-matriz-1080x1920.png",
       "id": "igreja-matriz"
+    },
+    {
+      "id": "igreja-padre-pelagio",
+      "nome": "Igreja Padre Pelágio",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "A Igreja do Santíssimo Redentor guarda a memória do missionário Padre Pelágio.",
+      "imagem": "imagens/fichas/portal-trindade-igreja-padre-pelagio-1080x1920.png",
+      "fontes": [
+        "https://www.paieterno.com.br/2023/06/07/romaria-2023-conheca-mais-sobre-a-igreja-do-padre-pelagio-em-trindade/",
+        "https://www.paieterno.com.br/2026/02/12/visite-trindade-e-participe-das-celebracoes-no-santuario/"
+      ],
+      "nota": "Foto: Trindade em Família · acervo fornecido. Recorte fotográfico de derivado editorial fornecido pelo usuário, com correspondência à foto real independente; captura desconhecida. Confirme condições de visita nos canais oficiais.",
+      "localizacao": "Praça do Cruzeiro · Setor Ana Rosa · Trindade · GO",
+      "credito": "Foto: Trindade em Família · acervo fornecido"
     },
     {
       "nome": "Igreja Santa Luzia",
@@ -847,6 +923,21 @@
       "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
       "imagem": "imagens/fichas/portal-trindade-napoli-1080x1920.png",
       "id": "napoli-pizzaria"
+    },
+    {
+      "id": "nuvem-doce",
+      "nome": "Nuvem Doce",
+      "categoria": "Sorvetes e Açaí",
+      "grupo": "Comércios e serviços",
+      "descricao": "Sorvetes para se refrescar em Trindade.",
+      "imagem": "imagens/fichas/portal-trindade-nuvem-doce-1080x1920.png",
+      "fontes": [
+        "https://www.instagram.com/p/DeMLwG-HJh_/"
+      ],
+      "nota": "Imagem ilustrativa do acervo. Recriação ilustrativa previamente aprovada; não é fotografia original Confirme funcionamento e produtos diretamente com o estabelecimento.",
+      "instagram": "https://www.instagram.com/nuvemdoce_sorveteria/",
+      "credito": "Arte do acervo editorial do Portal Trindade. A representação foi recriada em outubro de 2026; não é fotografia original.",
+      "tipo_imagem": "Recriação ilustrativa do acervo"
     },
     {
       "nome": "O Melhor Burger",
@@ -1215,6 +1306,22 @@
       "id": "saborosa-jantinha"
     },
     {
+      "id": "sala-dos-milagres",
+      "nome": "Sala dos Milagres",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "Fotos e objetos deixados pelos devotos preservam testemunhos de fé e gratidão.",
+      "imagem": "imagens/fichas/portal-trindade-sala-milagres-1080x1920.png",
+      "fontes": [
+        "https://www.paieterno.com.br/2026/01/22/santuario-pai-eterno-conta-com-visita-guiada/",
+        "https://www.paieterno.com.br/2025/07/01/romaria-do-pai-eterno-conta-com-pontos-de-peregrinacao/",
+        "https://www.instagram.com/reel/DaAw_G-RoX3/"
+      ],
+      "nota": "Arquivo publicado em junho de 2026 · Portal Trindade. Frame real de vídeo publicado pelo Portal Trindade em junho de 2026; data de captura exata não confirmada. Confirme condições de visita nos canais oficiais. O registro de arquivo tem baixa definição.",
+      "localizacao": "Santuário Basílica · piso inferior · Trindade · GO",
+      "credito": "Arquivo publicado em junho de 2026 · Portal Trindade"
+    },
+    {
       "nome": "San Paolo Cantina",
       "categoria": "Pizzarias",
       "grupo": "Comércios e serviços",
@@ -1313,6 +1420,21 @@
       "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
       "imagem": "imagens/fichas/portal-trindade-saori-1080x1920.png",
       "id": "saori-ichiban-delivery"
+    },
+    {
+      "id": "sorveart",
+      "nome": "Sorveart",
+      "categoria": "Sorvetes e Açaí",
+      "grupo": "Comércios e serviços",
+      "descricao": "Sorvetes para se refrescar em Trindade.",
+      "imagem": "imagens/fichas/portal-trindade-sorveart-1080x1920.png",
+      "fontes": [
+        "https://www.instagram.com/p/DeMLwG-HJh_/"
+      ],
+      "nota": "Imagem ilustrativa do acervo. Recriação ilustrativa previamente aprovada; não é fotografia original Confirme funcionamento e produtos diretamente com o estabelecimento.",
+      "instagram": "https://www.instagram.com/sorveartoficial/",
+      "credito": "Arte do acervo editorial do Portal Trindade. A representação foi recriada em outubro de 2026; não é fotografia original.",
+      "tipo_imagem": "Recriação ilustrativa do acervo"
     },
     {
       "nome": "Start Life Vila Pai Eterno",
@@ -1508,6 +1630,21 @@
       "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
       "imagem": "imagens/fichas/portal-trindade-vila-barro-branco-1080x1920.png",
       "id": "vila-barro-branco"
+    },
+    {
+      "id": "vila-sao-cottolengo",
+      "nome": "Vila São Cottolengo",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "Conhecida como Santuário do Irmão, une fé, acolhimento e cuidado em Trindade.",
+      "imagem": "imagens/fichas/portal-trindade-vila-sao-cottolengo-1080x1920.png",
+      "fontes": [
+        "https://cottolengo.org.br/?page_id=84",
+        "https://www.paieterno.com.br/2026/02/12/visite-trindade-e-participe-das-celebracoes-no-santuario/"
+      ],
+      "nota": "Imagem de arquivo fornecida. Fotografia de arquivo fornecida e identificada pelo usuário; captura e autoria não declaradas. Confirme condições de visita nos canais oficiais.",
+      "localizacao": "Av. Cel. Gabriel A. de Carvalho, 163 · Bairro Santuário · Trindade–GO",
+      "credito": "Imagem de arquivo fornecida"
     },
     {
       "nome": "Vovó Zica – Churrasco na Brasa",
