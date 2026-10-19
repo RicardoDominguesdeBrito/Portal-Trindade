@@ -188,5 +188,8 @@ def main():
         urls=[BASE]+[BASE+p for p in pages if p!='index.html']+[BASE+'guias/'+c['slug']+'.html' for c in collections]+[BASE+'guias/'+a['slug']+'.html' for a in city.articles]
         (out/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{escape(url)}</loc><lastmod>{DATE}</lastmod></url>' for url in urls)+'</urlset>\n')
         (out/'robots.txt').write_text('User-agent: *\nAllow: /\nDisallow: /previa-2026/\nSitemap: '+BASE+'sitemap.xml\n')
+    from build_fichas import build as build_fichas
+    build_fichas(out)
     print(json.dumps({'paginas':len(pages)+len(collections)+len(city.articles)+1,'artigos':len(city.articles),'respostas':len(city.questions),'guias':len(collections),'lugares':sum(len(c['itens']) for c in collections),'hospedagens':len(lodgings['estabelecimentos']),'destino':str(out)},ensure_ascii=False))
 if __name__=='__main__':main()
+

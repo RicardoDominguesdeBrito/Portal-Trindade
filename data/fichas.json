@@ -1,0 +1,1539 @@
+{
+  "atualizado_em": "2026-10-19",
+  "fichas": [
+    {
+      "nome": "100spin",
+      "categoria": "Pesque-pague",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/100spin/",
+      "fontes": [
+        "https://www.instagram.com/p/DeXI74EnGO8/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-100spin-1080x1920.png",
+      "id": "100spin"
+    },
+    {
+      "nome": "Açaí do Ninja",
+      "categoria": "Sorvetes e Açaí",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/acaidoninja_trindade/",
+      "fontes": [
+        "https://www.instagram.com/p/DdorRqiHOJe/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-acai-do-ninja-1080x1920.png",
+      "id": "acai-do-ninja"
+    },
+    {
+      "nome": "Adega & Restaurante Bentos",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/adegabentos/",
+      "fontes": [
+        "https://www.instagram.com/p/DcdoNuwFhLr/",
+        "https://www.instagram.com/p/DcmSwjgjwyZ/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-adegabentos-1080x1920.png",
+      "id": "adega-restaurante-bentos"
+    },
+    {
+      "nome": "Agridoce Sabores",
+      "categoria": "Doces",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/agridocego/",
+      "fontes": [
+        "https://www.instagram.com/p/DeokT68HKkY/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-agridoce-1080x1920.png",
+      "id": "agridoce-sabores"
+    },
+    {
+      "nome": "Arca Parque",
+      "categoria": "Turismo",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/arcaparque/",
+      "fontes": [
+        "https://www.instagram.com/p/DXy4WcHlr2S/",
+        "https://www.instagram.com/p/DeCr7lnGTFp/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-arcaparque-1080x1920.png",
+      "id": "arca-parque"
+    },
+    {
+      "nome": "Arte do Milho",
+      "categoria": "Lanches",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/arte_domilho/",
+      "fontes": [
+        "https://www.instagram.com/p/DdSVrisjUoC/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-artedomilho-1080x1920.png",
+      "id": "arte-do-milho"
+    },
+    {
+      "nome": "Artesanato de Santa Maria",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "Peças artesanais e aprendizado valorizam a cultura local no distrito de Santa Maria.",
+      "localizacao": "Distrito de Santa Maria · Trindade–GO",
+      "fontes": [
+        "https://leis.trindade.go.gov.br/leis/1643/lei-1840-2018",
+        "https://trindade.go.gov.br/distrito-de-santa-maria-ganha-escola-de-artesanato-e-feira-de-cultura-mensal/"
+      ],
+      "nota": "Fotografia de arquivo. Confirme horários, programação e condições de acesso antes da visita.",
+      "imagem": "imagens/fichas/portal-trindade-artesanato-santa-maria-1080x1920.png",
+      "id": "artesanato-de-santa-maria"
+    },
+    {
+      "nome": "Baronesa Cozinha Urbana",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/baronesa.cozinhaurbana/",
+      "fontes": [
+        "https://www.instagram.com/p/Ddq90QVnMsT/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-baronesa-1080x1920.png",
+      "id": "baronesa-cozinha-urbana"
+    },
+    {
+      "nome": "Barzin de Esquina",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/barzindeesquina/",
+      "fontes": [
+        "https://www.instagram.com/p/DeCr7lnGTFp/",
+        "https://www.instagram.com/p/DeRSSBJHM55/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-barzin-de-esquina-1080x1920.png",
+      "id": "barzin-de-esquina"
+    },
+    {
+      "nome": "Bruttie Casa de Pães",
+      "categoria": "Padarias",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/bruttiecasadepaes/",
+      "fontes": [
+        "https://www.instagram.com/p/DeokT68HKkY/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-bruttie-casa-de-paes-1080x1920.png",
+      "id": "bruttie-casa-de-paes"
+    },
+    {
+      "nome": "Caminho da Paixão",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "A Via-Sacra liga a Basílica à Igreja Padre Pelágio.",
+      "localizacao": "Avenida Constantino Xavier · Trindade–GO",
+      "fontes": [
+        "https://www.paieterno.com.br/2023/06/07/romaria-2023-conheca-mais-sobre-a-igreja-do-padre-pelagio-em-trindade/",
+        "https://trindade.go.gov.br/avanca-trindade-inicia-revitalizacao-do-eixo-entre-basilica-do-divino-pai-eterno-e-igreja-padre-pelagio/"
+      ],
+      "nota": "Fotografia de arquivo. Confirme horários, programação e condições de acesso antes da visita.",
+      "imagem": "imagens/fichas/portal-trindade-caminho-da-paixao-1080x1920.png",
+      "id": "caminho-da-paixao"
+    },
+    {
+      "nome": "Capela São José",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "Um lugar de fé no Santo Onofre, a Comunidade São José integra a Paróquia Divino Pai Eterno de Trindade.",
+      "localizacao": "Av. São Pedro, 270 · Santo Onofre · Trindade–GO",
+      "fontes": [
+        "https://arquidiocesedegoiania.org.br/paroquia/divino-pai-eterno-trindade/"
+      ],
+      "nota": "Fotografia de arquivo. Confirme horários, programação e condições de acesso antes da visita.",
+      "imagem": "imagens/fichas/portal-trindade-capela-sao-jose-1080x1920.png",
+      "id": "capela-sao-jose"
+    },
+    {
+      "nome": "Carinho de Vó – Cucina & Pizzaria",
+      "categoria": "Pizzarias",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/pizzariacarinhodevo/",
+      "fontes": [
+        "https://www.instagram.com/p/DdfSin0txvJ/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-carinho-de-vo-1080x1920.png",
+      "id": "carinho-de-vo-cucina-pizzaria"
+    },
+    {
+      "nome": "Carmelo da Santíssima Trindade",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "Inaugurado em 2009, abriga as Irmãs Carmelitas. A capela pública e o pátio externo são espaços associados à oração e à contemplação.",
+      "localizacao": "Avenida Manoel Monteiro",
+      "fontes": [
+        "https://www.paieterno.com.br/home-basilica/trindade/",
+        "https://www.paieterno.com.br/2017/06/23/visite-os-principais-pontos-de-peregrinacao-em-trindade/"
+      ],
+      "nota": "Fotografia de arquivo. Confirme horários, programação e condições de acesso antes da visita.",
+      "imagem": "imagens/fichas/portal-trindade-carmelo-1080x1920.png",
+      "id": "carmelo-da-santissima-trindade"
+    },
+    {
+      "nome": "Carne com Mandioca",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/carnecommandioca/",
+      "fontes": [
+        "https://www.instagram.com/p/DcdoNuwFhLr/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-carnecommandioca-1080x1920.png",
+      "id": "carne-com-mandioca"
+    },
+    {
+      "nome": "Carne de Sol 62",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/carnedesol.62ofc/",
+      "fontes": [
+        "https://www.instagram.com/p/Ddq90QVnMsT/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-carnedesol62-1080x1920.png",
+      "id": "carne-de-sol-62"
+    },
+    {
+      "nome": "Carro de Boi",
+      "categoria": "Pesque-pague",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/pesquepaguecarrodeb/",
+      "fontes": [
+        "https://www.instagram.com/p/DeXI74EnGO8/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-carrodeboi-1080x1920.png",
+      "id": "carro-de-boi"
+    },
+    {
+      "nome": "Casa22",
+      "categoria": "Lanches",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/casa22.food/",
+      "fontes": [
+        "https://www.instagram.com/p/DdDSeHvDbwH/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-casa22-1080x1920.png",
+      "id": "casa22"
+    },
+    {
+      "nome": "Cebolinha",
+      "categoria": "Mercados",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/super_cebolinha/",
+      "fontes": [
+        "https://www.instagram.com/p/DeSEjs-Dx4K/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-cebolinha-1080x1920.png",
+      "id": "cebolinha"
+    },
+    {
+      "nome": "Chama Hamburgueria e Gastrobar",
+      "categoria": "Lanches",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/chamagastrobar/",
+      "fontes": [
+        "https://www.instagram.com/p/DdDSeHvDbwH/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-chama-1080x1920.png",
+      "id": "chama-hamburgueria-e-gastrobar"
+    },
+    {
+      "nome": "Chiquinho Sorvetes",
+      "categoria": "Sorvetes e Açaí",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/chiquinho.trindade/",
+      "fontes": [
+        "https://www.instagram.com/p/DeMLwG-HJh_/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-chiquinho-1080x1920.png",
+      "id": "chiquinho-sorvetes"
+    },
+    {
+      "nome": "Cibeles Café e Restaurante",
+      "categoria": "Cafés",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/cafecibeles/",
+      "fontes": [
+        "https://www.instagram.com/p/DZUpV_9RLxS/",
+        "https://www.instagram.com/p/DZmv_BHRd3r/",
+        "https://www.instagram.com/p/DbkzGa_RDBS/",
+        "https://www.instagram.com/reel/Db215WFxzBe/",
+        "https://www.instagram.com/reel/DcIvSbCRvs0/",
+        "https://www.instagram.com/p/DcazFT_lgD4/",
+        "https://www.instagram.com/p/DcmSwjgjwyZ/",
+        "https://www.instagram.com/p/Dcs0qU6nIh7/",
+        "https://www.instagram.com/p/DcznEt8DV9D/",
+        "https://www.instagram.com/p/DdCtXdGnGTr/",
+        "https://www.instagram.com/p/DdQ6xjenNiN/",
+        "https://www.instagram.com/p/DdTwhT8x1YQ/",
+        "https://www.instagram.com/p/Ddi5UJgDSMn/",
+        "https://www.instagram.com/p/Dd064mvjWlq/",
+        "https://www.instagram.com/p/DeHBsklHHqZ/",
+        "https://www.instagram.com/p/DeeEMcOj0sg/",
+        "https://www.instagram.com/p/DefIourGU-g/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-cibeles-1080x1920.png",
+      "id": "cibeles-cafe-e-restaurante"
+    },
+    {
+      "nome": "Cineteatro Afipe",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "O antigo cinema de Trindade, de arquitetura art déco, ganhou novo nome após restauração e ampliação. Um espaço de cultura, encontros e evangelização.",
+      "localizacao": "Rua Dr. Irany Ferreira, 26 · Centro",
+      "fontes": [
+        "https://www.paieterno.com.br/home-basilica/trindade/",
+        "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeGeral-9b6.pdf"
+      ],
+      "nota": "Fotografia de arquivo. Confirme horários, programação e condições de acesso antes da visita.",
+      "credito": "Fotografia: Laczkowski, 25/07/2020 · Wikimedia Commons. Arte editorial adaptada.",
+      "licenca": "Fotografia e adaptação: CC BY-SA 4.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "fonte_foto": "https://commons.wikimedia.org/wiki/File:Cineteatro_Afipe_em_2020.jpg",
+      "imagem": "imagens/fichas/portal-trindade-cineteatro-afipe-1080x1920.png",
+      "id": "cineteatro-afipe"
+    },
+    {
+      "nome": "Costa Atacadão",
+      "categoria": "Mercados",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/costaatacadao/",
+      "fontes": [
+        "https://www.instagram.com/p/DeSEjs-Dx4K/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-costa-atacadao-1080x1920.png",
+      "id": "costa-atacadao"
+    },
+    {
+      "nome": "Daiō Sushi",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/daiosushi/",
+      "fontes": [
+        "https://www.instagram.com/p/Dc3H4xxDVqm/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-daio-1080x1920.png",
+      "id": "daio-sushi"
+    },
+    {
+      "nome": "Daora Jantinha",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/daora_jantinha/",
+      "fontes": [
+        "https://www.instagram.com/p/DeOzzEYHMSm/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-daora-1080x1920.png",
+      "id": "daora-jantinha"
+    },
+    {
+      "nome": "Dona Moça Confeitaria",
+      "categoria": "Doces",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/donamocaalimentos/",
+      "fontes": [
+        "https://www.instagram.com/p/DcTlzXHlgnM/",
+        "https://www.instagram.com/p/DeokT68HKkY/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-dona-moca-1080x1920.png",
+      "id": "dona-moca-confeitaria"
+    },
+    {
+      "nome": "Drogaria Big Popular",
+      "categoria": "Drogarias",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/drogariabigpopular/",
+      "fontes": [
+        "https://www.instagram.com/p/DeCr7lnGTFp/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-drogaria-big-popular-1080x1920.png",
+      "id": "drogaria-big-popular"
+    },
+    {
+      "nome": "Duo Gelatto",
+      "categoria": "Sorvetes e Açaí",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/duogelattotrindade/",
+      "fontes": [
+        "https://www.instagram.com/p/DeMLwG-HJh_/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-duo-gelatto-1080x1920.png",
+      "id": "duo-gelatto"
+    },
+    {
+      "nome": "Empório do Pastel Trindade",
+      "categoria": "Lanches",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/emporiodopasteltrindade/",
+      "fontes": [
+        "https://www.instagram.com/p/DcfQfCkjSD3/",
+        "https://www.instagram.com/p/Dd4NsSgHKc2/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-emporio-do-pastel-1080x1920.png",
+      "id": "emporio-do-pastel-trindade"
+    },
+    {
+      "nome": "Espetinho de Ouro",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/espetinhodeourooo/",
+      "fontes": [
+        "https://www.instagram.com/p/DeOzzEYHMSm/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-espetinho-de-ouro-1080x1920.png",
+      "id": "espetinho-de-ouro"
+    },
+    {
+      "nome": "Florybal Trindade",
+      "categoria": "Doces",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/florybaltrindade/",
+      "fontes": [
+        "https://www.instagram.com/reel/DaC8-TOx0uo/",
+        "https://www.instagram.com/p/DcznEt8DV9D/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-florybal-1080x1920.png",
+      "id": "florybal-trindade"
+    },
+    {
+      "nome": "Frutos de Goiás",
+      "categoria": "Sorvetes e Açaí",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/frutosdegoias.trindade/",
+      "fontes": [
+        "https://www.instagram.com/p/DeMLwG-HJh_/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-frutosdegoias-1080x1920.png",
+      "id": "frutos-de-goias"
+    },
+    {
+      "nome": "Hotel e Pousada Arcanjos",
+      "categoria": "Hospedagem",
+      "grupo": "Comércios e serviços",
+      "instagram": null,
+      "fontes": [],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-hotel-pousada-arcanjos-1080x1920.png",
+      "id": "hotel-e-pousada-arcanjos"
+    },
+    {
+      "nome": "Hotel Liguori",
+      "categoria": "Hospedagem",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/liguori.hotel/",
+      "fontes": [
+        "https://www.instagram.com/p/Dcf8tw5jwbH/",
+        "https://www.instagram.com/p/DcmSwjgjwyZ/",
+        "https://www.instagram.com/reel/DeOv78cxN8E/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-liguori-1080x1920.png",
+      "id": "hotel-liguori"
+    },
+    {
+      "nome": "Hotel Marina Torrano III",
+      "categoria": "Hospedagem",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/hotelmarinatorrano/",
+      "fontes": [
+        "https://www.instagram.com/reel/DeOv78cxN8E/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-marina-1080x1920.png",
+      "id": "hotel-marina-torrano-iii"
+    },
+    {
+      "nome": "Hotel Padre Pelágio",
+      "categoria": "Hospedagem",
+      "grupo": "Comércios e serviços",
+      "instagram": null,
+      "fontes": [],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-padre-pelagio-1080x1920.png",
+      "id": "hotel-padre-pelagio"
+    },
+    {
+      "nome": "Hotel Pousada Recanto do Pai",
+      "categoria": "Hospedagem",
+      "grupo": "Comércios e serviços",
+      "instagram": null,
+      "fontes": [
+        "https://www.instagram.com/p/Dcf8tw5jwbH/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-recanto-do-pai-1080x1920.png",
+      "id": "hotel-pousada-recanto-do-pai"
+    },
+    {
+      "nome": "Hotel Recanto Goiano",
+      "categoria": "Hospedagem",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/recantogoiano.hotel/",
+      "fontes": [
+        "https://www.instagram.com/p/Dcf8tw5jwbH/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-recantogoiano-1080x1920.png",
+      "id": "hotel-recanto-goiano"
+    },
+    {
+      "nome": "Hotel Turismo Trindade",
+      "categoria": "Hospedagem",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/eusouhotelturismo/",
+      "fontes": [
+        "https://www.instagram.com/p/Dcf8tw5jwbH/",
+        "https://www.instagram.com/reel/DeOv78cxN8E/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-hotelturismo-1080x1920.png",
+      "id": "hotel-turismo-trindade"
+    },
+    {
+      "nome": "Ibá Açaí Trindade",
+      "categoria": "Sorvetes e Açaí",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/ibaacai.trindade/",
+      "fontes": [
+        "https://www.instagram.com/p/DdsCjakxyK4/",
+        "https://www.instagram.com/reel/DdufgyAvmux/",
+        "https://www.instagram.com/reel/Ddwgh3-Rk5q/",
+        "https://www.instagram.com/p/DeMLwG-HJh_/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-iba-acai-1080x1920.png",
+      "id": "iba-acai-trindade"
+    },
+    {
+      "nome": "Igreja Matriz",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "Inaugurada em 1912, a Igreja Matriz é o primeiro Santuário do Divino Pai Eterno. Sua história acompanha a devoção que marcou Trindade.",
+      "localizacao": "Praça do Santuário · Centro · Trindade–GO",
+      "fontes": [
+        "https://www.paieterno.com.br/home-basilica/igreja-matriz/",
+        "https://arquidiocesedegoiania.org.br/paroquia/divino-pai-eterno-trindade/"
+      ],
+      "nota": "Fotografia de arquivo. Confirme horários, programação e condições de acesso antes da visita.",
+      "imagem": "imagens/fichas/portal-trindade-igreja-matriz-1080x1920.png",
+      "id": "igreja-matriz"
+    },
+    {
+      "nome": "Igreja Santa Luzia",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "Uma das igrejas reconhecidas como unidades especiais de interesse cultural de Trindade, reúne a comunidade na devoção a Santa Luzia.",
+      "localizacao": "Av. Francisco Paulo Ramos, 420 · Vila Pai Eterno · Trindade–GO",
+      "fontes": [
+        "https://arquidiocesedegoiania.org.br/paroquia/divino-pai-eterno-trindade/",
+        "https://leis.trindade.go.gov.br/leis/757/lei-complementar-025-2016"
+      ],
+      "nota": "Fotografia de arquivo. Confirme horários, programação e condições de acesso antes da visita.",
+      "imagem": "imagens/fichas/portal-trindade-santa-luzia-1080x1920.png",
+      "id": "igreja-santa-luzia"
+    },
+    {
+      "nome": "Igreja Santos Reis",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "A igreja está ligada às celebrações das Folias de Reis e integra a relação municipal de bens de interesse cultural.",
+      "localizacao": "Rua 5 com Rua Aleixo Antônio Alves · Setor Oeste · Trindade–GO",
+      "fontes": [
+        "https://arquidiocesedegoiania.org.br/paroquia/divino-pai-eterno-trindade/",
+        "https://leis.trindade.go.gov.br/leis/757/lei-complementar-025-2016",
+        "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeGeral-9b6.pdf"
+      ],
+      "nota": "Fotografia de arquivo. Confirme horários, programação e condições de acesso antes da visita.",
+      "imagem": "imagens/fichas/portal-trindade-santos-reis-1080x1920.png",
+      "id": "igreja-santos-reis"
+    },
+    {
+      "nome": "Imperial",
+      "categoria": "Mercados",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/supimperial/",
+      "fontes": [
+        "https://www.instagram.com/p/DeSEjs-Dx4K/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-supermercado-imperial-1080x1920.png",
+      "id": "imperial"
+    },
+    {
+      "nome": "Indústria do Milho",
+      "categoria": "Lanches",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/industriadomilho.oficial/",
+      "fontes": [
+        "https://www.instagram.com/p/Dase8PLRGkA/",
+        "https://www.instagram.com/p/DdSVrisjUoC/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-industria-do-milho-1080x1920.png",
+      "id": "industria-do-milho"
+    },
+    {
+      "nome": "Juscy e Edinho",
+      "categoria": "Lanches",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/juscyeedinhobeere/",
+      "fontes": [
+        "https://www.instagram.com/p/DbRRBD4PdQV/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-juscy-e-edinho-1080x1920.png",
+      "id": "juscy-e-edinho"
+    },
+    {
+      "nome": "Kariny Pires Academia Personalizada",
+      "categoria": "Fitness",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/academiakarinypires/",
+      "fontes": [
+        "https://www.instagram.com/p/DdbgDA2nO71/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-karinypires-1080x1920.png",
+      "id": "kariny-pires-academia-personalizada"
+    },
+    {
+      "nome": "Kika Frios",
+      "categoria": "Compras",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/kikafriosoficial/",
+      "fontes": [
+        "https://www.instagram.com/p/DbGUM0TRBil/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-kika-frios-1080x1920.png",
+      "id": "kika-frios"
+    },
+    {
+      "nome": "Kiray Sushi",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/kiray_sushi/",
+      "fontes": [
+        "https://www.instagram.com/p/Dc3H4xxDVqm/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-kiray-1080x1920.png",
+      "id": "kiray-sushi"
+    },
+    {
+      "nome": "La Casa Bar & Cozinha",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/lacasabarecozinha/",
+      "fontes": [
+        "https://www.instagram.com/p/DcdoNuwFhLr/",
+        "https://www.instagram.com/p/Ddq90QVnMsT/",
+        "https://www.instagram.com/p/DeRSSBJHM55/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-la-casa-1080x1920.png",
+      "id": "la-casa-bar-cozinha"
+    },
+    {
+      "nome": "LA Studio Fitness",
+      "categoria": "Fitness",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/lastudiofitness/",
+      "fontes": [
+        "https://www.instagram.com/p/DdbgDA2nO71/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-lastudiofitness-1080x1920.png",
+      "id": "la-studio-fitness"
+    },
+    {
+      "nome": "Le Petit Confeitaria",
+      "categoria": "Doces",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/le_petitconfeitaria/",
+      "fontes": [
+        "https://www.instagram.com/p/DbZD4vpP-gk/",
+        "https://www.instagram.com/p/DeokT68HKkY/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-le-petit-1080x1920.png",
+      "id": "le-petit-confeitaria"
+    },
+    {
+      "nome": "Loja Oficial Pai Eterno",
+      "categoria": "Compras",
+      "grupo": "Comércios e serviços",
+      "instagram": null,
+      "fontes": [
+        "https://www.instagram.com/reel/DZ-Gq4RRFCI/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-loja-oficial-pai-eterno-1080x1920.png",
+      "id": "loja-oficial-pai-eterno"
+    },
+    {
+      "nome": "Loja Santuário Pai Eterno",
+      "categoria": "Compras",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/lojasantuariopaieterno/",
+      "fontes": [],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-loja-novo-santuario-1080x1920.png",
+      "id": "loja-santuario-pai-eterno"
+    },
+    {
+      "nome": "LS Pastéis",
+      "categoria": "Lanches",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/lspasteis/",
+      "fontes": [
+        "https://www.instagram.com/p/Dd4NsSgHKc2/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-lspasteis-1080x1920.png",
+      "id": "ls-pasteis"
+    },
+    {
+      "nome": "Luan Sanduicheria",
+      "categoria": "Lanches",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/luansanduicheria/",
+      "fontes": [
+        "https://www.instagram.com/p/Ddq90QVnMsT/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-luan-1080x1920.png",
+      "id": "luan-sanduicheria"
+    },
+    {
+      "nome": "Mais Doces Sabrina",
+      "categoria": "Doces",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/maisdocessabrina/",
+      "fontes": [
+        "https://www.instagram.com/p/DeokT68HKkY/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-mais-doces-sabrina-1080x1920.png",
+      "id": "mais-doces-sabrina"
+    },
+    {
+      "nome": "Manda Pudim",
+      "categoria": "Doces",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/mandapudimgo/",
+      "fontes": [
+        "https://www.instagram.com/p/DeokT68HKkY/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-manda-pudim-1080x1920.png",
+      "id": "manda-pudim"
+    },
+    {
+      "nome": "Milky Moo",
+      "categoria": "Sorvetes e Açaí",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/milkymoo_trindadego/",
+      "fontes": [
+        "https://www.instagram.com/p/DeMLwG-HJh_/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-milkymoo-1080x1920.png",
+      "id": "milky-moo"
+    },
+    {
+      "nome": "Museu da Memória",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "Documentos, fotografias, obras de arte e objetos ajudam a contar a história da cidade e de sua tradição religiosa.",
+      "localizacao": "Rua 16 de Julho com Av. Major Manoel Alves · Trindade–GO",
+      "fontes": [
+        "https://cadastro.museus.gov.br/museus/museu-da-memoria-de-trindade/",
+        "https://trindade.go.gov.br/exposicao-celebra-carnavais-antigos-de-trindade-com-imagens-cedidas-por-moradores/",
+        "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeGeral-9b6.pdf"
+      ],
+      "nota": "Fotografia de arquivo. Confirme horários, programação e condições de acesso antes da visita.",
+      "imagem": "imagens/fichas/portal-trindade-museu-da-memoria-1080x1920.png",
+      "id": "museu-da-memoria"
+    },
+    {
+      "nome": "Napoli Pizzaria",
+      "categoria": "Pizzarias",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/napolipizzas_/",
+      "fontes": [
+        "https://www.instagram.com/p/DcV1T0WljzY/",
+        "https://www.instagram.com/p/DcjUjxbHDPc/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-napoli-1080x1920.png",
+      "id": "napoli-pizzaria"
+    },
+    {
+      "nome": "O Melhor Burger",
+      "categoria": "Lanches",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/omelhor.burger/",
+      "fontes": [
+        "https://www.instagram.com/p/DdDSeHvDbwH/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-omelhor-1080x1920.png",
+      "id": "o-melhor-burger"
+    },
+    {
+      "nome": "Obras do Novo Santuário",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "A construção da nova casa do Divino Pai Eterno integra o roteiro de fé de Trindade.",
+      "localizacao": "Novo Santuário · Trindade–GO",
+      "fontes": [
+        "https://www.paieterno.com.br/2026/07/27/santuario-de-esperanca-e-fe-visite-a-nova-casa-do-pai/",
+        "https://www.paieterno.com.br/2026/09/25/nova-casa-do-pai-avanca-com-concretagem/"
+      ],
+      "nota": "Arquivo publicado em junho de 2026. Data da captura não confirmada. Obra em andamento; confirme as condições atuais de visitação.",
+      "fonte_foto": "https://www.instagram.com/reel/DZ1G6ZON3Bq/",
+      "imagem": "imagens/fichas/portal-trindade-obras-novo-santuario-1080x1920.png",
+      "id": "obras-do-novo-santuario"
+    },
+    {
+      "nome": "Óticas Vitorya",
+      "categoria": "Compras",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/oticas_vitorya/",
+      "fontes": [],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-oticas-vitorya-1080x1920.png",
+      "id": "oticas-vitorya"
+    },
+    {
+      "nome": "Palato Churrascaria & Restaurante",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/palato.restaurante/",
+      "fontes": [
+        "https://www.instagram.com/p/DcmSwjgjwyZ/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-palato-1080x1920.png",
+      "id": "palato-churrascaria-restaurante"
+    },
+    {
+      "nome": "Pamonharia Borges",
+      "categoria": "Lanches",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/pamonhariaborgesoficial/",
+      "fontes": [
+        "https://www.instagram.com/p/DcMqzjLv-NR/",
+        "https://www.instagram.com/p/DdSVrisjUoC/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-borges-1080x1920.png",
+      "id": "pamonharia-borges"
+    },
+    {
+      "nome": "Panificadora Adore",
+      "categoria": "Padarias",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/panificadoraadore/",
+      "fontes": [
+        "https://www.instagram.com/p/DeokT68HKkY/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-adore-1080x1920.png",
+      "id": "panificadora-adore"
+    },
+    {
+      "nome": "Panificadora Jumbo2",
+      "categoria": "Padarias",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/panificadora_jumbo2/",
+      "fontes": [
+        "https://www.instagram.com/p/DeokT68HKkY/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-jumbo2-1080x1920.png",
+      "id": "panificadora-jumbo2"
+    },
+    {
+      "nome": "Papito's Gastro House",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/papitosgastrohouse/",
+      "fontes": [
+        "https://www.instagram.com/p/Ddq90QVnMsT/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-papitos-1080x1920.png",
+      "id": "papito-s-gastro-house"
+    },
+    {
+      "nome": "Paraíso",
+      "categoria": "Pesque-pague",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/pesque_pague_paraiso/",
+      "fontes": [
+        "https://www.instagram.com/p/DeXI74EnGO8/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-paraiso-1080x1920.png",
+      "id": "paraiso"
+    },
+    {
+      "nome": "Parque Lara Guimarães",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "Área verde de convivência com lagos e espaços de caminhada. Um dos principais locais de esporte e lazer ao ar livre de Trindade.",
+      "localizacao": "Rua Santo Antônio · Vila Padre Renato · Trindade–GO",
+      "fontes": [
+        "https://trindade.go.gov.br/monitorado-pela-prefeitura-acesso-ao-parque-lara-guimaraes-cresceu-em-julho/",
+        "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeGeral-9b6.pdf",
+        "https://trindade.go.gov.br/prefeitura-de-trindade-informa-suspensao-temporaria-das-atividades-no-kartodromo-municipal/"
+      ],
+      "nota": "Fotografia de arquivo. Confirme horários, programação e condições de acesso antes da visita. A Prefeitura anunciou a suspensão do kartódromo em 03/06/2026; confirme eventual reabertura.",
+      "imagem": "imagens/fichas/portal-trindade-parque-lara-guimaraes-1080x1920.png",
+      "id": "parque-lara-guimaraes"
+    },
+    {
+      "nome": "Pesque Pague Pintado",
+      "categoria": "Pesque-pague",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/pesquepaguepintado/",
+      "fontes": [
+        "https://www.instagram.com/reel/DdLrEcHx19O/",
+        "https://www.instagram.com/p/Dddvv2jnEer/",
+        "https://www.instagram.com/p/Ddv2e7GnO09/",
+        "https://www.instagram.com/reel/DeB1whyxLHL/",
+        "https://www.instagram.com/p/DeXI74EnGO8/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-pintado-1080x1920.png",
+      "id": "pesque-pague-pintado"
+    },
+    {
+      "nome": "Pizza do Gaúcho",
+      "categoria": "Pizzarias",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/pizza_do_gaucho/",
+      "fontes": [
+        "https://www.instagram.com/p/DcjUjxbHDPc/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-pizza-do-gaucho-1080x1920.png",
+      "id": "pizza-do-gaucho"
+    },
+    {
+      "nome": "Pizzaria Casarão",
+      "categoria": "Pizzarias",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/pcasarao/",
+      "fontes": [
+        "https://www.instagram.com/p/DcjUjxbHDPc/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-casarao-1080x1920.png",
+      "id": "pizzaria-casarao"
+    },
+    {
+      "nome": "Portal da Fé",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "Inaugurado em 2011, o monumento recebe quem chega a Trindade e apresenta a imagem da Santíssima Trindade coroando Maria.",
+      "localizacao": "Entrada da cidade · Av. Raimundo de Aquino",
+      "fontes": [
+        "https://www.paieterno.com.br/2017/04/07/por-que-trindade-e-a-capital-da-fe-de-goias-2/",
+        "https://goias.gov.br/turismo/wp-content/uploads/sites/4/2020/10/TrindadeGeral-9b6.pdf"
+      ],
+      "nota": "Fotografia de arquivo. Confirme horários, programação e condições de acesso antes da visita.",
+      "credito": "Fotografia: Josue Marinho, 2013 · Wikimedia Commons. Arte editorial adaptada.",
+      "licenca": "CC BY 3.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/",
+      "imagem": "imagens/fichas/portal-trindade-portal-da-fe-1080x1920.png",
+      "id": "portal-da-fe",
+      "fonte_foto": "https://commons.wikimedia.org/wiki/File:Trindade_GO_Brasil_-_Portal_da_cidade_-_panoramio.jpg"
+    },
+    {
+      "nome": "Pousada Flor dos Ipês",
+      "categoria": "Hospedagem",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/pousadaflordosipes/",
+      "fontes": [
+        "https://www.instagram.com/reel/DeOv78cxN8E/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-pousada-flor-dos-ipes-1080x1920.png",
+      "id": "pousada-flor-dos-ipes"
+    },
+    {
+      "nome": "Prime Store Tecnologia",
+      "categoria": "Compras",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/primestoretecnologia/",
+      "fontes": [
+        "https://www.instagram.com/p/DcSObBMDVRc/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-prime-1080x1920.png",
+      "id": "prime-store-tecnologia"
+    },
+    {
+      "nome": "Prosear Pizzas Artesanais",
+      "categoria": "Pizzarias",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/prosear_pizzaria/",
+      "fontes": [
+        "https://www.instagram.com/p/DcjUjxbHDPc/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-prosear-1080x1920.png",
+      "id": "prosear-pizzas-artesanais"
+    },
+    {
+      "nome": "Quintal Gelatos",
+      "categoria": "Sorvetes e Açaí",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/quintalgelatos/",
+      "fontes": [
+        "https://www.instagram.com/p/DeCr7lnGTFp/",
+        "https://www.instagram.com/p/DeMLwG-HJh_/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-quintal-gelatos-1080x1920.png",
+      "id": "quintal-gelatos"
+    },
+    {
+      "nome": "Rafael Almeida Doces",
+      "categoria": "Doces",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/rafaelalmeidadoces/",
+      "fontes": [
+        "https://www.instagram.com/p/DeokT68HKkY/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-rafael-almeida-1080x1920.png",
+      "id": "rafael-almeida-doces"
+    },
+    {
+      "nome": "Rancho Bentos",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/rancho.bentos/",
+      "fontes": [
+        "https://www.instagram.com/p/Ddq90QVnMsT/",
+        "https://www.instagram.com/p/DeRSSBJHM55/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-rancho-bentos-1080x1920.png",
+      "id": "rancho-bentos"
+    },
+    {
+      "nome": "Rede Posto Brasil",
+      "categoria": "Serviços",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/redepostobrasil/",
+      "fontes": [
+        "https://www.instagram.com/reel/DeCMNw5x0oA/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-rede-posto-brasil-1080x1920.png",
+      "id": "rede-posto-brasil"
+    },
+    {
+      "nome": "Restaurante Dora",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/restaurantesdora/",
+      "fontes": [
+        "https://www.instagram.com/p/DcmSwjgjwyZ/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-dora-1080x1920.png",
+      "id": "restaurante-dora"
+    },
+    {
+      "nome": "Rosângela Salgados",
+      "categoria": "Lanches",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/salgados.rosangela/",
+      "fontes": [
+        "https://www.instagram.com/p/DeokT68HKkY/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-rosangela-salgados-1080x1920.png",
+      "id": "rosangela-salgados"
+    },
+    {
+      "nome": "Rota 060 Hamburgueria Artesanal",
+      "categoria": "Lanches",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/rota060humbugeria/",
+      "fontes": [
+        "https://www.instagram.com/p/DdDSeHvDbwH/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-rota060-1080x1920.png",
+      "id": "rota-060-hamburgueria-artesanal"
+    },
+    {
+      "nome": "Royal Black Lounge",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/royalblackloungeoficial/",
+      "fontes": [
+        "https://www.instagram.com/p/DeRSSBJHM55/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-royal-black-1080x1920.png",
+      "id": "royal-black-lounge"
+    },
+    {
+      "nome": "Sabor de Casa Bolos Caseiros",
+      "categoria": "Doces",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/sabordecasatrindade/",
+      "fontes": [
+        "https://www.instagram.com/p/DbGQTIKRWZp/",
+        "https://www.instagram.com/p/DeokT68HKkY/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-sabor-de-casa-1080x1920.png",
+      "id": "sabor-de-casa-bolos-caseiros"
+    },
+    {
+      "nome": "Saborosa Jantinha",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/saborosa_jantinha_/",
+      "fontes": [
+        "https://www.instagram.com/p/DeOzzEYHMSm/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-saborosa-1080x1920.png",
+      "id": "saborosa-jantinha"
+    },
+    {
+      "nome": "San Paolo Cantina",
+      "categoria": "Pizzarias",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/sanpaolocantina/",
+      "fontes": [
+        "https://www.instagram.com/p/DcjUjxbHDPc/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-san-paolo-1080x1920.png",
+      "id": "san-paolo-cantina"
+    },
+    {
+      "nome": "Sanduicheria Brutus",
+      "categoria": "Lanches",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/bsanduicheria/",
+      "fontes": [
+        "https://www.instagram.com/p/DdDSeHvDbwH/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-brutus-1080x1920.png",
+      "id": "sanduicheria-brutus"
+    },
+    {
+      "nome": "Santa Fé Empório",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/santafeemporio/",
+      "fontes": [
+        "https://www.instagram.com/p/DcdoNuwFhLr/",
+        "https://www.instagram.com/reel/Dc4TbgkBVg4/",
+        "https://www.instagram.com/reel/Dc68itFvZJk/",
+        "https://www.instagram.com/reel/DdJkSekRZHU/",
+        "https://www.instagram.com/p/DdbUTzDHOQq/",
+        "https://www.instagram.com/p/Ddq90QVnMsT/",
+        "https://www.instagram.com/p/DdtVJw8nFl6/",
+        "https://www.instagram.com/p/Dd_bt4GnMO6/",
+        "https://www.instagram.com/p/DeRSSBJHM55/",
+        "https://www.instagram.com/reel/DeRVVwyRx_7/",
+        "https://www.instagram.com/reel/DejTDIXxecD/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-santa-fe-1080x1920.png",
+      "id": "santa-fe-emporio"
+    },
+    {
+      "nome": "Santo Santo Santo",
+      "categoria": "Compras",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/santosantosanto.trindade/",
+      "fontes": [],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-santo-santo-santo-1080x1920.png",
+      "id": "santo-santo-santo"
+    },
+    {
+      "nome": "Santorini Bar e Restaurante",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/santorinibarerestaurante/",
+      "fontes": [
+        "https://www.instagram.com/p/DeOzzEYHMSm/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-santorini-bar-e-restaurante-1080x1920.png",
+      "id": "santorini-bar-e-restaurante"
+    },
+    {
+      "nome": "Santuário Basílica",
+      "categoria": "Turismo e cultura",
+      "grupo": "Turismo e cultura",
+      "descricao": "Acolhe celebrações desde 1974 e recebeu o título de Basílica Menor em 2006. Seus vitrais e espaços de oração integram a experiência dos peregrinos.",
+      "localizacao": "Praça Dom Antônio R. de Oliveira · Bairro Santuário · Trindade–GO",
+      "fontes": [
+        "https://www.paieterno.com.br/2023/06/12/romaria-2023-santuario-basilica-foi-criado-para-acolher-devotos-em-peregrinacao/",
+        "https://arquidiocesedegoiania.org.br/paroquia/santuario-basilica-do-divino-pai-eterno-trindade/"
+      ],
+      "nota": "Fotografia de arquivo. Confirme horários, programação e condições de acesso antes da visita.",
+      "imagem": "imagens/fichas/portal-trindade-santuario-basilica-1080x1920.png",
+      "id": "santuario-basilica"
+    },
+    {
+      "nome": "Saori Ichiban Delivery",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/saoriichiban/",
+      "fontes": [
+        "https://www.instagram.com/p/Dc3H4xxDVqm/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-saori-1080x1920.png",
+      "id": "saori-ichiban-delivery"
+    },
+    {
+      "nome": "Start Life Vila Pai Eterno",
+      "categoria": "Fitness",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/startlifevilapaieterno/",
+      "fontes": [
+        "https://www.instagram.com/p/DdbgDA2nO71/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-start-life-vila-pai-eterno-1080x1920.png",
+      "id": "start-life-vila-pai-eterno"
+    },
+    {
+      "nome": "Store",
+      "categoria": "Mercados",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/storesupermercados/",
+      "fontes": [
+        "https://www.instagram.com/p/DeSEjs-Dx4K/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-store-1080x1920.png",
+      "id": "store"
+    },
+    {
+      "nome": "Studio de Treinamento Rhuan Alves",
+      "categoria": "Fitness",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/studiorhuanalves/",
+      "fontes": [
+        "https://www.instagram.com/p/DdbgDA2nO71/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-studio-rhuan-alves-1080x1920.png",
+      "id": "studio-de-treinamento-rhuan-alves"
+    },
+    {
+      "nome": "Summer Cross",
+      "categoria": "Fitness",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/summer__cross/",
+      "fontes": [
+        "https://www.instagram.com/p/DdbgDA2nO71/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-summer-cross-1080x1920.png",
+      "id": "summer-cross"
+    },
+    {
+      "nome": "Supermercado Cavalcante",
+      "categoria": "Mercados",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/supermercadocavalcante/",
+      "fontes": [
+        "https://www.instagram.com/p/DeCr7lnGTFp/",
+        "https://www.instagram.com/p/DeSEjs-Dx4K/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-cavalcante-1080x1920.png",
+      "id": "supermercado-cavalcante"
+    },
+    {
+      "nome": "Tahene Mariano Gourmet",
+      "categoria": "Doces",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/tahenemarianogourmet/",
+      "fontes": [
+        "https://www.instagram.com/p/DeokT68HKkY/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-tahene-mariano-1080x1920.png",
+      "id": "tahene-mariano-gourmet"
+    },
+    {
+      "nome": "Taiyô Sushi Bar",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/taiyo_sushibar/",
+      "fontes": [
+        "https://www.instagram.com/p/Dc3H4xxDVqm/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-taiyo-1080x1920.png",
+      "id": "taiyo-sushi-bar"
+    },
+    {
+      "nome": "The Best Açaí Trindade",
+      "categoria": "Sorvetes e Açaí",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/thebestacaitrindade/",
+      "fontes": [
+        "https://www.instagram.com/p/DbA7J4JxfC9/",
+        "https://www.instagram.com/reel/Dbnpr_RRCVy/",
+        "https://www.instagram.com/p/DcJmb5QHDn3/",
+        "https://www.instagram.com/p/DcznEt8DV9D/",
+        "https://www.instagram.com/p/DdorRqiHOJe/",
+        "https://www.instagram.com/p/DeMLwG-HJh_/",
+        "https://www.instagram.com/reel/DejTZp0RH4e/",
+        "https://www.instagram.com/reel/DenWx0btt2U/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-the-best-acai-1080x1920.png",
+      "id": "the-best-acai-trindade"
+    },
+    {
+      "nome": "Torresmo com Mandioca",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/torresmocommandioca/",
+      "fontes": [
+        "https://www.instagram.com/p/DcZWEKaD-F1/",
+        "https://www.instagram.com/p/DcdoNuwFhLr/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-torresmo-com-mandioca-1080x1920.png",
+      "id": "torresmo-com-mandioca"
+    },
+    {
+      "nome": "Trindade Plaza Hotel",
+      "categoria": "Hospedagem",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/trindadeplazahotel/",
+      "fontes": [
+        "https://www.instagram.com/p/Dcf8tw5jwbH/",
+        "https://www.instagram.com/reel/DeOv78cxN8E/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-plaza-1080x1920.png",
+      "id": "trindade-plaza-hotel"
+    },
+    {
+      "nome": "Trinks Food",
+      "categoria": "Lanches",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/trinks_food/",
+      "fontes": [
+        "https://www.instagram.com/p/Dd4NsSgHKc2/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-trinks-1080x1920.png",
+      "id": "trinks-food"
+    },
+    {
+      "nome": "Vaca no Pão Burger Bistrô",
+      "categoria": "Lanches",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/vacanopaoburgerbistro/",
+      "fontes": [
+        "https://www.instagram.com/p/DasZ00PR8QC/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-vaca-no-pao-1080x1920.png",
+      "id": "vaca-no-pao-burger-bistro"
+    },
+    {
+      "nome": "Vando Espetinhos",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/vandoespetinhos/",
+      "fontes": [
+        "https://www.instagram.com/reel/DXSNNJ7Eaqd/",
+        "https://www.instagram.com/reel/DXcmu9YD7ZW/",
+        "https://www.instagram.com/p/DeOzzEYHMSm/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-vando-1080x1920.png",
+      "id": "vando-espetinhos"
+    },
+    {
+      "nome": "Vila Barro Branco",
+      "categoria": "Turismo",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/vilabarrobranco/",
+      "fontes": [
+        "https://www.instagram.com/p/DXy4WcHlr2S/",
+        "https://www.instagram.com/reel/DbLEm6txXvU/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-vila-barro-branco-1080x1920.png",
+      "id": "vila-barro-branco"
+    },
+    {
+      "nome": "Vovó Zica – Churrasco na Brasa",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/restaurantevovozica/",
+      "fontes": [
+        "https://www.instagram.com/p/DcmSwjgjwyZ/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-vovozica-1080x1920.png",
+      "id": "vovo-zica-churrasco-na-brasa"
+    },
+    {
+      "nome": "WA Espetinhos",
+      "categoria": "Restaurantes",
+      "grupo": "Comércios e serviços",
+      "instagram": "https://www.instagram.com/wa_espetinhos/",
+      "fontes": [
+        "https://www.instagram.com/p/DeOzzEYHMSm/"
+      ],
+      "descricao": "",
+      "nota": "Fotografia e informações do acervo editorial. Confirme funcionamento, produtos e contatos diretamente com o estabelecimento.",
+      "imagem": "imagens/fichas/portal-trindade-wa-espetinhos-1080x1920.png",
+      "id": "wa-espetinhos"
+    }
+  ]
+}
