@@ -1,4 +1,5 @@
 import {answer, inHours} from './protocol.js';
+import {adminPage} from './admin-page.js';
 
 const json = (body, status=200) => new Response(JSON.stringify(body), {status, headers:{'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'}});
 const digits = x => /^\d{8,20}$/.test(x || '');
@@ -49,6 +50,7 @@ async function limitedBody(request, limit=262144) {
 export default {
   async fetch(request, env) {
     const url=new URL(request.url);
+    if(url.pathname==='/console' && request.method==='GET') return new Response(adminPage,{headers:{'content-type':'text/html; charset=utf-8','cache-control':'no-store','x-frame-options':'DENY','referrer-policy':'no-referrer','content-security-policy':"default-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'"}});
     if(url.pathname==='/health' && request.method==='GET') return json({service:'Sol',alive:true});
     if(url.pathname==='/webhook' && request.method==='GET') {
       if(url.searchParams.get('hub.mode')!=='subscribe' || !await equal(url.searchParams.get('hub.verify_token'),env.VERIFY_TOKEN)) return json({error:'forbidden'},403);
@@ -106,12 +108,21 @@ export class SolInbox {
     if(url.pathname==='/admin/status' && request.method==='GET') {
       const jobs=await this.db.list({prefix:'job:',limit:100});
       const chats=await this.db.list({prefix:'chat:',limit:100});
-      return json({paused:(await this.db.get('paused'))!==false, mode:this.env.MODE || 'dry-run',
+      const testUntil=(await this.db.get('testUntil')) || 0;
+      return json({paused:(await this.db.get('paused'))!==false, mode:this.env.MODE || 'dry-run', testUntil,testActive:testUntil>Date.now(),
         jobs:[...jobs].map(([key,j])=>({key,...j})),chats:[...chats].map(([key,c])=>({key,...c}))});
     }
     if(request.method!=='POST') return json({error:'not-found'},404);
     const raw=await limitedBody(request,8192);
     let body; try{body=JSON.parse(new TextDecoder().decode(raw));}catch{return json({error:'invalid-json'},400);}
+    if(url.pathname==='/admin/test') {
+      if(!Number.isInteger(body.minutes) || body.minutes<1 || body.minutes>15) return json({error:'minutes-1-to-15'},400);
+      if(!this.env.WHATSAPP_TOKEN || !this.env.TEST_PHONE_NUMBER_ID || this.env.PHONE_NUMBER_ID!==this.env.TEST_PHONE_NUMBER_ID || !(this.env.ALLOWED_SENDERS || '').trim()) return json({error:'test-configuration-incomplete'},409);
+      const now=Date.now(), until=now+body.minutes*60000;
+      await this.db.put({paused:false,testUntil:until,testStarted:now});
+      await this.db.setAlarm(now+1000);
+      return json({testActive:true,expiresAt:new Date(until).toISOString(),scope:'test-number-and-allowlist-only'});
+    }
     if(url.pathname==='/admin/pause') {
       if(typeof body.paused!=='boolean') return json({error:'boolean-required'},400);
       await this.db.put('paused',body.paused);
@@ -147,23 +158,27 @@ export class SolInbox {
   }
   async process(key,j) {
     const env=this.env;
+    const testUntil=(await this.db.get('testUntil')) || 0;
+    const temporaryTest=testUntil>Date.now();
+    const mode=temporaryTest?'test':env.MODE;
     const chatKey='chat:'+j.from, chat=(await this.db.get(chatKey)) || {};
     const finish=async(status,extra={})=>this.db.put(key,{...j,status,updated:Date.now(),...extra,text:undefined});
     if(chat.paused) return finish('held');
     if(Date.now()-j.at>Number(env.MAX_AGE_SECONDS || 600)*1000) return finish('expired');
-    if(!inHours(env)) return finish('outside-hours');
+    if(temporaryTest && j.at<((await this.db.get('testStarted')) || 0)-5000) return finish('before-test');
+    if(!temporaryTest && !inHours(env)) return finish('outside-hours');
     const decision=answer(j,chat);
     if(decision.text===chat.lastReply) return finish('duplicate-answer');
     if(chat.lastSent && Date.now()-chat.lastSent<5000 && !decision.pause) return finish('rate-limited');
-    if(!['dry-run','test'].includes(env.MODE)) return finish('blocked-mode');
-    if(env.MODE==='test' && (!env.WHATSAPP_TOKEN || !digits(env.PHONE_NUMBER_ID))) return finish('missing-credentials');
-    if(env.MODE==='test' && !(env.ALLOWED_SENDERS || '').split(',').map(s=>s.trim()).includes(j.from)) return finish('not-allowlisted');
-    if(env.MODE==='test' && env.PHONE_NUMBER_ID!==env.TEST_PHONE_NUMBER_ID) return finish('blocked-production-number');
+    if(!['dry-run','test'].includes(mode)) return finish('blocked-mode');
+    if(mode==='test' && (!env.WHATSAPP_TOKEN || !digits(env.PHONE_NUMBER_ID))) return finish('missing-credentials');
+    if(mode==='test' && !(env.ALLOWED_SENDERS || '').split(',').map(s=>s.trim()).includes(j.from)) return finish('not-allowlisted');
+    if(mode==='test' && env.PHONE_NUMBER_ID!==env.TEST_PHONE_NUMBER_ID) return finish('blocked-production-number');
     // Commit handoff/triage state only with planned/sent result, not with an unsent draft.
     const updated={...chat,stage:decision.nextStage || chat.stage,greeted:true,lastReply:decision.text,lastSent:Date.now(),updated:Date.now(),
       business:decision.business || chat.business,instagram:decision.instagram || chat.instagram,objective:decision.objective || chat.objective,
       paused:!!decision.pause,reason:decision.pause || ''};
-    if(env.MODE==='dry-run') {
+    if(mode==='dry-run') {
       await this.db.put(chatKey,updated);
       return finish('draft',{draft:decision.text});
     }
