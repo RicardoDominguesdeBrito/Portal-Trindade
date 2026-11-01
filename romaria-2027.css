@@ -1,0 +1,16 @@
+/* Destaque editorial da Romaria: cartaz original sempre inteiro. */
+.romaria-feature{background:#fffaf0;border-bottom:1px solid #e6d6b5}
+.romaria-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:center}
+.romaria-poster{min-width:0;margin:0}
+.romaria-poster>a{display:block;border:1px solid #e6d6b5;border-radius:4px;overflow:hidden;background:#efbd61}
+.romaria-poster img{display:block;width:100%;height:auto;object-fit:contain}
+.romaria-poster figcaption{margin-top:12px;font-size:11px;line-height:1.6;color:var(--muted)}
+.romaria-copy{min-width:0}
+.romaria-copy h2{font-size:clamp(34px,3.7vw,53px);margin:18px 0 24px}
+.romaria-copy>p:not(.eyebrow){margin-bottom:20px;line-height:1.8}
+.romaria-copy .romaria-dates{font-size:clamp(20px,2.2vw,27px);font-weight:700;color:var(--ink);line-height:1.45}
+.romaria-dates span{display:block;font-size:13px;font-weight:500;letter-spacing:.06em;margin-top:6px;color:var(--muted)}
+.romaria-actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;margin:28px 0 22px}
+.romaria-copy .romaria-source{font-size:12px;margin-bottom:0}
+.romaria-source a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:760px){.romaria-grid{grid-template-columns:1fr;gap:30px}.romaria-copy h2{font-size:36px}.romaria-copy{grid-row:1}.romaria-poster{grid-row:2}.romaria-feature{padding:42px 0}.romaria-actions{align-items:flex-start;flex-direction:column}.romaria-poster img{max-height:none}}
