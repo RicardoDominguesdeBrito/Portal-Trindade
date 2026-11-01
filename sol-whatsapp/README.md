@@ -1,6 +1,8 @@
 # Sol — integração de teste do WhatsApp
 
-Estado: **código preparado e testado localmente; ainda não implantado nem conectado à Meta**.
+Estado: **backend implantado na Cloudflare em 31/10/2026 (horário de São Paulo), com fila Durable Object SQLite e testes do GitHub aprovados; ainda não conectado ao webhook da Meta**.
+
+Endereço de verificação: https://sol-portal-trindade.ricardodbrito.workers.dev/health. Implantação pela branch `sol/whatsapp-integration`, workflow `.github/workflows/sol-whatsapp.yml`, Wrangler 4.156.0. Credencial de implantação limitada ao serviço, armazenada como segredo GitHub `SOL_CLOUDFLARE_API_TOKEN`. Não há token no código. Modo dry-run e pausa padrão preservados. Ainda faltam segredos Meta, chaves do webhook/controle, destinatário de teste e validação ponta a ponta.
 Este diretório é independente do site. Não faz alterações nas páginas, no domínio nem no WhatsApp Business existente. Não adicionar credenciais, transcrições, números particulares ou arquivos de clientes ao GitHub.
 
 ## O que foi implementado
