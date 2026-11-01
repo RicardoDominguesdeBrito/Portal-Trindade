@@ -80,3 +80,14 @@ test('protocol escalates sensitive requests, honors opt-out, never follows injec
   assert.equal(inHours({START_HOUR:'5',END_HOUR:'22'},new Date('2026-10-31T07:59:00Z')),false);
   assert.equal(inHours({START_HOUR:'5',END_HOUR:'22'},new Date('2026-10-31T08:00:00Z')),true);
 });
+test('temporary test expires and never enables the production number',async()=>{
+  const start=box=>box.fetch(new Request('https://internal/admin/test',{method:'POST',body:JSON.stringify({minutes:10})}));
+  const blocked=inbox({PHONE_NUMBER_ID:'2222222222'});
+  assert.equal((await start(blocked.box)).status,409);
+  const {db,box}=inbox();assert.equal((await start(box)).status,200);
+  assert.equal(await db.get('paused'),false);
+  await db.put('testUntil',Date.now()-1);
+  const old=globalThis.fetch;let sent=0;globalThis.fetch=async()=>{sent++;return Response.json({messages:[{id:'out'}]});};
+  try{await enqueue(box);await box.alarm();assert.equal(sent,0);assert.equal([...await jobs(db)][0][1].status,'draft');}
+  finally{globalThis.fetch=old;}
+});
