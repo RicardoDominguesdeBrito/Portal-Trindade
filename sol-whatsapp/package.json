@@ -1,0 +1,1 @@
+{"name":"sol-whatsapp","private":true,"type":"module","scripts":{"test":"node --test","check":"node --check src/worker.js"},"engines":{"node":">=22"}}
