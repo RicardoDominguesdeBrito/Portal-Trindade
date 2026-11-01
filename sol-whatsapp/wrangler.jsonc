@@ -8,9 +8,9 @@
   "vars": {
     "MODE": "dry-run",
     "GRAPH_VERSION": "v25.0",
-    "PHONE_NUMBER_ID": "",
-    "TEST_PHONE_NUMBER_ID": "",
-    "WABA_ID": "",
+    "PHONE_NUMBER_ID": "1315171965023813",
+    "TEST_PHONE_NUMBER_ID": "1315171965023813",
+    "WABA_ID": "4342819895935418",
     "ALLOWED_SENDERS": "",
     "START_HOUR": "5",
     "END_HOUR": "22",
