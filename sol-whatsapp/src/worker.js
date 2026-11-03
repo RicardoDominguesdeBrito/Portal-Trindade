@@ -1,5 +1,6 @@
 import {answer, inHours} from './protocol.js';
 import {adminPage} from './admin-page.js';
+import {productionReady, senderAllowed} from './production.js';
 
 const json = (body, status=200) => new Response(JSON.stringify(body), {status, headers:{'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'}});
 const digits = x => /^\d{8,20}$/.test(x || '');
@@ -21,7 +22,6 @@ async function equal(a,b) {
 }
 export function extract(payload, env, now=Date.now()) {
   const result=[];
-  const allow = new Set((env.ALLOWED_SENDERS || '').split(',').map(s=>s.trim()).filter(Boolean));
   if(payload?.object !== 'whatsapp_business_account' || !env.WABA_ID || !env.PHONE_NUMBER_ID) return result;
   for (const entry of payload.entry || []) {
     if (entry.id !== env.WABA_ID) continue;
@@ -30,7 +30,7 @@ export function extract(payload, env, now=Date.now()) {
       if(change.field !== 'messages' || value?.metadata?.phone_number_id !== env.PHONE_NUMBER_ID) continue;
       for(const m of value.messages || []) {
         const age=now/1000-Number(m.timestamp);
-        if(!digits(m.from) || !allow.has(m.from) || !m.id || m.id.length>256 || !Number.isFinite(age) || age< -60 || age>Number(env.MAX_AGE_SECONDS || 600)) continue;
+        if(!digits(m.from) || !senderAllowed(env,m.from) || !m.id || m.id.length>256 || !Number.isFinite(age) || age< -60 || age>Number(env.MAX_AGE_SECONDS || 600)) continue;
         if(!['text','image','video','audio','document','sticker','location','contacts','interactive','button'].includes(m.type)) continue;
         result.push({id:m.id,from:m.from,type:m.type,text:(m.text?.body || '').slice(0,4096),at:Number(m.timestamp)*1000});
       }
@@ -170,7 +170,9 @@ export class SolInbox {
     const decision=answer(j,chat);
     if(decision.text===chat.lastReply) return finish('duplicate-answer');
     if(chat.lastSent && Date.now()-chat.lastSent<5000 && !decision.pause) return finish('rate-limited');
-    if(!['dry-run','test'].includes(mode)) return finish('blocked-mode');
+    if(!['dry-run','test','production'].includes(mode)) return finish('blocked-mode');
+    if(mode==='production' && !productionReady(env)) return finish('blocked-production-config');
+    if(mode==='production' && !senderAllowed(env,j.from)) return finish('not-allowlisted');
     if(mode==='test' && (!env.WHATSAPP_TOKEN || !digits(env.PHONE_NUMBER_ID))) return finish('missing-credentials');
     if(mode==='test' && !(env.ALLOWED_SENDERS || '').split(',').map(s=>s.trim()).includes(j.from)) return finish('not-allowlisted');
     if(mode==='test' && env.PHONE_NUMBER_ID!==env.TEST_PHONE_NUMBER_ID) return finish('blocked-production-number');
