@@ -51,7 +51,10 @@ export default {
   async fetch(request, env) {
     const url=new URL(request.url);
     if(url.pathname==='/console' && request.method==='GET') return new Response(adminPage,{headers:{'content-type':'text/html; charset=utf-8','cache-control':'no-store','x-frame-options':'DENY','referrer-policy':'no-referrer','content-security-policy':"default-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'"}});
-    if(url.pathname==='/health' && request.method==='GET') return json({service:'Sol',alive:true});
+    if(url.pathname==='/health' && request.method==='GET') {
+      const id=env.SOL.idFromName('sol-single-executor');
+      return env.SOL.get(id).fetch(new Request('https://sol.internal/health'));
+    }
     if(url.pathname==='/webhook' && request.method==='GET') {
       if(url.searchParams.get('hub.mode')!=='subscribe' || !await equal(url.searchParams.get('hub.verify_token'),env.VERIFY_TOKEN)) return json({error:'forbidden'},403);
       return new Response(url.searchParams.get('hub.challenge') || '',{headers:{'cache-control':'no-store'}});
@@ -89,6 +92,29 @@ export class SolInbox {
   }
   async route(request) {
     const url=new URL(request.url);
+    if(url.pathname==='/health' && request.method==='GET') {
+      // Publish only operational booleans, never IDs, tokens or customer records.
+      // Persisted cache bounds the Meta read to one request per minute.
+      const key='health:phone', now=Date.now(), env=this.env;
+      let check=await this.db.get(key);
+      if(!check || now-check.at>60000 || check.phone!==env.PHONE_NUMBER_ID) {
+        let accessible=false,errorCode=null;
+        if(env.WHATSAPP_TOKEN && digits(env.PHONE_NUMBER_ID)) {
+          try {
+            const response=await fetch('https://graph.facebook.com/'+env.GRAPH_VERSION+'/'+env.PHONE_NUMBER_ID+'?fields=id',{
+              headers:{authorization:'Bearer '+env.WHATSAPP_TOKEN},signal:AbortSignal.timeout(8000)
+            });
+            const data=await response.json();
+            accessible=response.ok && data.id===env.PHONE_NUMBER_ID;
+            errorCode=accessible?null:(Number(data?.error?.code)||null);
+          } catch {errorCode=null;}
+        }
+        check={at:now,phone:env.PHONE_NUMBER_ID,accessible,errorCode};
+        await this.db.put(key,check);
+      }
+      return json({service:'Sol',alive:true,mode:env.MODE||'dry-run',productionConfigured:productionReady(env),
+        paused:(await this.db.get('paused'))!==false,phoneApiAccessible:check.accessible,apiErrorCode:check.errorCode});
+    }
     if(url.pathname==='/enqueue' && request.method==='POST') {
       const incoming=await request.json();
       const active=await this.db.list({prefix:'job:',limit:501});
