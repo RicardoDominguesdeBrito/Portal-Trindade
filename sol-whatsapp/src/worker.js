@@ -1,5 +1,6 @@
 import {answer, inHours} from './protocol.js';
 import {adminPage} from './admin-page.js';
+import {productionReady, senderAllowed} from './production.js';
 
 const json = (body, status=200) => new Response(JSON.stringify(body), {status, headers:{'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'}});
 const digits = x => /^\d{8,20}$/.test(x || '');
@@ -21,7 +22,6 @@ async function equal(a,b) {
 }
 export function extract(payload, env, now=Date.now()) {
   const result=[];
-  const allow = new Set((env.ALLOWED_SENDERS || '').split(',').map(s=>s.trim()).filter(Boolean));
   if(payload?.object !== 'whatsapp_business_account' || !env.WABA_ID || !env.PHONE_NUMBER_ID) return result;
   for (const entry of payload.entry || []) {
     if (entry.id !== env.WABA_ID) continue;
@@ -30,7 +30,7 @@ export function extract(payload, env, now=Date.now()) {
       if(change.field !== 'messages' || value?.metadata?.phone_number_id !== env.PHONE_NUMBER_ID) continue;
       for(const m of value.messages || []) {
         const age=now/1000-Number(m.timestamp);
-        if(!digits(m.from) || !allow.has(m.from) || !m.id || m.id.length>256 || !Number.isFinite(age) || age< -60 || age>Number(env.MAX_AGE_SECONDS || 600)) continue;
+        if(!digits(m.from) || !senderAllowed(env,m.from) || !m.id || m.id.length>256 || !Number.isFinite(age) || age< -60 || age>Number(env.MAX_AGE_SECONDS || 600)) continue;
         if(!['text','image','video','audio','document','sticker','location','contacts','interactive','button'].includes(m.type)) continue;
         result.push({id:m.id,from:m.from,type:m.type,text:(m.text?.body || '').slice(0,4096),at:Number(m.timestamp)*1000});
       }
@@ -51,7 +51,10 @@ export default {
   async fetch(request, env) {
     const url=new URL(request.url);
     if(url.pathname==='/console' && request.method==='GET') return new Response(adminPage,{headers:{'content-type':'text/html; charset=utf-8','cache-control':'no-store','x-frame-options':'DENY','referrer-policy':'no-referrer','content-security-policy':"default-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'"}});
-    if(url.pathname==='/health' && request.method==='GET') return json({service:'Sol',alive:true});
+    if(url.pathname==='/health' && request.method==='GET') {
+      const id=env.SOL.idFromName('sol-single-executor');
+      return env.SOL.get(id).fetch(new Request('https://sol.internal/health'));
+    }
     if(url.pathname==='/webhook' && request.method==='GET') {
       if(url.searchParams.get('hub.mode')!=='subscribe' || !await equal(url.searchParams.get('hub.verify_token'),env.VERIFY_TOKEN)) return json({error:'forbidden'},403);
       return new Response(url.searchParams.get('hub.challenge') || '',{headers:{'cache-control':'no-store'}});
@@ -89,6 +92,29 @@ export class SolInbox {
   }
   async route(request) {
     const url=new URL(request.url);
+    if(url.pathname==='/health' && request.method==='GET') {
+      // Publish only operational booleans, never IDs, tokens or customer records.
+      // Persisted cache bounds the Meta read to one request per minute.
+      const key='health:phone', now=Date.now(), env=this.env;
+      let check=await this.db.get(key);
+      if(!check || now-check.at>60000 || check.phone!==env.PHONE_NUMBER_ID) {
+        let accessible=false,errorCode=null;
+        if(env.WHATSAPP_TOKEN && digits(env.PHONE_NUMBER_ID)) {
+          try {
+            const response=await fetch('https://graph.facebook.com/'+env.GRAPH_VERSION+'/'+env.PHONE_NUMBER_ID+'?fields=id',{
+              headers:{authorization:'Bearer '+env.WHATSAPP_TOKEN},signal:AbortSignal.timeout(8000)
+            });
+            const data=await response.json();
+            accessible=response.ok && data.id===env.PHONE_NUMBER_ID;
+            errorCode=accessible?null:(Number(data?.error?.code)||null);
+          } catch {errorCode=null;}
+        }
+        check={at:now,phone:env.PHONE_NUMBER_ID,accessible,errorCode};
+        await this.db.put(key,check);
+      }
+      return json({service:'Sol',alive:true,mode:env.MODE||'dry-run',productionConfigured:productionReady(env),
+        paused:(await this.db.get('paused'))!==false,phoneApiAccessible:check.accessible,apiErrorCode:check.errorCode});
+    }
     if(url.pathname==='/enqueue' && request.method==='POST') {
       const incoming=await request.json();
       const active=await this.db.list({prefix:'job:',limit:501});
@@ -170,7 +196,9 @@ export class SolInbox {
     const decision=answer(j,chat);
     if(decision.text===chat.lastReply) return finish('duplicate-answer');
     if(chat.lastSent && Date.now()-chat.lastSent<5000 && !decision.pause) return finish('rate-limited');
-    if(!['dry-run','test'].includes(mode)) return finish('blocked-mode');
+    if(!['dry-run','test','production'].includes(mode)) return finish('blocked-mode');
+    if(mode==='production' && !productionReady(env)) return finish('blocked-production-config');
+    if(mode==='production' && !senderAllowed(env,j.from)) return finish('not-allowlisted');
     if(mode==='test' && (!env.WHATSAPP_TOKEN || !digits(env.PHONE_NUMBER_ID))) return finish('missing-credentials');
     if(mode==='test' && !(env.ALLOWED_SENDERS || '').split(',').map(s=>s.trim()).includes(j.from)) return finish('not-allowlisted');
     if(mode==='test' && env.PHONE_NUMBER_ID!==env.TEST_PHONE_NUMBER_ID) return finish('blocked-production-number');

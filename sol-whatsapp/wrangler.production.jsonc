@@ -1,0 +1,21 @@
+{
+  "name": "sol-portal-trindade",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-31",
+  "workers_dev": true,
+  "durable_objects": {"bindings": [{"name": "SOL", "class_name": "SolInbox"}]},
+  "migrations": [{"tag": "v1", "new_sqlite_classes": ["SolInbox"]}],
+  "vars": {
+    "MODE": "production",
+    "PRODUCTION_ENABLED": "false",
+    "RECIPIENT_SCOPE": "allowlist",
+    "GRAPH_VERSION": "v25.0",
+    "PHONE_NUMBER_ID": "1087653641089631",
+    "TEST_PHONE_NUMBER_ID": "1315171965023813",
+    "WABA_ID": "1982232865723855",
+    "START_HOUR": "0",
+    "END_HOUR": "24",
+    "MAX_AGE_SECONDS": "600"
+  },
+  "observability": {"enabled": false}
+}
