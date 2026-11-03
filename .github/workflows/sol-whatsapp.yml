@@ -1,0 +1,30 @@
+name: Implantar Sol (teste)
+on:
+  push:
+    branches: ['sol/whatsapp-integration']
+    paths: ['sol-whatsapp/**', '.github/workflows/sol-whatsapp.yml']
+permissions:
+  contents: read
+concurrency:
+  group: sol-whatsapp-test-deploy
+  cancel-in-progress: false
+jobs:
+  test-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: sol-whatsapp
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Testar webhook e controles de atendimento
+        run: npm test
+      - name: Publicar somente o backend da Sol em dry-run
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.SOL_CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: '60b0cf24034b4a93423caa2c30b7974b'
+          WRANGLER_SEND_METRICS: 'false'
+        run: npx --yes wrangler@4.156.0 deploy --config wrangler.jsonc
