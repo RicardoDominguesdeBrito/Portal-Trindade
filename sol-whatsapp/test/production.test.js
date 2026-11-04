@@ -19,6 +19,28 @@ class Store {
   async setAlarm(t){this.alarmAt=t;}
   async delete(k){this.values.delete(k);}
 }
+test('new inbound wakes the executor after an idle daily cleanup alarm',async()=>{
+  const db=new Store(),box=new SolInbox({storage:db,blockConcurrencyWhile:fn=>fn()},env);
+  await db.put('paused',false);
+  await box.alarm();
+  assert.ok(db.alarmAt>Date.now()+23*60*60*1000);
+  const response=await box.fetch(new Request('https://internal/enqueue',{method:'POST',body:JSON.stringify([message])}));
+  assert.equal((await response.json()).accepted,1);
+  assert.ok(db.alarmAt<=Date.now()+1500,'fresh inbound must preempt the daily alarm');
+  let calls=0;const original=globalThis.fetch;
+  globalThis.fetch=async()=>{calls++;return Response.json({messages:[{id:'idle-wakeup-reply'}]});};
+  try{await box.alarm();assert.equal(calls,1);await box.alarm();assert.equal(calls,1);}
+  finally{globalThis.fetch=original;}
+});
+test('enqueue never postpones an earlier alarm and does not resume a paused service',async()=>{
+  const db=new Store(),box=new SolInbox({storage:db,blockConcurrencyWhile:fn=>fn()},env);
+  const earlier=Date.now()+100;await db.setAlarm(earlier);
+  await box.fetch(new Request('https://internal/enqueue',{method:'POST',body:JSON.stringify([message])}));
+  assert.equal(db.alarmAt,earlier);
+  await box.alarm();
+  assert.equal([...db.values.values()].some(v=>v?.status==='sent'),false);
+  assert.equal((await db.get('paused')),undefined);
+});
 test('production refuses disabled, missing credentials, wrong assets and unknown recipient scope',()=>{
   for(const change of [{PRODUCTION_ENABLED:'false'},{WHATSAPP_TOKEN:''},{WABA_ID:'wrong'},{PHONE_NUMBER_ID:env.TEST_PHONE_NUMBER_ID},{RECIPIENT_SCOPE:'*'}]){
     const invalid={...env,...change};assert.equal(productionReady(invalid),false);assert.equal(extract(payload(),invalid).length,0);
@@ -52,3 +74,4 @@ test('queued production cannot send after the gate is disabled',async()=>{
   const original=globalThis.fetch;globalThis.fetch=()=>{throw new Error('must not call network');};
   try{await box.alarm();assert.equal((await db.get('job:disabled')).status,'blocked-production-config');}finally{globalThis.fetch=original;}
 });
+
