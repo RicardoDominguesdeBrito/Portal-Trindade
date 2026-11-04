@@ -127,8 +127,10 @@ export class SolInbox {
         await this.db.put({[key]:{at:Date.now()},[jobKey]:{...m,status:'queued',received:Date.now()}});
         accepted++;
       }
-      // Daily cleanup also runs while paused; no new sends are authorized by an alarm.
-      if(!await this.db.getAlarm()) await this.db.setAlarm(Date.now()+1000);
+      // Fresh inbound must preempt the idle daily cleanup alarm. Preserve an
+      // earlier wake-up; scheduling never changes pause/opt-out permissions.
+      const wakeAt=Date.now()+1000, alarmAt=await this.db.getAlarm();
+      if(alarmAt===null || alarmAt===undefined || (accepted>0 && alarmAt>wakeAt)) await this.db.setAlarm(wakeAt);
       return json({accepted});
     }
     if(url.pathname==='/admin/status' && request.method==='GET') {
@@ -236,3 +238,4 @@ export class SolInbox {
     }
   }
 }
+
