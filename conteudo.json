@@ -6,7 +6,16 @@
     "instagram": "https://www.instagram.com/trindadeportal"
   },
   "parceiros": {
-    "hospedagem": [],
+    "hospedagem": [
+      {
+        "nome": "Hotel Recanto Goiano",
+        "tag": "Hospedagem",
+        "descricao": "Hospedagem na Vila Santo Onofre, em Trindade. Consulte a disponibilidade e reserve diretamente com o hotel.",
+        "imagem": "/imagens/logo-recanto-goiano-card.webp",
+        "instagram": "https://www.instagram.com/recantogoiano.hotel",
+        "whatsapp": "5562985921198"
+      }
+    ],
     "gastronomia": [
       {
         "nome": "Cibeles Café e Restaurante",
